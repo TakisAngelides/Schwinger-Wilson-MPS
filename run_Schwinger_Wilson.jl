@@ -20,7 +20,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 accuracy = 10^(-10)
 lambda = 100.0
 l_0 = 0.0
-max_sweep_number = 100
+max_sweep_number = 200
 m_over_g_list = [0.125]
 x_list = [30.0, 40.0, 50.0, 60.0, 80.0] # N/sqrt(x) > 5
 
