@@ -103,7 +103,7 @@ include("variational_MPS_algorithm.jl")
 
 # Generate data for extrapolation to continuum - # N_list = [40, 60, 80, 100], D_list = [20, 40, 60, 80, 100]
 
-# Generating data for N = 40, D = 20, 40, 60
+# Generating data for N = 40, D = 20
 
 accuracy = 10^(-10)
 lambda = 100.0

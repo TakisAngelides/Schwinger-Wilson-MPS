@@ -8,4 +8,4 @@
 #SBATCH --partition=phi
 #SBATCH --mem-per-cpu=8G
 
-/onyx/qdata/julia-1.7.0/bin/julia run_Schwinger_Wilson.jl 2 2
+/onyx/qdata/julia-1.7.0/bin/julia run_Schwinger_Wilson.jl 20 40
