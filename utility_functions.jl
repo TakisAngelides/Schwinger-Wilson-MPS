@@ -6,6 +6,7 @@ using Plots
 using LaTeXStrings
 using Test
 using HDF5
+using Dates
 include("MPO.jl")
 
 @enum Form begin
@@ -401,8 +402,9 @@ function generate_Schwinger_data(m_over_g_list, x_list, N, D, accuracy, lambda, 
 
     for mg in m_over_g_list
         for x in x_list
-
-            println(lambda,l_0,mg,x,N,D)
+            
+            t1 = Dates.now()
+            println("Now calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t1)")
             mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
             E_0, mps, sweeps = variational_ground_state_MPS(2*N, 2, D, mpo, accuracy, max_sweep_number)
             
@@ -422,7 +424,10 @@ function generate_Schwinger_data(m_over_g_list, x_list, N, D, accuracy, lambda, 
             penalty_term_expectation_value = get_mpo_expectation_value(N, mps, get_penalty_term_MPO(N, lambda))
             
             write(file, "$(lambda),$(l_0),$(mg),$(x),$(N),$(D),$(sweeps),$(penalty_term_expectation_value),$(E_0)\n")
-
+            
+            t2 = Dates.now()
+            println("Have just finished calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t2)")
+            
         end
     end
 
