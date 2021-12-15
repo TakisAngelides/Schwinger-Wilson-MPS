@@ -404,7 +404,7 @@ function generate_Schwinger_data(m_over_g_list, x_list, N, D, accuracy, lambda, 
         for x in x_list
             
             t1 = Dates.now()
-            println("Now calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t1)")
+            println("Now calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t1)\n")
             mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
             E_0, mps, sweeps = variational_ground_state_MPS(2*N, 2, D, mpo, accuracy, max_sweep_number)
             
@@ -426,7 +426,7 @@ function generate_Schwinger_data(m_over_g_list, x_list, N, D, accuracy, lambda, 
             write(file, "$(lambda),$(l_0),$(mg),$(x),$(N),$(D),$(sweeps),$(penalty_term_expectation_value),$(E_0)\n")
             
             t2 = Dates.now()
-            println("Have just finished calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t2)")
+            println("Have just finished calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t2)\n")
             
         end
     end
