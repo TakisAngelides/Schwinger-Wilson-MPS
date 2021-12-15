@@ -124,7 +124,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generated data for N = 20, D = 40
 
-# Generating data for N = 40, D = 20
+# Generating data for N = 40, D = 20, 40, 60, 80, 100
 
 accuracy = 10^(-10)
 lambda = 100.0
