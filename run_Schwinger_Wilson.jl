@@ -9,6 +9,7 @@ using HDF5
 include("utility_functions.jl")
 include("MPO.jl")
 include("variational_MPS_algorithm.jl")
+include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -101,20 +102,40 @@ include("variational_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Check that the first excited energy is the same as from exact diagonalization
+
+# N = 4
+# x = 1.0
+# m_g_ratio = 0.25
+# l_0 = 0.0
+# lambda = 100.0
+# acc = 10^(-10)
+# max_sweeps = 50
+# d = 2
+# D = 20
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
+# E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
+# E_1, mps_first, sn_first = variational_first_excited_MPS(2*N, d, D, mpo, acc, max_sweeps, mps_ground, E_0)
+# println("First excited energy from variational search: ", E_1)
+# matrix = mpo_to_matrix(mpo)
+# println("First excited energy from exact diagonalization: ", eigvals(matrix))
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Generate data for extrapolation to continuum - # N_list = [40, 60, 80, 100], D_list = [20, 40, 60, 80, 100]
 
 # Generating data for N = 40, D = 20
 
-accuracy = 10^(-10)
-lambda = 100.0
-l_0 = 0.0
-max_sweep_number = 30
-m_over_g_list = [0.125]
-x_list = [30.0, 40.0, 50.0, 60.0, 80.0] # N/sqrt(x) > 5
+# accuracy = 10^(-10)
+# lambda = 100.0
+# l_0 = 0.0
+# max_sweep_number = 30
+# m_over_g_list = [0.125]
+# x_list = [30.0, 40.0, 50.0, 60.0, 80.0] # N/sqrt(x) > 5
 
-N = parse(Int, ARGS[1])
-D = parse(Int, ARGS[2])
+# N = parse(Int, ARGS[1])
+# D = parse(Int, ARGS[2])
 
-generate_Schwinger_data(m_over_g_list, x_list, N, D, accuracy, lambda, l_0, max_sweep_number)
+# generate_Schwinger_data(m_over_g_list, x_list, N, D, accuracy, lambda, l_0, max_sweep_number)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
