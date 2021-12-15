@@ -6,9 +6,7 @@ using Plots
 using LaTeXStrings
 using Test
 using HDF5
-include("utility_functions.jl")
 include("MPO.jl")
-include("variational_MPS_algorithm.jl")
 include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
