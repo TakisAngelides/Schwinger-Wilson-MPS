@@ -280,7 +280,7 @@ function get_spin_half_expectation_value(N::Int64, mps::Vector{Array{ComplexF64}
 
 end
 
-function get_mpo_expectation_value(N::Int64, mps::Vector{Array{ComplexF64}}, mpo::Vector{Array{ComplexF64}})::ComplexF64
+function get_mpo_expectation_value(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array})::ComplexF64
 
     """
     Computes the expectation value of the operator represented by the mpo input
@@ -297,6 +297,8 @@ function get_mpo_expectation_value(N::Int64, mps::Vector{Array{ComplexF64}}, mpo
 
     result = expectation value of mpo with respect to mps
     """
+
+    N = length(mps)
 
     # Contracts the triple of <mps|mpo|mps> at site 1, then contracts this triple with a dummy 1x1x1 tensor of value 1
     # which will get rid of the trivial indices of the first triple at site 1. The trivial indices are the ones labelled 1,
@@ -395,94 +397,89 @@ function quantum_state_coefficients(mps::Vector{Array{ComplexF64}}, N::Int64)::A
 
 end
 
-function generate_Schwinger_data(m_over_g_list, x_list, N, D, accuracy, lambda, l_0, max_sweep_number, D_previous)
+function generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number, D_previous)
 
-    penalty_term_MPO = get_penalty_term_MPO(N, lambda)
+    penalty_term_MPO = get_penalty_term_MPO(2*N, lambda)
 
-    for mg in m_over_g_list
-        for x in x_list
+    open("observables_$(N)_$(D)_$(mg)_$(x).txt", "w") do file
+        h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
 
-            open("observables_$(N)_$(D)_$(mg)_$(x).txt", "w") do file
-                h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+            if D_previous != 0
 
-                    if D_previous != 0
+                f = h5open("mps_$(N)_$(D_previous)_$(mg)_$(x).h5", "r")
 
-                        f = h5open("mps_$(N)_$(D_previous)_$(mg)_$(x).h5", "r")
+                mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D_previous)"]
 
-                        mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D_previous)"]
-
-                        mps_previous = Vector{Array{ComplexF64}}(undef, 2*N)
-                        idx = 1
-                        for t in mps_group
-                            mps_previous[idx] = read(t)
-                            idx = idx + 1
-                        end
-
-                        mps_after = Vector{Array{ComplexF64}}(undef, 2*N)
-
-                        for i in 1:2*N
-                            
-                            dims = size(mps_previous[i])
-                            D_left_previous = dims[1]
-                            D_right_previous = dims[2]
-
-                            if i == 1
-
-                                mps_after[i] = zeros(ComplexF64, 1, D, 2)
-                                for j in 1:2
-                                    mps_after[i][1:1, 1:D_right_previous, j] = mps_previous[i][:, :, j]
-                                end
-
-                            elseif i == 2*N
-
-                                mps_after[i] = zeros(ComplexF64, D, 1, 2)
-                                for j in 1:2
-                                    mps_after[i][1:D_left_previous, 1:1, j] = mps_previous[i][:,:,j]
-                                end
-
-                            else
-
-                                mps_after[i] = zeros(ComplexF64, D, D, 2)
-                                for j in 1:2
-                                    mps_after[i][1:D_left_previous, 1:D_right_previous, j] = mps_previous[i][:,:,j]
-                                end
-                            end
-                        end
-                    else
-                        mps_after = 0
-                    end
-                    
-                    t1 = Dates.now()
-                    println("Now calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t1)\n")
-                    
-                    mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-                    if D_previous != 0
-                        E_0, mps, sweeps = variational_ground_state_MPS_from_previous(2*N, 2, D, mpo, accuracy, max_sweep_number, D_previous, mps_after)
-                    else
-                        E_0, mps, sweeps = variational_ground_state_MPS(2*N, 2, D, mpo, accuracy, max_sweep_number)
-                    end
-                    
-                    if !(haskey(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"))
-                        create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
-                    end
-                    
-                    g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
-                    
-                    for i in 1:length(mps)
-                        
-                        g["mps_$(i)"] = mps[i]
-                        
-                    end
-                        
-                    penalty_term_expectation_value = get_mpo_expectation_value(N, mps, penalty_term_MPO)
-                    
-                    write(file, "$(lambda),$(l_0),$(mg),$(x),$(N),$(D),$(sweeps),$(penalty_term_expectation_value),$(E_0)\n")
-                    
-                    t2 = Dates.now()
-                    println("Have just finished calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t2)\n")
-                    
+                mps_previous = Vector{Array{ComplexF64}}(undef, 2*N)
+                idx = 1
+                for t in mps_group
+                    mps_previous[idx] = read(t)
+                    idx = idx + 1
                 end
+
+                mps_after = Vector{Array{ComplexF64}}(undef, 2*N)
+
+                for i in 1:2*N
+                    
+                    dims = size(mps_previous[i])
+                    D_left_previous = dims[1]
+                    D_right_previous = dims[2]
+
+                    if i == 1
+
+                        mps_after[i] = zeros(ComplexF64, 1, D, 2)
+                        for j in 1:2
+                            mps_after[i][1:1, 1:D_right_previous, j] = mps_previous[i][:, :, j]
+                        end
+
+                    elseif i == 2*N
+
+                        mps_after[i] = zeros(ComplexF64, D, 1, 2)
+                        for j in 1:2
+                            mps_after[i][1:D_left_previous, 1:1, j] = mps_previous[i][:,:,j]
+                        end
+
+                    else
+
+                        mps_after[i] = zeros(ComplexF64, D, D, 2)
+                        for j in 1:2
+                            mps_after[i][1:D_left_previous, 1:D_right_previous, j] = mps_previous[i][:,:,j]
+                        end
+                    end
+                end
+            else
+                mps_after = 0
             end
+            
+            t1 = Dates.now()
+            println("Now calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t1)\n")
+            
+            mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+            if D_previous != 0
+                E_0, mps, sweeps = variational_ground_state_MPS_from_previous(2*N, 2, D, mpo, accuracy, max_sweep_number, D_previous, mps_after)
+            else
+                E_0, mps, sweeps = variational_ground_state_MPS(2*N, 2, D, mpo, accuracy, max_sweep_number)
+            end
+            
+            if !(haskey(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"))
+                create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+            end
+            
+            g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+            
+            for i in 1:length(mps)
+                
+                g["mps_$(i)"] = mps[i]
+                
+            end
+                
+            penalty_term_expectation_value = get_mpo_expectation_value(mps, penalty_term_MPO)
+            
+            write(file, "$(lambda),$(l_0),$(mg),$(x),$(N),$(D),$(sweeps),$(penalty_term_expectation_value),$(E_0)\n")
+            
+            t2 = Dates.now()
+            println("Have just finished calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t2)\n")
+            
         end
     end
 end
