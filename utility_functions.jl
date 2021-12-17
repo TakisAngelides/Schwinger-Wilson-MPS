@@ -448,7 +448,7 @@ function generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_n
                     end
                 end
             else
-                mps_previous = 0
+                mps_after = 0
             end
             
             t1 = Dates.now()
@@ -456,7 +456,7 @@ function generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_n
             
             mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
             if D_previous != 0
-                E_0, mps, sweeps = variational_ground_state_MPS_from_previous(2*N, 2, D, mpo, accuracy, max_sweep_number, D_previous, mps_previous)
+                E_0, mps, sweeps = variational_ground_state_MPS_from_previous(2*N, 2, D, mpo, accuracy, max_sweep_number, D_previous, mps_after)
             else
                 E_0, mps, sweeps = variational_ground_state_MPS(2*N, 2, D, mpo, accuracy, max_sweep_number)
             end
