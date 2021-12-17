@@ -31,7 +31,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Checking that the minimum energy from the variational ground state search agrees with the minimum energy from exact diagonalization
 
-# N = 2
+# N = 4
 # x = 1.0
 # m_g_ratio = 0.25
 # l_0 = 0.0
@@ -39,7 +39,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # acc = 10^(-10)
 # max_sweeps = 30
 # d = 2
-# D = 4
+# D = 6
 # mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
 # E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
 # println("Minimum energy from variational ground state search: ", E_0)
@@ -117,6 +117,28 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # println("First excited energy from variational search: ", E_1)
 # matrix = mpo_to_matrix(mpo)
 # println("First excited energy from exact diagonalization: ", eigvals(matrix))
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Checking memory allocations
+
+# # The command which you write in a terminal not in REPL to generate the variational_MPS_algorithm.jl.mem file is:
+
+# # julia --track-allocation=user variational_MPS_algorithm.jl
+
+# # Then you run the variational_MPS_algorithm.jl again in the terminal with the command:
+
+# # julia variational_MPS_algorithm.jl 
+
+# # and then open the .mem file which will contain the number of memory allocations (in bytes?) per line of code.
+
+# function wrapper() # so as to not misallocate and focus on the function we want to probe
+#     mpo = get_Schwinger_Wilson_MPO(80, 0.0, 1.0, 100.0, 0.125) # force compilation
+#     Profile.clear_malloc_data() # clear allocation
+#     mpo = get_Schwinger_Wilson_MPO(80, 0.0, 1.0, 100.0, 0.125) # run again without compilation
+# end
+
+# wrapper()
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
