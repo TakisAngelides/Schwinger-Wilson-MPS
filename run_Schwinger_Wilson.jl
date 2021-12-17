@@ -21,8 +21,8 @@ max_sweep_number = 100
 N = parse(Int, ARGS[1])
 D = parse(Int, ARGS[2])
 D_previous = parse(Int, ARGS[3])
-x = parse(Float, ARGS[4])
-mg = parse(Float, ARGS[5])
+x = parse(Float64, ARGS[4])
+mg = parse(Float64, ARGS[5])
 
 generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number, D_previous)
 
