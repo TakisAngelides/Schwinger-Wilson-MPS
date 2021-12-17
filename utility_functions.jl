@@ -411,10 +411,11 @@ function generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_n
                 mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D_previous)"]
 
                 mps_previous = Vector{Array{ComplexF64}}(undef, 2*N)
-                idx = 1
-                for t in mps_group
-                    mps_previous[idx] = read(t)
-                    idx = idx + 1
+                
+                for i in 1:2*N
+                
+                    mps_previous[i] = read(mps_group["mps_$(i)"])
+
                 end
 
                 mps_after = Vector{Array{ComplexF64}}(undef, 2*N)
