@@ -142,6 +142,18 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Check the contents of an h5 file
+
+# h5open("mps_60_20_0.125_30.0.h5", "r") do fid
+
+#     g = fid["100.0_0.0_0.125_30.0_60_20"]
+
+#     display(read(g["mps_99"]))
+
+# end
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # # https://github.com/kuehnste/mps.jl/blob/main/test/runtests.jl
 
 # @testset "MPS Testing" begin
