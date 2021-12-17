@@ -365,16 +365,16 @@ function get_local_charge_MPO(N::Int64, site::Int64)::Vector{Array{ComplexF64}}
 
 end
 
-function get_penalty_term_MPO(N::Int64, lambda::Float64)
+function get_penalty_term_MPO(N::Int64, lambda::Float64)::Vector{Array}
 
-    mpo = Vector{Array{ComplexF64}}(undef, 2*N) # An MPO is stored as a vector and each element of the vector stores a 4-tensor
+    mpo = Vector{Array}(undef, N) # An MPO is stored as a vector and each element of the vector stores a 4-tensor
 
-    I = [1.0+0.0im 0.0+0.0im; 0.0+0.0im 1.0+0.0im]
-    Z = [1.0+0.0im 0.0+0.0im; 0.0+0.0im -1.0+0.0im]
+    I = [1 0;0 1]
+    Z = [1 0;0 -1]
     D = 3
     d = 2
 
-    for n in 1:2*N
+    for n in 1:N
     
         if n == 1
             
@@ -383,7 +383,7 @@ function get_penalty_term_MPO(N::Int64, lambda::Float64)
             mpo[n][1,2,:,:] = Z
             mpo[n][1,3,:,:] = I
             
-        elseif n == 2*N
+        elseif n == N
 
             mpo[n] = zeros((D, 1, d, d))
             mpo[n][1,1,:,:] = I
@@ -407,5 +407,3 @@ function get_penalty_term_MPO(N::Int64, lambda::Float64)
     return mpo
 
 end
-
-
