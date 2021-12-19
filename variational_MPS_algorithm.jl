@@ -351,6 +351,9 @@ function initialize_L_R_states(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array
         states[i] = contraction(states[i], (5,), mps[i], (3,))
         states[i] = contraction(states[i], (2,4,6), states[i+1], (1,2,3)) # Remember for loop index is going downwards so i+1 was the previous result in the for loop
 
+        memory_needed_in_GB = Base.summarysize(states)/10^(-9)
+        println("The states vector requires $(memory_needed_in_GB)") # This can show the memory in bytes used for states
+
     end
 
     memory_needed_in_GB = Base.summarysize(states)/10^(-9)
