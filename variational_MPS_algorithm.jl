@@ -445,16 +445,17 @@ function update_states!(sweep_direction::Form, states::Vector{Array{ComplexF64}}
     the given function mutates the input), it mutates the states vector.
     """
 
-    site = contraction(conj(M), (3,), W, (3,))
-    site = contraction(site, (5,), M, (3,))
-
     if sweep_direction == right # Right moving sweep from left to right
     
-        states[i] = contraction(states[i-1], (1,2,3), site, (1,3,5))
+        states[i] = contraction(M, (1,), states[i-1], (3,))
+        states[i] = contraction(W, (1, 4), states[i], (4, 2))
+        states[i] = contraction(conj(M), (1, 3), states[i], (4, 2))
     
     else # Left moving sweep from right to left
 
-        states[i] = contraction(site, (2,4,6), states[i+1], (1,2,3))
+        states[i] = contraction(states[i+1], (3,), M, (2,))
+        states[i] = contraction(W, (2, 4), states[i], (2, 4))
+        states[i] = contraction(conj(M), (2, 3), states[i], (3, 2))
 
     end
 end
