@@ -155,7 +155,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 #     # display(size(read(g["mps_120"])))
 #     a = read(g["mps_1"])
 #     display(a)
-
+#     println(Base.summarysize(a)) # to print the memory needed for the variable a in bytes
 # end
 
 # ----------------------------------------------------------------------------------------------------------------------------------
