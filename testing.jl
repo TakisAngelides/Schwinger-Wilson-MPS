@@ -148,7 +148,13 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 #     g = fid["100.0_0.0_0.125_30.0_60_20"]
 
-#     display(read(g["mps_99"]))
+#     println(length(read(g)))
+#     # for t in g
+#     #     println(size(read(t)))
+#     # end
+#     # display(size(read(g["mps_120"])))
+#     a = read(g["mps_1"])
+#     display(a)
 
 # end
 

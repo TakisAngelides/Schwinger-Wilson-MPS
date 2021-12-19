@@ -353,7 +353,8 @@ function initialize_L_R_states(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array
 
     end
 
-    # println(Base.summarysize(states)) # This can show the memory in bytes used for states
+    memory_needed_in_GB = Base.summarysize(states)/10^(-9)
+    println("The states vector requires $(memory_needed_in_GB)") # This can show the memory in bytes used for states
 
     return states
 
@@ -412,7 +413,8 @@ function get_updated_site(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{C
     """
 
     Heff, dimensions = get_Heff(L, W, R)
-    # println(Base.summarysize(Heff)) # This can show the memory in bytes used for Heff
+    memory_needed_in_GB = Base.summarysize(Heff)/10^(-9)
+    println("The Heff array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for Heff
     E, M = eigs(Heff, nev=1, which=:SR) # nev = 1 => it will return only 1 number of eigenvalues, SR => compute eigenvalues which have the smallest real part (ie the ground state energy and upwards depending on nev), also note M'*M = 1.0+0.0im
     M = reshape(M, (dimensions[1], dimensions[2], dimensions[3])) # M is reshaped in the form sigma_i, a_i-1, a_i
     M = permutedims(M, (2,3,1)) # M is permuted into the form a_i-1, a_i, sigma_i
