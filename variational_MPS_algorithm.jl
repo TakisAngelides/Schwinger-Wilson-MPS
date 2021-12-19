@@ -523,6 +523,8 @@ function variational_ground_state_MPS(N::Int64, d::Int64, D::Int64, mpo::Vector{
         for i in 1:N-1 # Its up to N-1 here because the left moving sweep will start from N
 
             L = states[i]
+            memory_needed_in_GB = Base.summarysize(Heff)/10^(-9)
+            println("The L array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for L
             W = mpo[i]
             R = states[i+1]
             M, _ = get_updated_site(L, W, R)
@@ -644,7 +646,7 @@ function variational_ground_state_MPS_from_previous(N::Int64, d::Int64, D::Int64
 
             L = states[i]
             memory_needed_in_GB = Base.summarysize(Heff)/10^(-9)
-            println("The L array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for Heff
+            println("The L array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for L
             W = mpo[i]
             R = states[i+1]
             M, _ = get_updated_site(L, W, R)
