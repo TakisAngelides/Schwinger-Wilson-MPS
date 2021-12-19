@@ -347,7 +347,7 @@ function initialize_L_R_states(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array
     
     for i in N:-1:2
 
-        memory_needed_in_GB = Base.summarysize(Heff)/10^(-9)
+        memory_needed_in_GB = Base.summarysize(states)/10^(-9)
         println("The Heff array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for Heff
 
         states[i] = contraction(conj(mps[i]), (3,), mpo[i], (3,))
