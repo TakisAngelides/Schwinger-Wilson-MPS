@@ -347,22 +347,11 @@ function initialize_L_R_states(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array
     
     for i in N:-1:2
 
-        memory_needed_in_GB = Base.summarysize(states)/10^(9)
-        println("The Heff array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for Heff
-
-        states[i] = contraction(conj(mps[i]), (3,), mpo[i], (3,))
-        states[i] = contraction(states[i], (5,), mps[i], (3,))
-        memory_needed_in_GB = Base.summarysize(states)/10^(9)
-        println("The states vector requires $(memory_needed_in_GB)") # This can show the memory in bytes used for states
-        states[i] = contraction(states[i], (2,4,6), states[i+1], (1,2,3)) # Remember for loop index is going downwards so i+1 was the previous result in the for loop
-
-        memory_needed_in_GB = Base.summarysize(states)/10^(9)
-        println("The states vector requires $(memory_needed_in_GB)") # This can show the memory in bytes used for states
+        states[i] = contraction(states[i+1], (3,), mps[i], (2,))
+        states[i] = contraction(mpo[i], (2, 4), states[i], (2, 4))
+        states[i] = contraction(conj(mps[i]), (2, 3), states[i], (3, 2))
 
     end
-
-    memory_needed_in_GB = Base.summarysize(states)/10^(9)
-    println("The states vector requires $(memory_needed_in_GB)") # This can show the memory in bytes used for states
 
     return states
 
@@ -392,14 +381,8 @@ function get_Heff(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{ComplexF6
     """
 
     Heff = contraction(L, (2,), W, (1,))
-    memory_needed_in_GB = Base.summarysize(Heff)/10^(9)
-    println("The Heff array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for Heff
     Heff = contraction(Heff, (3,), R, (2,))
-    memory_needed_in_GB = Base.summarysize(Heff)/10^(9)
-    println("The Heff array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for Heff
     Heff = permutedims(Heff, (3,1,5,4,2,6))
-    memory_needed_in_GB = Base.summarysize(Heff)/10^(9)
-    println("The Heff array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for Heff
     dimensions = size(Heff)
     Heff = reshape(Heff, (dimensions[1]*dimensions[2]*dimensions[3], dimensions[4]*dimensions[5]*dimensions[6]))
 
@@ -427,8 +410,6 @@ function get_updated_site(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{C
     """
 
     Heff, dimensions = get_Heff(L, W, R)
-    memory_needed_in_GB = Base.summarysize(Heff)/10^(9)
-    println("The Heff array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for Heff
     E, M = eigs(Heff, nev=1, which=:SR) # nev = 1 => it will return only 1 number of eigenvalues, SR => compute eigenvalues which have the smallest real part (ie the ground state energy and upwards depending on nev), also note M'*M = 1.0+0.0im
     M = reshape(M, (dimensions[1], dimensions[2], dimensions[3])) # M is reshaped in the form sigma_i, a_i-1, a_i
     M = permutedims(M, (2,3,1)) # M is permuted into the form a_i-1, a_i, sigma_i
@@ -525,8 +506,6 @@ function variational_ground_state_MPS(N::Int64, d::Int64, D::Int64, mpo::Vector{
         for i in 1:N-1 # Its up to N-1 here because the left moving sweep will start from N
 
             L = states[i]
-            memory_needed_in_GB = Base.summarysize(L)/10^(9)
-            println("The L array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for L
             W = mpo[i]
             R = states[i+1]
             M, _ = get_updated_site(L, W, R)
@@ -647,8 +626,6 @@ function variational_ground_state_MPS_from_previous(N::Int64, d::Int64, D::Int64
         for i in 1:N-1 # Its up to N-1 here because the left moving sweep will start from N
 
             L = states[i]
-            memory_needed_in_GB = Base.summarysize(L)/10^(9)
-            println("The L array requires $(memory_needed_in_GB)") # This can show the memory in bytes used for L
             W = mpo[i]
             R = states[i+1]
             M, _ = get_updated_site(L, W, R)
