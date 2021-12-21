@@ -56,12 +56,30 @@ end
 
 function operator_to_sparse_matrix(operator, idx::Int64, N::Int64)
 
+    """
+    This function will convert an operator acting on a single site with index idx to a sparse matrix.
+    It uses the kron from LinearAlgebra which is the tensor product between matrices.
+
+    Inputs:
+
+    N = number of lattice sites (if the physical sites are M then N = 2M)
+
+    operator = the operator in matrix representation to be converted to a sparse matrix
+
+    idx = the index for the site on which the operator acts on
+
+    Output:
+
+    result = the sparse matrix representing the operator in the full space of N sites (Matrix)
+
+    """
+
     result = ones(1)
     I = [1 0; 0 1]
     
     for i in 1:N
         if i == idx
-            result = kron(result, operator)
+            result = kron(result, operator) # this is the kronecker tensor product between two vectors or two matrices
         else
             result = kron(result, I)
         end
@@ -72,6 +90,26 @@ function operator_to_sparse_matrix(operator, idx::Int64, N::Int64)
 end
 
 function get_Schwinger_hamiltonian_matrix(N::Int64, l_0::Float64, x::Float64, lambda::Float64, m_g_ratio::Float64)
+
+    """
+    This function returns the Schwinger model Hamiltonian with Wilson fermions in the form of a matrix.
+
+    Inputs:
+
+    N = number of lattice sites (if M is the number of physical lattice sites then N = 2M)
+
+    l_0 = is the background electric field, in this case l_0 = theta/2pi
+
+    x = 1/(a*g)^2 where a is the lattice spacing and g is the coupling constant of the theory
+    
+    lambda = the penalty term's lagrange multiplier
+
+    m_g_ratio = m/g where m is the fermion mass
+
+    Output:
+
+    result = the Schwinger model Hamiltonian as a matrix (Matrix)
+    """
 
     A = -2*1im*(sqrt(x)*m_g_ratio + x)
     B = -2*1im*x
@@ -124,6 +162,20 @@ function get_Schwinger_hamiltonian_matrix(N::Int64, l_0::Float64, x::Float64, la
 end
 
 function get_penalty_term_matrix(N::Int64, lambda::Float64)
+
+    """
+    This will return the penalty term of the W' dimensionless Hamiltonian in the form of a matrix.
+    
+    Inputs:
+
+    N = number of lattice sites (if M is the number of physical lattice sites then N = 2M)
+
+    lambda = the lagrange multiplier to the penalty term in W'
+
+    Output:
+
+    result = the penalty term in the form of a matrix (Matrix)
+    """
 
     Z = [1 0; 0 -1]
 
@@ -398,6 +450,36 @@ function quantum_state_coefficients(mps::Vector{Array{ComplexF64}}, N::Int64)::A
 end
 
 function generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number, D_previous)
+
+    """
+    Generates data for the Schwinger model with Wilson fermions in order to extrapolate to the continuum. It saves to an h5 file
+    the ground state found for the given input parameters and it also writes to a text file the ground state energy and the
+    expectation value for the penalty term just to ensure that is indeed 0 and does not affect the value of the ground state energy.
+
+    Inputs:
+
+    mg = m/g
+
+    x = 1/(a*g)^2
+
+    N = number of physical lattice sites
+
+    D = bond dimension of to be initialized for the variational ground state search algorithm
+
+    accuracy = the accuracy for when to stop the variational ground state search algorithm compared to the change in energy found by the algorithm
+
+    lambda = lagrange multiplier to the penalty term
+
+    l_0 = background electric field, this is theta/2pi
+
+    max_sweep_number = the maximum number of sweeps to do in the variational ground state search algorithm
+
+    D_previous = if this is 0 then we do not use a previous ground state solution with smaller D for the next search with greater D otherwise we do so
+
+    Output:
+
+    No output other than writing to h5 and txt files
+    """
 
     penalty_term_MPO = get_penalty_term_MPO(2*N, lambda)
 

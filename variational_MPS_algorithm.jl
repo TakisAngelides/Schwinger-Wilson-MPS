@@ -319,6 +319,15 @@ function initialize_L_R_states(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array
     indices that stick out at the very left and very right of an <mps|mpo|mps> diagram (see for example Schollwock equation (192) which
     contains 3 trivial indices labeled 1 on the A tensor and W tensor that live on site 1).
 
+    Note:
+
+    It is important to do the contractions in such a way so at any given moment in this function we are not storing an array with
+    two virtual indices of MPO and four virtual indices of MPS. That would be a memory catastrophy for big values of D, given also
+    the MPO has D_MPO = 7. So if we want to contract a triple (conj(mps)-mpo-mps) to an existing contraction on the right we do so
+    zip wise such that we first contract the conj(mps) with what is on the right, then the mpo with what is on the right and then 
+    the mps with what is on the right. This way our memory complexity is O(D^2) rather than O(D^4) because at any given moment we
+    only have maximum two virtual MPS indices in a stored array.
+
     Inputs:
 
     mps = This will be the initial mps once we start the algorithm and its a vector of tensors of complex numbers 
@@ -422,10 +431,11 @@ function update_states!(sweep_direction::Form, states::Vector{Array{ComplexF64}}
 
     """
     Mutates the states vector which holds the partial contractions for the effective Hamiltonian shown in Schollwock Figure 38. We have
-    just optimised the tensor at site i and we are calculating the triple of bra mps, mpo and ket mps as shown in Schollwock Figure 39
-    and contracting it with element i-1 in the states vector if we are growing the L part of the effective Hamiltonian (ie sweeping 
-    from left to right) or we are contracting it with element i+1 in the states vector if we are growing the R part of the effective
-    Hamiltonian (ie sweeping from right to left).
+    just optimised the tensor at site i and we contract the triple of bra mps, mpo and ket mps as shown in Schollwock Figure 39
+    with element i-1 in the states vector if we are growing the L part of the effective Hamiltonian (ie sweeping 
+    from left to right) or with element i+1 in the states vector if we are growing the R part of the effective
+    Hamiltonian (ie sweeping from right to left). See note in initialize_L_R_states for how we do the contraction zip wise so as
+    to be more memory efficient rather than calculating the whole triple and then contracting it with what is on the right or left.
 
     Inputs:
 
@@ -570,7 +580,7 @@ function variational_ground_state_MPS(N::Int64, d::Int64, D::Int64, mpo::Vector{
 
 end
 
-function variational_ground_state_MPS_from_previous(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64, D_previous, mps_previous)::Tuple{ComplexF64, Vector{Array{ComplexF64}}, Int64}
+function variational_ground_state_MPS_from_previous(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64, D_previous::Int64, mps_previous)::Tuple{ComplexF64, Vector{Array{ComplexF64}}, Int64}
 
     """
     This is the main function which implements the variational MPS ground state algorithm described in Schollwock section 6.3.
@@ -582,6 +592,11 @@ function variational_ground_state_MPS_from_previous(N::Int64, d::Int64, D::Int64
     d = number of degrees of freedom on each site - eg d = 2 if we have only spin up, spin down (Integer)
 
     D = bond dimension which controls the entanglement of the mps state (Integer)
+
+    mps_previous = if D_previous is not 0 then it represents the bond dimension of the mps_previous which is the ground state of 
+                    the same mpo with the same N but lower D than what we are trying to find (sometimes 0 if D_previous is 0 sometimes vector of arrays )
+
+    D_previous = the bond dimension of the mps_previous
 
     mpo = The Hamiltonian we are investigating in the form of an mpo
 

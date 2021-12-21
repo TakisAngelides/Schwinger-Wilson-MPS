@@ -367,6 +367,24 @@ end
 
 function get_penalty_term_MPO(N::Int64, lambda::Float64)::Vector{Array}
 
+    """
+    The penalty term in the dimensionless Hamiltonian W = 2/ag^2 H enforces the total charge of the ground state to be 0.
+    We do this using a lagrange multiplier lambda and add to W the term lambda (sum from n = 1 to N Q_n)^2 = P_lambda. We
+    have W + P_lambda = W'. So this function returns the mpo for P_lambda. Note for Wilson fermions is
+    Q_n = psi dagger_n,2 psi_n,2 + psi dagger_n,1 psi_n,1 - 1.
+
+    Inputs:
+    
+    N = number of lattice sites if the number of physical sites is M then N = 2M for our spin formulation
+
+    lambda = lagrange multiplier (float)
+
+    Output:
+
+    mpo = the mpo for the penalty term which enforces zero charge on the g.s. (Vector of arrays)
+
+    """
+
     mpo = Vector{Array}(undef, N) # An MPO is stored as a vector and each element of the vector stores a 4-tensor
 
     I = [1 0;0 1]
