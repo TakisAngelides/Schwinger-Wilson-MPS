@@ -356,9 +356,9 @@ function initialize_L_R_states(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array
     
     for i in N:-1:2
 
-        states[i] = contraction(states[i+1], (3,), mps[i], (2,))
-        states[i] = contraction(mpo[i], (2, 4), states[i], (2, 4))
-        states[i] = contraction(conj(mps[i]), (2, 3), states[i], (3, 2))
+        states[i] = contraction(states[i+1], (3,), mps[i], (2,)) # states_a_i b_i a'_i * M_a'_i-1 a'_i sigma'_i -> A_a_i b_i a'_i-1 sigma'_i
+        states[i] = contraction(mpo[i], (2, 4), states[i], (2, 4)) # W_b_i-1 b_i sigma_i sigma'_i * A_a_i b_i a'_i-1 sigma'_i -> B_b_i-1 sigma_i a_i a'_i-1
+        states[i] = contraction(conj(mps[i]), (2, 3), states[i], (3, 2)) # M_a_i-1 a_i sigma_i * B_b_i-1 sigma_i a_i a'_i-1 -> C_a_i-1 b_i-1 a'_i-1
 
     end
 
@@ -389,9 +389,9 @@ function get_Heff(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{ComplexF6
     Heff, dimensions = effective Hamiltonian as matrix of two indices H_(sigma_l,a_l-1,a_l)(sigma_l_dash,a_l-1_dash,a_l_dash), dimensions of the indices in the order: sigma_l, a_l-1, a_l, sigma_l_dash, a_l-1_dash, a_l_dash
     """
 
-    Heff = contraction(L, (2,), W, (1,))
-    Heff = contraction(Heff, (3,), R, (2,))
-    Heff = permutedims(Heff, (3,1,5,4,2,6))
+    Heff = contraction(L, (2,), W, (1,)) # L_a_i-1 b_i-1 a'_i-1 * W_b_i-1 b_i sigma_i sigma'_i -> A_a_i-1 a'_i-1 b_i sigma_i sigma'_i
+    Heff = contraction(Heff, (3,), R, (2,)) # A_a_i-1 a'_i-1 b_i sigma_i sigma'_i * R_a_i b_i a'_i -> B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i
+    Heff = permutedims(Heff, (3,1,5,4,2,6)) # B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i -> C_sigma_i a_i-1 a_i sigma'_i a'_i-1 a'_i
     dimensions = size(Heff)
     Heff = reshape(Heff, (dimensions[1]*dimensions[2]*dimensions[3], dimensions[4]*dimensions[5]*dimensions[6]))
 
@@ -457,15 +457,15 @@ function update_states!(sweep_direction::Form, states::Vector{Array{ComplexF64}}
 
     if sweep_direction == right # Right moving sweep from left to right
     
-        states[i] = contraction(M, (1,), states[i-1], (3,))
-        states[i] = contraction(W, (1, 4), states[i], (4, 2))
-        states[i] = contraction(conj(M), (1, 3), states[i], (4, 2))
+        states[i] = contraction(M, (1,), states[i-1], (3,)) # M_a'_i-1 a'_i sigma'_i * states_a_i-1 b_i-1 a'_i-1 -> A_a'_i sigma'_i a_i-1 b_i-1
+        states[i] = contraction(W, (1, 4), states[i], (4, 2)) # W_b_i-1 b_i sigma_i sigma'_i * A_a'_i sigma'_i a_i-1 b_i-1 -> B_b_i sigma_i a'_i a_i-1
+        states[i] = contraction(conj(M), (1, 3), states[i], (4, 2)) # M_a_i-1 a_i sigma_i * B_b_i sigma_i a'_i a_i-1 -> C_a_i b_i a'_i
     
     else # Left moving sweep from right to left
 
-        states[i] = contraction(states[i+1], (3,), M, (2,))
-        states[i] = contraction(W, (2, 4), states[i], (2, 4))
-        states[i] = contraction(conj(M), (2, 3), states[i], (3, 2))
+        states[i] = contraction(states[i+1], (3,), M, (2,)) # states_a_i b_i a'_i * M_a'_i-1 a'_i sigma'_i -> A_a_i b_i a'_i-1 sigma'_i
+        states[i] = contraction(W, (2, 4), states[i], (2, 4)) # W_b_i-1 b_i sigma_i sigma'_i * A_a_i b_i a'_i-1 sigma'_i -> B_b_i-1 sigma_i a_i a'_i-1
+        states[i] = contraction(conj(M), (2, 3), states[i], (3, 2)) # M_a_i-1 a_i sigma_i * B_b_i-1 sigma_i a_i a'_i-1 -> C_a_i-1 b_i-1 a'_i-1
 
     end
 end
