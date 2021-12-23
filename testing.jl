@@ -31,18 +31,18 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Checking that the minimum energy from the variational ground state search agrees with the minimum energy from exact diagonalization
 
-N = 40
-x = 1.0
-m_g_ratio = 0.5
-l_0 = 0.0 # this is theta/2pi
-lambda = 100.0
-acc = 10^(-10)
-max_sweeps = 30
-d = 2
-D = 100
-mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
-E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
-println("Minimum energy from variational ground state search: ", E_0)
+# N = 4
+# x = 1.0
+# m_g_ratio = 0.5
+# l_0 = 0.5 # this is theta/2pi
+# lambda = 100.0
+# acc = 10^(-10)
+# max_sweeps = 30
+# d = 2
+# D = 2
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
+# E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
+# println("Minimum energy from variational ground state search: ", E_0)
 # matrix = mpo_to_matrix(mpo)
 # display(eigvals(matrix))
 # println("Minimum energy from exact diagonalization: ", minimum(eigvals(matrix)))
