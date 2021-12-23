@@ -390,18 +390,10 @@ function get_Heff(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{ComplexF6
     """
 
     Heff = contraction(L, (2,), W, (1,)) # L_a_i-1 b_i-1 a'_i-1 * W_b_i-1 b_i sigma_i sigma'_i -> A_a_i-1 a'_i-1 b_i sigma_i sigma'_i
-    println("The dimensions of Heff in first line are $(size(Heff))")
-    println("First line in get_Heff needs $(Base.summarysize(Heff)/10^(9)) GB")
     Heff = contraction(Heff, (3,), R, (2,)) # A_a_i-1 a'_i-1 b_i sigma_i sigma'_i * R_a_i b_i a'_i -> B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i
-    println("The dimensions of Heff in second line are $(size(Heff))")
-    println("Second line in get_Heff needs $(Base.summarysize(Heff)/10^(9)) GB")
     Heff = permutedims(Heff, (3,1,5,4,2,6)) # B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i -> C_sigma_i a_i-1 a_i sigma'_i a'_i-1 a'_i
-    println("The dimensions of Heff in third line are $(size(Heff))")
-    println("Third line in get_Heff needs $(Base.summarysize(Heff)/10^(9)) GB")
     dimensions = size(Heff)
     Heff = reshape(Heff, (dimensions[1]*dimensions[2]*dimensions[3], dimensions[4]*dimensions[5]*dimensions[6]))
-    println("The dimensions of Heff in fourth line are $(size(Heff))")
-    println("Fourth line in get_Heff needs $(Base.summarysize(Heff)/10^(9)) GB")
 
     return Heff, dimensions
 

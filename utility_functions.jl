@@ -449,6 +449,44 @@ function quantum_state_coefficients(mps::Vector{Array{ComplexF64}}, N::Int64)::A
 
 end
 
+function entanglement_entropy(mps, idx)
+
+    N = length(mps)
+    d = size(mps[1])[3]
+
+    @assert(idx >= 2 && idx <= N, "The index that defines the start of the right partition for the entanglement entropy
+    should satisfy the inequality 2<=idx<=N, with the first equality implying that the left partition consists only of the first left
+    most site and the second equality implying that the left partition consists of only sites except the last right
+    most site. The input was idx = $(idx), which does not satisfy the inequality.")
+
+    tmp = ones(ComplexF64, 1)
+    
+    psi_bond_contracted = contraction(mps[N], (2,), tmp, (1,))
+    for i in N-1:-1:1
+        psi_bond_contracted = contraction(mps[i], (2,), psi_bond_contracted, (1,))
+    end
+    psi_bond_contracted = contraction(tmp, (1,), psi_bond_contracted, (1,))
+    
+    psi_bar_bond_contracted = contraction(conj(mps[N]), (2,), tmp, (1,))
+    for i in N-1:-1:1
+        psi_bar_bond_contracted = contraction(conj(mps[i]), (2,), psi_bar_bond_contracted, (1,))
+    end
+    psi_bar_bond_contracted = contraction(tmp, (1,), psi_bar_bond_contracted, (1,))
+
+    nums = [i for i in idx:N]
+    nums = tuple(nums...)
+    rho_reduced = contraction(psi_bond_contracted, nums, psi_bar_bond_contracted, nums)
+    rho_reduced = reshape(rho_reduced, (d^(N-idx-1), d^(N-idx-1)))
+    
+    evals = eigvals(rho_reduced)
+    evals = abs.(real(evals))
+    S = -evals.*log.(evals)
+    S = sum(S)
+
+    return S
+
+end
+
 function generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number, D_previous)
 
     """
