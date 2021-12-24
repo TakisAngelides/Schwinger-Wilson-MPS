@@ -475,15 +475,27 @@ function entanglement_entropy(mps, idx)
 
     nums = [i for i in idx:N]
     nums = tuple(nums...)
-    rho_reduced = contraction(psi_bond_contracted, nums, psi_bar_bond_contracted, nums)
-    rho_reduced = reshape(rho_reduced, (d^(N-idx-1), d^(N-idx-1)))
-    
-    evals = eigvals(rho_reduced)
-    evals = abs.(real(evals))
-    S = -evals.*log.(evals)
-    S = sum(S)
+    rho_left_reduced = contraction(psi_bond_contracted, nums, psi_bar_bond_contracted, nums)
+    rho_left_reduced = reshape(rho_left_reduced, (d^(idx-1), d^(idx-1)))
 
-    return S
+    evals = eigvals(rho_left_reduced)
+    evals = abs.(real(evals))
+    S_left = -evals.*log.(evals)
+    S_left = sum(S_left)
+
+    # For the right partition reduced matrix 
+
+    # nums = [i for i in 1:idx-1]
+    # nums = tuple(nums...)
+    # rho_right_reduced = contraction(psi_bond_contracted, nums, psi_bar_bond_contracted, nums)
+    # rho_right_reduced = reshape(rho_right_reduced, (d^(N-idx+1), d^(N-idx+1)))
+
+    # evals = eigvals(rho_right_reduced)
+    # evals = abs.(real(evals))
+    # S_right = -evals.*log.(evals)
+    # S_right = sum(S_right)
+
+    return S_left
 
 end
 
