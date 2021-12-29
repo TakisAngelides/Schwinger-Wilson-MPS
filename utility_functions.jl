@@ -451,6 +451,22 @@ end
 
 function entanglement_entropy(mps, idx)
 
+    """
+    Gets the entanglement entropy for the bi-partition of an mps given as input where the idx input specifies the first site
+    belonging to the right partition. The right partition consists of all sites from idx until the last site and everything else
+    belongs to the left partition. 
+
+    Inputs:
+
+    mps = the state for which we find the density matrix, get the reduced matrix for the left partition and calcuate its entanglement entropy
+
+    idx = the index to the first site of the right partition
+
+    Outputs:
+
+    S_left = the entanglement entropy of the left partition
+    """
+
     N = length(mps)
     d = size(mps[1])[3]
 
