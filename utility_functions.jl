@@ -633,3 +633,29 @@ function generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_n
     end
 end
 
+function generate_entropy_data()
+
+    l_0 = 0.5
+    x = 30.0
+    N = 40
+    D = 40
+    accuracy = 10^(-8)
+    lambda = 100.0
+    max_sweep_number = 100
+    mg_list = LinRange(0.2, 0.5, 50)
+
+    open("entropy_mass_data.txt", "w") do file
+
+        for mg in mg_list
+
+            mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+            E_0, mps, sweeps = variational_ground_state_MPS(2*N, 2, D, mpo, accuracy, max_sweep_number)
+            ee = entanglement_entropy(mps, N)   
+            write(file, "$(mg),$(ee)\n")
+            
+        end
+
+    end 
+
+end
+
