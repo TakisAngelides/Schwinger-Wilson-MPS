@@ -205,8 +205,9 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # ----------------------------------------------------------------------------------------------------------------------------------
 
 # Checking that the minimum energy from the variational ground state search agrees with the minimum energy from exact diagonalization
+# and check the entanglement entropy function
 
-# N = 4
+# N = 6
 # x = 1.0
 # m_g_ratio = 0.5
 # l_0 = 0.5 # this is theta/2pi
@@ -218,6 +219,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
 # E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
 # println("Minimum energy from variational ground state search: ", E_0)
+# println(entanglement_entropy(mps_ground, N))
 # matrix = mpo_to_matrix(mpo)
 # display(eigvals(matrix))
 # println("Minimum energy from exact diagonalization: ", minimum(eigvals(matrix)))

@@ -451,6 +451,22 @@ end
 
 function entanglement_entropy(mps, idx)
 
+    """
+    Gets the entanglement entropy for the bi-partition of an mps given as input where the idx input specifies the first site
+    belonging to the right partition. The right partition consists of all sites from idx until the last site and everything else
+    belongs to the left partition. 
+
+    Inputs:
+
+    mps = the state for which we find the density matrix, get the reduced matrix for the left partition and calcuate its entanglement entropy
+
+    idx = the index to the first site of the right partition
+
+    Outputs:
+
+    S_left = the entanglement entropy of the left partition
+    """
+
     N = length(mps)
     d = size(mps[1])[3]
 
@@ -475,15 +491,27 @@ function entanglement_entropy(mps, idx)
 
     nums = [i for i in idx:N]
     nums = tuple(nums...)
-    rho_reduced = contraction(psi_bond_contracted, nums, psi_bar_bond_contracted, nums)
-    rho_reduced = reshape(rho_reduced, (d^(N-idx-1), d^(N-idx-1)))
-    
-    evals = eigvals(rho_reduced)
-    evals = abs.(real(evals))
-    S = -evals.*log.(evals)
-    S = sum(S)
+    rho_left_reduced = contraction(psi_bond_contracted, nums, psi_bar_bond_contracted, nums)
+    rho_left_reduced = reshape(rho_left_reduced, (d^(idx-1), d^(idx-1)))
 
-    return S
+    evals = eigvals(rho_left_reduced)
+    evals = abs.(real(evals))
+    S_left = -evals.*log.(evals)
+    S_left = sum(S_left)
+
+    # For the right partition reduced matrix 
+
+    # nums = [i for i in 1:idx-1]
+    # nums = tuple(nums...)
+    # rho_right_reduced = contraction(psi_bond_contracted, nums, psi_bar_bond_contracted, nums)
+    # rho_right_reduced = reshape(rho_right_reduced, (d^(N-idx+1), d^(N-idx+1)))
+
+    # evals = eigvals(rho_right_reduced)
+    # evals = abs.(real(evals))
+    # S_right = -evals.*log.(evals)
+    # S_right = sum(S_right)
+
+    return S_left
 
 end
 
@@ -603,5 +631,31 @@ function generate_Schwinger_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_n
             
         end
     end
+end
+
+function generate_entropy_data()
+
+    l_0 = 0.5
+    x = 30.0
+    N = 40
+    D = 40
+    accuracy = 10^(-8)
+    lambda = 100.0
+    max_sweep_number = 100
+    mg_list = LinRange(0.2, 0.5, 50)
+
+    open("entropy_mass_data.txt", "w") do file
+
+        for mg in mg_list
+
+            mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+            E_0, mps, sweeps = variational_ground_state_MPS(2*N, 2, D, mpo, accuracy, max_sweep_number)
+            ee = entanglement_entropy(mps, N)   
+            write(file, "$(mg),$(ee)\n")
+            
+        end
+
+    end 
+
 end
 
