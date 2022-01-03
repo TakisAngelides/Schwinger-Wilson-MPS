@@ -637,8 +637,8 @@ function generate_entropy_data()
 
     l_0 = 0.5
     x = 30.0
-    N = 40
-    D = 40
+    N = 20
+    D = 20
     accuracy = 10^(-8)
     lambda = 100.0
     max_sweep_number = 100
