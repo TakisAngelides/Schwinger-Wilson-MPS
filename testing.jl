@@ -29,20 +29,74 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Checking the center_orthogonalize! function
+
+# mps = initialize_MPS(8, 2, 4)
+# idx = 4
+# println(inner_product_MPS(mps, mps))
+# S = center_orthogonalize!(mps, idx)
+# println(norm_center_orthogonal(mps, S, idx))
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Checking the entanglement entropy functions
+
+# mps = get_GHZ_mps(8)
+# display(quantum_state_coefficients(mps, 8))
+
+# mpo = get_Schwinger_Wilson_MPO(8, 0.0, 1.0, 100.0, 0.33)
+# acc = 10^(-10)
+# ms = 30
+# E_0, mps, sn = variational_ground_state_MPS(16, 2, 4, mpo, acc, ms)
+
+
+# println("norm = ", inner_product_MPS(mps, mps))
+# println("Trial = ", entanglement_entropy(mps, idx))
+# println("Inefficient = ", entanglement_entropy_inefficient(mps, idx+1))
+# println("EE = ", entanglement_entropy_old(mps, idx))
+# S = center_orthogonalize!(mps, 4)
+# evals = S.^2
+# S_ortho = 0
+# for eval in evals
+#     if eval > 10^(-12)
+#         global S_ortho += -eval*log2(eval)
+#     end
+# end
+# println("S ortho = ", S_ortho)
+
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Testing the GHZ state
+
+# N = 6
+# mps = get_GHZ_mps(N)
+# mps = initialize_MPS(N, 2, 5)
+# println(inner_product_MPS(mps, mps))
+# println("EEI = ", entanglement_entropy_inefficient(mps, Int(N/2)+1))
+# println("EEE = ", entanglement_entropy(mps, Int(N/2)))
+# state = quantum_state_coefficients(mps_GHZ, N)
+# display(state)
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Checking that the minimum energy from the variational ground state search agrees with the minimum energy from exact diagonalization
+# and checking the entanglement entropy functions
 
 # N = 4
-# x = 1.0
+# x = 4.0
 # m_g_ratio = 0.5
 # l_0 = 0.5 # this is theta/2pi
 # lambda = 100.0
 # acc = 10^(-10)
 # max_sweeps = 30
 # d = 2
-# D = 2
+# D = 12
 # mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
 # E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
 # println("Minimum energy from variational ground state search: ", E_0)
+# println(entanglement_entropy_inefficient(mps_ground, N))
+# println(entanglement_entropy(mps_ground, N))
 # matrix = mpo_to_matrix(mpo)
 # display(eigvals(matrix))
 # println("Minimum energy from exact diagonalization: ", minimum(eigvals(matrix)))
