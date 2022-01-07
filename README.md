@@ -15,12 +15,17 @@ variational_ground_state_MPS_from_previous
 
 Functions in MPO.jl:
 
--get_Ising_MPO
--get_identity_MPO
--get_spin_half_MPO
--get_Schwinger_Wilson_MPO
--get_local_charge_MPO
--get_penalty_term_MPO
+get_Ising_MPO
+
+get_identity_MPO
+
+get_spin_half_MPO
+
+get_Schwinger_Wilson_MPO
+
+get_local_charge_MPO
+
+get_penalty_term_MPO
 
 Functions in variational_first_excited_state_MPS_algorithm.jl:
 
