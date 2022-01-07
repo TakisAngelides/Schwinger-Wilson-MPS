@@ -1,4 +1,3 @@
-using Profile
 using LinearAlgebra
 using Arpack
 using BenchmarkTools
