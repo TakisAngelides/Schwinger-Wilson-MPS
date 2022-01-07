@@ -1,4 +1,6 @@
-These set of files are a Julia implementation of mainly the variational ground state search using matrix product states.
+These set of files are a Julia implementation of mainly the variational ground state search algorithm using matrix product states. There is also an implementation to get
+the first excited state. The reason the title of this repository is Schwinger Wilson MPS is because it implements the Schwinger model with Wilson fermions MPO and performs
+the variational ground state search algorithm on it.
 
 **Functions in variational_MPS_algorithm.jl:**
 
