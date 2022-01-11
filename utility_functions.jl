@@ -1054,3 +1054,28 @@ function generate_entropy_data()
 
 end
 
+function generate_entropy_data_Ising()
+
+    N = 40
+    D = 20
+    accuracy = 10^(-10)
+    max_sweep_number = 100
+    J = -1.0
+    g_z = -0.1
+    l, u, n = 0.0, 2.0, 10
+    g_x = LinRange(l, u, n)
+
+    open("entropy_mass_data_Ising_$(l)_$(u)_$(n).txt", "w") do file
+
+        for mg in mg_list
+
+            mpo = get_Ising_MPO(N, J, g_x, g_z)
+            E_0, mps, sweeps = variational_ground_state_MPS(N, 2, D, mpo, accuracy, max_sweep_number)
+            ee = entanglement_entropy(mps, N)   
+            write(file, "$(mg),$(ee)\n")
+            
+        end
+
+    end 
+
+end
