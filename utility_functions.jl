@@ -1072,7 +1072,7 @@ function generate_entropy_data_Ising()
             mpo = get_Ising_MPO(N, J, g_x, g_z)
             E_0, mps, sweeps = variational_ground_state_MPS(N, 2, D, mpo, accuracy, max_sweep_number)
             ee = entanglement_entropy(mps, Int(N/2))   
-            write(file, "$(mg),$(ee)\n")
+            write(file, "$(g_x),$(ee)\n")
             
         end
 
