@@ -1064,6 +1064,8 @@ function generate_entropy_data()
     max_sweep_number = 100
     l, u, n = -1.0, 1.0, 50
     mg_list = LinRange(l, u, n)
+    tmp = LinRange(-0.5, -0.45, 20)
+    mg_list = vcat(mg_list, tmp)
 
     open("entropy_mass_data_$(l)_$(u)_$(n)_$(N)_$(D).txt", "w") do file
 
