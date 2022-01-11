@@ -1056,7 +1056,7 @@ end
 function generate_entropy_data()
 
     l_0 = 0.0
-    x = 6.0
+    x = 1.0
     N = 10
     D = 10
     accuracy = 10^(-10)
