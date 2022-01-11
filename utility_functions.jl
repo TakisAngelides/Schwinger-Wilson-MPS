@@ -1056,13 +1056,13 @@ end
 
 function generate_entropy_data_Ising()
 
-    N = 40
-    D = 20
+    N = 100
+    D = 40
     accuracy = 10^(-10)
     max_sweep_number = 100
     J = -1.0
     g_z = -0.1
-    l, u, n = 0.0, 2.0, 10
+    l, u, n = 0.0, 3.0, 20
     g_x_list = LinRange(l, u, n)
 
     open("entropy_mass_data_Ising_$(l)_$(u)_$(n).txt", "w") do file
