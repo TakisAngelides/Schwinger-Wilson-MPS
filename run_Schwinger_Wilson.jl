@@ -29,6 +29,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for entanglement entropy vs mass plot 
 
-generate_entropy_data_Ising()
+# generate_entropy_data_Ising()
+generate_entropy_data()
 
 # ----------------------------------------------------------------------------------------------------------------------------------
