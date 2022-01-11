@@ -1036,7 +1036,7 @@ function generate_entropy_data()
     accuracy = 10^(-8)
     lambda = 100.0
     max_sweep_number = 100
-    mg_list = LinRange(-0.4, -0.3, 50)
+    mg_list = LinRange(-0.4, -0.3, 5)
 
     open("entropy_mass_data.txt", "w") do file
 
