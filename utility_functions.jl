@@ -1055,9 +1055,9 @@ end
 
 function generate_entropy_data()
 
-    l_0 = 0.5
+    l_0 = 0.0
     x = 1.0
-    N = 10
+    N = 20
     D = 10
     accuracy = 10^(-10)
     lambda = 100.0
@@ -1065,7 +1065,7 @@ function generate_entropy_data()
     l, u, n = -1.0, 1.0, 50
     mg_list = LinRange(l, u, n)
 
-    open("entropy_mass_data_$(l)_$(u)_$(n).txt", "w") do file
+    open("entropy_mass_data_$(l)_$(u)_$(n)_$(N)_$(D).txt", "w") do file
 
         for mg in mg_list
 
