@@ -1033,7 +1033,7 @@ function generate_entropy_data()
     x = 100.0
     N = 100
     D = 20
-    accuracy = 10^(-8)
+    accuracy = 10^(-10)
     lambda = 100.0
     max_sweep_number = 100
     mg_list = LinRange(-0.36, -0.26, 10)
