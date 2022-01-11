@@ -1063,11 +1063,11 @@ function generate_entropy_data_Ising()
     J = -1.0
     g_z = -0.1
     l, u, n = 0.0, 2.0, 10
-    g_x = LinRange(l, u, n)
+    g_x_list = LinRange(l, u, n)
 
     open("entropy_mass_data_Ising_$(l)_$(u)_$(n).txt", "w") do file
 
-        for mg in mg_list
+        for g_x in g_x_list
 
             mpo = get_Ising_MPO(N, J, g_x, g_z)
             E_0, mps, sweeps = variational_ground_state_MPS(N, 2, D, mpo, accuracy, max_sweep_number)
