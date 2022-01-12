@@ -1053,31 +1053,9 @@ function generate_entropy_data_Ising()
 
 end
 
-function generate_entropy_data()
+function generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
 
-    l_0 = 0.0
-    x = 1.0
-    N = 20
-    D = 10
-    accuracy = 10^(-10)
-    lambda = 100.0
-    max_sweep_number = 100
-    l, u, n = -1.0, 1.0, 50
-    mg_list = LinRange(l, u, n)
-    tmp = LinRange(-0.5, -0.45, 20)
-    mg_list = vcat(mg_list, tmp)
-
-    open("entropy_mass_data_$(l)_$(u)_$(n)_$(N)_$(D).txt", "w") do file
-
-        for mg in mg_list
-
-            mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-            E_0, mps, sweeps = variational_ground_state_MPS(2*N, 2, D, mpo, accuracy, max_sweep_number)
-            ee = entanglement_entropy(mps, N)   
-            write(file, "$(mg),$(ee)\n")
-            
-        end
-
-    end 
+    mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+    _, _, _ = variational_ground_state_MPS_for_saving(2*N, 2, D, mpo, accuracy, max_sweep_number)
 
 end
