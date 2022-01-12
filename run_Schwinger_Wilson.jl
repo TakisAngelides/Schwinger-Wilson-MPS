@@ -35,8 +35,8 @@ lambda = 100.0
 l_0 = 0.0
 max_sweep_number = 100
 N = parse(Int, ARGS[1])
-x = parse(Int, ARGS[2])
-mg = parse(Int, ARGS[3])
+x = parse(Float64, ARGS[2])
+mg = parse(Float64, ARGS[3])
 
 generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
 
