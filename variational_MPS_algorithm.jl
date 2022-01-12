@@ -5,6 +5,7 @@ using BenchmarkTools
 using Plots
 using LaTeXStrings
 using Test
+using Dates
 using HDF5
 include("utility_functions.jl")
 
@@ -699,6 +700,185 @@ function variational_ground_state_MPS_from_previous(N::Int64, d::Int64, D::Int64
 
         E_initial = E
         sweep_number = sweep_number + 1
+    end
+
+    return E_optimal, mps, sweep_number
+
+end
+
+function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64)::Tuple{ComplexF64, Vector{Array{ComplexF64}}, Int64}
+
+    """
+    This is the main function which implements the variational MPS ground state algorithm described in Schollwock section 6.3.
+        
+    Inputs:
+
+    N = number of lattice sites (Integer)
+
+    d = number of degrees of freedom on each site - eg d = 2 if we have only spin up, spin down (Integer)
+
+    D = bond dimension which controls the entanglement of the mps state (Integer)
+
+    mpo = The Hamiltonian we are investigating in the form of an mpo
+
+    accuracy = We are trying to find the mps that will give the smallest energy and we stop the search once the fractional change in energy is less than the accuracy (Float)
+    
+    max_sweeps = number of maximum sweeps we should perform if the desired accuracy is not reached and the algorithm does not stop because it reached the desired accuracy
+
+    Outputs:
+
+    E_optimal, mps, sweep_number = minimum energy we reached, mps that reached this minimum energy which approximates the ground state of the mpo Hamiltonian we gave as input, number of sweeps we performed when we stopped the algorithm
+
+    """
+
+    tmp = Dates.now()
+    println("Just started calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
+    
+    mps = initialize_MPS(N, d, D) # Initialize a random mps
+    gauge_mps!(right, mps, true, N) # Put it in right canonical form and normalize it
+
+    # This are the partial contractions of the initial mps configuration which is contains all B tensors, 
+    # it has length N+1 where the first and last elements are 1x1x1 tensors of value 1. The states vector will thus be of the form
+    # 1RRRR1 for N = 5.
+
+    states = initialize_L_R_states(mps, mpo, N) # Holds partial contractions needed for each site's H_eff
+    E_initial = 10^(-5) # Will hold the ground state energy approximation of the previous full sweep
+    E_optimal = 0 # Will hold the final best ground state energy approximation once the algorithm is finished
+    sweep_number = 0 # Counts the number of full sweeps performed
+    US = 0 # Will hold the residual matrices from SVD when we put a newly updated tensor in right canonical form while sweeping from right to left
+    
+    t1 = time()
+
+    function run_time(t1::Float64, t2::Float64)::Bool
+
+        """
+        Calculates the time elapses between t1 and t2 where t2 is after t1 and returns whether the elapsed time is over 23 hours and 30 minutes.
+        
+        Note:
+        
+        This function is saying to the code down below where it is used that if the time left is 30 minutes (cluster time limit
+        is 24 hours) do not open the file to store a new mps because it might not have enough time to write it before job gets killed
+        and then we would end up with nothing in the file.
+    
+        Inputs:
+    
+        t1 = first time stamp (Float)
+    
+        t2 = second time stamp after t1 (Float)
+    
+        Output:
+    
+        Boolean set to false if there is only 30 minutes left until run time becomes 24 hours
+        """
+    
+        t = t2 - t1
+        if t >= 84600 # this is the number of seconds for 23 hours and 30 minutes
+            return false
+        else
+            return true
+        end
+    
+    end
+
+    # ------------------------------------------------------------------------------------------------------------------------------------------
+
+    # tmp = Dates.now()
+    # println("Now calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t1)\n")
+
+    # ------------------------------------------------------------------------------------------------------------------------------------------
+
+    h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "cw") do fid
+        create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+    end
+
+    while(true)
+
+        tmp = Dates.now()
+        println("Sweep number $(sweep_number) starting now: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
+
+        t2 = time()
+
+        if sweep_number != 0 && sweep_number % 4 == 0 && run_time(t1, t2)
+            
+            h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+                
+                g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+                
+                for i in 1:length(mps)
+                    
+                    g["mps_$(i)"] = mps[i]
+                    
+                end
+            end
+        end
+        
+        E = 0 # Will hold the ground state energy apprxoimation right after a full sweep finishes
+
+        # From left to right sweep (right moving sweep or right sweep)
+
+        for i in 1:N-1 # Its up to N-1 here because the left moving sweep will start from N
+
+            L = states[i]
+            W = mpo[i]
+            R = states[i+1]
+            M, _ = get_updated_site(L, W, R)
+            mps[i], _ = gauge_site(left, M)
+            update_states!(right, states, mps[i], W, i+1) # i+1 because for loop starts from 1 and index 1 in states is the dummy 1x1x1 tensor of value 1 
+
+        end
+
+        for i in N:-1:2 # Lower limit is 2 here because the right moving sweep will start from 1
+
+            L = states[i]
+            W = mpo[i]
+            R = states[i+1]
+            M, E = get_updated_site(L, W, R)
+            US, mps[i] = gauge_site(right, M) # We only use US after this for loop to restore normalization to the mps state
+            update_states!(left, states, mps[i], W, i)
+
+        end
+        
+        fractional_energy_change = abs((E - E_initial)/E_initial)
+
+        if fractional_energy_change < accuracy
+
+            E_optimal = E
+            
+            # To restore the normalization of the mps
+
+            # We start with a normalized mps and each time we update a tensor we replace it with a normalized one such that the mps 
+            # normalization is maintained. The fact that we discard residual matrices from the SVD that put the updated tensors into 
+            # a particular gauge changes the mps and thus destroys its normalization. However these residual matrices would have been 
+            # multiplied on the next site which is about to get updated next and replaced with a normalized tensor, 
+            # restoring theoverall mps normalization. Just as we are about to stop sweeping, we need to multiply onto the tensor 
+            # on site 1 the lastresidual matrices from gauging site 2 so as to not change the mps, 
+            # maintaining in this way its normalization.
+
+            mps[1] = contraction(mps[1], (2,), US, (1,))
+            mps[1] = permutedims(mps[1], (1,3,2))
+
+            # println("Desired accuracy reached.")
+
+            break
+        
+        elseif max_sweeps < sweep_number
+            
+            E_optimal = E
+
+            mps[1] = contraction(mps[1], (2,), US, (1,))
+            mps[1] = permutedims(mps[1], (1,3,2))
+
+            println("Maximum number of sweeps reached before desired accuracy.")
+
+            break
+
+        end
+
+        E_initial = E
+        tmp = Dates.now()
+        println("Sweep number $(sweep_number) just finished: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
+        sweep_number = sweep_number + 1
+        
     end
 
     return E_optimal, mps, sweep_number
