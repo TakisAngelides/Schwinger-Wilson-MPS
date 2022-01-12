@@ -789,7 +789,9 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
     # ------------------------------------------------------------------------------------------------------------------------------------------
 
     h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
-        create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+        if !(haskey(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"))
+            create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+        end
     end
 
     while(true)
