@@ -395,6 +395,7 @@ function get_Heff(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{ComplexF6
     Heff = permutedims(Heff, (3,1,5,4,2,6)) # B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i -> C_sigma_i a_i-1 a_i sigma'_i a'_i-1 a'_i
     dimensions = size(Heff)
     println(dimensions)
+    println(Base.summarysize(Heff)/10^9)
     Heff = reshape(Heff, (dimensions[1]*dimensions[2]*dimensions[3], dimensions[4]*dimensions[5]*dimensions[6]))
 
     return Heff, dimensions
