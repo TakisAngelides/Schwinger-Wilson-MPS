@@ -5,10 +5,6 @@ if [ -z $D ]; then
 echo "MISSING VALUE OF D"
 exit 1
 fi
-N_val=(40)
-x_val=(30.0 40.0 50.0 60.0 80.0)
-#N_val=(40)
-#x_val=(30.0)
 N_val=(40 60 80 100)
 x_val=(30.0 40.0 50.0 60.0 80.0)
 mg=0.125
