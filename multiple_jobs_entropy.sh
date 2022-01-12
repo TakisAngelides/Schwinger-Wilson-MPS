@@ -13,5 +13,5 @@ exit 1
 fi
 
 for mg in "${mg_list[@]}"; do
-		echo sbatch -J TN_${N}_${x}_${mg}_${D} job_Schwinger_entropy.sh ${N} ${x} ${mg}
+	sbatch -J TN_${N}_${x}_${mg}_${D} job_Schwinger_entropy.sh ${N} ${x} ${mg}
 done
