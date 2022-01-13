@@ -1091,3 +1091,15 @@ function h5_to_mps(name_of_file::String)::Vector{Array{ComplexF64}}
     return mps
 
 end
+
+function mps_to_entropy_save_file(mg, x, N, D)
+
+    name_of_file = "mps_$(N)_$(D)_$(mg)_$(x).h5"
+    mps = h5_to_mps(name_of_file)
+    half = Int(N/2)
+    ee = entanglement_entropy(mps, half)
+    open("entropy_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D).txt", "w") do file
+        write(file, "$(mg),$(ee)\n")
+    end 
+
+end
