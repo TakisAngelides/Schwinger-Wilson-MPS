@@ -885,6 +885,9 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
         
     end
 
+    tmp = Dates.now()
+    println("Algorithm finished with sweep number $(sweep_number): lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
+
     return E_optimal, mps, sweep_number
 
 end
