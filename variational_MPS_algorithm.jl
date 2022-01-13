@@ -802,7 +802,7 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
 
         t2 = time()
 
-        if sweep_number != 0 && sweep_number % 4 == 0 && run_time(t1, t2)
+        if sweep_number != 0 && sweep_number % 2 == 0 && run_time(t1, t2)
             
             h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
                 
