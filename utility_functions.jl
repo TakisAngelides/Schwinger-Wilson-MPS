@@ -1084,12 +1084,7 @@ function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64)::Vector{Array{Co
 
     lambda = 100.0
     l_0 = 0.0
-    strs = split(name_of_file, "_")
-    N = parse(Int, strs[2])
-    D = parse(Int, strs[3])
-    mg = parse(Float64, strs[4])
-    x = parse(Float64, split(strs[5], "h")[1][1:length(split(strs[5], "h")[1])-1])
-
+    
     mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
 
     mps = Vector{Array{ComplexF64}}(undef, N)
