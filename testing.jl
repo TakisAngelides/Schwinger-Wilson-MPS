@@ -217,13 +217,28 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Testing reading an mps from h5 file
 
-# mps = h5_to_mps("mps_96_80_-0.65_10.0.h5")
+# N = 4
+# D = 8
+# mg = 0.125
+# x = 1.0
+# mps = h5_to_mps(2*N, D, mg, x)
+# println(inner_product_MPS(mps, mps))
 # N = length(mps)
 # display(mps[1])
 # display(mps[N])
 # for i in 1:N
 #     println(size(mps[i]))
 # end
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Testing calculating entropy for already saved mps
+
+# mg = 0.125
+# x = 1.0
+# N = 4
+# D = 8
+# mps_to_entropy_save_file(mg, x, 2*N, D)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
