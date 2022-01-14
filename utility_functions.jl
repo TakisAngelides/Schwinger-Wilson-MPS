@@ -1060,13 +1060,25 @@ function generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_num
 
 end
 
-function h5_to_mps(name_of_file::String)::Vector{Array{ComplexF64}}
+function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64)::Vector{Array{ComplexF64}}
 
     """
     Input:
 
-    name_of_file = mps_N_D_mg_x.h5 (String)
+    N = the number of spin sites which is double the physical sites (Int)
+
+    D = bond dimension (Int)
+
+    mg = mass over coupling constant (Float)
+
+    x = 1/(a^2 * g^2) (Float)
+
+    Output:
+
+    mps = the mps saved in the h5 file with the name "mps_$(N)_$(D)_$(mg)_$(x).h5"
     """
+
+    name_of_file = "mps_$(N)_$(D)_$(mg)_$(x).h5"
 
     f = h5open(name_of_file, "r")
 
@@ -1074,28 +1086,29 @@ function h5_to_mps(name_of_file::String)::Vector{Array{ComplexF64}}
     l_0 = 0.0
     strs = split(name_of_file, "_")
     N = parse(Int, strs[2])
-    D = parse(Float64, strs[3])
+    D = parse(Int, strs[3])
     mg = parse(Float64, strs[4])
-    x = parse(Float64, strs[5]) 
+    x = parse(Float64, split(strs[5], "h")[1][1:length(split(strs[5], "h")[1])-1])
 
     mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
 
-    mps = Vector{Array{ComplexF64}}(undef, 2*N)
+    mps = Vector{Array{ComplexF64}}(undef, N)
     
-    for i in 1:2*N
+    for i in 1:N
     
         mps[i] = read(mps_group["mps_$(i)"])
 
     end
+
+    close(f)
     
     return mps
 
 end
 
-function mps_to_entropy_save_file(mg, x, N, D)
+function mps_to_entropy_save_file(mg::Float64, x::Float64, N::Int64, D::Int64)
 
-    name_of_file = "mps_$(N)_$(D)_$(mg)_$(x).h5"
-    mps = h5_to_mps(name_of_file)
+    mps = h5_to_mps(N, D, mg, x)
     half = Int(N/2)
     ee = entanglement_entropy(mps, half)
     open("entropy_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D).txt", "w") do file
