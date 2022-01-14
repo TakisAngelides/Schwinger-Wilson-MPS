@@ -394,8 +394,9 @@ function get_Heff(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{ComplexF6
     Heff = contraction(Heff, (3,), R, (2,)) # A_a_i-1 a'_i-1 b_i sigma_i sigma'_i * R_a_i b_i a'_i -> B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i
     Heff = permutedims(Heff, (3,1,5,4,2,6)) # B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i -> C_sigma_i a_i-1 a_i sigma'_i a'_i-1 a'_i
     dimensions = size(Heff)
-    println(dimensions)
-    println(Base.summarysize(Heff)/10^9)
+    println("Dimensions of Heff: $(dimensions)\n")
+    size_of_Heff = Base.summarysize(Heff)/10^9
+    println("Size of Heff: $(size_of_Heff) GB\n")
     Heff = reshape(Heff, (dimensions[1]*dimensions[2]*dimensions[3], dimensions[4]*dimensions[5]*dimensions[6]))
 
     return Heff, dimensions
@@ -789,12 +790,6 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
 
     # ------------------------------------------------------------------------------------------------------------------------------------------
 
-    h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
-        if !(haskey(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"))
-            create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
-        end
-    end
-
     while(true)
 
         tmp = Dates.now()
@@ -802,9 +797,33 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
 
         t2 = time()
 
-        if sweep_number != 0 && sweep_number % 2 == 0 && run_time(t1, t2)
+        if sweep_number == 1
+
+            mps[1] = contraction(mps[1], (2,), US, (1,))
+            mps[1] = permutedims(mps[1], (1,3,2))
             
             h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+
+                create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+                
+                g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+                
+                for i in 1:length(mps)
+                    
+                    g["mps_$(i)"] = mps[i]
+                    
+                end
+            end
+        end
+
+        if sweep_number != 0 && sweep_number % 2 == 0 && run_time(t1, t2)
+
+            mps[1] = contraction(mps[1], (2,), US, (1,))
+            mps[1] = permutedims(mps[1], (1,3,2))
+            
+            h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+
+                create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
                 
                 g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
                 
@@ -887,6 +906,8 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
 
     tmp = Dates.now()
     println("Algorithm finished with sweep number $(sweep_number): lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
+
+    println(inner_product_MPS(mps, mps))
 
     return E_optimal, mps, sweep_number
 
