@@ -217,10 +217,10 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Testing reading an mps from h5 file
 
-# N = 4
-# D = 8
-# mg = 0.125
-# x = 1.0
+# N = 48
+# D = 80
+# mg = -0.6
+# x = 10.0
 # mps = h5_to_mps(2*N, D, mg, x)
 # println(inner_product_MPS(mps, mps))
 # N = length(mps)
