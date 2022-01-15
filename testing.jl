@@ -232,6 +232,22 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Testing particular parameters for Schwinger model
+
+# N = 4
+# D = 8
+# mg = -0.6
+# x = 60.0
+# ms = 100
+# acc = 10^(-10)
+# lambda = 100.0
+# l_0 = 0.0
+# d = 2
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+# E_0, mps, ns = variational_ground_state_MPS_for_saving(2*N, d, D, mpo, acc, ms)
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Testing calculating entropy for already saved mps
 
 # mg = 0.125
