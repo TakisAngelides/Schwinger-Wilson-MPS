@@ -210,6 +210,7 @@ function gauge_site(form::Form, M_initial::Array{ComplexF64})::Tuple{Array{Compl
         # The next line is enough to remove the reference on M_initial so that it does not mutate the original M_initial and just uses its value, hence the gauge_site function does not mutate M_initial at all
         M = permutedims(M_initial, (1,3,2)) # Assumes initial index was left right physical and now M_(a_i-1)(sigma_i)(a_i)
         M = reshape(M, (D_left, d*D_right)) # Merging indices: Prepare as 2 index tensor to give to SVD, M_(a_i-1)(sigma_i)(a_i) -> M_(a_i-1)(sigma_i a_i)
+        display(M)
         F = svd(M) # One can recover M by M = U*Diagonal(S)*Vt 
         U = F.U # U_(a_i-1)(s_i-1)
         S = F.S # S_(s_i-1)(s_i-1) although S here is just a vector storing the diagonal elements
