@@ -248,6 +248,18 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Testing the gauge_mps! function
+
+# N = 82
+# D = 80
+# d = 2
+
+# mps = initialize_MPS(2*N, d, D)
+# gauge_mps!(right, mps, true, 2*N)
+# display(mps)
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Testing calculating entropy for already saved mps
 
 # mg = 0.125
