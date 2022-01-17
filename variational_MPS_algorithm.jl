@@ -30,9 +30,11 @@ function initialize_MPS(N::Int64, d::Int64, D::Int64)::Vector{Array{ComplexF64}}
          |
     1 -- M -- 2 , where 1 and 2 are the left and right bond indices that control entanglement between sites and 3 is the physical index. 
 
-    Note 1: This function assumes both bond indices has the same dimension.
+    Note 1: This function assumes both bond indices have the same dimension.
 
     Note 2: The first and last sites have a left and right index respectively which is set to the value 1, ie a trivial index of 0 dimension.
+
+    Note 3: The norm of the resulting mps is close to one because we put the tensors in right canonical form otherwise it can blow up.
 
     Inputs: 
 
@@ -49,17 +51,20 @@ function initialize_MPS(N::Int64, d::Int64, D::Int64)::Vector{Array{ComplexF64}}
     
     # Tensor at site 1
 
-    mps[1] = rand(ComplexF64, 1, D, d) # random 3-tensor with index dimensions 1, D and d
+     _, mps[1] = gauge_site(right, rand(ComplexF64, 1, D, d))
 
     # Tensor at site N
 
-    mps[N] = rand(ComplexF64, D, 1, d)
+    US, mps[N] = gauge_site(right, rand(ComplexF64, D, 1, d))
 
     # Tensors at site 2 to N-1
 
     for i in 2:N-1
-        mps[i] = rand(ComplexF64, D, D, d)
+        _, mps[i] = gauge_site(right, rand(ComplexF64, D, D, d))
     end
+
+    tmp = contraction(mps[N-1], (2,), US, (1,))
+    mps[N-1] = permutedims(tmp, (1, 3, 2))
     
     return mps
 
