@@ -38,7 +38,7 @@ N = parse(Int, ARGS[1])
 x = parse(Float64, ARGS[2])
 mg = parse(Float64, ARGS[3])
 
-# generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
-mps_to_entropy_save_file(mg, x, 2*N, D)
+generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
+# mps_to_entropy_save_file(mg, x, 2*N, D)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
