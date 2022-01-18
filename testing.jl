@@ -103,6 +103,27 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Plotting entanglement entropy vs m/g
+
+# mg_list = LinRange(-0.7, -0.4, 10)
+# ee_list = []
+# N = 4
+# d = 2
+# D = 8
+# l_0 = 0.0
+# x = 1.0
+# lambda = 100.0
+# acc = 10^-8
+# ms = 100
+# for mg in mg_list
+#     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+#     _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+#     append!(ee_list, entanglement_entropy(mps, N))
+# end
+# plot(mg_list, ee_list)
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Check that the penalty term enforces total charge to 0 and checking the local charge MPO
 
 # N = 10
