@@ -79,7 +79,7 @@ function get_electric_field_configuration(N::Int64, l_0::Float64, mps)::Vector{F
     charge_list = []
     electric_field_list = []
 
-    for n in 2:2:2*N
+    for n in 1:N
 
         charge_mpo = get_local_charge_MPO(N, n)
         mps_right = act_mpo_on_mps(charge_mpo, mps)

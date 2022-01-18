@@ -328,34 +328,34 @@ function get_local_charge_MPO(N::Int64, site::Int64)::Vector{Array{ComplexF64}}
     Z = [1.0+0.0im 0.0+0.0im; 0.0+0.0im -1.0+0.0im]
     I = [1.0+0.0im 0.0+0.0im; 0.0+0.0im 1.0+0.0im]
 
-    for n in 1:2*N
+    for i in 1:2*N
     
-        if site == n || site - 1 == n
-            if n == 1
-                mpo[n] = zeros((1, D, d, d))
-                mpo[n][1,1,:,:] = -Z/2
-                mpo[n][1,2,:,:] = I
-            elseif n == 2*N
-                mpo[n] = zeros((D, 1, d, d))
-                mpo[n][1,1,:,:] = I
-                mpo[n][2,1,:,:] = -Z/2
+        if i == 2*site-1 || i == 2*site
+            if i == 1
+                mpo[i] = zeros((1, D, d, d))
+                mpo[i][1,1,:,:] = Z/2
+                mpo[i][1,2,:,:] = I
+            elseif i == 2*N
+                mpo[i] = zeros((D, 1, d, d))
+                mpo[i][1,1,:,:] = I
+                mpo[i][2,1,:,:] = Z/2
             else
-                mpo[n] = zeros((D, D, d, d))
-                mpo[n][1,1,:,:] = I
-                mpo[n][2,2,:,:] = I
-                mpo[n][2,1,:,:] = -Z/2
+                mpo[i] = zeros((D, D, d, d))
+                mpo[i][1,1,:,:] = I
+                mpo[i][2,2,:,:] = I
+                mpo[i][2,1,:,:] = Z/2
             end
         else
-            if n == 1
-                mpo[n] = zeros((1, D, d, d))
-                mpo[n][1,2,:,:] = I
-            elseif n == 2*N
-                mpo[n] = zeros((D, 1, d, d))
-                mpo[n][1,1,:,:] = I
+            if i == 1
+                mpo[i] = zeros((1, D, d, d))
+                mpo[i][1,2,:,:] = I
+            elseif i == 2*N
+                mpo[i] = zeros((D, 1, d, d))
+                mpo[i][1,1,:,:] = I
             else
-                mpo[n] = zeros((D, D, d, d))
-                mpo[n][1,1,:,:] = I
-                mpo[n][2,2,:,:] = I
+                mpo[i] = zeros((D, D, d, d))
+                mpo[i][1,1,:,:] = I
+                mpo[i][2,2,:,:] = I
             end
         end 
     
