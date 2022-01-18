@@ -107,11 +107,11 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # N = 10
 # x = 1.0
-# m_g_ratio = 0.01
-# l_0 = 0.5 # this is theta/2pi
+# m_g_ratio = 0.125
+# l_0 = 0.0 # this is theta/2pi
 # lambda = 100.0
 # acc = 10^(-10)
-# max_sweeps = 10
+# max_sweeps = 100
 # d = 2
 # D = 10
 
@@ -124,11 +124,11 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
 # E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
 
-# mpo_penalty = get_penalty_term_MPO(N, lambda)
+# mpo_penalty = get_penalty_term_MPO(2*N, lambda)
 # mps_after_penalty_mpo = act_mpo_on_mps(mpo_penalty, mps_ground)
 
-# println(get_mpo_expectation_value(2*N, mps_ground, mpo_penalty))
-# println(get_spin_half_expectation_value(2*N, mps_ground, "z")) # the total charge operator is sum -g/2 sigma_z
+# println(get_mpo_expectation_value(mps_ground, mpo_penalty))
+# println(get_spin_half_expectation_value(2*N, mps_ground, "z")) # the total charge operator is sum_n 1/2 sigma^z_n
 
 # charge_list = [] # stores Q_tilde_n
 
