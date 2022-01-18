@@ -375,14 +375,12 @@ function get_spin_half_expectation_value(N::Int64, mps::Vector{Array{ComplexF64}
 
 end
 
-function get_mpo_expectation_value(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array{ComplexF64}})::ComplexF64
+function get_mpo_expectation_value(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array})::ComplexF64
 
     """
     Computes the expectation value of the operator represented by the mpo input
 
     Inputs:
-
-    N = number of lattice sites (Integer)
 
     mps = the mps which we will use to calculate <mps|operator|mps> (Vector of 3-tensors)
 
@@ -395,26 +393,17 @@ function get_mpo_expectation_value(mps::Vector{Array{ComplexF64}}, mpo::Vector{A
 
     N = length(mps)
 
-    # Contracts the triple of <mps|mpo|mps> at site 1, then contracts this triple with a dummy 1x1x1 tensor of value 1
-    # which will get rid of the trivial indices of the first triple at site 1. The trivial indices are the ones labelled 1,
-    # see for example Schollwock equation (192) first bracket.
+    @assert(length(mpo) == N, "The length of the mps is $(N) and the length of the mpo is $(length(mpo)), hence cannot take the expectation value of the mpo.")
 
-    triple_1 = contraction(conj!(deepcopy(mps[1])), (3,), mpo[1], (3,))
-    triple_1 = contraction(triple_1, (5,), mps[1], (3,))
-    dummy_tensor = ones(ComplexF64, 1,1,1)
-    result = contraction(dummy_tensor, (1,2,3), triple_1, (1,3,5))
+    result = ones(Float64, 1, 1, 1)
 
-    # Now we compute the triple <mps|mpo|mps> at site i and contract it with the triple at site i-1 which we named result before
-
-    for i in 2:N
-    
-        triple_i = contraction(conj!(deepcopy(mps[i])), (3,), mpo[i], (3,))
-        triple_i = contraction(triple_i, (5,), mps[i], (3,))
-        result = contraction(result, (1,2,3), triple_i, (1,3,5))
-
+    for i in 1:N
+        result = contraction(result, (1,), conj(mps[i]), (1,))
+        result = contraction(result, (1, 4), mpo[i], (1, 3))
+        result = contraction(result, (1, 4), mps[i], (1, 3))
     end
 
-    return result[1,1,1] # expectation value of mpo with respect to mps which was a 1x1x1 tensor hence the [1,1,1] index to get a ComplexF64
+    return result[1,1,1]
 
 end
 
