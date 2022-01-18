@@ -105,10 +105,10 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Check that the penalty term enforces total charge to 0 and checking the local charge MPO
 
-# N = 4
+# N = 10
 # x = 1.0
-# m_g_ratio = 0.5
-# l_0 = 0.25 # this is theta/2pi
+# m_g_ratio = 0.01
+# l_0 = 0.5 # this is theta/2pi
 # lambda = 100.0
 # acc = 10^(-10)
 # max_sweeps = 10
@@ -130,9 +130,9 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # println(get_mpo_expectation_value(2*N, mps_ground, mpo_penalty))
 # println(get_spin_half_expectation_value(2*N, mps_ground, "z")) # the total charge operator is sum -g/2 sigma_z
 
-# charge_list = []
+# charge_list = [] # stores Q_tilde_n
 
-# for n in 2:2:2*N
+# for n in 1:N
 
 #     charge_mpo = get_local_charge_MPO(N, n)
 #     mps_right = act_mpo_on_mps(charge_mpo, mps_ground)
@@ -144,14 +144,24 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # println(sum(charge_list))
 
 # l_field = get_electric_field_configuration(N, l_0, mps_ground)
+# display(l_field)
 
-# # This checks Gauss' law: l_field[i] - l_field[i-1] = Q[i]
+# This checks Gauss' law: l_field[i] - l_field[i-1] = Q[i] ie L_n  - L_n-1 = Q_tilde_n
 
-# display(isapprox(l_field[2]-l_field[1], charge_list[2]))
-# display(l_field[2]-l_field[1])
-# display(charge_list[2])
+# for n in 1:N
+#     if n == 1
+#         display(isapprox(l_field[n]-l_0, charge_list[n]))
+#         display(l_field[n]-l_0)
+#         display(charge_list[n])
+#     else
+#         display(isapprox(l_field[n]-l_field[n-1], charge_list[n]))
+#         display(l_field[n]-l_field[n-1])
+#         display(charge_list[n])
+#     end
+# end
 
-# display(sum(get_electric_field_configuration(N, l_0, mps_ground))/N)
+# append!(l_field, l_0)
+# display(sum(l_field))
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
