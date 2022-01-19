@@ -141,7 +141,7 @@ open("E_field_vs_mass.txt", "w") do f
         _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
         E = sum(get_electric_field_configuration(N, l_0, mps)) + l_0
         EE = entanglement_entropy(mps, N)
-        write(f, "$(mg),$(E),$()\n")
+        write(f, "$(mg),$(E),$(EE)\n")
     end
 end
 
