@@ -126,14 +126,14 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for total electric field vs m/g
 
-mg_list = LinRange(-0.6, -0.4, 4)
-N = 20
+mg_list = LinRange(-0.7, -0.4, 5)
+N = 40
 d = 2
 D = 60
 l_0 = 0.0
-x = 1.0
+x = 10.0
 lambda = 100.0
-acc = 10^-8
+acc = 10^(-8)
 ms = 100
 open("E_field_vs_mass.txt", "w") do f
     for mg in mg_list
