@@ -126,11 +126,11 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for total electric field vs m/g
 
-mg_list = LinRange(0.4, 0.7, 5)
+mg_list = LinRange(-0.7, -0.4, 5)
 N = 20
 d = 2
 D = 60
-l_0 = 0.5
+l_0 = 0.0
 x = 1.0
 lambda = 100.0
 acc = 10^-8
@@ -140,7 +140,8 @@ open("E_field_vs_mass.txt", "w") do f
         mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
         _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
         E = sum(get_electric_field_configuration(N, l_0, mps)) + l_0
-        write(f, "$(mg),$(E)\n")
+        EE = entanglement_entropy(mps, N)
+        write(f, "$(mg),$(E),$()\n")
     end
 end
 
