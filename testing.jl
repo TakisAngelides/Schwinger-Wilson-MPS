@@ -126,7 +126,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for total electric field vs m/g
 
-mg_list = LinRange(-0.7, -0.4, 5)
+mg_list = LinRange(-0.6, -0.4, 4)
 N = 20
 d = 2
 D = 60
