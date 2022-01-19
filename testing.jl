@@ -129,7 +129,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 mg_list = LinRange(-0.7, -0.4, 5)
 N = 20
 d = 2
-D = 40
+D = 60
 l_0 = 0.0
 x = 1.0
 lambda = 100.0
