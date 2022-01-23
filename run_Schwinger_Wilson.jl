@@ -29,7 +29,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for entanglement entropy vs mass plot 
 
-D = 60 # Stefan's values DVALS=( 20 40 60 80 100 110 120 140 160 180 200 250 300)
+D = 100 # Stefan's values DVALS=( 20 40 60 80 100 110 120 140 160 180 200 250 300)
 accuracy = 10^(-8)
 lambda = 100.0
 l_0 = 0.0
@@ -38,7 +38,7 @@ N = parse(Int, ARGS[1])
 x = parse(Float64, ARGS[2])
 mg = parse(Float64, ARGS[3])
 
-# generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
-mps_to_entropy_save_file(mg, x, 2*N, D)
+generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
+# mps_to_entropy_save_file(mg, x, 2*N, D)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
