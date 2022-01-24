@@ -5,7 +5,7 @@ if [ -z $N ]; then
 echo "MISSING VALUE OF N"
 exit 1
 fi
-mg_list=(-0.75 -0.65 -0.6 -0.55 -0.53 -0.51 -0.49 -0.47 -0.45 -0.3 -0.2 -0.1)
+mg_list=(-0.6 -0.49 -0.47 -0.45 -0.3 -0.2 -0.1)
 x=$2
 if [ -z $x ]; then
 echo "MISSING VALUE OF x"
