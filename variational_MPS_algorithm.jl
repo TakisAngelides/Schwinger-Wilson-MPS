@@ -714,7 +714,7 @@ function variational_ground_state_MPS_from_previous(N::Int64, d::Int64, D::Int64
 
 end
 
-function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64)::Tuple{ComplexF64, Vector{Array{ComplexF64}}, Int64}
+function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64, from_saved::Bool)::Tuple{ComplexF64, Vector{Array{ComplexF64}}, Int64}
 
     """
     This is the main function which implements the variational MPS ground state algorithm described in Schollwock section 6.3.
@@ -742,7 +742,18 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
     tmp = Dates.now()
     println("Just started calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
     
-    mps = initialize_MPS(N, d, D) # Initialize a random mps
+    if from_saved # if this is true load mps from a saved h5 file
+        h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+            g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+            mps = Vector{Array{ComplexF64}}(undef, N)
+            for i in 1:N
+                mps[i] = read(g["mps_$(i)"])
+            end
+        end
+    else
+        mps = initialize_MPS(N, d, D) # Initialize a random mps
+    end
+
     gauge_mps!(right, mps, true, N) # Put it in right canonical form and normalize it
 
     # This are the partial contractions of the initial mps configuration which is contains all B tensors, 
