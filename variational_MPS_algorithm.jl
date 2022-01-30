@@ -743,7 +743,7 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
     println("Just started calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
     
     if from_saved # if this is true load mps from a saved h5 file
-        h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+        h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "r") do fid
             g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
             mps = Vector{Array{ComplexF64}}(undef, N)
             for i in 1:N
