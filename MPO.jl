@@ -426,7 +426,6 @@ function get_penalty_term_MPO(N::Int64, lambda::Float64)::Vector{Array}
 
 end
 
-
 function get_chiral_condensate_MPO(N::Int64)::Vector{Array}
 
     mpo = Vector{Array}(undef, 2*N)
