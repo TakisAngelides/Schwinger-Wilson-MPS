@@ -445,30 +445,30 @@ function get_chiral_condensate_MPO(N::Int64)::Vector{Array{ComplexF64}}
 
     D = 4
     d = 2
-    I = [1 0; 0 1]
-    PLUS = [0 1; 0 0]
-    MINUS = [0 0; 1 0]
+    I = [1.0+0.0im 0.0+0.0im; 0.0+0.0im 1.0+0.0im]
+    PLUS = [0.0+0.0im 1.0+0.0im; 0.0+0.0im 0.0+0.0im]
+    MINUS = [0.0+0.0im 0.0+0.0im; 1.0+0.0im 0.0+0.0im]
 
-    tensor_first = zeros(1, D, d, d)
-    tensor_first[1,2,:,:] = -1im*PLUS
-    tensor_first[1,3,:,:] = 1im*MINUS
+    tensor_first = zeros(ComplexF64, 1, D, d, d)
+    tensor_first[1,2,:,:] = -1im.*PLUS
+    tensor_first[1,3,:,:] = 1im.*MINUS
     tensor_first[1,D,:,:] = I
 
-    tensor_last = zeros(D, 1, d, d)
+    tensor_last = zeros(ComplexF64, D, 1, d, d)
     tensor_last[1,1,:,:] = I
     tensor_last[2,1,:,:] = MINUS
     tensor_last[3,1,:,:] = PLUS
 
-    tensor_even = zeros(D, D, d, d)
+    tensor_even = zeros(ComplexF64, D, D, d, d)
     tensor_even[1,1,:,:] = I
     tensor_even[2,1,:,:] = MINUS
     tensor_even[3,1,:,:] = PLUS
     tensor_even[D,D,:,:] = I
 
-    tensor_odd = zeros(D, D, d, d)
+    tensor_odd = zeros(ComplexF64, D, D, d, d)
     tensor_odd[1,1,:,:] = I
-    tensor_odd[D,2,:,:] = -1im*PLUS
-    tensor_odd[D,3,:,:] = 1im*MINUS
+    tensor_odd[D,2,:,:] = -1im.*PLUS
+    tensor_odd[D,3,:,:] = 1im.*MINUS
     tensor_odd[D,D,:,:] = I
 
     for i in 1:N
