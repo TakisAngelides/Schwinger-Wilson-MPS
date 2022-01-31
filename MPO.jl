@@ -162,11 +162,11 @@ function get_spin_half_MPO(N::Int64, measure_axis::String)::Vector{Array{Complex
     identity = [1.0 0.0;0.0 1.0]
 
     if measure_axis == "x"
-        operator = [0.0 0.5;0.5 0.0] # sigma_x/2 - pauli x operator divided by 2
+        operator = [0.0 0.5;0.5 0.0] # sigma_x/2 = pauli x operator divided by 2
     elseif measure_axis == "y"
-        operator = [0.0 -0.5im;0.5im 0.0] # sigma_y/2 - pauli y operator divided by 2
+        operator = [0.0 -0.5im;0.5im 0.0] # sigma_y/2 = pauli y operator divided by 2
     elseif measure_axis == "z"
-        operator = [0.5 0.0;0.0 -0.5] # sigma_z/2 - pauli z operator divided by 2
+        operator = [0.5 0.0;0.0 -0.5] # sigma_z/2 = pauli z operator divided by 2
     end
 
     mpo = Vector{Array{ComplexF64}}(undef, N)
@@ -424,4 +424,52 @@ function get_penalty_term_MPO(N::Int64, lambda::Float64)::Vector{Array}
     
     return mpo
 
+end
+
+
+function get_chiral_condensate_MPO(N::Int64)::Vector{Array}
+
+    mpo = Vector{Array}(undef, 2*N)
+
+    D = 4
+    d = 2
+    I = [1 0; 0 1]
+    PLUS = [0 1; 0 0]
+    MINUS = [0 0; 1 0]
+
+    tensor_first = zeros(1, D, d, d)
+    tensor_first[1,2,:,:] = -i*PLUS
+    tensor_first[1,3,:,:] = i*MINUS
+    tensor_first[1,D,:,:] = I
+
+    tensor_last = zeros(D, 1, d, d)
+    tensor_last[1,1,:,:] = I
+    tensor_last[2,1,:,:] = MINUS
+    tensor_last[3,1,:,:] = PLUS
+
+    tensor_even = zeros(D, D, d, d)
+    tensor_even[1,1,:,:] = I
+    tensor_even[2,1,:,:] = MINUS
+    tensor_even[3,1,:,:] = PLUS
+    tensor_even[D,D,:,:] = I
+
+    tensor_odd = zeros(D, D, d, d)
+    tensor_odd[1,1,:,:] = I
+    tensor_odd[D,2,:,:] = -i*PLUS
+    tensor_odd[D,3,:,:] = i*MINUS
+    tensor_odd[D,D,:,:] = I
+
+    for i in 1:2*N
+        if i == 1
+            mpo[i] = tensor_first
+        elseif i == 2*N
+            mpo[i] = tensor_last
+        elseif i % 2 == 0
+            mpo[i] = tensor_even
+        else
+            mpo[i] = tensor_odd
+        end
+    end
+
+    return mpo
 end
