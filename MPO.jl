@@ -450,8 +450,8 @@ function get_chiral_condensate_MPO(N::Int64)::Vector{Array{ComplexF64}}
     MINUS = [0 0; 1 0]
 
     tensor_first = zeros(1, D, d, d)
-    tensor_first[1,2,:,:] = -i*PLUS
-    tensor_first[1,3,:,:] = i*MINUS
+    tensor_first[1,2,:,:] = -1im*PLUS
+    tensor_first[1,3,:,:] = 1im*MINUS
     tensor_first[1,D,:,:] = I
 
     tensor_last = zeros(D, 1, d, d)
@@ -467,8 +467,8 @@ function get_chiral_condensate_MPO(N::Int64)::Vector{Array{ComplexF64}}
 
     tensor_odd = zeros(D, D, d, d)
     tensor_odd[1,1,:,:] = I
-    tensor_odd[D,2,:,:] = -i*PLUS
-    tensor_odd[D,3,:,:] = i*MINUS
+    tensor_odd[D,2,:,:] = -1im*PLUS
+    tensor_odd[D,3,:,:] = 1im*MINUS
     tensor_odd[D,D,:,:] = I
 
     for i in 1:N
