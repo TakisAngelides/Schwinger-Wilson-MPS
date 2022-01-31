@@ -426,9 +426,22 @@ function get_penalty_term_MPO(N::Int64, lambda::Float64)::Vector{Array}
 
 end
 
-function get_chiral_condensate_MPO(N::Int64)::Vector{Array}
+function get_chiral_condensate_MPO(N::Int64)::Vector{Array{ComplexF64}}
 
-    mpo = Vector{Array}(undef, 2*N)
+    """
+    Gets the MPO of the chiral condensate operator in the Wilson Schwinger model corresponding
+    to the expression <psi_bar psi>.
+
+    Input:
+
+    N = number of spin sites meaning this is double the number of physical sites (Int)
+
+    Output:
+
+    mpo = the chiral condensate mpo (Vector of array of complex numbers)
+    """
+
+    mpo = Vector{Array{ComplexF64}}(undef, N)
 
     D = 4
     d = 2
@@ -458,10 +471,10 @@ function get_chiral_condensate_MPO(N::Int64)::Vector{Array}
     tensor_odd[D,3,:,:] = i*MINUS
     tensor_odd[D,D,:,:] = I
 
-    for i in 1:2*N
+    for i in 1:N
         if i == 1
             mpo[i] = tensor_first
-        elseif i == 2*N
+        elseif i == N
             mpo[i] = tensor_last
         elseif i % 2 == 0
             mpo[i] = tensor_even
