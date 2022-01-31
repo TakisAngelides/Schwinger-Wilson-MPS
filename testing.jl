@@ -124,26 +124,46 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Testing the chiral condensate operator mpo
+
+# N = 4
+# x = 1.0
+# m_g_ratio = 0.21
+# l_0 = 0.4 # this is theta/2pi
+# lambda = 100.0
+# acc = 10^(-10)
+# max_sweeps = 30
+# d = 2
+# D = 8
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
+# E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
+# operator_mpo = get_chiral_condensate_MPO(2*N)
+# mps_after_operator_mpo = act_mpo_on_mps(operator_mpo, mps_ground)
+# expectation_value = inner_product_MPS(mps_ground, mps_after_operator_mpo)
+# println(expectation_value)
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Generate data for total electric field vs m/g
 
-mg_list = LinRange(-0.7, -0.4, 5)
-N = 40
-d = 2
-D = 60
-l_0 = 0.0
-x = 10.0
-lambda = 100.0
-acc = 10^(-8)
-ms = 100
-open("E_field_vs_mass.txt", "w") do f
-    for mg in mg_list
-        mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-        _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
-        E = sum(get_electric_field_configuration(N, l_0, mps)) + l_0
-        EE = entanglement_entropy(mps, N)
-        write(f, "$(mg),$(E),$(EE)\n")
-    end
-end
+# mg_list = LinRange(-0.7, -0.4, 5)
+# N = 40
+# d = 2
+# D = 60
+# l_0 = 0.0
+# x = 10.0
+# lambda = 100.0
+# acc = 10^(-8)
+# ms = 100
+# open("E_field_vs_mass.txt", "w") do f
+#     for mg in mg_list
+#         mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+#         _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+#         E = sum(get_electric_field_configuration(N, l_0, mps)) + l_0
+#         EE = entanglement_entropy(mps, N)
+#         write(f, "$(mg),$(E),$(EE)\n")
+#     end
+# end
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
