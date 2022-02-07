@@ -920,6 +920,19 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
         
     end
 
+    h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+
+        create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+        
+        g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+        
+        for i in 1:length(mps)
+            
+            g["mps_$(i)"] = mps[i]
+            
+        end
+    end
+
     tmp = Dates.now()
     println("Algorithm finished with sweep number $(sweep_number): lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
 
