@@ -29,7 +29,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for entanglement entropy vs mass plot 
 
-D = 100 # Stefan's values DVALS=( 20 40 60 80 100 110 120 140 160 180 200 250 300)
+D = 30 # Stefan's values DVALS=( 20 40 60 80 100 110 120 140 160 180 200 250 300)
 accuracy = 10^(-8)
 lambda = 100.0
 l_0 = 0.0
