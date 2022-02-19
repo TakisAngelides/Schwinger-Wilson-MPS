@@ -1045,7 +1045,7 @@ end
 function generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
 
     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-    from_saved_mps = false
+    from_saved_mps = true
     _, _, _ = variational_ground_state_MPS_for_saving(2*N, 2, D, mpo, accuracy, max_sweep_number, from_saved_mps)
 
 end
