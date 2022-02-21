@@ -10,5 +10,6 @@
 # N=$1
 # x=$2
 # mg=$3
+# D=$4
 
-/onyx/qdata/julia-1.7.0/bin/julia run_Schwinger_Wilson.jl $1 $2 $3
+/onyx/qdata/julia-1.7.0/bin/julia run_Schwinger_Wilson.jl $1 $2 $3 $4
