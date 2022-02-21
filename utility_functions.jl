@@ -1044,9 +1044,14 @@ end
 
 function generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
 
+    D_dict = Dict{Int64, Int64}(20 => 20, 40 => 20, 60 => 40, 80 => 60, 100 => 80, 110 => 100, 120 => 110, 140 => 120, 160 => 140, 180 => 160, 200 => 180, 250 => 200, 300 => 250)
+    mg_dict = Dict{Float64, Float64}(-0.1 => -0.1, -0.2 => -0.1, -0.3 => -0.2, -0.45 => -0.3, -0.47 => -0.45, -0.49 => -0.47, -0.51 => -0.49, -0.53 => -0.51, -0.55 => -0.53, -0.6 => -0.55, -0.65 => -0.6, -0.75 => -0.65)
+
+    D_previous = D_dict[D]
+    mg_previous = mg_dict[mg]
+
     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-    from_saved_mps = true
-    _, _, _ = variational_ground_state_MPS_for_saving(2*N, 2, D, mpo, accuracy, max_sweep_number, from_saved_mps)
+    _, _, _ = variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(2*N, 2, D, mpo, accuracy, max_sweep_number, D_previous, mg_previous)
 
 end
 
