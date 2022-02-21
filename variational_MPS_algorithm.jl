@@ -944,6 +944,33 @@ end
 
 function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64, D_previous::Int64, mg_previous::Float64)
 
+    """
+    This is the main function which implements the variational MPS ground state algorithm described in Schollwock section 6.3.
+    
+    The ansantz is loaded from saved if D > 20 and if the mps we are asking for exists, and we give the mg previous, D previous for the next mg, D
+
+    We are saving the mps before the second sweep starts, every even sweep number and if there are 30 minutes left from the 24 hour cyclamen limit 
+
+    Inputs:
+
+    N = number of spin lattice sites, which is 2*number of physical sites (Integer)
+
+    d = number of degrees of freedom on each site - eg d = 2 if we have only spin up, spin down (Integer)
+
+    D = bond dimension which controls the entanglement of the mps state (Integer)
+
+    mpo = The Hamiltonian we are investigating in the form of an mpo
+
+    accuracy = We are trying to find the mps that will give the smallest energy and we stop the search once the fractional change in energy is less than the accuracy (Float)
+    
+    max_sweeps = number of maximum sweeps we should perform if the desired accuracy is not reached and the algorithm does not stop because it reached the desired accuracy
+
+    Outputs:
+
+    E_optimal, mps, sweep_number = minimum energy we reached, mps that reached this minimum energy which approximates the ground state of the mpo Hamiltonian we gave as input, number of sweeps we performed when we stopped the algorithm
+
+    """
+
     tmp = Dates.now()
     println("Just started calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
     
@@ -959,49 +986,56 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     # -----------------------------------------------------
 
     function load_mps_previous_D_mg()
+
+        if isfile("mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5")
     
-        f = h5open("mps_$(N)_$(D_previous)_$(mg)_$(x).h5", "r")
+            f = h5open("mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5", "r")
 
-        mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D_previous)"]
+            mps_group = f["$(lambda)_$(l_0)_$(mg_previous)_$(x)_$(N)_$(D_previous)"]
 
-        mps_previous = Vector{Array{ComplexF64}}(undef, 2*N)
-        
-        for i in 1:2*N
-        
-            mps_previous[i] = read(mps_group["mps_$(i)"])
-
-        end
-
-        mps = Vector{Array{ComplexF64}}(undef, 2*N)
-
-        for i in 1:2*N
+            mps_previous = Vector{Array{ComplexF64}}(undef, 2*N)
             
-            dims = size(mps_previous[i])
-            D_left_previous = dims[1]
-            D_right_previous = dims[2]
+            for i in 1:2*N
+            
+                mps_previous[i] = read(mps_group["mps_$(i)"])
 
-            if i == 1
+            end
 
-                mps[i] = zeros(ComplexF64, 1, D, 2)
-                for j in 1:2
-                    mps[i][1:1, 1:D_right_previous, j] = mps_previous[i][:, :, j]
-                end
+            mps = Vector{Array{ComplexF64}}(undef, 2*N)
 
-            elseif i == 2*N
+            for i in 1:2*N
+                
+                dims = size(mps_previous[i])
+                D_left_previous = dims[1]
+                D_right_previous = dims[2]
 
-                mps[i] = zeros(ComplexF64, D, 1, 2)
-                for j in 1:2
-                    mps[i][1:D_left_previous, 1:1, j] = mps_previous[i][:,:,j]
-                end
+                if i == 1
 
-            else
+                    mps[i] = zeros(ComplexF64, 1, D, 2)
+                    for j in 1:2
+                        mps[i][1:1, 1:D_right_previous, j] = mps_previous[i][:, :, j]
+                    end
 
-                mps[i] = zeros(ComplexF64, D, D, 2)
-                for j in 1:2
-                    mps[i][1:D_left_previous, 1:D_right_previous, j] = mps_previous[i][:,:,j]
+                elseif i == 2*N
+
+                    mps[i] = zeros(ComplexF64, D, 1, 2)
+                    for j in 1:2
+                        mps[i][1:D_left_previous, 1:1, j] = mps_previous[i][:,:,j]
+                    end
+
+                else
+
+                    mps[i] = zeros(ComplexF64, D, D, 2)
+                    for j in 1:2
+                        mps[i][1:D_left_previous, 1:D_right_previous, j] = mps_previous[i][:,:,j]
+                    end
                 end
             end
-        end
+
+        else
+
+            mps = initialize_MPS(N, d, D)
+            println("There was no mps found saved to give as initial ansantz with parameters 2N = $(N), D_previous = $(D_previous), mg = $(mg), x = $(x).")
 
         return mps
     
@@ -1015,7 +1049,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
     else # when there is a previous D solution
 
-        mps = load_mps_previous_D_mg()
+        mps = load_mps_previous_D_mg() # give previous D and previous mg as ansantz
         
     end
 
@@ -1204,6 +1238,5 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     println(inner_product_MPS(mps, mps))
 
     return E_optimal, mps, sweep_number
-
 
 end
