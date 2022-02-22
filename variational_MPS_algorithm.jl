@@ -995,7 +995,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
             mps_previous = Vector{Array{ComplexF64}}(undef, 2*N)
             
-            for i in 1:2*N
+            for i in 1:N
             
                 mps_previous[i] = read(mps_group["mps_$(i)"])
 
@@ -1003,7 +1003,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
             mps = Vector{Array{ComplexF64}}(undef, 2*N)
 
-            for i in 1:2*N
+            for i in 1:N
                 
                 dims = size(mps_previous[i])
                 D_left_previous = dims[1]
@@ -1016,7 +1016,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
                         mps[i][1:1, 1:D_right_previous, j] = mps_previous[i][:, :, j]
                     end
 
-                elseif i == 2*N
+                elseif i == N
 
                     mps[i] = zeros(ComplexF64, D, 1, 2)
                     for j in 1:2
