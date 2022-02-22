@@ -1037,6 +1037,8 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
             mps = initialize_MPS(N, d, D)
             println("There was no mps found saved to give as initial ansantz with parameters 2N = $(N), D_previous = $(D_previous), mg = $(mg), x = $(x).")
 
+        end
+
         return mps
     
     end
