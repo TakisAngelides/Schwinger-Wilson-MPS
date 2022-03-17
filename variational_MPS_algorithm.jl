@@ -987,9 +987,9 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
     function load_mps_previous_D_mg()
 
-        if isfile("mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5")
+        if isfile("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5")
     
-            f = h5open("mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5", "r")
+            f = h5open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5", "r")
 
             mps_group = f["$(lambda)_$(l_0)_$(mg_previous)_$(x)_$(N)_$(D_previous)"]
 
@@ -1067,39 +1067,6 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     sweep_number = 0 # Counts the number of full sweeps performed
     US = 0 # Will hold the residual matrices from SVD when we put a newly updated tensor in right canonical form while sweeping from right to left
     
-    t1 = time()
-
-    function run_time(t1::Float64, t2::Float64)::Bool
-
-        """
-        Calculates the time elapses between t1 and t2 where t2 is after t1 and returns whether the elapsed time is over 23 hours and 30 minutes.
-        
-        Note:
-        
-        This function is saying to the code down below where it is used that if the time left is 30 minutes (cluster time limit
-        is 24 hours) do not open the file to store a new mps because it might not have enough time to write it before job gets killed
-        and then we would end up with nothing in the file.
-    
-        Inputs:
-    
-        t1 = first time stamp (Float)
-    
-        t2 = second time stamp after t1 (Float)
-    
-        Output:
-    
-        Boolean set to false if there is only 30 minutes left until run time becomes 24 hours
-        """
-    
-        t = t2 - t1
-        if t >= 84600 # this is the number of seconds for 23 hours and 30 minutes
-            return false
-        else
-            return true
-        end
-    
-    end
-
     # ------------------------------------------------------------------------------------------------------------------------------------------
 
     # tmp = Dates.now()
@@ -1112,14 +1079,12 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         tmp = Dates.now()
         println("Sweep number $(sweep_number) starting now: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
 
-        t2 = time()
-
         if sweep_number == 1
 
             mps[1] = contraction(mps[1], (2,), US, (1,))
             mps[1] = permutedims(mps[1], (1,3,2))
             
-            h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+            h5open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
 
                 create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
                 
@@ -1133,12 +1098,12 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
             end
         end
 
-        if sweep_number != 0 && sweep_number % 2 == 0 && run_time(t1, t2)
+        if sweep_number != 0 && sweep_number % 2 == 0
 
             mps[1] = contraction(mps[1], (2,), US, (1,))
             mps[1] = permutedims(mps[1], (1,3,2))
             
-            h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+            h5open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
 
                 create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
                 
@@ -1221,7 +1186,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         
     end
 
-    h5open("mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+    h5open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
 
         create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
         
