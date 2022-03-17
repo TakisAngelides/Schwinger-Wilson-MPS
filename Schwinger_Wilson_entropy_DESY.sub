@@ -1,5 +1,4 @@
 executable = Schwinger_Wilson_entropy_DESY.sh
-# Arguments are N, x and D
 arguments = "10 2.0 10"
 output = /afs/ifh.de/user/a/angeltak/logs/Schwinger_Wilson_entropy_$(Cluster)_$(Process).out
 error = /afs/ifh.de/user/a/angeltak/logs/Schwinger_Wilson_entropy_$(Cluster)_$(Process).error
