@@ -1,4 +1,5 @@
 #!/bin/zsh
+export JULIA_DEPOT_PATH="/lustre/fs23/group/nic/skuehn/.julia:$JULIA_DEPOT_PATH"
 
 N=$1
 x=$2
