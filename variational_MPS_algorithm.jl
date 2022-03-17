@@ -1045,7 +1045,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
     # Below we choose the ansantz according to the given D, mg
 
-    if D == 20
+    if D == 20 || D_previous == 0 || mg_previous == 0
 
         mps = initialize_MPS(N, d, D)
 
