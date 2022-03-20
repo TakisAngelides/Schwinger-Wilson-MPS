@@ -1054,6 +1054,10 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
             mps[1] = permutedims(mps[1], (1,3,2))
         end
         
+        if !isdir(path)
+            mkdir(path)
+        end
+
         h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
 
             create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
