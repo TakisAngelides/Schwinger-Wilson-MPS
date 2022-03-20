@@ -985,11 +985,15 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     # end
     # -----------------------------------------------------
 
+    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D)"
+
     function load_mps_previous_D_mg()
 
-        if isfile("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5")
+        path_to_mps = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D_previous)/mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5"
+
+        if isfile(path_to_mps)
     
-            f = h5open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5", "r")
+            f = h5open(path_to_mps, "r")
 
             mps_group = f["$(lambda)_$(l_0)_$(mg_previous)_$(x)_$(N)_$(D_previous)"]
 
@@ -1043,6 +1047,28 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     
     end
 
+    function save_mps(contraction_flag)
+
+        if contraction_flag == true
+            mps[1] = contraction(mps[1], (2,), US, (1,))
+            mps[1] = permutedims(mps[1], (1,3,2))
+        end
+        
+        h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+
+            create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+            
+            g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+            
+            for i in 1:length(mps)
+                
+                g["mps_$(i)"] = mps[i]
+                
+            end
+        end
+
+    end
+
     # Below we choose the ansantz according to the given D, mg
 
     if D == 20 || D_previous == 0 || mg_previous == 0
@@ -1080,41 +1106,11 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         println("Sweep number $(sweep_number) starting now: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
 
         if sweep_number == 1
-
-            mps[1] = contraction(mps[1], (2,), US, (1,))
-            mps[1] = permutedims(mps[1], (1,3,2))
-            
-            h5open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
-
-                create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
-                
-                g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
-                
-                for i in 1:length(mps)
-                    
-                    g["mps_$(i)"] = mps[i]
-                    
-                end
-            end
+            save_mps(true)
         end
 
         if sweep_number != 0 && sweep_number % 2 == 0
-
-            mps[1] = contraction(mps[1], (2,), US, (1,))
-            mps[1] = permutedims(mps[1], (1,3,2))
-            
-            h5open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
-
-                create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
-                
-                g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
-                
-                for i in 1:length(mps)
-                    
-                    g["mps_$(i)"] = mps[i]
-                    
-                end
-            end
+            save_mps(true)
         end
         
         E = 0 # Will hold the ground state energy apprxoimation right after a full sweep finishes
@@ -1186,18 +1182,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         
     end
 
-    h5open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Data/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
-
-        create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
-        
-        g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
-        
-        for i in 1:length(mps)
-            
-            g["mps_$(i)"] = mps[i]
-            
-        end
-    end
+    save_mps(false)
 
     tmp = Dates.now()
     println("Algorithm finished with sweep number $(sweep_number): lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
