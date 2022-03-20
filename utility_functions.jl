@@ -1109,7 +1109,14 @@ function mps_to_entropy_save_file(mg::Float64, x::Float64, N::Int64, D::Int64)
     mps = h5_to_mps(N, D, mg, x)
     half = Int(N/2)
     ee = entanglement_entropy(mps, half)
-    open("/lustre/fs23/group/nic/tangelides/Schwinger Wilson Entropy Data/entropy_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D).txt", "w") do file
+
+    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Entropy Data/N_$(N)_x_$(x)_D_$(D)"
+
+    if !isdir(path)
+        mkdir(path)
+    end
+        
+    open(path*"/entropy_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D).txt", "w") do file
         write(file, "$(mg),$(ee)\n")
     end 
 
