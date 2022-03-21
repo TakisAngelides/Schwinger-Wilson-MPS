@@ -942,6 +942,28 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
 
 end
 
+function save_mps(contraction_flag)
+
+    if contraction_flag == true
+        mps[1] = contraction(mps[1], (2,), US, (1,))
+        mps[1] = permutedims(mps[1], (1,3,2))
+    end
+
+    h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+
+        create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+        
+        g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+        
+        for i in 1:length(mps)
+            
+            g["mps_$(i)"] = mps[i]
+            
+        end
+    end
+
+end
+
 function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64, D_previous::Int64, mg_previous::Float64)
 
     """
@@ -986,6 +1008,9 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     # -----------------------------------------------------
 
     path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D)"
+    if !isdir(path)
+        mkdir(path)
+    end
 
     function load_mps_previous_D_mg()
 
@@ -1045,32 +1070,6 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
         return mps
     
-    end
-
-    function save_mps(contraction_flag)
-
-        if contraction_flag == true
-            mps[1] = contraction(mps[1], (2,), US, (1,))
-            mps[1] = permutedims(mps[1], (1,3,2))
-        end
-        
-        if !isdir(path)
-            mkdir(path)
-        end
-
-        h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
-
-            create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
-            
-            g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
-            
-            for i in 1:length(mps)
-                
-                g["mps_$(i)"] = mps[i]
-                
-            end
-        end
-
     end
 
     # Below we choose the ansantz according to the given D, mg
