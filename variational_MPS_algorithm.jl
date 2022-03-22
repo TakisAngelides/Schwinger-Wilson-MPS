@@ -942,6 +942,30 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
 
 end
 
+function save_mps(contraction_flag, mps_local, US_local, path_local)
+
+    if contraction_flag == true
+        mps_local[1] = contraction(mps_local[1], (2,), US_local, (1,))
+        mps_local[1] = permutedims(mps_local[1], (1,3,2))
+    end
+
+    h5open(path_local*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+
+        create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+        
+        g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+        
+        for i in 1:length(mps_local)
+            
+            var = isdefined(mps_local, i)
+            println("The mps[$(i)] is defined: $(var)")
+            g["mps_$(i)"] = mps_local[i]
+            
+        end
+    end
+
+end
+
 function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64, D_previous::Int64, mg_previous::Float64)
 
     """
@@ -995,6 +1019,8 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         path_to_mps = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D_previous)/mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5"
 
         if isfile(path_to_mps)
+
+            println("The ansatz is loaded from a previous mps solution stored with values N = $(N), D_previous = $(D_previous), mg_previous = $(mg_previous), x = $(x)")
     
             f = h5open(path_to_mps, "r")
 
@@ -1091,30 +1117,8 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         end
     end
 
-    function save_mps(contraction_flag, mps_local, US_local)
-
-        if contraction_flag == true
-            mps_local[1] = contraction(mps_local[1], (2,), US_local, (1,))
-            mps_local[1] = permutedims(mps_local[1], (1,3,2))
-        end
+    display(mps[1][1,1,1])
     
-        h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
-    
-            create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
-            
-            g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
-            
-            for i in 1:length(mps_local)
-                
-                var = isdefined(mps_local, i)
-                println("The mps[$(i)] is defined: $(var)")
-                g["mps_$(i)"] = mps_local[i]
-                
-            end
-        end
-    
-    end
-
     while(true)
 
         tmp = Dates.now()
@@ -1132,15 +1136,15 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
         # TODO: REMOVE THIS AFTER DEBUG
         if sweep_number == 0
-            save_mps(false, mps, US)
+            save_mps(false, mps, US, path)
         end
 
         if sweep_number == 1
-            save_mps(true, mps, US)
+            save_mps(true, mps, US, path)
         end
 
         if sweep_number != 0 && sweep_number % 2 == 0
-            save_mps(true, mps, US)
+            save_mps(true, mps, US, path)
         end
         
         E = 0 # Will hold the ground state energy apprxoimation right after a full sweep finishes
@@ -1187,7 +1191,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
             mps[1] = contraction(mps[1], (2,), US, (1,))
             mps[1] = permutedims(mps[1], (1,3,2))
-            save_mps(false, mps, US) 
+            save_mps(false, mps, US, path) 
             # println("Desired accuracy reached.")
 
             break
@@ -1198,7 +1202,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
             mps[1] = contraction(mps[1], (2,), US, (1,))
             mps[1] = permutedims(mps[1], (1,3,2))
-            save_mps(false, mps, US) 
+            save_mps(false, mps, US, path) 
             println("Maximum number of sweeps reached before desired accuracy.")
 
             break
