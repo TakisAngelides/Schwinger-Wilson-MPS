@@ -1028,7 +1028,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
             mps_group = f["$(lambda)_$(l_0)_$(mg_previous)_$(x)_$(N)_$(D_previous)"]
 
-            mps_previous = Vector{Array{ComplexF64}}(undef, 2*N)
+            mps_previous = Vector{Array{ComplexF64}}(undef, N)
             
             for i in 1:N
             
@@ -1036,7 +1036,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
             end
 
-            mps = Vector{Array{ComplexF64}}(undef, 2*N)
+            mps = Vector{Array{ComplexF64}}(undef, N)
 
             for i in 1:N
                 
