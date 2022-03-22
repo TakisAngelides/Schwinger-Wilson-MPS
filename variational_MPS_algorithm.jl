@@ -1074,7 +1074,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
     # Below we choose the ansantz according to the given D, mg
 
-    if D == 20 || D_previous == 0 || mg_previous == 0
+    if D == 20 || D_previous == 0 || mg_previous == 0 # D_previous or mg_previous would be 0 if the current input D or mg do not point to a previous D or mg (see utility_functions.jl generate_entropy_data(...))
 
         mps = initialize_MPS(N, d, D)
 
