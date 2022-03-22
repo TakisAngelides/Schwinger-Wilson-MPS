@@ -957,10 +957,6 @@ function save_mps(contraction_flag, mps_local, US_local, path_local)
         
         for i in 1:length(mps_local)
             
-            var = isdefined(mps_local, i)
-            println("The mps[$(i)] is defined: $(var)")
-            varrr = mps_local[i][1,1,1]
-            println("The value of mps[$(i)][1,1,1] is $(varrr)")
             g["mps_$(i)"] = mps_local[i]
             
         end
@@ -1108,52 +1104,13 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     # println("Now calculating: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(t1)\n")
 
     # ------------------------------------------------------------------------------------------------------------------------------------------
-
-    # flag_undef = false
-    # for i in 1:length(mps)
-    #     if !isdefined(mps, i)
-    #         flag_undef = true
-    #         println("The mps at index $(i) is not defined even before the algorithm starts")
-    #     elseif (i == length(mps)) && (!flag_undef)
-    #         println("The mps before the algorithm starts seems defined")
-    #     end
-    # end
-
-    varr = mps[1][1,1,1]
-    println("This is the value of mps[1][1,1,1]: $(varr)")
     
     while(true)
 
         tmp = Dates.now()
         println("Sweep number $(sweep_number) starting now: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
 
-        # flag_undef = false
-        # for i in 1:length(mps)
-        #     if !isdefined(mps, i)
-        #         flag_undef = true
-        #         println("The mps at index $(i) is not defined even before calling the first save_mps")
-        #     elseif (i == length(mps)) && (!flag_undef)
-        #         println("The mps before the first call to save_mps seems defined")
-        #     end
-        # end
-
-        varr = mps[1][1,1,1]
-        println("This is the value of mps[1][1,1,1]: $(varr)")
-
-        # TODO: REMOVE THIS AFTER DEBUG----
-        if sweep_number == 0
-            save_mps(false, mps, US, path)
-        end
-        #----------------------------------
-
-        varr = mps[1][1,1,1]
-        println("This is the value of mps[1][1,1,1]: $(varr)")
-
-        if sweep_number == 1
-            save_mps(true, mps, US, path)
-        end
-
-        if sweep_number != 0 && sweep_number % 2 == 0
+        if (sweep_number == 1) || (sweep_number != 0 && sweep_number % 2 == 0)
             save_mps(true, mps, US, path)
         end
         
