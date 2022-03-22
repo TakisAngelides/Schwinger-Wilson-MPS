@@ -1065,6 +1065,8 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
             
             for i in 1:length(mps)
                 
+                var = isdefined(mps, i)
+                println("The mps[$(i)] is undefined: $(var)")
                 g["mps_$(i)"] = mps[i]
                 
             end
