@@ -1065,7 +1065,6 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
             
             for i in 1:length(mps)
                 
-                display(mps[i])
                 g["mps_$(i)"] = mps[i]
                 
             end
