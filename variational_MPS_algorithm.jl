@@ -1050,30 +1050,6 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     
     end
 
-    function save_mps(contraction_flag, mps_local, US_local)
-
-        if contraction_flag == true
-            mps_local[1] = contraction(mps_local[1], (2,), US_local, (1,))
-            mps_local[1] = permutedims(mps_local[1], (1,3,2))
-        end
-    
-        h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
-    
-            create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
-            
-            g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
-            
-            for i in 1:length(mps_local)
-                
-                var = isdefined(mps_local, i)
-                println("The mps[$(i)] is defined: $(var)")
-                g["mps_$(i)"] = mps_local[i]
-                
-            end
-        end
-    
-    end
-
     # Below we choose the ansantz according to the given D, mg
 
     if D == 20 || D_previous == 0 || mg_previous == 0 # D_previous or mg_previous would be 0 if the current input D or mg do not point to a previous D or mg (see utility_functions.jl generate_entropy_data(...))
@@ -1105,10 +1081,54 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
     # ------------------------------------------------------------------------------------------------------------------------------------------
 
+    flag_undef = false
+    for i in 1:length(mps)
+        if !isdefined(mps, i)
+            flag_undef = true
+            println("The mps at index $(i) is not defined even before the algorithm starts")
+        elseif (i == length(mps)) && (!flag_undef)
+            println("The mps before the algorithm starts seems defined")
+        end
+    end
+
+    function save_mps(contraction_flag, mps_local, US_local)
+
+        if contraction_flag == true
+            mps_local[1] = contraction(mps_local[1], (2,), US_local, (1,))
+            mps_local[1] = permutedims(mps_local[1], (1,3,2))
+        end
+    
+        h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+    
+            create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
+            
+            g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+            
+            for i in 1:length(mps_local)
+                
+                var = isdefined(mps_local, i)
+                println("The mps[$(i)] is defined: $(var)")
+                g["mps_$(i)"] = mps_local[i]
+                
+            end
+        end
+    
+    end
+
     while(true)
 
         tmp = Dates.now()
         println("Sweep number $(sweep_number) starting now: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
+
+        flag_undef = false
+        for i in 1:length(mps)
+            if !isdefined(mps, i)
+                flag_undef = true
+                println("The mps at index $(i) is not defined even before calling the first save_mps")
+            elseif (i == length(mps)) && (!flag_undef)
+                println("The mps before the first call to save_mps seems defined")
+            end
+        end
 
         # TODO: REMOVE THIS AFTER DEBUG
         if sweep_number == 0
