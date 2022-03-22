@@ -1117,7 +1117,8 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         end
     end
 
-    display(mps[1][1,1,1])
+    varr = mps[1][1,1,1]
+    println("This is the value of mps[1][1,1,1]: $(varr)")
     
     while(true)
 
