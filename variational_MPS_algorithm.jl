@@ -1112,7 +1112,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
         # TODO: REMOVE THIS AFTER DEBUG
         if sweep_number == 0
-            save_mps(true)
+            save_mps(false)
         end
 
         if sweep_number == 1
