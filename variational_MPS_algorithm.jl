@@ -70,6 +70,21 @@ function initialize_MPS(N::Int64, d::Int64, D::Int64)::Vector{Array{ComplexF64}}
 
 end
 
+function add_noise_to_mps(mps)
+
+    for i in 1:length(mps)
+
+        dims = size(mps[i])
+        eps = 10^(-3)
+        noise_tensor = rand(ComplexF64, dims[1], dims[2], dims[3])*eps
+        mps[i] = tensor + noise_tensor
+
+    end
+    
+    return mps
+
+end
+
 function contraction(A, c_A::Tuple, B, c_B::Tuple)::Array{ComplexF64}
 
     """
@@ -1103,6 +1118,10 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
             end
         end
     
+    end
+
+    if mg < -0.4
+        mps = add_noise_to_mps(mps)
     end
 
     while(true)
