@@ -1110,6 +1110,11 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         tmp = Dates.now()
         println("Sweep number $(sweep_number) starting now: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
 
+        # TODO: REMOVE THIS AFTER DEBUG
+        if sweep_number == 0
+            save_mps(true)
+        end
+
         if sweep_number == 1
             save_mps(true)
         end
