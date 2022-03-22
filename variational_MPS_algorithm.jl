@@ -959,6 +959,8 @@ function save_mps(contraction_flag, mps_local, US_local, path_local)
             
             var = isdefined(mps_local, i)
             println("The mps[$(i)] is defined: $(var)")
+            varrr = mps[i][1,1,1]
+            println("The value of mps[$(i)][1,1,1] is $(varrr)")
             g["mps_$(i)"] = mps_local[i]
             
         end
