@@ -1068,7 +1068,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         else
 
             mps = initialize_MPS(N, d, D)
-            println("There was no mps found saved to give as initial ansantz with parameters 2N = $(N), D_previous = $(D_previous), mg = $(mg), x = $(x).")
+            println("There was no mps found saved to give as initial ansantz with parameters (2*)N = $(N), D_previous = $(D_previous), mg = $(mg), x = $(x).")
 
         end
 
@@ -1107,15 +1107,15 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
     # ------------------------------------------------------------------------------------------------------------------------------------------
 
-    flag_undef = false
-    for i in 1:length(mps)
-        if !isdefined(mps, i)
-            flag_undef = true
-            println("The mps at index $(i) is not defined even before the algorithm starts")
-        elseif (i == length(mps)) && (!flag_undef)
-            println("The mps before the algorithm starts seems defined")
-        end
-    end
+    # flag_undef = false
+    # for i in 1:length(mps)
+    #     if !isdefined(mps, i)
+    #         flag_undef = true
+    #         println("The mps at index $(i) is not defined even before the algorithm starts")
+    #     elseif (i == length(mps)) && (!flag_undef)
+    #         println("The mps before the algorithm starts seems defined")
+    #     end
+    # end
 
     varr = mps[1][1,1,1]
     println("This is the value of mps[1][1,1,1]: $(varr)")
@@ -1125,20 +1125,27 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         tmp = Dates.now()
         println("Sweep number $(sweep_number) starting now: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
 
-        flag_undef = false
-        for i in 1:length(mps)
-            if !isdefined(mps, i)
-                flag_undef = true
-                println("The mps at index $(i) is not defined even before calling the first save_mps")
-            elseif (i == length(mps)) && (!flag_undef)
-                println("The mps before the first call to save_mps seems defined")
-            end
-        end
+        # flag_undef = false
+        # for i in 1:length(mps)
+        #     if !isdefined(mps, i)
+        #         flag_undef = true
+        #         println("The mps at index $(i) is not defined even before calling the first save_mps")
+        #     elseif (i == length(mps)) && (!flag_undef)
+        #         println("The mps before the first call to save_mps seems defined")
+        #     end
+        # end
 
-        # TODO: REMOVE THIS AFTER DEBUG
+        varr = mps[1][1,1,1]
+        println("This is the value of mps[1][1,1,1]: $(varr)")
+
+        # TODO: REMOVE THIS AFTER DEBUG----
         if sweep_number == 0
             save_mps(false, mps, US, path)
         end
+        #----------------------------------
+
+        varr = mps[1][1,1,1]
+        println("This is the value of mps[1][1,1,1]: $(varr)")
 
         if sweep_number == 1
             save_mps(true, mps, US, path)
