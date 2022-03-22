@@ -1050,11 +1050,11 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     
     end
 
-    function save_mps(contraction_flag)
+    function save_mps(contraction_flag, mps_local, US_local)
 
         if contraction_flag == true
-            mps[1] = contraction(mps[1], (2,), US, (1,))
-            mps[1] = permutedims(mps[1], (1,3,2))
+            mps_local[1] = contraction(mps_local[1], (2,), US_local, (1,))
+            mps_local[1] = permutedims(mps_local[1], (1,3,2))
         end
     
         h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
@@ -1063,11 +1063,11 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
             
             g = fid["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
             
-            for i in 1:length(mps)
+            for i in 1:length(mps_local)
                 
-                var = isdefined(mps, i)
-                println("The mps[$(i)] is undefined: $(var)")
-                g["mps_$(i)"] = mps[i]
+                var = isdefined(mps_local, i)
+                println("The mps[$(i)] is defined: $(var)")
+                g["mps_$(i)"] = mps_local[i]
                 
             end
         end
@@ -1112,15 +1112,15 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
         # TODO: REMOVE THIS AFTER DEBUG
         if sweep_number == 0
-            save_mps(false)
+            save_mps(false, mps, US)
         end
 
         if sweep_number == 1
-            save_mps(true)
+            save_mps(true, mps, US)
         end
 
         if sweep_number != 0 && sweep_number % 2 == 0
-            save_mps(true)
+            save_mps(true, mps, US)
         end
         
         E = 0 # Will hold the ground state energy apprxoimation right after a full sweep finishes
@@ -1167,7 +1167,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
             mps[1] = contraction(mps[1], (2,), US, (1,))
             mps[1] = permutedims(mps[1], (1,3,2))
-
+            save_mps(false, mps, US) 
             # println("Desired accuracy reached.")
 
             break
@@ -1178,7 +1178,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
             mps[1] = contraction(mps[1], (2,), US, (1,))
             mps[1] = permutedims(mps[1], (1,3,2))
-
+            save_mps(false, mps, US) 
             println("Maximum number of sweeps reached before desired accuracy.")
 
             break
@@ -1189,10 +1189,8 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         tmp = Dates.now()
         println("Sweep number $(sweep_number) just finished: lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
         sweep_number = sweep_number + 1
-        
-    end
 
-    save_mps(false)
+    end
 
     tmp = Dates.now()
     println("Algorithm finished with sweep number $(sweep_number): lambda = $(lambda), l_0 = $(l_0), m_over_g = $(mg), x = $(x), N = $(N), D = $(D), and the time is $(tmp)\n")
