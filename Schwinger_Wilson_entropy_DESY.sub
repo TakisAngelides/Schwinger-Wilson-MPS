@@ -8,7 +8,7 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schw
 
 should_transfer_files = IF_NEEDED
 
-request_memory = 2G
+request_memory = 10G
 
 request_cpus = 4
 
