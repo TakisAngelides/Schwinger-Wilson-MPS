@@ -76,7 +76,7 @@ function add_noise_to_mps(mps)
 
         dims = size(mps[i])
         eps = 10^(-3)
-        noise_tensor = rand(ComplexF64, dims[1], dims[2], dims[3])*eps
+        noise_tensor = (rand(ComplexF64, dims[1], dims[2], dims[3])-(0.5+0.5im))*eps
         mps[i] = mps[i] + noise_tensor
 
     end
