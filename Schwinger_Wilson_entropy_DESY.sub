@@ -10,8 +10,6 @@ should_transfer_files = IF_NEEDED
 
 request_memory = 4G
 
-request_cpus = 4
-
 output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_choice_$(choice)_$(Cluster)_$(Process).out
 
 error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_choice_$(choice)_$(Cluster)_$(Process).error
