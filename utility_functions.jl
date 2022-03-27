@@ -1055,7 +1055,7 @@ function generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_num
     if haskey(mg_dict, mg)
         mg_previous = mg_dict[mg]
     else
-        mg_previous = 0
+        mg_previous = 0.0
     end
 
     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
