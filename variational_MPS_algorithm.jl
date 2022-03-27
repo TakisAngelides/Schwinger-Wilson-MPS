@@ -1071,11 +1071,11 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
     if D == 20 || D_previous == 0 || mg_previous == 0 # D_previous or mg_previous would be 0 if the current input D or mg do not point to a previous D or mg (see utility_functions.jl generate_entropy_data(...))
 
-        # mps = initialize_MPS(N, d, D)
+        mps = initialize_MPS(N, d, D)
 
-        D_previous = 40
-        mg_previous = -0.55
-        mps = load_mps_previous_D_mg()
+        # D_previous = 40
+        # mg_previous = -0.55
+        # mps = load_mps_previous_D_mg()
 
     else # when there is a previous D solution
 
