@@ -57,7 +57,7 @@ function get_GHZ_mps(N::Int64)::Vector{Array{ComplexF64}}
 
 end
 
-function get_electric_field_configuration(N::Int64, l_0::Float64, mps)::Vector{Float64}
+function get_electric_field_configuration(N::Int64, l_0::Float64, mps)
     
     """
     Gets the L_n = l_0 + sum_k=1^N Q_k for the Schwinger model
@@ -93,7 +93,7 @@ function get_electric_field_configuration(N::Int64, l_0::Float64, mps)::Vector{F
     
     end
 
-    return electric_field_list
+    return charge_list, electric_field_list
 
 end
 

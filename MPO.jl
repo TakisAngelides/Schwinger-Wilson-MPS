@@ -212,7 +212,7 @@ function get_Schwinger_Wilson_MPO(N::Int64, l_0::Float64, x::Float64, lambda::Fl
 
     N = number of physical lattice sites (Integer) - in the spin formulation the lattice is spread to 2N sites
 
-    l_0 = background electric field (float)
+    l_0 = background electric field, theta/2pi (float) 
 
     x = 1/(a^2 * g^2) where a is lattice spacing and g is coupling constant (float)
 
