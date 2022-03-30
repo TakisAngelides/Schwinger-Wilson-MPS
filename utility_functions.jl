@@ -57,10 +57,17 @@ function get_GHZ_mps(N::Int64)::Vector{Array{ComplexF64}}
 
 end
 
-function get_electric_field_configuration(N::Int64, l_0::Float64, mps)
+function get_electric_field_configuration(l_0::Float64, mps)
     
     """
-    Gets the L_n = l_0 + sum_k=1^N Q_k for the Schwinger model
+    Gets the L_n = l_0 + sum_{k=1^n}(Q_k) = l_0 + 1/2 * sum_{p=1^2n}(Z_p) for the Schwinger model
+
+    Note: the Q_k = phi dagger k,1 * phi k,1 + phi dagger k,2 * phi k,2 - 1 operator on the physical sites 
+    becomes Q_k = 0.5(0.5*Z_{2k-1} + 1) + 0.5(0.5*Z_{2k} + 1) - 1 on the spin sites:
+
+    Q_k = phi dagger k,1 * phi k,1 + phi dagger k,2 * phi k,2 - 1      (physical sites)
+    ->
+    Q_k = 0.5(0.5*Z_{2k-1} + 1) + 0.5(0.5*Z_{2k} + 1) - 1              (spin sites)
 
     Inputs:
 
@@ -76,24 +83,41 @@ function get_electric_field_configuration(N::Int64, l_0::Float64, mps)
 
     """
     
-    charge_list = []
-    electric_field_list = []
+    # TODO: Review the docstrings
+
+    N_spin = length(mps)
+
+    N = Int(N_spin/2)
+
+    expectation_value_of_Z_at_each_spin_site = get_spin_configuration(mps)
+
+    Z_list = expectation_value_of_Z_at_each_spin_site
+
+    electric_field_configuration = []
 
     for n in 1:N
 
-        charge_mpo = get_local_charge_MPO(N, n)
-        mps_right = act_mpo_on_mps(charge_mpo, mps)
-        append!(charge_list, real(inner_product_MPS(mps, mps_right)))
-    
+        L_n = l_0 + 0.5*sum(Z_list[1:2*n])
+        append!(electric_field_configuration, L_n)
+
     end
 
-    for n in 1:N
-        
-        append!(electric_field_list, l_0 + sum(charge_list[1:n]))
-    
+    return electric_field_configuration
+
+end
+
+function get_charge_configuration(mps)
+
+    N_spin = length(mps)
+    N = Int(N_spin/2)
+    Z_list = get_spin_configuration(mps)
+    charge_configuration = []
+    for k in 1:N
+        Q_k = 0.5*(Z_list[2*k-1]+1)+0.5*(Z_list[2*k]+1)-1
+        append!(charge_configuration, Q_k)
     end
 
-    return charge_list, electric_field_list
+    return charge_configuration
 
 end
 
@@ -375,7 +399,7 @@ function get_spin_half_expectation_value(N::Int64, mps::Vector{Array{ComplexF64}
 
 end
 
-function get_mpo_expectation_value(mps::Vector{Array{ComplexF64}}, mpo::Vector{Array})::ComplexF64
+function get_mpo_expectation_value(mps::Vector{Array{ComplexF64}}, mpo)::ComplexF64
 
     """
     Computes the expectation value of the operator represented by the mpo input
@@ -1118,6 +1142,40 @@ function mps_to_entropy_save_file(mg::Float64, x::Float64, N::Int64, D::Int64)
         
     open(path*"/entropy_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D).txt", "w") do file
         write(file, "$(mg),$(ee)\n")
+    end 
+
+end
+
+function get_spin_configuration(mps::Vector{Array{ComplexF64}})
+
+    N_spin = length(mps)
+    N = Int(N_spin/2)
+    configuration = []
+
+    for i in 1:N_spin
+
+        mpo = get_local_spin_MPO(N, i)
+        expectation_value_of_Z = get_mpo_expectation_value(mps, mpo)
+        append!(configuration, expectation_value_of_Z)
+    
+    end
+
+    return configuration
+end
+
+function mps_to_average_electric_field(mg, x, N, D, l_0)
+
+    mps = h5_to_mps(N, D, mg, x)
+    avg_E_field = mean(get_electric_field_configuration(l_0, mps))
+
+    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Average Electric Field Data/N_$(N)_x_$(x)_D_$(D)"
+
+    if !isdir(path)
+        mkdir(path)
+    end
+
+    open(path*"/avg_E_field_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D)_$(l_0).txt", "w") do file
+        write(file, "$(mg),$(avg_E_field)\n")
     end 
 
 end
