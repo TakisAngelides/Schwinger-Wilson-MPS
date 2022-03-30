@@ -309,13 +309,13 @@ end
 function get_local_charge_MPO(N::Int64, site::Int64)::Vector{Array{ComplexF64}}
 
     """
-    The charge operator for the Schwinger model using Wilson fermions at a particular site is returned as an MPO
+    The charge operator for the Schwinger model using Wilson fermions at a particular spin site is returned as an MPO
 
     Inputs:
 
     N = number of physical lattice sites
 
-    site = the site on which to act with the charge operator, on the extended lattice this should be only on even sites from 2 to 2N
+    site = the site on which to act with the charge operator, on the extended spin lattice
 
     Output:
 
@@ -362,6 +362,62 @@ function get_local_charge_MPO(N::Int64, site::Int64)::Vector{Array{ComplexF64}}
     end
 
     return mpo
+
+end
+
+function get_local_spin_MPO(N::Int64, site::Int64)::Vector{Array{ComplexF64}}
+
+    """
+    Gets the MPO for the Z operator acting at a particular spin site
+
+    Inputs:
+
+    N = number of physical lattice sites
+
+    site = the site on which to act with the Z operator on the extended spin lattice
+
+    Output:
+
+    mpo = the mpo for a single Z operator on a given site
+    """
+
+    mpo = Vector{Array{ComplexF64}}(undef, 2*N)
+    d = 2
+    D = 2
+    Z = [1.0+0.0im 0.0+0.0im; 0.0+0.0im -1.0+0.0im]
+    I = [1.0+0.0im 0.0+0.0im; 0.0+0.0im 1.0+0.0im]
+
+    for i in 1:2*N
+        if i == 2*N
+            if i == site
+                mpo[i] = zeros((D, 1, d, d))
+                mpo[i][2,1,:,:] = Z
+            else
+                mpo[i] = zeros((D, 1, d, d))
+                mpo[i][1,1,:,:] = I
+            end
+        elseif i == 1
+            if i == site
+                mpo[i] = zeros((1, D, d, d))
+                mpo[i][1,1,:,:] = Z
+            else
+                mpo[i] = zeros((1, D, d, d))
+                mpo[i][1,2,:,:] = I
+            end
+        else
+            if i == site
+                mpo[i] = zeros((D, D, d, d))
+                mpo[i][2,1,:,:] = Z
+            else
+                mpo[i] = zeros((D, D, d, d))
+                mpo[i][1,1,:,:] = I
+                mpo[i][2,2,:,:] = I
+            end
+        end
+    end
+
+    return mpo
+
 
 end
 
