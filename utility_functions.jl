@@ -1083,7 +1083,7 @@ function generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_num
     end
 
     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-    _, _, _ = variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(2*N, 2, D, mpo, accuracy, max_sweep_number, D_previous, mg_previous)
+    _, _, _ = variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(2*N, 2, D, mpo, accuracy, max_sweep_number, D_previous, mg_previous, l_0)
 
 end
 
@@ -1105,7 +1105,7 @@ function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64)::Vector{Array{Co
     mps = the mps saved in the h5 file with the name "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/$(N)_x_$(x)_D_$(D)/mps_$(N)_$(D)_$(mg)_$(x).h5"
     """
 
-    name_of_file = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D)/mps_$(N)_$(D)_$(mg)_$(x).h5"
+    name_of_file = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)/mps_$(N)_$(D)_$(mg)_$(x)_$(l_0).h5"
 
     f = h5open(name_of_file, "r")
 
@@ -1128,19 +1128,19 @@ function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64)::Vector{Array{Co
 
 end
 
-function mps_to_entropy_save_file(mg::Float64, x::Float64, N::Int64, D::Int64)
+function mps_to_entropy_save_file(mg::Float64, x::Float64, N::Int64, D::Int64, l_0::Float64)
 
     mps = h5_to_mps(N, D, mg, x)
     half = Int(N/2)
     ee = entanglement_entropy(mps, half)
 
-    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Entropy Data/N_$(N)_x_$(x)_D_$(D)"
+    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Entropy Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)"
 
     if !isdir(path)
         mkdir(path)
     end
         
-    open(path*"/entropy_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D).txt", "w") do file
+    open(path*"/entropy_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D)_$(l_0).txt", "w") do file
         write(file, "$(mg),$(ee)\n")
     end 
 
@@ -1168,7 +1168,7 @@ function mps_to_average_electric_field(mg, x, N, D, l_0)
     mps = h5_to_mps(N, D, mg, x)
     avg_E_field = real(mean(get_electric_field_configuration(l_0, mps)))
 
-    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Average Electric Field Data/N_$(N)_x_$(x)_D_$(D)"
+    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Average Electric Field Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)"
 
     if !isdir(path)
         mkdir(path)

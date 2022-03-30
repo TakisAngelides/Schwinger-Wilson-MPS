@@ -957,7 +957,7 @@ function variational_ground_state_MPS_for_saving(N::Int64, d::Int64, D::Int64, m
 
 end
 
-function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64, D_previous::Int64, mg_previous::Float64)
+function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64, D_previous::Int64, mg_previous::Float64, l_0::Float64)
 
     """
     This is the main function which implements the variational MPS ground state algorithm described in Schollwock section 6.3.
@@ -1000,18 +1000,18 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
     # end
     # -----------------------------------------------------
 
-    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D)"
+    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)"
     if !isdir(path)
         mkdir(path)
     end
 
     function load_mps_previous_D_mg()
 
-        path_to_mps = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D_previous)/mps_$(N)_$(D_previous)_$(mg_previous)_$(x).h5"
+        path_to_mps = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D_previous)_l0_$(l_0)/mps_$(N)_$(D_previous)_$(mg_previous)_$(x)_$(l_0).h5"
 
         if isfile(path_to_mps)
 
-            println("The ansatz is loaded from a previous mps solution stored with values N = $(N), D_previous = $(D_previous), mg_previous = $(mg_previous), x = $(x)")
+            println("The ansatz is loaded from a previous mps solution stored with values N = $(N), D_previous = $(D_previous), mg_previous = $(mg_previous), x = $(x), l_0 = $(l_0)")
     
             f = h5open(path_to_mps, "r")
 
@@ -1059,7 +1059,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
         else
 
             mps = initialize_MPS(N, d, D)
-            println("There was no mps found saved to give as initial ansantz with parameters (2*)N = $(N), D_previous = $(D_previous), mg = $(mg), x = $(x).")
+            println("There was no mps found saved to give as initial ansantz with parameters (2*)N = $(N), D_previous = $(D_previous), mg = $(mg), x = $(x), l_0 = $(l_0).")
 
         end
 
@@ -1109,7 +1109,7 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
             mps[1] = permutedims(mps[1], (1,3,2))
         end
     
-        h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x).h5", "w") do fid
+        h5open(path*"/mps_$(N)_$(D)_$(mg)_$(x)_$(l_0).h5", "w") do fid
     
             create_group(fid, "$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)")
             
