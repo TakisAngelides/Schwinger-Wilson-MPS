@@ -344,6 +344,39 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Testing getting the spin configuration of an mps and then the electric field configuration
+# and also testing Gauss's law L_n - L_n-1 - Q_n = 0 for 0 external charges
+
+# N = 4
+# D = 8
+# mg = -0.125
+# x = 1.0
+# ms = 20
+# acc = 10^(-8)
+# lambda = 100.0
+# l_0 = 0.0
+# d = 2
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+# E_0, mps, ns = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+
+# electric_field_configuration = get_electric_field_configuration(l_0, mps)
+# charge_configuration = get_charge_configuration(mps)
+
+# L_list = electric_field_configuration
+# Q_list = charge_configuration
+
+# for n in 1:N
+#     if n == 1
+#         println(L_list[n]-l_0-Q_list[n])
+#     else
+#         println(L_list[n]-L_list[n-1]-Q_list[n])
+#     end
+# end
+
+# println(sum(charge_configuration))
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # # https://github.com/kuehnste/mps.jl/blob/main/test/runtests.jl
 
 # @testset "MPS Testing" begin
