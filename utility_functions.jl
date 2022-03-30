@@ -1174,7 +1174,7 @@ function mps_to_average_electric_field(mg, x, N, D, l_0)
     end
 
     open(path*"/avg_E_field_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D)_$(l_0).txt", "w") do file
-        write(file, "$(mg),$(avg_E_field)\n")
+        write(file, "$(l_0),$(avg_E_field)\n")
     end 
 
 end
