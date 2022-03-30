@@ -8,10 +8,10 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schw
 
 should_transfer_files = IF_NEEDED
 
-output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(l_0)_choice_$(choice)_$(Cluster)_$(Process).out
+output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_choice_$(choice)_$(Cluster)_$(Process).out
 
-error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(l_0)_choice_$(choice)_$(Cluster)_$(Process).error
+error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_choice_$(choice)_$(Cluster)_$(Process).error
 
-log = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(l_0)_choice_$(choice)_$(Cluster)_$(Process).log
+log = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_choice_$(choice)_$(Cluster)_$(Process).log
 
-queue l_0 in 0.0,0.698132,1.39626,2.0944,2.79253,3.49066,4.18879,4.88692,5.58505,6.28319
+queue l_0 in 0.0, 0.698132, 1.39626, 2.0944, 2.79253, 3.49066, 4.18879, 4.88692, 5.58505, 6.28319
