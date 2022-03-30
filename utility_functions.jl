@@ -1167,7 +1167,7 @@ function mps_to_average_electric_field(mg, x, N, D, l_0)
     mps = h5_to_mps(N, D, mg, x, l_0)
     avg_E_field = real(mean(get_electric_field_configuration(l_0, mps)))
 
-    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Average Electric Field Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)"
+    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Average Electric Field Data/N_$(N)_x_$(x)_D_$(D)"
 
     if !isdir(path)
         mkdir(path)
