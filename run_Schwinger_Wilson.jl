@@ -34,7 +34,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # extra mg values for N = 48, x = 10.0: -0.56, -0.57, -0.58, -0.59, -0.61, -0.62, -0.63, -0.64, -0.66, -0.67, -0.68, -0.69, -0.71, -0.72  
 accuracy = 10^(-8)
 lambda = 100.0
-l_0 = 0.0
+l_0 = 0.5
 max_sweep_number = 100
 N = parse(Int, ARGS[1])
 x = parse(Float64, ARGS[2])
