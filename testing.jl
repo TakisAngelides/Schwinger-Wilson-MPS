@@ -349,12 +349,12 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # N = 4
 # D = 8
-# mg = -0.125
+# mg = 2.0
 # x = 1.0
 # ms = 20
 # acc = 10^(-8)
-# lambda = 100.0
-# l_0 = 0.0
+# lambda = 0.0
+# l_0 = 2.5
 # d = 2
 # mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
 # E_0, mps, ns = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
@@ -365,6 +365,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # L_list = electric_field_configuration
 # Q_list = charge_configuration
 
+# println("Checking Gauss's law")
 # for n in 1:N
 #     if n == 1
 #         println(L_list[n]-l_0-Q_list[n])
@@ -372,8 +373,42 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 #         println(L_list[n]-L_list[n-1]-Q_list[n])
 #     end
 # end
-
+# println("Charge configuration")
+# display(charge_configuration)
+# println("Total charge")
 # println(sum(charge_configuration))
+# println("Average electric field")
+# println(mean(electric_field_configuration))
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Checking the first order phase transition
+
+# theta_list = LinRange(0, 2pi, 10)
+
+# N = 25
+# D = 10
+# mg = 5.0
+# x = 1.0
+# ms = 20
+# acc = 10^(-8)
+# lambda = 0.0
+# d = 2
+# avg_E_field_list = []
+
+# for theta in theta_list
+
+#     println(theta)
+
+#     l_0 = theta/(2*pi)
+#     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+#     E_0, mps, ns = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+#     append!(avg_E_field_list, real(mean(get_electric_field_configuration(l_0, mps))))
+
+# end
+
+# display(avg_E_field_list)
+# plot(theta_list, avg_E_field_list)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
