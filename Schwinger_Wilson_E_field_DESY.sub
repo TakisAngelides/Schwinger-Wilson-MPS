@@ -1,0 +1,17 @@
+environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
+
+executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
+
+arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl $(N) $(x) $(l) $(D) $(choice)
+
+transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
+
+should_transfer_files = IF_NEEDED
+
+output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_l_$(l)_choice_$(choice)_$(Cluster)_$(Process).out
+
+error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_l_$(l)_choice_$(choice)_$(Cluster)_$(Process).error
+
+log = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_l_$(l)__choice_$(choice)_$(Cluster)_$(Process).log
+
+queue l in 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
