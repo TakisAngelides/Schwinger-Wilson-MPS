@@ -48,9 +48,9 @@ choice = parse(Int64, ARGS[5])
 if choice == 1
     generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_number)
 elseif choice == 2
-    mps_to_entropy_save_file(mg, x, 2*N, D, l_0)
+    mps_to_entropy_save_file(mg, x, 2*N, D, l_0, lambda)
 elseif choice == 3
-    mps_to_average_electric_field(mg, x, 2*N, D, l_0)
+    mps_to_average_electric_field(mg, x, 2*N, D, l_0, lambda)
 end
 
 # ----------------------------------------------------------------------------------------------------------------------------------

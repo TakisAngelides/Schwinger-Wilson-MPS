@@ -1087,7 +1087,7 @@ function generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_num
 
 end
 
-function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64, l_0::Float64)::Vector{Array{ComplexF64}}
+function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64, l_0::Float64, lambda)::Vector{Array{ComplexF64}}
 
     """
     Input:
@@ -1108,8 +1108,6 @@ function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64, l_0::Float64)::V
     name_of_file = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)/mps_$(N)_$(D)_$(mg)_$(x)_$(l_0).h5"
 
     f = h5open(name_of_file, "r")
-
-    lambda = 100.0
     
     mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
 
@@ -1127,9 +1125,9 @@ function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64, l_0::Float64)::V
 
 end
 
-function mps_to_entropy_save_file(mg::Float64, x::Float64, N::Int64, D::Int64, l_0::Float64)
+function mps_to_entropy_save_file(mg::Float64, x::Float64, N::Int64, D::Int64, l_0::Float64, lambda)
 
-    mps = h5_to_mps(N, D, mg, x, l_0)
+    mps = h5_to_mps(N, D, mg, x, l_0, lambda)
     half = Int(N/2)
     ee = entanglement_entropy(mps, half)
 
@@ -1162,9 +1160,9 @@ function get_spin_configuration(mps::Vector{Array{ComplexF64}})
     return configuration
 end
 
-function mps_to_average_electric_field(mg, x, N, D, l_0)
+function mps_to_average_electric_field(mg, x, N, D, l_0, lambda)
 
-    mps = h5_to_mps(N, D, mg, x, l_0)
+    mps = h5_to_mps(N, D, mg, x, l_0, lambda)
     avg_E_field = real(mean(get_electric_field_configuration(l_0, mps)))
 
     path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Average Electric Field Data/N_$(N)_x_$(x)_D_$(D)"
