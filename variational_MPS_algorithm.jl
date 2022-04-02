@@ -1073,10 +1073,6 @@ function variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(N::I
 
         mps = initialize_MPS(N, d, D)
 
-        # D_previous = 40
-        # mg_previous = -0.55
-        # mps = load_mps_previous_D_mg()
-
     else # when there is a previous D solution
 
         mps = load_mps_previous_D_mg() # give previous D and previous mg as ansantz
