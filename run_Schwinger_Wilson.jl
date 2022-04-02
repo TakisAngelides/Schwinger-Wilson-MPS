@@ -33,15 +33,12 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # mg values to run: -0.10, -0.20, -0.30, -0.45, -0.47, -0.49, -0.51, -0.53, -0.55, -0.60, -0.65, -0.75
 # extra mg values for N = 48, x = 10.0: -0.56, -0.57, -0.58, -0.59, -0.61, -0.62, -0.63, -0.64, -0.66, -0.67, -0.68, -0.69, -0.71, -0.72  
 accuracy = 10^(-8)
-# lambda = 100.0
-lambda = 0.0
-# l_0 = 0.0
-mg = 5.0
+lambda = 100.0
+l_0 = 0.0
 max_sweep_number = 100
 N = parse(Int, ARGS[1])
 x = parse(Float64, ARGS[2])
-# mg = parse(Float64, ARGS[3])
-l_0 = parse(Float64, ARGS[3])
+mg = parse(Float64, ARGS[3])
 D = parse(Int64, ARGS[4])
 choice = parse(Int64, ARGS[5])
 
