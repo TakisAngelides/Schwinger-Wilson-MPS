@@ -114,7 +114,7 @@ max_sweeps = 30
 d = 2
 D = 20
 
-lambda_1 = 1000.0
+lambda_1 = 100.0
 mpo_1 = get_Schwinger_Wilson_MPO(N, l_0, x, lambda_1, m_g_ratio)
 E_0_1, mps_ground_1, sn_1 = variational_ground_state_MPS(2*N, d, D, mpo_1, acc, max_sweeps)
 
