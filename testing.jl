@@ -105,25 +105,25 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Checking that the minimum energy from the variational ground state search agrees in both Q=0 enforced and not enforced
 
-N = 20
-x = 1.0
-m_g_ratio = -0.125
-l_0 = 0.0 # this is theta/2pi
-acc = 10^(-10)
-max_sweeps = 30
-d = 2
-D = 20
+# N = 20
+# x = 1.0
+# m_g_ratio = -0.125
+# l_0 = 0.0 # this is theta/2pi
+# acc = 10^(-10)
+# max_sweeps = 30
+# d = 2
+# D = 20
 
-lambda_1 = 100.0
-mpo_1 = get_Schwinger_Wilson_MPO(N, l_0, x, lambda_1, m_g_ratio)
-E_0_1, mps_ground_1, sn_1 = variational_ground_state_MPS(2*N, d, D, mpo_1, acc, max_sweeps)
+# lambda_1 = 100.0
+# mpo_1 = get_Schwinger_Wilson_MPO(N, l_0, x, lambda_1, m_g_ratio)
+# E_0_1, mps_ground_1, sn_1 = variational_ground_state_MPS(2*N, d, D, mpo_1, acc, max_sweeps)
 
-lambda_2 = 0.0
-mpo_2 = get_Schwinger_Wilson_MPO(N, l_0, x, lambda_2, m_g_ratio)
-E_0_2, mps_ground_2, sn_2 = variational_ground_state_MPS(2*N, d, D, mpo_2, acc, max_sweeps)
+# lambda_2 = 0.0
+# mpo_2 = get_Schwinger_Wilson_MPO(N, l_0, x, lambda_2, m_g_ratio)
+# E_0_2, mps_ground_2, sn_2 = variational_ground_state_MPS(2*N, d, D, mpo_2, acc, max_sweeps)
 
-println("Minimum energy from variational ground state search with zero charge enforced: ", E_0_1)
-println("Minimum energy from variational ground state search with zero charge not enforced: ", E_0_2)
+# println("Minimum energy from variational ground state search with zero charge enforced: ", E_0_1)
+# println("Minimum energy from variational ground state search with zero charge not enforced: ", E_0_2)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
