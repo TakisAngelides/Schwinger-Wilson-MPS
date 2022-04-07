@@ -1162,6 +1162,13 @@ end
 
 function mps_to_average_electric_field(mg, x, N, D, l_0, lambda)
 
+    """
+    Inputs:
+
+    N = number of spin sites which is double the number of physical latiice sites
+
+    """
+    
     mps = h5_to_mps(N, D, mg, x, l_0, lambda)
     avg_E_field = real(mean(get_electric_field_configuration(l_0, mps)))
 
