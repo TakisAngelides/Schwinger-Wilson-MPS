@@ -35,4 +35,4 @@ for i in 1:spin_N
 
 end
 
-_, _, _ = variational_ground_state_MPS_from_previous_D_and_mg_and_for_saving(2*N, 2, D, mpo, accuracy, max_sweep_number, mps_ansatz)
+_, _, _ = variational_ground_state_MPS_from_dead_for_saving(2*N, 2, D, mpo, accuracy, max_sweep_number, mps_ansatz)
