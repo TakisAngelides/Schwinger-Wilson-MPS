@@ -462,3 +462,17 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # println(eigvals(matrix_takis) == eigvals(matrix_stefan))
 
 # ----------------------------------------------------------------------------------------------------------------------------------
+
+# Checking if the Schwinger Wilson spectrum is the same for theta = 0 m/g = -0.125 and theta = pi m/g = 0.125
+
+# mpo_1 = get_Schwinger_Wilson_MPO(4, 0.0, 2.0, 100.0, -0.125)
+# mpo_2 = get_Schwinger_Wilson_MPO(4, 0.5, 2.0, 100.0, 0.125)
+
+# matrix_1 = mpo_to_matrix(mpo_1)
+# matrix_2 = mpo_to_matrix(mpo_2)
+
+# display(eigvals(matrix_1))
+# display(eigvals(matrix_2))
+# println(eigvals(matrix_1) == eigvals(matrix_2))
+
+# ----------------------------------------------------------------------------------------------------------------------------------
