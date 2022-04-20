@@ -449,3 +449,16 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Checking Stefan's and Takis's mpo for Schwinger Wilson spectrum
+
+# mpo_takis = get_Schwinger_Wilson_MPO(4, 0.5, 2.0, 100.0, 0.125)
+# mpo_stefan = get_Schwinger_Wilson_MPO_Stefan(4, 0.5, 2.0, 100.0, 0.125)
+
+# matrix_takis = mpo_to_matrix(mpo_takis)
+# matrix_stefan = mpo_to_matrix(mpo_stefan)
+
+# display(eigvals(matrix_takis))
+# display(eigvals(matrix_stefan))
+# println(eigvals(matrix_takis) == eigvals(matrix_stefan))
+
+# ----------------------------------------------------------------------------------------------------------------------------------

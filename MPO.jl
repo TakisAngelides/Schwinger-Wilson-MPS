@@ -306,6 +306,88 @@ function get_Schwinger_Wilson_MPO(N::Int64, l_0::Float64, x::Float64, lambda::Fl
 
 end
 
+function get_Schwinger_Wilson_MPO_Stefan(N::Int64, l_0::Float64, x::Float64, lambda::Float64, m_g_ratio::Float64)::Vector{Array{ComplexF64}}
+
+    I = [1 0; 0 1]
+    Z = [1 0; 0 -1]
+    PLUS = [0 1; 0 0]
+    MINUS = [0 0; 1 0]
+
+    D = 7
+    d = 2
+
+    mpo = Vector{Array{ComplexF64}}(undef, 2*N) # An MPO is stored as a vector and each element of the vector stores a 4-tensor
+
+    for n in 1:2*N
+
+        c_p = N - ceil(n/2)
+    
+        if n % 2 == 0
+        
+            if n == 2*N
+
+                mpo[n] = zeros((D, 1, d, d))
+                mpo[n][1,1,:,:] = ((1/(2*N))*((N-1)*l_0^2 + (1/4)*N*(N-1)+(1/2)*lambda*N)).*I + (l_0*c_p).*Z
+                mpo[n][2,1,:,:] = -2*1im*(m_g_ratio*sqrt(x) + x).*MINUS
+                mpo[n][3,1,:,:] = 2*1im*x.*MINUS
+                mpo[n][4,1,:,:] = 2*1im*(m_g_ratio*sqrt(x) + x).*PLUS
+                mpo[n][5,1,:,:] = -2*1im*x.*PLUS
+                mpo[n][6,1,:,:] = (1/2)*(c_p + lambda).*Z
+                mpo[n][7,1,:,:] = I
+
+            else
+
+                mpo[n] = zeros((D, D, d, d))
+                mpo[n][1,7,:,:] = ((1/(2*N))*((N-1)*l_0^2 + (1/4)*N*(N-1)+(1/2)*lambda*N)).*I + (l_0*c_p).*Z
+                mpo[n][2,7,:,:] = -2*1im*(m_g_ratio*sqrt(x) + x).*MINUS
+                mpo[n][3,7,:,:] = 2*1im*x.*MINUS
+                mpo[n][4,7,:,:] = 2*1im*(m_g_ratio*sqrt(x) + x).*PLUS
+                mpo[n][5,7,:,:] = -2*1im*x.*PLUS
+                mpo[n][6,7,:,:] = (1/2)*(c_p + lambda).*Z
+                mpo[n][7,7,:,:] = I
+                mpo[n][1,1,:,:] = I
+                mpo[n][2,2,:,:] = Z
+                mpo[n][1,6,:,:] = Z
+                mpo[n][4,4,:,:] = Z
+                mpo[n][6,6,:,:] = I
+
+            end
+        else
+
+            if n == 1
+                
+                mpo[n] = zeros((1, D, d, d))
+                mpo[n][1,1,:,:] = I
+                mpo[n][1,2,:,:] = PLUS
+                mpo[n][1,4,:,:] = MINUS
+                mpo[n][1,6,:,:] = Z
+                mpo[n][1,7,:,:] = ((1/(2*N))*((N-1)*l_0^2 + (1/4)*N*(N-1)+(1/2)*lambda*N)).*I + (l_0*c_p).*Z
+                
+            
+            else
+
+                mpo[n] = zeros((D, D, d, d))
+                mpo[n][1,1,:,:] = I
+                mpo[n][1,2,:,:] = PLUS
+                mpo[n][1,4,:,:] = MINUS
+                mpo[n][1,6,:,:] = Z
+                mpo[n][1,7,:,:] = ((1/(2*N))*((N-1)*l_0^2 + (1/4)*N*(N-1)+(1/2)*lambda*N)).*I + (l_0*c_p).*Z
+                mpo[n][2,3,:,:] = Z
+                mpo[n][4,5,:,:] = Z
+                mpo[n][6,6,:,:] = I
+                mpo[n][6,7,:,:] = (1/2)*(c_p + lambda).*Z
+                mpo[n][7,7,:,:] = I
+
+            end
+
+        end
+    
+    end
+    
+    return mpo
+
+end
+
 function get_local_charge_MPO(N::Int64, site::Int64)::Vector{Array{ComplexF64}}
 
     """
