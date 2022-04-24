@@ -1,4 +1,4 @@
-DAGMAN_USE_CONDOR_SUBMIT = FALSE
+DAGMAN_USE_CONDOR_SUBMIT = false
 JOB N20x1.0mg0.05D10 {
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
