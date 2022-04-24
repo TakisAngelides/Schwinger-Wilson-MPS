@@ -16,4 +16,4 @@ error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_$(Cluster
 
 log = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_$(Cluster)_$(Process).log
 
-queue mg in -0.1 -0.2 -0.3 -0.49 -0.53 -0.55 -0.6 -0.65 -0.75
+queue mg in -0.45
