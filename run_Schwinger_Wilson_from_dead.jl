@@ -13,11 +13,11 @@ x = parse(Float64, ARGS[2])
 mg = parse(Float64, ARGS[3])
 D = parse(Int64, ARGS[4])
 l_0 = parse(Float64, ARGS[5])
-lambd = parse(Float64, ARGS[6])
+lambda = parse(Float64, ARGS[6])
 acc = parse(Float64, ARGS[7])
 ms = parse(Int64, ARGS[8])
 
-mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambd, mg)
+mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
 
 spin_N = 2*N
 
@@ -25,7 +25,7 @@ path_to_mps = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(s
 
 f = h5open(path_to_mps, "r")
 
-mps_group = f["$(lambd)_$(l_0)_$(mg)_$(x)_$(spin_N)_$(D)"]
+mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(spin_N)_$(D)"]
 
 mps_ansatz = Vector{Array{ComplexF64}}(undef, spin_N)
 
