@@ -90,3 +90,11 @@ PARENT N20x1.0mg0.05D10 CHILD N20x1.0mg0.05D20
 PARENT N20x1.0mg0.1D10 CHILD N20x1.0mg0.1D20
 PARENT N30x2.0mg0.05D10 CHILD N30x2.0mg0.05D20
 PARENT N30x2.0mg0.1D10 CHILD N30x2.0mg0.1D20
+SCRIPT HOLD N20x1.0mg0.05D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.05 D=10 l_0=0.5 lambd=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N20x1.0mg0.05D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.05 D=20 l_0=0.5 lambd=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N20x1.0mg0.1D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.1 D=10 l_0=0.5 lambd=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N20x1.0mg0.1D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.1 D=20 l_0=0.5 lambd=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N30x2.0mg0.05D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.05 D=10 l_0=0.5 lambd=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N30x2.0mg0.05D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.05 D=20 l_0=0.5 lambd=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N30x2.0mg0.1D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.1 D=10 l_0=0.5 lambd=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N30x2.0mg0.1D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.1 D=20 l_0=0.5 lambd=100.0 acc=1e-08 ms=100 mem=1
