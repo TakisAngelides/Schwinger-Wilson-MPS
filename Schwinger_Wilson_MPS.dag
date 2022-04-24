@@ -1,6 +1,5 @@
 DAGMAN_USE_CONDOR_SUBMIT = False
 JOB N20x1.0mg0.05D10 {
-    DAGMAN_USE_CONDOR_SUBMIT = False
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
     arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 20 1.0 0.05 10 0.5 100.0 1e-08 100
@@ -12,7 +11,6 @@ JOB N20x1.0mg0.05D10 {
     output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_10_mg_0.05_l0_0.5_$(Cluster)_$(Process).log
 }
 JOB N20x1.0mg0.05D20 {
-    DAGMAN_USE_CONDOR_SUBMIT = False
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
     arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 20 1.0 0.05 20 0.5 100.0 1e-08 100
@@ -24,7 +22,6 @@ JOB N20x1.0mg0.05D20 {
     output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_20_mg_0.05_l0_0.5_$(Cluster)_$(Process).log
 }
 JOB N20x1.0mg0.1D10 {
-    DAGMAN_USE_CONDOR_SUBMIT = False
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
     arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 20 1.0 0.1 10 0.5 100.0 1e-08 100
@@ -36,7 +33,6 @@ JOB N20x1.0mg0.1D10 {
     output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_10_mg_0.1_l0_0.5_$(Cluster)_$(Process).log
 }
 JOB N20x1.0mg0.1D20 {
-    DAGMAN_USE_CONDOR_SUBMIT = False
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
     arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 20 1.0 0.1 20 0.5 100.0 1e-08 100
@@ -48,7 +44,6 @@ JOB N20x1.0mg0.1D20 {
     output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_20_mg_0.1_l0_0.5_$(Cluster)_$(Process).log
 }
 JOB N30x2.0mg0.05D10 {
-    DAGMAN_USE_CONDOR_SUBMIT = False
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
     arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 30 2.0 0.05 10 0.5 100.0 1e-08 100
@@ -60,7 +55,6 @@ JOB N30x2.0mg0.05D10 {
     output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_10_mg_0.05_l0_0.5_$(Cluster)_$(Process).log
 }
 JOB N30x2.0mg0.05D20 {
-    DAGMAN_USE_CONDOR_SUBMIT = False
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
     arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 30 2.0 0.05 20 0.5 100.0 1e-08 100
@@ -72,7 +66,6 @@ JOB N30x2.0mg0.05D20 {
     output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_20_mg_0.05_l0_0.5_$(Cluster)_$(Process).log
 }
 JOB N30x2.0mg0.1D10 {
-    DAGMAN_USE_CONDOR_SUBMIT = False
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
     arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 30 2.0 0.1 10 0.5 100.0 1e-08 100
@@ -84,7 +77,6 @@ JOB N30x2.0mg0.1D10 {
     output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_10_mg_0.1_l0_0.5_$(Cluster)_$(Process).log
 }
 JOB N30x2.0mg0.1D20 {
-    DAGMAN_USE_CONDOR_SUBMIT = False
     environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
     executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
     arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 30 2.0 0.1 20 0.5 100.0 1e-08 100
