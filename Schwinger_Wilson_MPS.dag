@@ -1,108 +1,28 @@
-JOB N20x1.0mg0.05D10 {
-    environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
-    executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
-    arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 20 1.0 0.05 10 0.5 100.0 1e-08 100
-    transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
-    request_memory = 1G
-    max_retries = 5
-    should_transfer_files = IF_NEEDED
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_10_mg_0.05_l0_0.5_$(Cluster)_$(Process).out
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_10_mg_0.05_l0_0.5_$(Cluster)_$(Process).error
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_10_mg_0.05_l0_0.5_$(Cluster)_$(Process).log
-}
-JOB N20x1.0mg0.05D20 {
-    environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
-    executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
-    arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 20 1.0 0.05 20 0.5 100.0 1e-08 100
-    transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
-    request_memory = 1G
-    max_retries = 5
-    should_transfer_files = IF_NEEDED
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_20_mg_0.05_l0_0.5_$(Cluster)_$(Process).out
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_20_mg_0.05_l0_0.5_$(Cluster)_$(Process).error
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_20_mg_0.05_l0_0.5_$(Cluster)_$(Process).log
-}
-JOB N20x1.0mg0.1D10 {
-    environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
-    executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
-    arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 20 1.0 0.1 10 0.5 100.0 1e-08 100
-    transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
-    request_memory = 1G
-    max_retries = 5
-    should_transfer_files = IF_NEEDED
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_10_mg_0.1_l0_0.5_$(Cluster)_$(Process).out
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_10_mg_0.1_l0_0.5_$(Cluster)_$(Process).error
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_10_mg_0.1_l0_0.5_$(Cluster)_$(Process).log
-}
-JOB N20x1.0mg0.1D20 {
-    environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
-    executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
-    arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 20 1.0 0.1 20 0.5 100.0 1e-08 100
-    transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
-    request_memory = 1G
-    max_retries = 5
-    should_transfer_files = IF_NEEDED
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_20_mg_0.1_l0_0.5_$(Cluster)_$(Process).out
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_20_mg_0.1_l0_0.5_$(Cluster)_$(Process).error
-    output = /afs/ifh.de/user/a/angeltak/logs/N_20_x_1.0_D_20_mg_0.1_l0_0.5_$(Cluster)_$(Process).log
-}
-JOB N30x2.0mg0.05D10 {
-    environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
-    executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
-    arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 30 2.0 0.05 10 0.5 100.0 1e-08 100
-    transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
-    request_memory = 1G
-    max_retries = 5
-    should_transfer_files = IF_NEEDED
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_10_mg_0.05_l0_0.5_$(Cluster)_$(Process).out
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_10_mg_0.05_l0_0.5_$(Cluster)_$(Process).error
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_10_mg_0.05_l0_0.5_$(Cluster)_$(Process).log
-}
-JOB N30x2.0mg0.05D20 {
-    environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
-    executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
-    arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 30 2.0 0.05 20 0.5 100.0 1e-08 100
-    transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
-    request_memory = 1G
-    max_retries = 5
-    should_transfer_files = IF_NEEDED
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_20_mg_0.05_l0_0.5_$(Cluster)_$(Process).out
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_20_mg_0.05_l0_0.5_$(Cluster)_$(Process).error
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_20_mg_0.05_l0_0.5_$(Cluster)_$(Process).log
-}
-JOB N30x2.0mg0.1D10 {
-    environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
-    executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
-    arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 30 2.0 0.1 10 0.5 100.0 1e-08 100
-    transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
-    request_memory = 1G
-    max_retries = 5
-    should_transfer_files = IF_NEEDED
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_10_mg_0.1_l0_0.5_$(Cluster)_$(Process).out
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_10_mg_0.1_l0_0.5_$(Cluster)_$(Process).error
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_10_mg_0.1_l0_0.5_$(Cluster)_$(Process).log
-}
-JOB N30x2.0mg0.1D20 {
-    environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
-    executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
-    arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl 30 2.0 0.1 20 0.5 100.0 1e-08 100
-    transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
-    request_memory = 1G
-    max_retries = 5
-    should_transfer_files = IF_NEEDED
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_20_mg_0.1_l0_0.5_$(Cluster)_$(Process).out
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_20_mg_0.1_l0_0.5_$(Cluster)_$(Process).error
-    output = /afs/ifh.de/user/a/angeltak/logs/N_30_x_2.0_D_20_mg_0.1_l0_0.5_$(Cluster)_$(Process).log
-}
-PARENT N20x1.0mg0.05D10 CHILD N20x1.0mg0.05D20
-PARENT N20x1.0mg0.1D10 CHILD N20x1.0mg0.1D20
-PARENT N30x2.0mg0.05D10 CHILD N30x2.0mg0.05D20
-PARENT N30x2.0mg0.1D10 CHILD N30x2.0mg0.1D20
-SCRIPT HOLD N20x1.0mg0.05D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.05 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N20x1.0mg0.05D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.05 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N20x1.0mg0.1D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.1 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N20x1.0mg0.1D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.1 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N30x2.0mg0.05D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.05 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N30x2.0mg0.05D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.05 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N30x2.0mg0.1D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.1 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N30x2.0mg0.1D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.1 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N20x10mg005D10 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N20x10mg005D10 N=20 x=1.0 mg=0.05 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N20x10mg005D20 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N20x10mg005D20 N=20 x=1.0 mg=0.05 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N20x10mg01D10 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N20x10mg01D10 N=20 x=1.0 mg=0.1 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N20x10mg01D20 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N20x10mg01D20 N=20 x=1.0 mg=0.1 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N30x20mg005D10 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N30x20mg005D10 N=30 x=2.0 mg=0.05 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N30x20mg005D20 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N30x20mg005D20 N=30 x=2.0 mg=0.05 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N30x20mg01D10 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N30x20mg01D10 N=30 x=2.0 mg=0.1 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N30x20mg01D20 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N30x20mg01D20 N=30 x=2.0 mg=0.1 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+PARENT N20x10mg005D10 CHILD N20x10mg005D20
+PARENT N20x10mg01D10 CHILD N20x10mg01D20
+PARENT N30x20mg005D10 CHILD N30x20mg005D20
+PARENT N30x20mg01D10 CHILD N30x20mg01D20
+SCRIPT HOLD N20x10mg005D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.05 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N20x10mg005D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.05 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N20x10mg01D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.1 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N20x10mg01D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.1 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N30x20mg005D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.05 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N30x20mg005D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.05 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N30x20mg01D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.1 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N30x20mg01D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.1 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
