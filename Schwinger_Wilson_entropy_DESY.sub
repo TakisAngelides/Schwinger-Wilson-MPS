@@ -8,6 +8,8 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schw
 
 request_memory = 4G
 
+max_retries = 5
+
 should_transfer_files = IF_NEEDED
 
 output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_choice_$(choice)_$(Cluster)_$(Process).out
