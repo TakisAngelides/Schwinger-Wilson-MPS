@@ -1,29 +1,29 @@
 CONFIG dagman.config
-JOB N20x10mg005D10 Schwinger_Wilson_MPS_dag_submit.sub
-VARS N20x10mg005D10 N="20" x="1.0" mg="0.05" D="10" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="1"
-JOB N20x10mg005D20 Schwinger_Wilson_MPS_dag_submit.sub
-VARS N20x10mg005D20 N="20" x="1.0" mg="0.05" D="20" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="1"
-JOB N20x10mg01D10 Schwinger_Wilson_MPS_dag_submit.sub
-VARS N20x10mg01D10 N="20" x="1.0" mg="0.1" D="10" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="1"
-JOB N20x10mg01D20 Schwinger_Wilson_MPS_dag_submit.sub
-VARS N20x10mg01D20 N="20" x="1.0" mg="0.1" D="20" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="1"
-JOB N30x20mg005D10 Schwinger_Wilson_MPS_dag_submit.sub
-VARS N30x20mg005D10 N="30" x="2.0" mg="0.05" D="10" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="1"
-JOB N30x20mg005D20 Schwinger_Wilson_MPS_dag_submit.sub
-VARS N30x20mg005D20 N="30" x="2.0" mg="0.05" D="20" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="1"
-JOB N30x20mg01D10 Schwinger_Wilson_MPS_dag_submit.sub
-VARS N30x20mg01D10 N="30" x="2.0" mg="0.1" D="10" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="1"
-JOB N30x20mg01D20 Schwinger_Wilson_MPS_dag_submit.sub
-VARS N30x20mg01D20 N="30" x="2.0" mg="0.1" D="20" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="1"
-PARENT N20x10mg005D10 CHILD N20x10mg005D20
-PARENT N20x10mg01D10 CHILD N20x10mg01D20
-PARENT N30x20mg005D10 CHILD N30x20mg005D20
-PARENT N30x20mg01D10 CHILD N30x20mg01D20
-SCRIPT HOLD N20x10mg005D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.05 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N20x10mg005D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.05 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N20x10mg01D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.1 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N20x10mg01D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=20 x=1.0 mg=0.1 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N30x20mg005D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.05 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N30x20mg005D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.05 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N30x20mg01D10 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.1 D=10 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N30x20mg01D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=30 x=2.0 mg=0.1 D=20 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N64x100mg005D80 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N64x100mg005D80 N="64" x="10.0" mg="0.05" D="80" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="3"
+JOB N64x100mg005D100 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N64x100mg005D100 N="64" x="10.0" mg="0.05" D="100" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="7"
+JOB N64x100mg01D80 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N64x100mg01D80 N="64" x="10.0" mg="0.1" D="80" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="3"
+JOB N64x100mg01D100 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N64x100mg01D100 N="64" x="10.0" mg="0.1" D="100" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="7"
+JOB N156x600mg005D80 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N156x600mg005D80 N="156" x="60.0" mg="0.05" D="80" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="3"
+JOB N156x600mg005D100 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N156x600mg005D100 N="156" x="60.0" mg="0.05" D="100" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="7"
+JOB N156x600mg01D80 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N156x600mg01D80 N="156" x="60.0" mg="0.1" D="80" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="3"
+JOB N156x600mg01D100 Schwinger_Wilson_MPS_dag_submit.sub
+VARS N156x600mg01D100 N="156" x="60.0" mg="0.1" D="100" l_0="0.5" lambda="100.0" acc="1e-08" ms="100" mem="7"
+PARENT N64x100mg005D80 CHILD N64x100mg005D100
+PARENT N64x100mg01D80 CHILD N64x100mg01D100
+PARENT N156x600mg005D80 CHILD N156x600mg005D100
+PARENT N156x600mg01D80 CHILD N156x600mg01D100
+SCRIPT HOLD N64x100mg005D80Schwinger_Wilson_MPS_HOLD_dag.subN=64 x=10.0 mg=0.05 D=80 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=3
+SCRIPT HOLD N64x100mg005D100Schwinger_Wilson_MPS_HOLD_dag.subN=64 x=10.0 mg=0.05 D=100 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=7
+SCRIPT HOLD N64x100mg01D80Schwinger_Wilson_MPS_HOLD_dag.subN=64 x=10.0 mg=0.1 D=80 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=3
+SCRIPT HOLD N64x100mg01D100Schwinger_Wilson_MPS_HOLD_dag.subN=64 x=10.0 mg=0.1 D=100 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=7
+SCRIPT HOLD N156x600mg005D80Schwinger_Wilson_MPS_HOLD_dag.subN=156 x=60.0 mg=0.05 D=80 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=3
+SCRIPT HOLD N156x600mg005D100Schwinger_Wilson_MPS_HOLD_dag.subN=156 x=60.0 mg=0.05 D=100 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=7
+SCRIPT HOLD N156x600mg01D80Schwinger_Wilson_MPS_HOLD_dag.subN=156 x=60.0 mg=0.1 D=80 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=3
+SCRIPT HOLD N156x600mg01D100Schwinger_Wilson_MPS_HOLD_dag.subN=156 x=60.0 mg=0.1 D=100 l_0=0.5 lambda=100.0 acc=1e-08 ms=100 mem=7
