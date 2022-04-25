@@ -411,10 +411,10 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Checking the first order phase transition
 
-theta_list = LinRange(0, 2*pi, 20)
+theta_list = LinRange(0, 2*pi, 10)
 
 N = 64
-D = 80
+D = 60
 mg = 5.0
 x = 10.0
 ms = 20
