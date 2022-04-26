@@ -16,7 +16,4 @@ should_transfer_files = IF_NEEDED
 
 error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_l0_$(l)_choice_$(choice)_$(Cluster)_$(Process).error
 
-queue mg,l in (
--0.7,0.0
--0.6,0.0
-)
+queue mg l from mg_l_0_vals.txt
