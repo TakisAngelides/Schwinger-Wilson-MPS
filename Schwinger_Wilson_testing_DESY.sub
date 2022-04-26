@@ -8,7 +8,13 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/testing.
 
 should_transfer_files = IF_NEEDED
 
-request_memory = 4G
+mem = $(D)*$(D)*$(D)*$(D)*2*2*16/1e9
+
+request_memory = $(mem)G
+
++RequestRuntime = 144 * $(HOUR)
+
+max_retries = 5
 
 output = /afs/ifh.de/user/a/angeltak/logs/testing_$(Cluster)_$(Process).out
 

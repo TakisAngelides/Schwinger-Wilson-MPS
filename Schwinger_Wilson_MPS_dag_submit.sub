@@ -1,11 +1,23 @@
 environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
+
 executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
+
 arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl $(N) $(x) $(mg) $(D) $(l_0) $(lambda) $(acc) $(ms)
+
 transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson_dag.jl
+
 request_memory = $(mem)G
+
 max_retries = 5
+
++RequestRuntime = 144 * $(HOUR)
+
 should_transfer_files = IF_NEEDED
+
 output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_l0_$(l_0)_$(Cluster)_$(Process).out
+
 output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_l0_$(l_0)_$(Cluster)_$(Process).error
+
 output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_l0_$(l_0)_$(Cluster)_$(Process).log
+
 queue

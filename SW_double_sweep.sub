@@ -10,6 +10,8 @@ mem = $(D)*$(D)*$(D)*$(D)*2*2*16/1e9
 
 request_memory = $(mem)G
 
++RequestRuntime = 144 * $(HOUR)
+
 max_retries = 5
 
 should_transfer_files = IF_NEEDED
