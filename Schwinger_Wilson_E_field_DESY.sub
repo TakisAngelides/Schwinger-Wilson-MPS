@@ -8,6 +8,14 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schw
 
 should_transfer_files = IF_NEEDED
 
+mem = $(D)*$(D)*$(D)*$(D)*2*2*16/1e9
+
+request_memory = $(mem)G
+
++RequestRuntime = 144 * $(HOUR)
+
+max_retries = 5
+
 output = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_l_$(l)_choice_$(choice)_$(Cluster)_$(Process).out
 
 error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_l_$(l)_choice_$(choice)_$(Cluster)_$(Process).error
