@@ -419,7 +419,7 @@ mg = 5.0
 x = 10.0
 ms = 20
 acc = 10^(-8)
-lambda = 100.0
+lambda = 0.0
 d = 2
 avg_E_field_list = []
 
