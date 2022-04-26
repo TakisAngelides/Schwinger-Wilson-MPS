@@ -6,7 +6,7 @@ arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilso
 
 transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
 
-mem = $(D)*$(D)*$(D)*$(D)*64/1e-9
+mem = $(D)*$(D)*$(D)*$(D)*64/1e9
 
 request_memory = $(mem)G
 
@@ -20,7 +20,8 @@ error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_l0_$(l0)_
 
 log = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_l0_$(l0)_choice_$(choice)_$(Cluster)_$(Process).log
 
-queue mg, l0 in -0.7,0.0
+queue mg, l0 in (
+-0.7,0.0
 -0.6,0.0
 -0.590625,0.0
 -0.5812499999999999,0.0
@@ -340,3 +341,4 @@ queue mg, l0 in -0.7,0.0
 0.4,0.57
 0.45,0.57
 0.5,0.57
+)
