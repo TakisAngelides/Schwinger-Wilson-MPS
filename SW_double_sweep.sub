@@ -6,7 +6,7 @@ arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilso
 
 transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/run_Schwinger_Wilson.jl
 
-mem = $(D)*$(D)*$(D)*$(D)*64/1e9
+mem = $(D)*$(D)*$(D)*$(D)*2*2*16/1e9
 
 request_memory = $(mem)G
 
