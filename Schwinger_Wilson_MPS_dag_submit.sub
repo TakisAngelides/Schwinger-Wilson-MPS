@@ -10,7 +10,7 @@ request_memory = $(mem)G
 
 max_retries = 5
 
-+RequestRuntime = 144 * $(HOUR)
++RequestRuntime = 144*60*60
 
 should_transfer_files = IF_NEEDED
 
