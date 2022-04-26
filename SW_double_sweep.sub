@@ -20,7 +20,7 @@ error = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_choice_$(
 
 log = /afs/ifh.de/user/a/angeltak/logs/N_$(N)_x_$(x)_D_$(D)_mg_$(mg)_choice_$(choice)_$(Cluster)_$(Process).log
 
-queue mg,l_0 from (
+queue mg,l_0 in (
     -0.7,0.0
     -0.6,0.0
     -0.590625,0.0
