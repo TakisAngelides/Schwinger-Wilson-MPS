@@ -411,33 +411,33 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Checking the first order phase transition
 
-theta_list = LinRange(0, 2*pi, 10)
+# theta_list = LinRange(0, 2*pi, 10)
 
-N = 64
-D = 60
-mg = 5.0
-x = 10.0
-ms = 20
-acc = 10^(-8)
-lambda = 0.0
-d = 2
-avg_E_field_list = []
+# N = 64
+# D = 60
+# mg = 5.0
+# x = 10.0
+# ms = 20
+# acc = 10^(-8)
+# lambda = 0.0
+# d = 2
+# avg_E_field_list = []
 
-for theta in theta_list
+# for theta in theta_list
 
-    println(theta)
+#     println(theta)
 
-    l_0 = theta/(2*pi)
-    mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-    E_0, mps, ns = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
-    append!(avg_E_field_list, real(mean(get_electric_field_configuration(l_0, mps))))
+#     l_0 = theta/(2*pi)
+#     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+#     E_0, mps, ns = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+#     append!(avg_E_field_list, real(mean(get_electric_field_configuration(l_0, mps))))
 
-end
+# end
 
-display(avg_E_field_list)
-plot(theta_list, avg_E_field_list)
-scatter!(theta_list, avg_E_field_list)
-savefig("avg_E_vs_theta.pdf")
+# display(avg_E_field_list)
+# plot(theta_list, avg_E_field_list)
+# scatter!(theta_list, avg_E_field_list)
+# savefig("avg_E_vs_theta.pdf")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -467,7 +467,7 @@ savefig("avg_E_vs_theta.pdf")
 
 # Checking if the Schwinger Wilson spectrum is the same for theta = 0 m/g = -0.125 and theta = pi m/g = 0.125
 
-# mpo_1 = get_Schwinger_Wilson_MPO(4, 0.0, 2.0, 100.0, -0.125)
+# mpo_1 = get_Schwinger_Wilson_MPO(4, 0.0, 1.0, 100.0, -0.125)
 # mpo_2 = get_Schwinger_Wilson_MPO(4, 0.5, 2.0, 100.0, 0.125)
 
 # matrix_1 = mpo_to_matrix(mpo_1)
@@ -476,5 +476,9 @@ savefig("avg_E_vs_theta.pdf")
 # display(eigvals(matrix_1))
 # display(eigvals(matrix_2))
 # println(eigvals(matrix_1) == eigvals(matrix_2))
+
+# mpo_2 = get_Schwinger_Wilson_MPO_Stefan(4, 0.0, 1.0, 100.0, -0.125)
+# m_2 = mpo_to_matrix(mpo_2)
+# display(eigvals(m_2))
 
 # ----------------------------------------------------------------------------------------------------------------------------------
