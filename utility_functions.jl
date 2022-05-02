@@ -1159,7 +1159,7 @@ function mps_to_chiral_condensate(mg::Float64, x::Float64, N::Int64, D::Int64, l
 
     cc_mpo = get_chiral_condensate_MPO(N)
 
-    cc = get_mpo_expectation_value(mps, cc_mpo)
+    cc = real(get_mpo_expectation_value(mps, cc_mpo))
 
     path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Chiral Condensate Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)"
 
