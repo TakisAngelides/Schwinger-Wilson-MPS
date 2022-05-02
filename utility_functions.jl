@@ -1147,6 +1147,32 @@ function mps_to_entropy_save_file(mg::Float64, x::Float64, N::Int64, D::Int64, l
 
 end
 
+function mps_to_chiral_condensate(mg::Float64, x::Float64, N::Int64, D::Int64, l_0::Float64, lambda)
+
+    """
+    Inputs:
+    
+    N = number of spin sites
+    """
+
+    mps = h5_to_mps(N, D, mg, x, l_0, lambda)
+
+    cc_mpo = get_chiral_condensate_MPO(N)
+
+    cc = get_mpo_expectation_value(mps, cc_mpo)
+
+    path = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson Chiral Condensate Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)"
+
+    if !isdir(path)
+        mkdir(path)
+    end
+        
+    open(path*"/chiral_condensate_mass_data_Schwinger_$(mg)_$(x)_$(N)_$(D)_$(l_0).txt", "w") do file
+        write(file, "$(mg),$(cc)\n")
+    end
+
+end
+
 function get_spin_configuration(mps::Vector{Array{ComplexF64}})
 
     N_spin = length(mps)
