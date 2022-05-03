@@ -501,7 +501,7 @@ function variational_ground_state_MPS(N::Int64, d::Int64, D::Int64, mpo::Vector{
         
     Inputs:
 
-    N = number of lattice sites (Integer)
+    N = number of spin lattice sites (Integer)
 
     d = number of degrees of freedom on each site - eg d = 2 if we have only spin up, spin down (Integer)
 

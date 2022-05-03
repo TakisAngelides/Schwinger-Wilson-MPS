@@ -632,7 +632,7 @@ function get_pseudo_momentum_MPO(N::Int64, x::Float64)::Vector{Array{ComplexF64}
     N = number of physical lattice sites, as opposed to spin lattice sites which is 2N
     """
 
-    mpo = Vector{Array{ComplexF64}}(undef, N)
+    mpo = Vector{Array{ComplexF64}}(undef, 2*N)
 
     D = 6
     d = 2

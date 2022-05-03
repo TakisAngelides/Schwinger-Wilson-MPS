@@ -367,6 +367,26 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Testing pseudo momentum operator mpo
+
+# N = 10
+# D = 20
+# mg = 0.125
+# x = 1.0
+# ms = 100
+# acc = 10^(-10)
+# lambda = 100.0
+# l_0 = 100.0
+# d = 2
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+# E_0, mps, ns = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+# momentum_mpo = get_pseudo_momentum_MPO(N, x)
+# E_1, mps_1, ns_1 = variational_first_excited_MPS(2*N, d, D, mpo, acc, ms, mps, E_0)
+# display(get_mpo_expectation_value(mps, momentum_mpo))
+# display(get_mpo_expectation_value(mps_1, momentum_mpo))
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Testing the gauge_mps! function
 
 # N = 82
