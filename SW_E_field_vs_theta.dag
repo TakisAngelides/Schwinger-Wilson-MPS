@@ -1,561 +1,561 @@
 CONFIG dagman.config
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20 N="28" x="2.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N28x20mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40 N="28" x="2.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20 N="40" x="4.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N40x40mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40 N="40" x="4.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20 N="50" x="6.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N50x60mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40 N="50" x="6.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20 N="58" x="8.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-JOB N58x80mg50D40 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40 N="58" x="8.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-PARENT N28x20mg50D20 CHILD N28x20mg50D40
-PARENT N40x40mg50D20 CHILD N40x40mg50D40
-PARENT N50x60mg50D20 CHILD N50x60mg50D40
-PARENT N58x80mg50D20 CHILD N58x80mg50D40
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N28x20mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N40x40mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N50x60mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
-SCRIPT HOLD N58x80mg50D40 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+JOB N28x20mg50D20l000 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l00 N="28" x="2.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l000 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l00 N="28" x="2.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l000 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l00 N="40" x="4.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l000 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l00 N="40" x="4.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l000 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l00 N="50" x="6.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l000 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l00 N="50" x="6.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l000 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l00 N="58" x="8.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l000 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l00 N="58" x="8.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00105 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0105 N="28" x="2.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00105 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0105 N="28" x="2.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00105 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0105 N="40" x="4.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00105 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0105 N="40" x="4.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00105 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0105 N="50" x="6.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00105 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0105 N="50" x="6.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00105 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0105 N="58" x="8.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00105 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0105 N="58" x="8.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00211 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0211 N="28" x="2.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00211 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0211 N="28" x="2.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00211 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0211 N="40" x="4.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00211 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0211 N="40" x="4.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00211 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0211 N="50" x="6.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00211 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0211 N="50" x="6.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00211 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0211 N="58" x="8.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00211 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0211 N="58" x="8.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00316 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0316 N="28" x="2.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00316 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0316 N="28" x="2.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00316 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0316 N="40" x="4.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00316 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0316 N="40" x="4.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00316 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0316 N="50" x="6.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00316 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0316 N="50" x="6.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00316 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0316 N="58" x="8.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00316 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0316 N="58" x="8.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00421 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0421 N="28" x="2.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00421 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0421 N="28" x="2.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00421 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0421 N="40" x="4.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00421 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0421 N="40" x="4.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00421 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0421 N="50" x="6.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00421 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0421 N="50" x="6.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00421 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0421 N="58" x="8.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00421 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0421 N="58" x="8.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00526 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0526 N="28" x="2.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00526 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0526 N="28" x="2.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00526 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0526 N="40" x="4.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00526 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0526 N="40" x="4.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00526 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0526 N="50" x="6.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00526 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0526 N="50" x="6.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00526 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0526 N="58" x="8.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00526 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0526 N="58" x="8.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00632 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0632 N="28" x="2.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00632 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0632 N="28" x="2.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00632 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0632 N="40" x="4.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00632 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0632 N="40" x="4.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00632 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0632 N="50" x="6.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00632 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0632 N="50" x="6.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00632 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0632 N="58" x="8.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00632 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0632 N="58" x="8.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00737 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0737 N="28" x="2.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00737 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0737 N="28" x="2.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00737 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0737 N="40" x="4.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00737 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0737 N="40" x="4.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00737 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0737 N="50" x="6.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00737 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0737 N="50" x="6.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00737 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0737 N="58" x="8.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00737 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0737 N="58" x="8.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00842 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0842 N="28" x="2.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00842 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0842 N="28" x="2.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00842 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0842 N="40" x="4.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00842 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0842 N="40" x="4.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00842 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0842 N="50" x="6.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00842 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0842 N="50" x="6.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00842 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0842 N="58" x="8.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00842 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0842 N="58" x="8.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l00947 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l0947 N="28" x="2.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l00947 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l0947 N="28" x="2.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l00947 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l0947 N="40" x="4.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l00947 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l0947 N="40" x="4.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l00947 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l0947 N="50" x="6.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l00947 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l0947 N="50" x="6.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l00947 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l0947 N="58" x="8.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l00947 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l0947 N="58" x="8.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01053 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1053 N="28" x="2.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01053 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1053 N="28" x="2.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01053 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1053 N="40" x="4.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01053 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1053 N="40" x="4.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01053 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1053 N="50" x="6.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01053 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1053 N="50" x="6.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01053 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1053 N="58" x="8.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01053 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1053 N="58" x="8.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01158 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1158 N="28" x="2.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01158 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1158 N="28" x="2.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01158 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1158 N="40" x="4.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01158 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1158 N="40" x="4.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01158 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1158 N="50" x="6.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01158 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1158 N="50" x="6.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01158 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1158 N="58" x="8.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01158 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1158 N="58" x="8.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01263 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1263 N="28" x="2.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01263 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1263 N="28" x="2.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01263 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1263 N="40" x="4.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01263 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1263 N="40" x="4.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01263 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1263 N="50" x="6.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01263 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1263 N="50" x="6.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01263 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1263 N="58" x="8.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01263 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1263 N="58" x="8.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01368 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1368 N="28" x="2.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01368 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1368 N="28" x="2.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01368 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1368 N="40" x="4.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01368 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1368 N="40" x="4.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01368 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1368 N="50" x="6.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01368 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1368 N="50" x="6.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01368 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1368 N="58" x="8.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01368 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1368 N="58" x="8.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01474 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1474 N="28" x="2.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01474 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1474 N="28" x="2.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01474 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1474 N="40" x="4.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01474 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1474 N="40" x="4.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01474 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1474 N="50" x="6.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01474 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1474 N="50" x="6.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01474 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1474 N="58" x="8.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01474 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1474 N="58" x="8.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01579 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1579 N="28" x="2.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01579 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1579 N="28" x="2.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01579 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1579 N="40" x="4.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01579 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1579 N="40" x="4.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01579 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1579 N="50" x="6.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01579 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1579 N="50" x="6.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01579 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1579 N="58" x="8.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01579 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1579 N="58" x="8.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01684 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1684 N="28" x="2.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01684 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1684 N="28" x="2.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01684 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1684 N="40" x="4.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01684 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1684 N="40" x="4.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01684 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1684 N="50" x="6.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01684 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1684 N="50" x="6.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01684 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1684 N="58" x="8.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01684 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1684 N="58" x="8.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01789 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1789 N="28" x="2.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01789 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1789 N="28" x="2.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01789 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1789 N="40" x="4.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01789 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1789 N="40" x="4.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01789 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1789 N="50" x="6.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01789 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1789 N="50" x="6.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01789 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1789 N="58" x="8.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01789 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1789 N="58" x="8.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l01895 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l1895 N="28" x="2.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l01895 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l1895 N="28" x="2.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l01895 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l1895 N="40" x="4.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l01895 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l1895 N="40" x="4.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l01895 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l1895 N="50" x="6.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l01895 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l1895 N="50" x="6.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l01895 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l1895 N="58" x="8.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l01895 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l1895 N="58" x="8.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D20l020 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D20l20 N="28" x="2.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N28x20mg50D40l020 SW_E_field_vs_theta_dag_submit.sub
+VARS N28x20mg50D40l20 N="28" x="2.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D20l020 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D20l20 N="40" x="4.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N40x40mg50D40l020 SW_E_field_vs_theta_dag_submit.sub
+VARS N40x40mg50D40l20 N="40" x="4.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D20l020 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D20l20 N="50" x="6.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N50x60mg50D40l020 SW_E_field_vs_theta_dag_submit.sub
+VARS N50x60mg50D40l20 N="50" x="6.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D20l020 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D20l20 N="58" x="8.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+JOB N58x80mg50D40l020 SW_E_field_vs_theta_dag_submit.sub
+VARS N58x80mg50D40l20 N="58" x="8.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+PARENT N28x20mg50D20l00 CHILD N28x20mg50D40l000
+PARENT N40x40mg50D20l00 CHILD N40x40mg50D40l000
+PARENT N50x60mg50D20l00 CHILD N50x60mg50D40l000
+PARENT N58x80mg50D20l00 CHILD N58x80mg50D40l000
+PARENT N28x20mg50D20l0105 CHILD N28x20mg50D40l00105
+PARENT N40x40mg50D20l0105 CHILD N40x40mg50D40l00105
+PARENT N50x60mg50D20l0105 CHILD N50x60mg50D40l00105
+PARENT N58x80mg50D20l0105 CHILD N58x80mg50D40l00105
+PARENT N28x20mg50D20l0211 CHILD N28x20mg50D40l00211
+PARENT N40x40mg50D20l0211 CHILD N40x40mg50D40l00211
+PARENT N50x60mg50D20l0211 CHILD N50x60mg50D40l00211
+PARENT N58x80mg50D20l0211 CHILD N58x80mg50D40l00211
+PARENT N28x20mg50D20l0316 CHILD N28x20mg50D40l00316
+PARENT N40x40mg50D20l0316 CHILD N40x40mg50D40l00316
+PARENT N50x60mg50D20l0316 CHILD N50x60mg50D40l00316
+PARENT N58x80mg50D20l0316 CHILD N58x80mg50D40l00316
+PARENT N28x20mg50D20l0421 CHILD N28x20mg50D40l00421
+PARENT N40x40mg50D20l0421 CHILD N40x40mg50D40l00421
+PARENT N50x60mg50D20l0421 CHILD N50x60mg50D40l00421
+PARENT N58x80mg50D20l0421 CHILD N58x80mg50D40l00421
+PARENT N28x20mg50D20l0526 CHILD N28x20mg50D40l00526
+PARENT N40x40mg50D20l0526 CHILD N40x40mg50D40l00526
+PARENT N50x60mg50D20l0526 CHILD N50x60mg50D40l00526
+PARENT N58x80mg50D20l0526 CHILD N58x80mg50D40l00526
+PARENT N28x20mg50D20l0632 CHILD N28x20mg50D40l00632
+PARENT N40x40mg50D20l0632 CHILD N40x40mg50D40l00632
+PARENT N50x60mg50D20l0632 CHILD N50x60mg50D40l00632
+PARENT N58x80mg50D20l0632 CHILD N58x80mg50D40l00632
+PARENT N28x20mg50D20l0737 CHILD N28x20mg50D40l00737
+PARENT N40x40mg50D20l0737 CHILD N40x40mg50D40l00737
+PARENT N50x60mg50D20l0737 CHILD N50x60mg50D40l00737
+PARENT N58x80mg50D20l0737 CHILD N58x80mg50D40l00737
+PARENT N28x20mg50D20l0842 CHILD N28x20mg50D40l00842
+PARENT N40x40mg50D20l0842 CHILD N40x40mg50D40l00842
+PARENT N50x60mg50D20l0842 CHILD N50x60mg50D40l00842
+PARENT N58x80mg50D20l0842 CHILD N58x80mg50D40l00842
+PARENT N28x20mg50D20l0947 CHILD N28x20mg50D40l00947
+PARENT N40x40mg50D20l0947 CHILD N40x40mg50D40l00947
+PARENT N50x60mg50D20l0947 CHILD N50x60mg50D40l00947
+PARENT N58x80mg50D20l0947 CHILD N58x80mg50D40l00947
+PARENT N28x20mg50D20l1053 CHILD N28x20mg50D40l01053
+PARENT N40x40mg50D20l1053 CHILD N40x40mg50D40l01053
+PARENT N50x60mg50D20l1053 CHILD N50x60mg50D40l01053
+PARENT N58x80mg50D20l1053 CHILD N58x80mg50D40l01053
+PARENT N28x20mg50D20l1158 CHILD N28x20mg50D40l01158
+PARENT N40x40mg50D20l1158 CHILD N40x40mg50D40l01158
+PARENT N50x60mg50D20l1158 CHILD N50x60mg50D40l01158
+PARENT N58x80mg50D20l1158 CHILD N58x80mg50D40l01158
+PARENT N28x20mg50D20l1263 CHILD N28x20mg50D40l01263
+PARENT N40x40mg50D20l1263 CHILD N40x40mg50D40l01263
+PARENT N50x60mg50D20l1263 CHILD N50x60mg50D40l01263
+PARENT N58x80mg50D20l1263 CHILD N58x80mg50D40l01263
+PARENT N28x20mg50D20l1368 CHILD N28x20mg50D40l01368
+PARENT N40x40mg50D20l1368 CHILD N40x40mg50D40l01368
+PARENT N50x60mg50D20l1368 CHILD N50x60mg50D40l01368
+PARENT N58x80mg50D20l1368 CHILD N58x80mg50D40l01368
+PARENT N28x20mg50D20l1474 CHILD N28x20mg50D40l01474
+PARENT N40x40mg50D20l1474 CHILD N40x40mg50D40l01474
+PARENT N50x60mg50D20l1474 CHILD N50x60mg50D40l01474
+PARENT N58x80mg50D20l1474 CHILD N58x80mg50D40l01474
+PARENT N28x20mg50D20l1579 CHILD N28x20mg50D40l01579
+PARENT N40x40mg50D20l1579 CHILD N40x40mg50D40l01579
+PARENT N50x60mg50D20l1579 CHILD N50x60mg50D40l01579
+PARENT N58x80mg50D20l1579 CHILD N58x80mg50D40l01579
+PARENT N28x20mg50D20l1684 CHILD N28x20mg50D40l01684
+PARENT N40x40mg50D20l1684 CHILD N40x40mg50D40l01684
+PARENT N50x60mg50D20l1684 CHILD N50x60mg50D40l01684
+PARENT N58x80mg50D20l1684 CHILD N58x80mg50D40l01684
+PARENT N28x20mg50D20l1789 CHILD N28x20mg50D40l01789
+PARENT N40x40mg50D20l1789 CHILD N40x40mg50D40l01789
+PARENT N50x60mg50D20l1789 CHILD N50x60mg50D40l01789
+PARENT N58x80mg50D20l1789 CHILD N58x80mg50D40l01789
+PARENT N28x20mg50D20l1895 CHILD N28x20mg50D40l01895
+PARENT N40x40mg50D20l1895 CHILD N40x40mg50D40l01895
+PARENT N50x60mg50D20l1895 CHILD N50x60mg50D40l01895
+PARENT N58x80mg50D20l1895 CHILD N58x80mg50D40l01895
+PARENT N28x20mg50D20l20 CHILD N28x20mg50D40l020
+PARENT N40x40mg50D20l20 CHILD N40x40mg50D40l020
+PARENT N50x60mg50D20l20 CHILD N50x60mg50D40l020
+PARENT N58x80mg50D20l20 CHILD N58x80mg50D40l020
+SCRIPT HOLD N28x20mg50D20l00 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l00 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l00 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l00 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l00 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l00 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l00 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l00 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0105 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0105 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0105 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0105 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0105 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0105 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0105 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0105 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.105 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0211 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0211 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0211 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0211 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0211 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0211 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0211 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0211 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.211 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0316 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0316 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0316 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0316 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0316 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0316 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0316 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0316 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.316 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0421 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0421 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0421 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0421 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0421 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0421 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0421 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0421 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.421 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0526 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0526 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0526 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0526 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0526 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0526 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0526 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0526 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.526 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0632 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0632 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0632 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0632 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0632 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0632 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0632 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0632 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.632 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0737 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0737 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0737 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0737 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0737 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0737 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0737 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0737 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.737 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0842 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0842 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0842 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0842 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0842 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0842 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0842 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0842 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.842 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l0947 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l0947 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l0947 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l0947 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l0947 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l0947 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l0947 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l0947 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=0.947 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1053 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1053 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1053 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1053 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1053 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1053 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1053 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1053 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.053 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1158 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1158 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1158 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1158 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1158 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1158 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1158 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1158 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.158 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1263 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1263 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1263 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1263 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1263 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1263 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1263 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1263 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.263 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1368 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1368 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1368 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1368 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1368 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1368 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1368 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1368 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.368 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1474 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1474 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1474 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1474 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1474 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1474 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1474 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1474 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.474 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1579 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1579 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1579 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1579 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1579 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1579 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1579 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1579 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.579 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1684 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1684 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1684 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1684 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1684 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1684 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1684 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1684 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.684 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1789 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1789 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1789 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1789 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1789 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1789 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1789 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1789 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.789 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l1895 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l1895 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l1895 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l1895 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l1895 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l1895 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l1895 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l1895 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=1.895 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D20l20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=20 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N28x20mg50D40l20 Schwinger_Wilson_MPS_HOLD_dag.sub N=28 x=2.0 mg=5.0 D=40 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D20l20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=20 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N40x40mg50D40l20 Schwinger_Wilson_MPS_HOLD_dag.sub N=40 x=4.0 mg=5.0 D=40 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D20l20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=20 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N50x60mg50D40l20 Schwinger_Wilson_MPS_HOLD_dag.sub N=50 x=6.0 mg=5.0 D=40 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D20l20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=20 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
+SCRIPT HOLD N58x80mg50D40l20 Schwinger_Wilson_MPS_HOLD_dag.sub N=58 x=8.0 mg=5.0 D=40 l_0=2.0 lambda=100.0 acc=1e-08 ms=100 mem=1
