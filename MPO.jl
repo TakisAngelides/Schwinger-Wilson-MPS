@@ -623,3 +623,55 @@ function get_chiral_condensate_MPO(N::Int64)::Vector{Array{ComplexF64}}
 
     return mpo
 end
+
+function get_pseudo_momentum_MPO(N::Int64, x::Float64)::Vector{Array{ComplexF64}}
+
+    """
+    Inputs:
+
+    N = number of physical lattice sites, as opposed to spin lattice sites which is 2N
+    """
+
+    mpo = Vector{Array{ComplexF64}}(undef, N)
+
+    D = 6
+    d = 2
+    I = [1.0+0.0im 0.0+0.0im; 0.0+0.0im 1.0+0.0im]
+    PLUS = [0.0+0.0im 1.0+0.0im; 0.0+0.0im 0.0+0.0im]
+    MINUS = [0.0+0.0im 0.0+0.0im; 1.0+0.0im 0.0+0.0im]
+    Z = [1.0+0.0im 0.0+0.0im; 0.0+0.0im -1.0+0.0im]
+
+    tensor_first = zeros(ComplexF64, 1, D, d, d)
+    tensor_first[1,4,:,:] = MINUS
+    tensor_first[1,5,:,:] = PLUS
+    tensor_first[1,D,:,:] = I
+
+    tensor_last = zeros(ComplexF64, D, 1, d, d)
+    tensor_last[1,1,:,:] = I
+    tensor_last[2,1,:,:] = 1im * x * MINUS
+    tensor_last[3,1,:,:] = -1im * x * PLUS
+
+    tensor = zeros(ComplexF64, D, D, d, d)
+    tensor[1,1,:,:] = I
+    tensor[2,1,:,:] = 1im * x * MINUS
+    tensor[3,1,:,:] = -1im * x * PLUS
+    tensor[3,1,:,:] = -1im * x * PLUS
+    tensor[D,4,:,:] = MINUS
+    tensor[D,5,:,:] = PLUS
+    tensor[5,2,:,:] = Z
+    tensor[4,3,:,:] = Z
+    tensor[D,D,:,:] = I
+
+    for i in 1:2*N
+        if i == 1
+            mpo[i] = tensor_first
+        elseif i == 2*N
+            mpo[i] = tensor_last
+        else
+            mpo[i] = tensor
+        end
+    end
+
+    return mpo
+
+end

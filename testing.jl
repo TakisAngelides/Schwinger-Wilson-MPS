@@ -6,6 +6,7 @@ using Plots
 using LaTeXStrings
 using Test
 using HDF5
+using ProfileView
 include("MPO.jl")
 include("variational_first_excited_state_MPS_algorithm.jl")
 
@@ -295,6 +296,23 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # end
 
 # wrapper()
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Checking time for each line in the variational algorithm
+
+# N = 10
+# x = 1.0
+# m_g_ratio = 0.125
+# l_0 = 0.3 # this is theta/2pi
+# lambda = 100.0
+# acc = 10^(-10)
+# max_sweeps = 100
+# d = 2
+# D = 10
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
+
+# VSCodeServer.@profview E_0_1, mps_ground_1, sn_1 = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps) # Gets a flamegraph showing the amount of time for each line
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
