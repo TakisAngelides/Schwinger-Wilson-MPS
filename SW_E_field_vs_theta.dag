@@ -1,324 +1,324 @@
 CONFIG dagman.config
 JOB N28x20mg50D20l00 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l00 N="28" x="2.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l00 N="28" x="2.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l00 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l00 N="28" x="2.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l00 N="28" x="2.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l00 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l00 N="40" x="4.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l00 N="40" x="4.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l00 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l00 N="40" x="4.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l00 N="40" x="4.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l00 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l00 N="50" x="6.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l00 N="50" x="6.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l00 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l00 N="50" x="6.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l00 N="50" x="6.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l00 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l00 N="58" x="8.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l00 N="58" x="8.0" mg="5.0" D="20" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l00 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l00 N="58" x="8.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l00 N="58" x="8.0" mg="5.0" D="40" l_0="0.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0105 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0105 N="28" x="2.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0105 N="28" x="2.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0105 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0105 N="28" x="2.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0105 N="28" x="2.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0105 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0105 N="40" x="4.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0105 N="40" x="4.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0105 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0105 N="40" x="4.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0105 N="40" x="4.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0105 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0105 N="50" x="6.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0105 N="50" x="6.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0105 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0105 N="50" x="6.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0105 N="50" x="6.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0105 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0105 N="58" x="8.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0105 N="58" x="8.0" mg="5.0" D="20" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0105 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0105 N="58" x="8.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0105 N="58" x="8.0" mg="5.0" D="40" l_0="0.105" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0211 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0211 N="28" x="2.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0211 N="28" x="2.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0211 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0211 N="28" x="2.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0211 N="28" x="2.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0211 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0211 N="40" x="4.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0211 N="40" x="4.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0211 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0211 N="40" x="4.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0211 N="40" x="4.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0211 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0211 N="50" x="6.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0211 N="50" x="6.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0211 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0211 N="50" x="6.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0211 N="50" x="6.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0211 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0211 N="58" x="8.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0211 N="58" x="8.0" mg="5.0" D="20" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0211 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0211 N="58" x="8.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0211 N="58" x="8.0" mg="5.0" D="40" l_0="0.211" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0316 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0316 N="28" x="2.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0316 N="28" x="2.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0316 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0316 N="28" x="2.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0316 N="28" x="2.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0316 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0316 N="40" x="4.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0316 N="40" x="4.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0316 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0316 N="40" x="4.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0316 N="40" x="4.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0316 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0316 N="50" x="6.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0316 N="50" x="6.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0316 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0316 N="50" x="6.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0316 N="50" x="6.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0316 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0316 N="58" x="8.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0316 N="58" x="8.0" mg="5.0" D="20" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0316 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0316 N="58" x="8.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0316 N="58" x="8.0" mg="5.0" D="40" l_0="0.316" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0421 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0421 N="28" x="2.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0421 N="28" x="2.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0421 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0421 N="28" x="2.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0421 N="28" x="2.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0421 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0421 N="40" x="4.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0421 N="40" x="4.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0421 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0421 N="40" x="4.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0421 N="40" x="4.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0421 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0421 N="50" x="6.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0421 N="50" x="6.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0421 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0421 N="50" x="6.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0421 N="50" x="6.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0421 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0421 N="58" x="8.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0421 N="58" x="8.0" mg="5.0" D="20" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0421 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0421 N="58" x="8.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0421 N="58" x="8.0" mg="5.0" D="40" l_0="0.421" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0526 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0526 N="28" x="2.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0526 N="28" x="2.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0526 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0526 N="28" x="2.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0526 N="28" x="2.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0526 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0526 N="40" x="4.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0526 N="40" x="4.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0526 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0526 N="40" x="4.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0526 N="40" x="4.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0526 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0526 N="50" x="6.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0526 N="50" x="6.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0526 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0526 N="50" x="6.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0526 N="50" x="6.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0526 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0526 N="58" x="8.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0526 N="58" x="8.0" mg="5.0" D="20" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0526 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0526 N="58" x="8.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0526 N="58" x="8.0" mg="5.0" D="40" l_0="0.526" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0632 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0632 N="28" x="2.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0632 N="28" x="2.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0632 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0632 N="28" x="2.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0632 N="28" x="2.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0632 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0632 N="40" x="4.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0632 N="40" x="4.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0632 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0632 N="40" x="4.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0632 N="40" x="4.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0632 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0632 N="50" x="6.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0632 N="50" x="6.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0632 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0632 N="50" x="6.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0632 N="50" x="6.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0632 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0632 N="58" x="8.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0632 N="58" x="8.0" mg="5.0" D="20" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0632 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0632 N="58" x="8.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0632 N="58" x="8.0" mg="5.0" D="40" l_0="0.632" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0737 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0737 N="28" x="2.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0737 N="28" x="2.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0737 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0737 N="28" x="2.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0737 N="28" x="2.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0737 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0737 N="40" x="4.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0737 N="40" x="4.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0737 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0737 N="40" x="4.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0737 N="40" x="4.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0737 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0737 N="50" x="6.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0737 N="50" x="6.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0737 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0737 N="50" x="6.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0737 N="50" x="6.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0737 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0737 N="58" x="8.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0737 N="58" x="8.0" mg="5.0" D="20" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0737 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0737 N="58" x="8.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0737 N="58" x="8.0" mg="5.0" D="40" l_0="0.737" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0842 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0842 N="28" x="2.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0842 N="28" x="2.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0842 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0842 N="28" x="2.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0842 N="28" x="2.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0842 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0842 N="40" x="4.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0842 N="40" x="4.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0842 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0842 N="40" x="4.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0842 N="40" x="4.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0842 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0842 N="50" x="6.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0842 N="50" x="6.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0842 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0842 N="50" x="6.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0842 N="50" x="6.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0842 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0842 N="58" x="8.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0842 N="58" x="8.0" mg="5.0" D="20" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0842 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0842 N="58" x="8.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0842 N="58" x="8.0" mg="5.0" D="40" l_0="0.842" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l0947 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l0947 N="28" x="2.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l0947 N="28" x="2.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l0947 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l0947 N="28" x="2.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l0947 N="28" x="2.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l0947 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l0947 N="40" x="4.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l0947 N="40" x="4.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l0947 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l0947 N="40" x="4.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l0947 N="40" x="4.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l0947 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l0947 N="50" x="6.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l0947 N="50" x="6.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l0947 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l0947 N="50" x="6.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l0947 N="50" x="6.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l0947 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l0947 N="58" x="8.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l0947 N="58" x="8.0" mg="5.0" D="20" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l0947 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l0947 N="58" x="8.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l0947 N="58" x="8.0" mg="5.0" D="40" l_0="0.947" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1053 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1053 N="28" x="2.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1053 N="28" x="2.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1053 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1053 N="28" x="2.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1053 N="28" x="2.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1053 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1053 N="40" x="4.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1053 N="40" x="4.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1053 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1053 N="40" x="4.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1053 N="40" x="4.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1053 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1053 N="50" x="6.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1053 N="50" x="6.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1053 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1053 N="50" x="6.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1053 N="50" x="6.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1053 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1053 N="58" x="8.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1053 N="58" x="8.0" mg="5.0" D="20" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1053 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1053 N="58" x="8.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1053 N="58" x="8.0" mg="5.0" D="40" l_0="1.053" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1158 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1158 N="28" x="2.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1158 N="28" x="2.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1158 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1158 N="28" x="2.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1158 N="28" x="2.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1158 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1158 N="40" x="4.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1158 N="40" x="4.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1158 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1158 N="40" x="4.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1158 N="40" x="4.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1158 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1158 N="50" x="6.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1158 N="50" x="6.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1158 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1158 N="50" x="6.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1158 N="50" x="6.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1158 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1158 N="58" x="8.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1158 N="58" x="8.0" mg="5.0" D="20" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1158 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1158 N="58" x="8.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1158 N="58" x="8.0" mg="5.0" D="40" l_0="1.158" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1263 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1263 N="28" x="2.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1263 N="28" x="2.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1263 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1263 N="28" x="2.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1263 N="28" x="2.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1263 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1263 N="40" x="4.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1263 N="40" x="4.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1263 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1263 N="40" x="4.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1263 N="40" x="4.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1263 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1263 N="50" x="6.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1263 N="50" x="6.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1263 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1263 N="50" x="6.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1263 N="50" x="6.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1263 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1263 N="58" x="8.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1263 N="58" x="8.0" mg="5.0" D="20" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1263 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1263 N="58" x="8.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1263 N="58" x="8.0" mg="5.0" D="40" l_0="1.263" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1368 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1368 N="28" x="2.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1368 N="28" x="2.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1368 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1368 N="28" x="2.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1368 N="28" x="2.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1368 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1368 N="40" x="4.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1368 N="40" x="4.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1368 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1368 N="40" x="4.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1368 N="40" x="4.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1368 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1368 N="50" x="6.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1368 N="50" x="6.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1368 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1368 N="50" x="6.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1368 N="50" x="6.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1368 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1368 N="58" x="8.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1368 N="58" x="8.0" mg="5.0" D="20" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1368 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1368 N="58" x="8.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1368 N="58" x="8.0" mg="5.0" D="40" l_0="1.368" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1474 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1474 N="28" x="2.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1474 N="28" x="2.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1474 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1474 N="28" x="2.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1474 N="28" x="2.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1474 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1474 N="40" x="4.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1474 N="40" x="4.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1474 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1474 N="40" x="4.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1474 N="40" x="4.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1474 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1474 N="50" x="6.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1474 N="50" x="6.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1474 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1474 N="50" x="6.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1474 N="50" x="6.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1474 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1474 N="58" x="8.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1474 N="58" x="8.0" mg="5.0" D="20" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1474 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1474 N="58" x="8.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1474 N="58" x="8.0" mg="5.0" D="40" l_0="1.474" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1579 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1579 N="28" x="2.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1579 N="28" x="2.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1579 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1579 N="28" x="2.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1579 N="28" x="2.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1579 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1579 N="40" x="4.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1579 N="40" x="4.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1579 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1579 N="40" x="4.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1579 N="40" x="4.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1579 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1579 N="50" x="6.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1579 N="50" x="6.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1579 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1579 N="50" x="6.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1579 N="50" x="6.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1579 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1579 N="58" x="8.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1579 N="58" x="8.0" mg="5.0" D="20" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1579 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1579 N="58" x="8.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1579 N="58" x="8.0" mg="5.0" D="40" l_0="1.579" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1684 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1684 N="28" x="2.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1684 N="28" x="2.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1684 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1684 N="28" x="2.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1684 N="28" x="2.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1684 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1684 N="40" x="4.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1684 N="40" x="4.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1684 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1684 N="40" x="4.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1684 N="40" x="4.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1684 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1684 N="50" x="6.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1684 N="50" x="6.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1684 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1684 N="50" x="6.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1684 N="50" x="6.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1684 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1684 N="58" x="8.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1684 N="58" x="8.0" mg="5.0" D="20" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1684 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1684 N="58" x="8.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1684 N="58" x="8.0" mg="5.0" D="40" l_0="1.684" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1789 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1789 N="28" x="2.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1789 N="28" x="2.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1789 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1789 N="28" x="2.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1789 N="28" x="2.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1789 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1789 N="40" x="4.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1789 N="40" x="4.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1789 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1789 N="40" x="4.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1789 N="40" x="4.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1789 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1789 N="50" x="6.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1789 N="50" x="6.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1789 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1789 N="50" x="6.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1789 N="50" x="6.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1789 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1789 N="58" x="8.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1789 N="58" x="8.0" mg="5.0" D="20" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1789 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1789 N="58" x="8.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1789 N="58" x="8.0" mg="5.0" D="40" l_0="1.789" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l1895 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l1895 N="28" x="2.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l1895 N="28" x="2.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l1895 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l1895 N="28" x="2.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l1895 N="28" x="2.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l1895 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l1895 N="40" x="4.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l1895 N="40" x="4.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l1895 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l1895 N="40" x="4.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l1895 N="40" x="4.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l1895 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l1895 N="50" x="6.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l1895 N="50" x="6.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l1895 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l1895 N="50" x="6.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l1895 N="50" x="6.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l1895 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l1895 N="58" x="8.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l1895 N="58" x="8.0" mg="5.0" D="20" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l1895 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l1895 N="58" x="8.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l1895 N="58" x="8.0" mg="5.0" D="40" l_0="1.895" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D20l20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D20l20 N="28" x="2.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D20l20 N="28" x="2.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N28x20mg50D40l20 SW_E_field_vs_theta_dag_submit.sub
-VARS N28x20mg50D40l20 N="28" x="2.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N28x20mg50D40l20 N="28" x="2.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D20l20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D20l20 N="40" x="4.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D20l20 N="40" x="4.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N40x40mg50D40l20 SW_E_field_vs_theta_dag_submit.sub
-VARS N40x40mg50D40l20 N="40" x="4.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N40x40mg50D40l20 N="40" x="4.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D20l20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D20l20 N="50" x="6.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D20l20 N="50" x="6.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N50x60mg50D40l20 SW_E_field_vs_theta_dag_submit.sub
-VARS N50x60mg50D40l20 N="50" x="6.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N50x60mg50D40l20 N="50" x="6.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D20l20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D20l20 N="58" x="8.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D20l20 N="58" x="8.0" mg="5.0" D="20" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 JOB N58x80mg50D40l20 SW_E_field_vs_theta_dag_submit.sub
-VARS N58x80mg50D40l20 N="58" x="8.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="1" mem="1"
+VARS N58x80mg50D40l20 N="58" x="8.0" mg="5.0" D="40" l_0="2.0" lambda="100.0" acc="1e-08" ms="100" choice="2" mem="1"
 PARENT N28x20mg50D20l00 CHILD N28x20mg50D40l00
 PARENT N40x40mg50D20l00 CHILD N40x40mg50D40l00
 PARENT N50x60mg50D20l00 CHILD N50x60mg50D40l00
