@@ -249,8 +249,8 @@ function get_Schwinger_Wilson_MPO(N::Int64, l_0::Float64, x::Float64, lambda::Fl
                 mpo[n][1,1,:,:] = I
                 mpo[n][2,1,:,:] = MINUS
                 mpo[n][3,1,:,:] = PLUS
-                mpo[n][6,1,:,:] = 0.5*(N - n/2 + lambda).*Z
-                mpo[n][7,1,:,:] = C/(2*N).*I + l_0*(N-n/2).*Z
+                mpo[n][6,1,:,:] = 0.5*lambda.*Z
+                mpo[n][7,1,:,:] = C/(2*N).*I
 
             else
 
@@ -327,12 +327,12 @@ function get_Schwinger_Wilson_MPO_Stefan(N::Int64, l_0::Float64, x::Float64, lam
             if n == 2*N
 
                 mpo[n] = zeros((D, 1, d, d))
-                mpo[n][1,1,:,:] = ((1/(2*N))*((N-1)*l_0^2 + (1/4)*N*(N-1)+(1/2)*lambda*N)).*I + (l_0*c_p).*Z
+                mpo[n][1,1,:,:] = ((1/(2*N))*((N-1)*l_0^2 + (1/4)*N*(N-1)+(1/2)*lambda*N)).*I
                 mpo[n][2,1,:,:] = -2*1im*(m_g_ratio*sqrt(x) + x).*MINUS
                 mpo[n][3,1,:,:] = 2*1im*x.*MINUS
                 mpo[n][4,1,:,:] = 2*1im*(m_g_ratio*sqrt(x) + x).*PLUS
                 mpo[n][5,1,:,:] = -2*1im*x.*PLUS
-                mpo[n][6,1,:,:] = (1/2)*(c_p + lambda).*Z
+                mpo[n][6,1,:,:] = (1/2)*(lambda).*Z
                 mpo[n][7,1,:,:] = I
 
             else
@@ -378,6 +378,117 @@ function get_Schwinger_Wilson_MPO_Stefan(N::Int64, l_0::Float64, x::Float64, lam
                 mpo[n][6,7,:,:] = (1/2)*(c_p + lambda).*Z
                 mpo[n][7,7,:,:] = I
 
+            end
+
+        end
+    
+    end
+    
+    return mpo
+
+end
+
+function get_Schwinger_Wilson_general_r_MPO(N::Int64, l_0::Float64, x::Float64, lambda::Float64, m_g_ratio::Float64, r::Float64)::Vector{Array{ComplexF64}}
+
+    """
+    Builds the MPO for the 1+1 Schwinger model Hamiltonian using Wilson fermions with general r, Gauss' law and a Jordan Wigner transformation to 
+    put the Hamiltonian in full spin formulation. 
+
+    Inputs: 
+
+    N = number of physical lattice sites (Integer) - in the spin formulation the lattice is spread to 2N sites
+
+    l_0 = background electric field, theta/2pi (float) 
+
+    x = 1/(a^2 * g^2) where a is lattice spacing and g is coupling constant (float)
+
+    lambda = penalty term's lagrange multiplier (float)
+
+    m_g_ratio = mass of fermion divided by coupling constant = m/g (float)
+
+    Outputs:
+
+    mpo = MPO of Schwinger model Hamiltonian using Wilson fermions (Vector of tensors of complex numbers)
+
+    """
+
+    A = (1/(2*N))*((N-1)*l_0^2 + lambda*N/2 + N*(N-1)/4)
+    B = 1im*x*(r - 1)
+    C = 2*1im*(sqrt(x)*m_g_ratio + x*r)
+    D = 1im*x*(r + 1)
+    
+    D_bond = 7
+    d = 2
+
+    I = [1 0; 0 1]
+    Z = [1 0; 0 -1]
+    PLUS = [0 1; 0 0]
+    MINUS = [0 0; 1 0]
+
+    mpo = Vector{Array{ComplexF64}}(undef, 2*N) # An MPO is stored as a vector and each element of the vector stores a 4-tensor
+
+    for n in 1:2*N
+    
+        if n % 2 == 0
+        
+            if n == 2*N
+
+                mpo[n] = zeros((D_bond, 1, d, d))
+                mpo[n][1,1,:,:] = I
+                mpo[n][7,1,:,:] = A.*I
+                mpo[n][2,1,:,:] = MINUS
+                mpo[n][3,1,:,:] = PLUS
+                mpo[n][6,1,:,:] = 0.5*lambda.*Z
+
+            else
+
+                mpo[n] = zeros((D_bond, D_bond, d, d))
+                mpo[n][1,1,:,:] = I
+                mpo[n][7,7,:,:] = I
+                mpo[n][7,1,:,:] = A.*I + l_0*(N-n/2).*Z
+                mpo[n][6,6,:,:] = I
+                mpo[n][7,3,:,:] = B.*MINUS
+                mpo[n][2,1,:,:] = MINUS
+                mpo[n][7,2,:,:] = -B.*PLUS
+                mpo[n][3,1,:,:] = PLUS
+                mpo[n][4,4,:,:] = Z
+                mpo[n][5,5,:,:] = Z
+                mpo[n][6,1,:,:] = 0.5*(N-n/2+lambda).*Z
+                mpo[n][7,6,:,:] = Z 
+
+            end
+        else
+
+            if n == 1
+                
+                mpo[n] = zeros((1, D_bond, d, d))
+                mpo[n][1,7,:,:] = I
+                mpo[n][1,1,:,:] = A.*I + l_0*(N-n/2-0.5).*Z
+                mpo[n][1,3,:,:] = C.*MINUS
+                mpo[n][1,5,:,:] = -D.*MINUS
+                mpo[n][1,2,:,:] = -C.*PLUS
+                mpo[n][1,4,:,:] = D.*PLUS 
+                mpo[n][1,6,:,:] = Z
+                
+            
+            else
+
+                mpo[n] = zeros((D_bond, D_bond, d, d))
+                mpo[n][1,1,:,:] = I
+                mpo[n][7,7,:,:] = I
+                mpo[n][7,1,:,:] = A.*I + l_0*(N-n/2-0.5).*Z
+                mpo[n][6,6,:,:] = I
+                mpo[n][2,1,:,:] = MINUS
+                mpo[n][7,3,:,:] = C.*MINUS
+                mpo[n][7,5,:,:] = -D.*MINUS
+                mpo[n][3,1,:,:] = PLUS
+                mpo[n][7,2,:,:] = -C.*PLUS
+                mpo[n][7,4,:,:] = D.*PLUS
+                mpo[n][4,2,:,:] = Z
+                mpo[n][5,3,:,:] = Z
+                mpo[n][6,1,:,:] = 0.5*(N-n/2-0.5+lambda).*Z
+                mpo[n][7,6,:,:] = Z
+            
             end
 
         end
