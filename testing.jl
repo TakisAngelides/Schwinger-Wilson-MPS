@@ -542,7 +542,7 @@ acc = 10^(-8)
 lambda = 100.0
 l_0 = 0.5
 d = 2
-m_g_list = LinRange(0.0, 4.0, 10)
+m_g_list = LinRange(0.0, 7.0, 20)
 EE_pos_list = []
 EE_neg_list = []
 
