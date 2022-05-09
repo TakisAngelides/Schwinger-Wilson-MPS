@@ -60,7 +60,7 @@ function get_updated_site_first_excited(L::Array{ComplexF64}, W::Array{ComplexF6
     H, dimensions = get_Heff(L, W, R) # H is a matrix, H_(sigma_l,a_l-1,a_l)(sigma_l_dash,a_l-1_dash,a_l_dash)
     P = get_H_projection(left, mps_0_tensor, right)
     H_eff = H - E_0*P
-    E, M = eigsolve(H_eff, 1, :SR) # nev = 1 => it will return only 1 number of eigenvalues, SR => compute eigenvalues which have the smallest real part (ie the ground state energy and upwards depending on nev), also note M'*M = 1.0+0.0im
+    E, M = eigsolve(H_eff, 1, :SR, ishermitian = true) # nev = 1 => it will return only 1 number of eigenvalues, SR => compute eigenvalues which have the smallest real part (ie the ground state energy and upwards depending on nev), also note M'*M = 1.0+0.0im
     M = reshape(M[1], (dimensions[1], dimensions[2], dimensions[3])) # M is reshaped in the form sigma_i, a_i-1, a_i
     M = permutedims(M, (2,3,1)) # M is permuted into the form a_i-1, a_i, sigma_i
 
