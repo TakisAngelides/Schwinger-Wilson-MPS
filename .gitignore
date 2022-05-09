@@ -2,3 +2,4 @@
 Submit jobs on DESY cluster example.txt
 *.out
 *.err
+*.pdf

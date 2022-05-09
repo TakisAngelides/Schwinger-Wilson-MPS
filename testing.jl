@@ -532,42 +532,64 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Testing the KrylovKit eigsolve as well as general r = 1.0 MPO and original r = 1 MPO
+
+# N = 10
+# D = 20
+# x = 1.0
+# ms = 100
+# acc = 10^(-8)
+# lambda = 100.0
+# l_0 = 0.5
+# d = 2
+# mg = 0.125
+
+# mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+
+# E_gen, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_gen, acc, ms)
+# E, _, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+
+# println(E_gen, " -- ", E)
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Testing the E.E. vs m/g for r = 1 vs r = -1
 
-N = 20
-D = 20
-x = 1.0
-ms = 100
-acc = 10^(-8)
-lambda = 100.0
-l_0 = 0.5
-d = 2
-m_g_list = LinRange(0.0, 7.0, 20)
-EE_pos_list = []
-EE_neg_list = []
+# N = 20
+# D = 20
+# x = 1.0
+# ms = 100
+# acc = 10^(-8)
+# lambda = 100.0
+# l_0 = 0.5
+# d = 2
+# m_g_list = LinRange(0.0, 7.0, 20)
+# EE_pos_list = []
+# EE_neg_list = []
 
-for mg in m_g_list
-    mpo_pos = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
-    mpo_neg = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, -1.0)
+# for mg in m_g_list
+#     mpo_pos = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
+#     mpo_neg = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, -1.0)
     
-    _, mps_pos, _ = variational_ground_state_MPS(2*N, d, D, mpo_pos, acc, ms)
-    _, mps_neg, _ = variational_ground_state_MPS(2*N, d, D, mpo_neg, acc, ms)
+#     _, mps_pos, _ = variational_ground_state_MPS(2*N, d, D, mpo_pos, acc, ms)
+#     _, mps_neg, _ = variational_ground_state_MPS(2*N, d, D, mpo_neg, acc, ms)
     
-    ee_pos = entanglement_entropy(mps_pos, N)
-    append!(EE_pos_list, ee_pos)
+#     ee_pos = entanglement_entropy(mps_pos, N)
+#     append!(EE_pos_list, ee_pos)
     
-    ee_neg = entanglement_entropy(mps_neg, N)
-    append!(EE_neg_list, ee_neg)
-end
+#     ee_neg = entanglement_entropy(mps_neg, N)
+#     append!(EE_neg_list, ee_neg)
+# end
 
-# PyPlot.clf()
-# figure()
-plot(m_g_list, EE_pos_list)
-savefig("rpos1.pdf")
-# gcf()
-# PyPlot.clf()
-# figure()
-plot(m_g_list,EE_neg_list)
-savefig("rneg1.pdf")
+# # PyPlot.clf()
+# # figure()
+# plot(m_g_list, EE_pos_list)
+# savefig("rpos1.pdf")
+# # gcf()
+# # PyPlot.clf()
+# # figure()
+# plot(m_g_list,EE_neg_list)
+# savefig("rneg1.pdf")
 
 # ----------------------------------------------------------------------------------------------------------------------------------

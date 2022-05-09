@@ -1,6 +1,7 @@
 using Profile
 using LinearAlgebra
 using Arpack
+using KrylovKit
 using BenchmarkTools
 using Plots
 using LaTeXStrings
@@ -440,11 +441,20 @@ function get_updated_site(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{C
     Outputs:
 
     M, E[1] = updates site of the mps with indices a_l-1, a_l, sigma_l (see Schollwock above equation (210)), ground state energy approximation
+
+    Notes:
+
+    1) The default values of KrylovKit eigsolve are:
+        const orth = KrylovKit.ModifiedGramSchmidtIR()
+        const krylovdim = 30
+        const maxiter = 100
+        const tol = 1e-12
+    2) The eigs of arpack was not converging for some jobs which resulted in jobs getting killed without saving an mps
     """
 
     Heff, dimensions = get_Heff(L, W, R)
-    E, M = eigs(Heff, nev=1, which=:SR) # nev = 1 => it will return only 1 number of eigenvalues, SR => compute eigenvalues which have the smallest real part (ie the ground state energy and upwards depending on nev), also note M'*M = 1.0+0.0im
-    M = reshape(M, (dimensions[1], dimensions[2], dimensions[3])) # M is reshaped in the form sigma_i, a_i-1, a_i
+    E, M = eigsolve(Heff, 1, :SR) # nev = 1 => it will return only 1 number of eigenvalues, SR => compute eigenvalues which have the smallest real part (ie the ground state energy and upwards depending on nev), also note M'*M = 1.0+0.0im
+    M = reshape(M[1], (dimensions[1], dimensions[2], dimensions[3])) # M is reshaped in the form sigma_i, a_i-1, a_i
     M = permutedims(M, (2,3,1)) # M is permuted into the form a_i-1, a_i, sigma_i
 
     return M, E[1]
