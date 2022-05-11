@@ -47,7 +47,7 @@ if choice == 1
 elseif choice == 2
     mps_to_entropy_save_file(mg, x, 2*N, D, l_0, lambda)
 elseif choice == 3
-    mps_to_chiral_condensate(mg, x, 2*N, D, l_0, lambda)
+    mps_to_average_electric_field(mg, x, 2*N, D, l_0, lambda)
 end
 
 # ----------------------------------------------------------------------------------------------------------------------------------
