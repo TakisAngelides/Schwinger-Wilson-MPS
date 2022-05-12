@@ -1,12 +1,3 @@
-using Profile
-using LinearAlgebra
-using Arpack
-using KrylovKit
-using BenchmarkTools
-using Plots
-using LaTeXStrings
-using Test
-using HDF5
 include("variational_MPS_algorithm.jl")
 
 function initialize_left_right_states(mps_first::Vector{Array{ComplexF64}}, mps_0::Vector{Array{ComplexF64}}, N::Int64)
