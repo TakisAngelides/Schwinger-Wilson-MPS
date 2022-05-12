@@ -1,12 +1,3 @@
-using Profile
-using LinearAlgebra
-using Arpack
-using BenchmarkTools
-using Plots
-using LaTeXStrings
-using Test
-using HDF5
-using Dates
 include("MPO.jl")
 
 @enum Form begin
@@ -1091,12 +1082,12 @@ function generate_entropy_data(mg, x, N, D, accuracy, lambda, l_0, max_sweep_num
 
 end
 
-function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64, l_0::Float64, lambda)::Vector{Array{ComplexF64}}
+function h5_to_mps(N::Int64, x::Float64, D::Int64, l_0::Float64, mg::Float64, ms::Int64, accuracy::Float64, lambda::Float64, r::Float64)::Vector{Array{ComplexF64}}
 
     """
     Input:
 
-    N = the number of spin sites which is double the physical sites (Int)
+    N = number of physical lattice sites (Int)
 
     D = bond dimension (Int)
 
@@ -1109,17 +1100,19 @@ function h5_to_mps(N::Int64, D::Int64, mg::Float64, x::Float64, l_0::Float64, la
     mps = the mps saved in the h5 file with the name "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/$(N)_x_$(x)_D_$(D)/mps_$(N)_$(D)_$(mg)_$(x).h5"
     """
 
-    name_of_file = "/lustre/fs23/group/nic/tangelides/Schwinger Wilson MPS Data/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)/mps_$(N)_$(D)_$(mg)_$(x)_$(l_0).h5"
+    path = "/lustre/fs23/group/nic/tangelides/SW_MPS/"
+    name_of_mps = "N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(accuracy)_lam_$(lambda)_r_$(r)"
+    path_to_mps = path*name_of_mps*".h5"
 
-    f = h5open(name_of_file, "r")
+    f = h5open(path_to_mps, "r")
     
-    mps_group = f["$(lambda)_$(l_0)_$(mg)_$(x)_$(N)_$(D)"]
+    mps_group = f[name_of_mps]
 
-    mps = Vector{Array{ComplexF64}}(undef, N)
+    mps = Vector{Array{ComplexF64}}(undef, 2*N)
     
-    for i in 1:N
+    for i in 1:2*N
     
-        mps[i] = read(mps_group["mps_$(i)"])
+        mps[i] = read(mps_group["$(i)"])
 
     end
 
