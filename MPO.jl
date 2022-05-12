@@ -6,6 +6,7 @@ using Plots
 using LaTeXStrings
 using Test
 using HDF5
+using Dates
 
 @enum Form begin
     left
