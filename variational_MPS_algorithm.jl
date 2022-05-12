@@ -1048,7 +1048,23 @@ function variational_ground_state_algorithm(N::Int64, d::Int64, x::Float64, l_0:
     
     function get_ansatz()
 
-        if isfile(path_to_previous_mps)
+        if isfile(path_to_mps)
+
+            println("The ansatz is a saved MPS with parameters "*name_of_mps*"\n")
+
+            f = h5open(path_to_mps, "r")
+
+            mps_group = f[name_of_mps]
+
+            mps = Vector{Array{ComplexF64}}(undef, N)
+            
+            for i in 1:N
+            
+                mps[i] = read(mps_group["$(i)"])
+
+            end
+
+        elseif isfile(path_to_previous_mps)
 
             println("The ansatz is a saved MPS with parameters "*name_of_previous_mps*"\n")
     
