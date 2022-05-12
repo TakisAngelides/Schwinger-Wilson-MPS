@@ -1,0 +1,11 @@
+environment = "JULIA_DEPOT_PATH='/lustre/fs23/group/nic/tangelides/.julia:$JULIA_DEPOT_PATH'"
+
+executable = /lustre/fs23/group/nic/tangelides/julia-1.7.2/bin/julia
+
+arguments = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_observables.jl $(N) $(x) $(mg) $(D) $(l_0) $(lambda) $(acc) $(ms) $(r) $(choice)
+
+transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_observables.jl
+
+should_transfer_files = IF_NEEDED
+
+queue
