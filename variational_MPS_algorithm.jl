@@ -1,13 +1,4 @@
-using Profile
-using LinearAlgebra
-using Arpack
 using KrylovKit
-using BenchmarkTools
-using Plots
-using LaTeXStrings
-using Test
-using Dates
-using HDF5
 include("utility_functions.jl")
 
 @enum Form begin
@@ -1041,4 +1032,177 @@ function variational_ground_state_MPS_from_dead_for_saving(N::Int64, d::Int64, D
 
     return E_optimal, mps, sweep_number
 
+end
+
+function variational_ground_state_algorithm(N::Int64, d::Int64, x::Float64, l_0::Float64, lambda::Float64, mg::Float64, ms::Int64, accuracy::Float64, D::Int64, D_previous::Int64, mg_previous::Float64, mpo::Vector{Array{ComplexF64}}, r::Float64)
+
+    path = "/lustre/fs23/group/nic/tangelides/SW_MPS/"
+    N_phys = Int(N/2)
+    name_of_mps = "N_$(N_phys)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(accuracy)_lam_$(lambda)_r_$(r)"
+    path_to_mps = path*name_of_mps*".h5"
+    name_of_previous_mps = "N_$(N_phys)_x_$(x)_D_$(D_previous)_l0_$(l_0)_mg_$(mg_previous)_ms_$(ms)_acc_$(accuracy)_lam_$(lambda)_r_$(r)"
+    path_to_previous_mps = path*name_of_previous_mps*".h5"
+    
+    tmp = Dates.now()
+    println("Just started the algorithm for "*name_of_mps*" and the time is $(tmp)\n")
+    
+    function get_ansatz()
+
+        if isfile(path_to_previous_mps)
+
+            println("The ansatz is a saved MPS with parameters "*name_of_previous_mps*"\n")
+    
+            f = h5open(path_to_previous_mps, "r")
+
+            mps_group = f[name_of_previous_mps]
+
+            mps_previous = Vector{Array{ComplexF64}}(undef, N)
+            
+            for i in 1:N
+            
+                mps_previous[i] = read(mps_group["$(i)"])
+
+            end
+
+            mps = Vector{Array{ComplexF64}}(undef, N)
+
+            for i in 1:N
+                
+                dims = size(mps_previous[i])
+                D_left_previous = dims[1]
+                D_right_previous = dims[2]
+
+                if i == 1
+
+                    mps[i] = zeros(ComplexF64, 1, D, d)
+                    for j in 1:d
+                        mps[i][1:1, 1:D_right_previous, j] = mps_previous[i][:, :, j]
+                    end
+
+                elseif i == N
+
+                    mps[i] = zeros(ComplexF64, D, 1, d)
+                    for j in 1:d
+                        mps[i][1:D_left_previous, 1:1, j] = mps_previous[i][:,:,j]
+                    end
+
+                else
+
+                    mps[i] = zeros(ComplexF64, D, D, d)
+                    for j in 1:d
+                        mps[i][1:D_left_previous, 1:D_right_previous, j] = mps_previous[i][:,:,j]
+                    end
+                end
+            end
+
+        else
+
+            println("Ansatz is random there was no saved MPS with parameters "*name_of_previous_mps*"\n")
+            mps = initialize_MPS(N, d, D)
+
+        end
+
+        return mps
+    
+    end
+
+    mps = get_ansatz()
+
+    gauge_mps!(right, mps, true, N) 
+    states = initialize_L_R_states(mps, mpo, N) 
+    E_initial = 10^(-5) 
+    E_optimal = 0 
+    sweep_number = 0 
+    US = 0 
+    
+    function save_mps(contraction_flag)
+
+        if contraction_flag == true
+            mps[1] = contraction(mps[1], (2,), US, (1,))
+            mps[1] = permutedims(mps[1], (1,3,2))
+        end
+    
+        h5open(path_to_mps, "w") do fid
+    
+            create_group(fid, name_of_mps)
+            
+            g = fid[name_of_mps]
+            
+            for i in 1:length(mps)
+                
+                g["$(i)"] = mps[i]
+                
+            end
+        end
+    
+    end
+
+    while(true)
+
+        tmp = Dates.now()
+        println("Sweep number $(sweep_number) starting time is $(tmp)\n")
+
+        if (sweep_number == 1) || (sweep_number != 0 && sweep_number % 2 == 0)
+            save_mps(true)
+        end
+        
+        E = 0 
+
+        for i in 1:N-1 
+
+            L = states[i]
+            W = mpo[i]
+            R = states[i+1]
+            M, _ = get_updated_site(L, W, R)
+            mps[i], _ = gauge_site(left, M)
+            update_states!(right, states, mps[i], W, i+1)
+
+        end
+
+        for i in N:-1:2
+
+            L = states[i]
+            W = mpo[i]
+            R = states[i+1]
+            M, E = get_updated_site(L, W, R)
+            US, mps[i] = gauge_site(right, M) 
+            update_states!(left, states, mps[i], W, i)
+
+        end
+        
+        fractional_energy_change = abs((E - E_initial)/E_initial)
+
+        if fractional_energy_change < accuracy
+
+            E_optimal = E
+            
+            mps[1] = contraction(mps[1], (2,), US, (1,))
+            mps[1] = permutedims(mps[1], (1,3,2))
+            save_mps(false) 
+            
+            break
+        
+        elseif ms < sweep_number
+            
+            E_optimal = E
+
+            mps[1] = contraction(mps[1], (2,), US, (1,))
+            mps[1] = permutedims(mps[1], (1,3,2))
+            save_mps(false) 
+            println("Maximum number of sweeps reached before desired accuracy.")
+
+            break
+
+        end
+
+        E_initial = E
+        tmp = Dates.now()
+        println("Sweep number $(sweep_number) finishing time is $(tmp)\n")
+        sweep_number = sweep_number + 1
+
+    end
+
+    tmp = Dates.now()
+    println("Algorithm finished with sweep number $(sweep_number) and the time is $(tmp)\n")
+    
 end
