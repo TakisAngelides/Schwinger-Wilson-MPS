@@ -20,7 +20,7 @@ if choice == 1 # Energy
     mpo = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, r)
     energy = get_mpo_expectation_value(mps, mpo)
     
-    text_file_name = "/Energy/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(accuracy)_lam_$(lambda)_r_$(r).txt"
+    text_file_name = "/Energy/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r).txt"
     path_to_text_file = path*text_file_name
     
     open(path_to_text_file, "w") do f
@@ -31,7 +31,7 @@ elseif choice == 2 # Entropy
 
     entropy = entanglement_entropy(mps, N)
     
-    text_file_name = "/Entropy/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(accuracy)_lam_$(lambda)_r_$(r).txt"
+    text_file_name = "/Entropy/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r).txt"
     path_to_text_file = path*text_file_name
     
     open(path_to_text_file, "w") do f
