@@ -8,4 +8,8 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_obser
 
 should_transfer_files = IF_NEEDED
 
+error = /afs/ifh.de/user/a/angeltak/logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).error
+
+log = /afs/ifh.de/user/a/angeltak/logs/$(Cluster)_$(Process)_N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r)_choice_$(choice).log
+
 queue
