@@ -621,3 +621,26 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # println(get_mpo_expectation_value(mps, mpo))
 
 # ----------------------------------------------------------------------------------------------------------------------------------
+
+# # Testing energy(theta 1) - energy(theta 2) vs m/g
+
+# N = 4
+# D = 5
+# x = 1.0
+# mg = -0.475
+# lambda = 100.0
+# r = 1.0
+# acc = 1.0e-8
+# ms = 100
+# d = 2
+
+# mpo_left = get_Schwinger_Wilson_general_r_MPO(N, 0.2, x, lambda, mg, r)
+# mpo_right = get_Schwinger_Wilson_general_r_MPO(N, 0.75, x, lambda, mg, r)
+
+# E_left, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_left, acc, ms)
+# E_right, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_right, acc, ms)
+
+# println(E_left - E_right)
+
+
+# ----------------------------------------------------------------------------------------------------------------------------------

@@ -1,1729 +1,673 @@
 CONFIG dagman.config
+JOB N64x100mg-08D20l0025r10 SW_MPS.sub
+VARS N64x100mg-08D20l0025r10 N="64" x="10.0" mg="-0.8" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+RETRY N64x100mg-08D20l0025r10 3
+SCRIPT HOLD N64x100mg-08D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-08D40l0025r10 SW_MPS.sub
+VARS N64x100mg-08D40l0025r10 N="64" x="10.0" mg="-0.8" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+RETRY N64x100mg-08D40l0025r10 3
+SCRIPT HOLD N64x100mg-08D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-08D60l0025r10 SW_MPS.sub
+VARS N64x100mg-08D60l0025r10 N="64" x="10.0" mg="-0.8" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+RETRY N64x100mg-08D60l0025r10 3
+SCRIPT HOLD N64x100mg-08D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-07D20l0025r10 SW_MPS.sub
+VARS N64x100mg-07D20l0025r10 N="64" x="10.0" mg="-0.7" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.8" r="1.0"
+RETRY N64x100mg-07D20l0025r10 3
+SCRIPT HOLD N64x100mg-07D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-07D40l0025r10 SW_MPS.sub
+VARS N64x100mg-07D40l0025r10 N="64" x="10.0" mg="-0.7" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.8" r="1.0"
+RETRY N64x100mg-07D40l0025r10 3
+SCRIPT HOLD N64x100mg-07D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-07D60l0025r10 SW_MPS.sub
+VARS N64x100mg-07D60l0025r10 N="64" x="10.0" mg="-0.7" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.8" r="1.0"
+RETRY N64x100mg-07D60l0025r10 3
+SCRIPT HOLD N64x100mg-07D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-06D20l0025r10 SW_MPS.sub
+VARS N64x100mg-06D20l0025r10 N="64" x="10.0" mg="-0.6" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.7" r="1.0"
+RETRY N64x100mg-06D20l0025r10 3
+SCRIPT HOLD N64x100mg-06D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-06D40l0025r10 SW_MPS.sub
+VARS N64x100mg-06D40l0025r10 N="64" x="10.0" mg="-0.6" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.7" r="1.0"
+RETRY N64x100mg-06D40l0025r10 3
+SCRIPT HOLD N64x100mg-06D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-06D60l0025r10 SW_MPS.sub
+VARS N64x100mg-06D60l0025r10 N="64" x="10.0" mg="-0.6" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.7" r="1.0"
+RETRY N64x100mg-06D60l0025r10 3
+SCRIPT HOLD N64x100mg-06D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-05D20l0025r10 SW_MPS.sub
+VARS N64x100mg-05D20l0025r10 N="64" x="10.0" mg="-0.5" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.6" r="1.0"
+RETRY N64x100mg-05D20l0025r10 3
+SCRIPT HOLD N64x100mg-05D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-05D40l0025r10 SW_MPS.sub
+VARS N64x100mg-05D40l0025r10 N="64" x="10.0" mg="-0.5" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.6" r="1.0"
+RETRY N64x100mg-05D40l0025r10 3
+SCRIPT HOLD N64x100mg-05D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-05D60l0025r10 SW_MPS.sub
+VARS N64x100mg-05D60l0025r10 N="64" x="10.0" mg="-0.5" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.6" r="1.0"
+RETRY N64x100mg-05D60l0025r10 3
+SCRIPT HOLD N64x100mg-05D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-04D20l0025r10 SW_MPS.sub
+VARS N64x100mg-04D20l0025r10 N="64" x="10.0" mg="-0.4" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.5" r="1.0"
+RETRY N64x100mg-04D20l0025r10 3
+SCRIPT HOLD N64x100mg-04D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-04D40l0025r10 SW_MPS.sub
+VARS N64x100mg-04D40l0025r10 N="64" x="10.0" mg="-0.4" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.5" r="1.0"
+RETRY N64x100mg-04D40l0025r10 3
+SCRIPT HOLD N64x100mg-04D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-04D60l0025r10 SW_MPS.sub
+VARS N64x100mg-04D60l0025r10 N="64" x="10.0" mg="-0.4" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.5" r="1.0"
+RETRY N64x100mg-04D60l0025r10 3
+SCRIPT HOLD N64x100mg-04D60l0025r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-03D20l0025r10 SW_MPS.sub
-VARS N64x100mg-03D20l0025r10 N="64" x="10.0" mg="-0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+VARS N64x100mg-03D20l0025r10 N="64" x="10.0" mg="-0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.4" r="1.0"
 RETRY N64x100mg-03D20l0025r10 3
 SCRIPT HOLD N64x100mg-03D20l0025r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-03D40l0025r10 SW_MPS.sub
-VARS N64x100mg-03D40l0025r10 N="64" x="10.0" mg="-0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+VARS N64x100mg-03D40l0025r10 N="64" x="10.0" mg="-0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.4" r="1.0"
 RETRY N64x100mg-03D40l0025r10 3
 SCRIPT HOLD N64x100mg-03D40l0025r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-03D60l0025r10 SW_MPS.sub
-VARS N64x100mg-03D60l0025r10 N="64" x="10.0" mg="-0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+VARS N64x100mg-03D60l0025r10 N="64" x="10.0" mg="-0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.4" r="1.0"
 RETRY N64x100mg-03D60l0025r10 3
 SCRIPT HOLD N64x100mg-03D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-03D80l0025r10 SW_MPS.sub
-VARS N64x100mg-03D80l0025r10 N="64" x="10.0" mg="-0.3" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N64x100mg-03D80l0025r10 3
-SCRIPT HOLD N64x100mg-03D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-03D100l0025r10 SW_MPS.sub
-VARS N64x100mg-03D100l0025r10 N="64" x="10.0" mg="-0.3" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N64x100mg-03D100l0025r10 3
-SCRIPT HOLD N64x100mg-03D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D20l0025r10 SW_MPS.sub
-VARS N64x100mg-02D20l0025r10 N="64" x="10.0" mg="-0.2" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D20l0025r10 3
-SCRIPT HOLD N64x100mg-02D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D40l0025r10 SW_MPS.sub
-VARS N64x100mg-02D40l0025r10 N="64" x="10.0" mg="-0.2" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D40l0025r10 3
-SCRIPT HOLD N64x100mg-02D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D60l0025r10 SW_MPS.sub
-VARS N64x100mg-02D60l0025r10 N="64" x="10.0" mg="-0.2" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D60l0025r10 3
-SCRIPT HOLD N64x100mg-02D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D80l0025r10 SW_MPS.sub
-VARS N64x100mg-02D80l0025r10 N="64" x="10.0" mg="-0.2" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D80l0025r10 3
-SCRIPT HOLD N64x100mg-02D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D100l0025r10 SW_MPS.sub
-VARS N64x100mg-02D100l0025r10 N="64" x="10.0" mg="-0.2" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D100l0025r10 3
-SCRIPT HOLD N64x100mg-02D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D20l0025r10 SW_MPS.sub
-VARS N64x100mg-01D20l0025r10 N="64" x="10.0" mg="-0.1" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D20l0025r10 3
-SCRIPT HOLD N64x100mg-01D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D40l0025r10 SW_MPS.sub
-VARS N64x100mg-01D40l0025r10 N="64" x="10.0" mg="-0.1" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D40l0025r10 3
-SCRIPT HOLD N64x100mg-01D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D60l0025r10 SW_MPS.sub
-VARS N64x100mg-01D60l0025r10 N="64" x="10.0" mg="-0.1" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D60l0025r10 3
-SCRIPT HOLD N64x100mg-01D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D80l0025r10 SW_MPS.sub
-VARS N64x100mg-01D80l0025r10 N="64" x="10.0" mg="-0.1" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D80l0025r10 3
-SCRIPT HOLD N64x100mg-01D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D100l0025r10 SW_MPS.sub
-VARS N64x100mg-01D100l0025r10 N="64" x="10.0" mg="-0.1" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D100l0025r10 3
-SCRIPT HOLD N64x100mg-01D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D20l0025r10 SW_MPS.sub
-VARS N64x100mg-005D20l0025r10 N="64" x="10.0" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D20l0025r10 3
-SCRIPT HOLD N64x100mg-005D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D40l0025r10 SW_MPS.sub
-VARS N64x100mg-005D40l0025r10 N="64" x="10.0" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D40l0025r10 3
-SCRIPT HOLD N64x100mg-005D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D60l0025r10 SW_MPS.sub
-VARS N64x100mg-005D60l0025r10 N="64" x="10.0" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D60l0025r10 3
-SCRIPT HOLD N64x100mg-005D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D80l0025r10 SW_MPS.sub
-VARS N64x100mg-005D80l0025r10 N="64" x="10.0" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D80l0025r10 3
-SCRIPT HOLD N64x100mg-005D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D100l0025r10 SW_MPS.sub
-VARS N64x100mg-005D100l0025r10 N="64" x="10.0" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D100l0025r10 3
-SCRIPT HOLD N64x100mg-005D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D20l0025r10 SW_MPS.sub
-VARS N64x100mg00D20l0025r10 N="64" x="10.0" mg="0.0" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D20l0025r10 3
-SCRIPT HOLD N64x100mg00D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D40l0025r10 SW_MPS.sub
-VARS N64x100mg00D40l0025r10 N="64" x="10.0" mg="0.0" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D40l0025r10 3
-SCRIPT HOLD N64x100mg00D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D60l0025r10 SW_MPS.sub
-VARS N64x100mg00D60l0025r10 N="64" x="10.0" mg="0.0" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D60l0025r10 3
-SCRIPT HOLD N64x100mg00D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D80l0025r10 SW_MPS.sub
-VARS N64x100mg00D80l0025r10 N="64" x="10.0" mg="0.0" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D80l0025r10 3
-SCRIPT HOLD N64x100mg00D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D100l0025r10 SW_MPS.sub
-VARS N64x100mg00D100l0025r10 N="64" x="10.0" mg="0.0" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D100l0025r10 3
-SCRIPT HOLD N64x100mg00D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D20l0025r10 SW_MPS.sub
-VARS N64x100mg005D20l0025r10 N="64" x="10.0" mg="0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D20l0025r10 3
-SCRIPT HOLD N64x100mg005D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D40l0025r10 SW_MPS.sub
-VARS N64x100mg005D40l0025r10 N="64" x="10.0" mg="0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D40l0025r10 3
-SCRIPT HOLD N64x100mg005D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D60l0025r10 SW_MPS.sub
-VARS N64x100mg005D60l0025r10 N="64" x="10.0" mg="0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D60l0025r10 3
-SCRIPT HOLD N64x100mg005D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D80l0025r10 SW_MPS.sub
-VARS N64x100mg005D80l0025r10 N="64" x="10.0" mg="0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D80l0025r10 3
-SCRIPT HOLD N64x100mg005D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D100l0025r10 SW_MPS.sub
-VARS N64x100mg005D100l0025r10 N="64" x="10.0" mg="0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D100l0025r10 3
-SCRIPT HOLD N64x100mg005D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D20l0025r10 SW_MPS.sub
-VARS N64x100mg01D20l0025r10 N="64" x="10.0" mg="0.1" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D20l0025r10 3
-SCRIPT HOLD N64x100mg01D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D40l0025r10 SW_MPS.sub
-VARS N64x100mg01D40l0025r10 N="64" x="10.0" mg="0.1" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D40l0025r10 3
-SCRIPT HOLD N64x100mg01D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D60l0025r10 SW_MPS.sub
-VARS N64x100mg01D60l0025r10 N="64" x="10.0" mg="0.1" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D60l0025r10 3
-SCRIPT HOLD N64x100mg01D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D80l0025r10 SW_MPS.sub
-VARS N64x100mg01D80l0025r10 N="64" x="10.0" mg="0.1" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D80l0025r10 3
-SCRIPT HOLD N64x100mg01D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D100l0025r10 SW_MPS.sub
-VARS N64x100mg01D100l0025r10 N="64" x="10.0" mg="0.1" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D100l0025r10 3
-SCRIPT HOLD N64x100mg01D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D20l0025r10 SW_MPS.sub
-VARS N64x100mg02D20l0025r10 N="64" x="10.0" mg="0.2" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D20l0025r10 3
-SCRIPT HOLD N64x100mg02D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D40l0025r10 SW_MPS.sub
-VARS N64x100mg02D40l0025r10 N="64" x="10.0" mg="0.2" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D40l0025r10 3
-SCRIPT HOLD N64x100mg02D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D60l0025r10 SW_MPS.sub
-VARS N64x100mg02D60l0025r10 N="64" x="10.0" mg="0.2" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D60l0025r10 3
-SCRIPT HOLD N64x100mg02D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D80l0025r10 SW_MPS.sub
-VARS N64x100mg02D80l0025r10 N="64" x="10.0" mg="0.2" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D80l0025r10 3
-SCRIPT HOLD N64x100mg02D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D100l0025r10 SW_MPS.sub
-VARS N64x100mg02D100l0025r10 N="64" x="10.0" mg="0.2" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D100l0025r10 3
-SCRIPT HOLD N64x100mg02D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D20l0025r10 SW_MPS.sub
-VARS N64x100mg03D20l0025r10 N="64" x="10.0" mg="0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D20l0025r10 3
-SCRIPT HOLD N64x100mg03D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D40l0025r10 SW_MPS.sub
-VARS N64x100mg03D40l0025r10 N="64" x="10.0" mg="0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D40l0025r10 3
-SCRIPT HOLD N64x100mg03D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D60l0025r10 SW_MPS.sub
-VARS N64x100mg03D60l0025r10 N="64" x="10.0" mg="0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D60l0025r10 3
-SCRIPT HOLD N64x100mg03D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D80l0025r10 SW_MPS.sub
-VARS N64x100mg03D80l0025r10 N="64" x="10.0" mg="0.3" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D80l0025r10 3
-SCRIPT HOLD N64x100mg03D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D100l0025r10 SW_MPS.sub
-VARS N64x100mg03D100l0025r10 N="64" x="10.0" mg="0.3" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D100l0025r10 3
-SCRIPT HOLD N64x100mg03D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-08D20l0025r10 SW_MPS.sub
+VARS N156x600mg-08D20l0025r10 N="156" x="60.0" mg="-0.8" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+RETRY N156x600mg-08D20l0025r10 3
+SCRIPT HOLD N156x600mg-08D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-08D40l0025r10 SW_MPS.sub
+VARS N156x600mg-08D40l0025r10 N="156" x="60.0" mg="-0.8" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+RETRY N156x600mg-08D40l0025r10 3
+SCRIPT HOLD N156x600mg-08D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-08D60l0025r10 SW_MPS.sub
+VARS N156x600mg-08D60l0025r10 N="156" x="60.0" mg="-0.8" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+RETRY N156x600mg-08D60l0025r10 3
+SCRIPT HOLD N156x600mg-08D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-07D20l0025r10 SW_MPS.sub
+VARS N156x600mg-07D20l0025r10 N="156" x="60.0" mg="-0.7" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.8" r="1.0"
+RETRY N156x600mg-07D20l0025r10 3
+SCRIPT HOLD N156x600mg-07D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-07D40l0025r10 SW_MPS.sub
+VARS N156x600mg-07D40l0025r10 N="156" x="60.0" mg="-0.7" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.8" r="1.0"
+RETRY N156x600mg-07D40l0025r10 3
+SCRIPT HOLD N156x600mg-07D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-07D60l0025r10 SW_MPS.sub
+VARS N156x600mg-07D60l0025r10 N="156" x="60.0" mg="-0.7" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.8" r="1.0"
+RETRY N156x600mg-07D60l0025r10 3
+SCRIPT HOLD N156x600mg-07D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-06D20l0025r10 SW_MPS.sub
+VARS N156x600mg-06D20l0025r10 N="156" x="60.0" mg="-0.6" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.7" r="1.0"
+RETRY N156x600mg-06D20l0025r10 3
+SCRIPT HOLD N156x600mg-06D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-06D40l0025r10 SW_MPS.sub
+VARS N156x600mg-06D40l0025r10 N="156" x="60.0" mg="-0.6" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.7" r="1.0"
+RETRY N156x600mg-06D40l0025r10 3
+SCRIPT HOLD N156x600mg-06D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-06D60l0025r10 SW_MPS.sub
+VARS N156x600mg-06D60l0025r10 N="156" x="60.0" mg="-0.6" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.7" r="1.0"
+RETRY N156x600mg-06D60l0025r10 3
+SCRIPT HOLD N156x600mg-06D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-05D20l0025r10 SW_MPS.sub
+VARS N156x600mg-05D20l0025r10 N="156" x="60.0" mg="-0.5" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.6" r="1.0"
+RETRY N156x600mg-05D20l0025r10 3
+SCRIPT HOLD N156x600mg-05D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-05D40l0025r10 SW_MPS.sub
+VARS N156x600mg-05D40l0025r10 N="156" x="60.0" mg="-0.5" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.6" r="1.0"
+RETRY N156x600mg-05D40l0025r10 3
+SCRIPT HOLD N156x600mg-05D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-05D60l0025r10 SW_MPS.sub
+VARS N156x600mg-05D60l0025r10 N="156" x="60.0" mg="-0.5" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.6" r="1.0"
+RETRY N156x600mg-05D60l0025r10 3
+SCRIPT HOLD N156x600mg-05D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-04D20l0025r10 SW_MPS.sub
+VARS N156x600mg-04D20l0025r10 N="156" x="60.0" mg="-0.4" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.5" r="1.0"
+RETRY N156x600mg-04D20l0025r10 3
+SCRIPT HOLD N156x600mg-04D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-04D40l0025r10 SW_MPS.sub
+VARS N156x600mg-04D40l0025r10 N="156" x="60.0" mg="-0.4" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.5" r="1.0"
+RETRY N156x600mg-04D40l0025r10 3
+SCRIPT HOLD N156x600mg-04D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-04D60l0025r10 SW_MPS.sub
+VARS N156x600mg-04D60l0025r10 N="156" x="60.0" mg="-0.4" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.5" r="1.0"
+RETRY N156x600mg-04D60l0025r10 3
+SCRIPT HOLD N156x600mg-04D60l0025r10 /usr/bin/condor_release $JOBID
 JOB N156x600mg-03D20l0025r10 SW_MPS.sub
-VARS N156x600mg-03D20l0025r10 N="156" x="60.0" mg="-0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+VARS N156x600mg-03D20l0025r10 N="156" x="60.0" mg="-0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.4" r="1.0"
 RETRY N156x600mg-03D20l0025r10 3
 SCRIPT HOLD N156x600mg-03D20l0025r10 /usr/bin/condor_release $JOBID
 JOB N156x600mg-03D40l0025r10 SW_MPS.sub
-VARS N156x600mg-03D40l0025r10 N="156" x="60.0" mg="-0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+VARS N156x600mg-03D40l0025r10 N="156" x="60.0" mg="-0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.4" r="1.0"
 RETRY N156x600mg-03D40l0025r10 3
 SCRIPT HOLD N156x600mg-03D40l0025r10 /usr/bin/condor_release $JOBID
 JOB N156x600mg-03D60l0025r10 SW_MPS.sub
-VARS N156x600mg-03D60l0025r10 N="156" x="60.0" mg="-0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+VARS N156x600mg-03D60l0025r10 N="156" x="60.0" mg="-0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.4" r="1.0"
 RETRY N156x600mg-03D60l0025r10 3
 SCRIPT HOLD N156x600mg-03D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-03D80l0025r10 SW_MPS.sub
-VARS N156x600mg-03D80l0025r10 N="156" x="60.0" mg="-0.3" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N156x600mg-03D80l0025r10 3
-SCRIPT HOLD N156x600mg-03D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-03D100l0025r10 SW_MPS.sub
-VARS N156x600mg-03D100l0025r10 N="156" x="60.0" mg="-0.3" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N156x600mg-03D100l0025r10 3
-SCRIPT HOLD N156x600mg-03D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D20l0025r10 SW_MPS.sub
-VARS N156x600mg-02D20l0025r10 N="156" x="60.0" mg="-0.2" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D20l0025r10 3
-SCRIPT HOLD N156x600mg-02D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D40l0025r10 SW_MPS.sub
-VARS N156x600mg-02D40l0025r10 N="156" x="60.0" mg="-0.2" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D40l0025r10 3
-SCRIPT HOLD N156x600mg-02D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D60l0025r10 SW_MPS.sub
-VARS N156x600mg-02D60l0025r10 N="156" x="60.0" mg="-0.2" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D60l0025r10 3
-SCRIPT HOLD N156x600mg-02D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D80l0025r10 SW_MPS.sub
-VARS N156x600mg-02D80l0025r10 N="156" x="60.0" mg="-0.2" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D80l0025r10 3
-SCRIPT HOLD N156x600mg-02D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D100l0025r10 SW_MPS.sub
-VARS N156x600mg-02D100l0025r10 N="156" x="60.0" mg="-0.2" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D100l0025r10 3
-SCRIPT HOLD N156x600mg-02D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D20l0025r10 SW_MPS.sub
-VARS N156x600mg-01D20l0025r10 N="156" x="60.0" mg="-0.1" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D20l0025r10 3
-SCRIPT HOLD N156x600mg-01D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D40l0025r10 SW_MPS.sub
-VARS N156x600mg-01D40l0025r10 N="156" x="60.0" mg="-0.1" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D40l0025r10 3
-SCRIPT HOLD N156x600mg-01D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D60l0025r10 SW_MPS.sub
-VARS N156x600mg-01D60l0025r10 N="156" x="60.0" mg="-0.1" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D60l0025r10 3
-SCRIPT HOLD N156x600mg-01D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D80l0025r10 SW_MPS.sub
-VARS N156x600mg-01D80l0025r10 N="156" x="60.0" mg="-0.1" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D80l0025r10 3
-SCRIPT HOLD N156x600mg-01D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D100l0025r10 SW_MPS.sub
-VARS N156x600mg-01D100l0025r10 N="156" x="60.0" mg="-0.1" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D100l0025r10 3
-SCRIPT HOLD N156x600mg-01D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D20l0025r10 SW_MPS.sub
-VARS N156x600mg-005D20l0025r10 N="156" x="60.0" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D20l0025r10 3
-SCRIPT HOLD N156x600mg-005D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D40l0025r10 SW_MPS.sub
-VARS N156x600mg-005D40l0025r10 N="156" x="60.0" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D40l0025r10 3
-SCRIPT HOLD N156x600mg-005D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D60l0025r10 SW_MPS.sub
-VARS N156x600mg-005D60l0025r10 N="156" x="60.0" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D60l0025r10 3
-SCRIPT HOLD N156x600mg-005D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D80l0025r10 SW_MPS.sub
-VARS N156x600mg-005D80l0025r10 N="156" x="60.0" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D80l0025r10 3
-SCRIPT HOLD N156x600mg-005D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D100l0025r10 SW_MPS.sub
-VARS N156x600mg-005D100l0025r10 N="156" x="60.0" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D100l0025r10 3
-SCRIPT HOLD N156x600mg-005D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D20l0025r10 SW_MPS.sub
-VARS N156x600mg00D20l0025r10 N="156" x="60.0" mg="0.0" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D20l0025r10 3
-SCRIPT HOLD N156x600mg00D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D40l0025r10 SW_MPS.sub
-VARS N156x600mg00D40l0025r10 N="156" x="60.0" mg="0.0" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D40l0025r10 3
-SCRIPT HOLD N156x600mg00D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D60l0025r10 SW_MPS.sub
-VARS N156x600mg00D60l0025r10 N="156" x="60.0" mg="0.0" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D60l0025r10 3
-SCRIPT HOLD N156x600mg00D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D80l0025r10 SW_MPS.sub
-VARS N156x600mg00D80l0025r10 N="156" x="60.0" mg="0.0" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D80l0025r10 3
-SCRIPT HOLD N156x600mg00D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D100l0025r10 SW_MPS.sub
-VARS N156x600mg00D100l0025r10 N="156" x="60.0" mg="0.0" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D100l0025r10 3
-SCRIPT HOLD N156x600mg00D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D20l0025r10 SW_MPS.sub
-VARS N156x600mg005D20l0025r10 N="156" x="60.0" mg="0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D20l0025r10 3
-SCRIPT HOLD N156x600mg005D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D40l0025r10 SW_MPS.sub
-VARS N156x600mg005D40l0025r10 N="156" x="60.0" mg="0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D40l0025r10 3
-SCRIPT HOLD N156x600mg005D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D60l0025r10 SW_MPS.sub
-VARS N156x600mg005D60l0025r10 N="156" x="60.0" mg="0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D60l0025r10 3
-SCRIPT HOLD N156x600mg005D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D80l0025r10 SW_MPS.sub
-VARS N156x600mg005D80l0025r10 N="156" x="60.0" mg="0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D80l0025r10 3
-SCRIPT HOLD N156x600mg005D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D100l0025r10 SW_MPS.sub
-VARS N156x600mg005D100l0025r10 N="156" x="60.0" mg="0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D100l0025r10 3
-SCRIPT HOLD N156x600mg005D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D20l0025r10 SW_MPS.sub
-VARS N156x600mg01D20l0025r10 N="156" x="60.0" mg="0.1" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D20l0025r10 3
-SCRIPT HOLD N156x600mg01D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D40l0025r10 SW_MPS.sub
-VARS N156x600mg01D40l0025r10 N="156" x="60.0" mg="0.1" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D40l0025r10 3
-SCRIPT HOLD N156x600mg01D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D60l0025r10 SW_MPS.sub
-VARS N156x600mg01D60l0025r10 N="156" x="60.0" mg="0.1" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D60l0025r10 3
-SCRIPT HOLD N156x600mg01D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D80l0025r10 SW_MPS.sub
-VARS N156x600mg01D80l0025r10 N="156" x="60.0" mg="0.1" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D80l0025r10 3
-SCRIPT HOLD N156x600mg01D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D100l0025r10 SW_MPS.sub
-VARS N156x600mg01D100l0025r10 N="156" x="60.0" mg="0.1" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D100l0025r10 3
-SCRIPT HOLD N156x600mg01D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D20l0025r10 SW_MPS.sub
-VARS N156x600mg02D20l0025r10 N="156" x="60.0" mg="0.2" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D20l0025r10 3
-SCRIPT HOLD N156x600mg02D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D40l0025r10 SW_MPS.sub
-VARS N156x600mg02D40l0025r10 N="156" x="60.0" mg="0.2" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D40l0025r10 3
-SCRIPT HOLD N156x600mg02D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D60l0025r10 SW_MPS.sub
-VARS N156x600mg02D60l0025r10 N="156" x="60.0" mg="0.2" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D60l0025r10 3
-SCRIPT HOLD N156x600mg02D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D80l0025r10 SW_MPS.sub
-VARS N156x600mg02D80l0025r10 N="156" x="60.0" mg="0.2" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D80l0025r10 3
-SCRIPT HOLD N156x600mg02D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D100l0025r10 SW_MPS.sub
-VARS N156x600mg02D100l0025r10 N="156" x="60.0" mg="0.2" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D100l0025r10 3
-SCRIPT HOLD N156x600mg02D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D20l0025r10 SW_MPS.sub
-VARS N156x600mg03D20l0025r10 N="156" x="60.0" mg="0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D20l0025r10 3
-SCRIPT HOLD N156x600mg03D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D40l0025r10 SW_MPS.sub
-VARS N156x600mg03D40l0025r10 N="156" x="60.0" mg="0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D40l0025r10 3
-SCRIPT HOLD N156x600mg03D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D60l0025r10 SW_MPS.sub
-VARS N156x600mg03D60l0025r10 N="156" x="60.0" mg="0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D60l0025r10 3
-SCRIPT HOLD N156x600mg03D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D80l0025r10 SW_MPS.sub
-VARS N156x600mg03D80l0025r10 N="156" x="60.0" mg="0.3" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D80l0025r10 3
-SCRIPT HOLD N156x600mg03D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D100l0025r10 SW_MPS.sub
-VARS N156x600mg03D100l0025r10 N="156" x="60.0" mg="0.3" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D100l0025r10 3
-SCRIPT HOLD N156x600mg03D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-08D20l0025r10 SW_MPS.sub
+VARS N180x800mg-08D20l0025r10 N="180" x="80.0" mg="-0.8" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+RETRY N180x800mg-08D20l0025r10 3
+SCRIPT HOLD N180x800mg-08D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-08D40l0025r10 SW_MPS.sub
+VARS N180x800mg-08D40l0025r10 N="180" x="80.0" mg="-0.8" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+RETRY N180x800mg-08D40l0025r10 3
+SCRIPT HOLD N180x800mg-08D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-08D60l0025r10 SW_MPS.sub
+VARS N180x800mg-08D60l0025r10 N="180" x="80.0" mg="-0.8" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+RETRY N180x800mg-08D60l0025r10 3
+SCRIPT HOLD N180x800mg-08D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-07D20l0025r10 SW_MPS.sub
+VARS N180x800mg-07D20l0025r10 N="180" x="80.0" mg="-0.7" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.8" r="1.0"
+RETRY N180x800mg-07D20l0025r10 3
+SCRIPT HOLD N180x800mg-07D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-07D40l0025r10 SW_MPS.sub
+VARS N180x800mg-07D40l0025r10 N="180" x="80.0" mg="-0.7" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.8" r="1.0"
+RETRY N180x800mg-07D40l0025r10 3
+SCRIPT HOLD N180x800mg-07D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-07D60l0025r10 SW_MPS.sub
+VARS N180x800mg-07D60l0025r10 N="180" x="80.0" mg="-0.7" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.8" r="1.0"
+RETRY N180x800mg-07D60l0025r10 3
+SCRIPT HOLD N180x800mg-07D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-06D20l0025r10 SW_MPS.sub
+VARS N180x800mg-06D20l0025r10 N="180" x="80.0" mg="-0.6" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.7" r="1.0"
+RETRY N180x800mg-06D20l0025r10 3
+SCRIPT HOLD N180x800mg-06D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-06D40l0025r10 SW_MPS.sub
+VARS N180x800mg-06D40l0025r10 N="180" x="80.0" mg="-0.6" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.7" r="1.0"
+RETRY N180x800mg-06D40l0025r10 3
+SCRIPT HOLD N180x800mg-06D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-06D60l0025r10 SW_MPS.sub
+VARS N180x800mg-06D60l0025r10 N="180" x="80.0" mg="-0.6" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.7" r="1.0"
+RETRY N180x800mg-06D60l0025r10 3
+SCRIPT HOLD N180x800mg-06D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-05D20l0025r10 SW_MPS.sub
+VARS N180x800mg-05D20l0025r10 N="180" x="80.0" mg="-0.5" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.6" r="1.0"
+RETRY N180x800mg-05D20l0025r10 3
+SCRIPT HOLD N180x800mg-05D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-05D40l0025r10 SW_MPS.sub
+VARS N180x800mg-05D40l0025r10 N="180" x="80.0" mg="-0.5" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.6" r="1.0"
+RETRY N180x800mg-05D40l0025r10 3
+SCRIPT HOLD N180x800mg-05D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-05D60l0025r10 SW_MPS.sub
+VARS N180x800mg-05D60l0025r10 N="180" x="80.0" mg="-0.5" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.6" r="1.0"
+RETRY N180x800mg-05D60l0025r10 3
+SCRIPT HOLD N180x800mg-05D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-04D20l0025r10 SW_MPS.sub
+VARS N180x800mg-04D20l0025r10 N="180" x="80.0" mg="-0.4" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.5" r="1.0"
+RETRY N180x800mg-04D20l0025r10 3
+SCRIPT HOLD N180x800mg-04D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-04D40l0025r10 SW_MPS.sub
+VARS N180x800mg-04D40l0025r10 N="180" x="80.0" mg="-0.4" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.5" r="1.0"
+RETRY N180x800mg-04D40l0025r10 3
+SCRIPT HOLD N180x800mg-04D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-04D60l0025r10 SW_MPS.sub
+VARS N180x800mg-04D60l0025r10 N="180" x="80.0" mg="-0.4" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.5" r="1.0"
+RETRY N180x800mg-04D60l0025r10 3
+SCRIPT HOLD N180x800mg-04D60l0025r10 /usr/bin/condor_release $JOBID
 JOB N180x800mg-03D20l0025r10 SW_MPS.sub
-VARS N180x800mg-03D20l0025r10 N="180" x="80.0" mg="-0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+VARS N180x800mg-03D20l0025r10 N="180" x="80.0" mg="-0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.4" r="1.0"
 RETRY N180x800mg-03D20l0025r10 3
 SCRIPT HOLD N180x800mg-03D20l0025r10 /usr/bin/condor_release $JOBID
 JOB N180x800mg-03D40l0025r10 SW_MPS.sub
-VARS N180x800mg-03D40l0025r10 N="180" x="80.0" mg="-0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+VARS N180x800mg-03D40l0025r10 N="180" x="80.0" mg="-0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.4" r="1.0"
 RETRY N180x800mg-03D40l0025r10 3
 SCRIPT HOLD N180x800mg-03D40l0025r10 /usr/bin/condor_release $JOBID
 JOB N180x800mg-03D60l0025r10 SW_MPS.sub
-VARS N180x800mg-03D60l0025r10 N="180" x="80.0" mg="-0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+VARS N180x800mg-03D60l0025r10 N="180" x="80.0" mg="-0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.4" r="1.0"
 RETRY N180x800mg-03D60l0025r10 3
 SCRIPT HOLD N180x800mg-03D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-03D80l0025r10 SW_MPS.sub
-VARS N180x800mg-03D80l0025r10 N="180" x="80.0" mg="-0.3" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N180x800mg-03D80l0025r10 3
-SCRIPT HOLD N180x800mg-03D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-03D100l0025r10 SW_MPS.sub
-VARS N180x800mg-03D100l0025r10 N="180" x="80.0" mg="-0.3" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N180x800mg-03D100l0025r10 3
-SCRIPT HOLD N180x800mg-03D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D20l0025r10 SW_MPS.sub
-VARS N180x800mg-02D20l0025r10 N="180" x="80.0" mg="-0.2" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D20l0025r10 3
-SCRIPT HOLD N180x800mg-02D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D40l0025r10 SW_MPS.sub
-VARS N180x800mg-02D40l0025r10 N="180" x="80.0" mg="-0.2" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D40l0025r10 3
-SCRIPT HOLD N180x800mg-02D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D60l0025r10 SW_MPS.sub
-VARS N180x800mg-02D60l0025r10 N="180" x="80.0" mg="-0.2" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D60l0025r10 3
-SCRIPT HOLD N180x800mg-02D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D80l0025r10 SW_MPS.sub
-VARS N180x800mg-02D80l0025r10 N="180" x="80.0" mg="-0.2" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D80l0025r10 3
-SCRIPT HOLD N180x800mg-02D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D100l0025r10 SW_MPS.sub
-VARS N180x800mg-02D100l0025r10 N="180" x="80.0" mg="-0.2" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D100l0025r10 3
-SCRIPT HOLD N180x800mg-02D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D20l0025r10 SW_MPS.sub
-VARS N180x800mg-01D20l0025r10 N="180" x="80.0" mg="-0.1" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D20l0025r10 3
-SCRIPT HOLD N180x800mg-01D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D40l0025r10 SW_MPS.sub
-VARS N180x800mg-01D40l0025r10 N="180" x="80.0" mg="-0.1" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D40l0025r10 3
-SCRIPT HOLD N180x800mg-01D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D60l0025r10 SW_MPS.sub
-VARS N180x800mg-01D60l0025r10 N="180" x="80.0" mg="-0.1" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D60l0025r10 3
-SCRIPT HOLD N180x800mg-01D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D80l0025r10 SW_MPS.sub
-VARS N180x800mg-01D80l0025r10 N="180" x="80.0" mg="-0.1" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D80l0025r10 3
-SCRIPT HOLD N180x800mg-01D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D100l0025r10 SW_MPS.sub
-VARS N180x800mg-01D100l0025r10 N="180" x="80.0" mg="-0.1" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D100l0025r10 3
-SCRIPT HOLD N180x800mg-01D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D20l0025r10 SW_MPS.sub
-VARS N180x800mg-005D20l0025r10 N="180" x="80.0" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D20l0025r10 3
-SCRIPT HOLD N180x800mg-005D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D40l0025r10 SW_MPS.sub
-VARS N180x800mg-005D40l0025r10 N="180" x="80.0" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D40l0025r10 3
-SCRIPT HOLD N180x800mg-005D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D60l0025r10 SW_MPS.sub
-VARS N180x800mg-005D60l0025r10 N="180" x="80.0" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D60l0025r10 3
-SCRIPT HOLD N180x800mg-005D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D80l0025r10 SW_MPS.sub
-VARS N180x800mg-005D80l0025r10 N="180" x="80.0" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D80l0025r10 3
-SCRIPT HOLD N180x800mg-005D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D100l0025r10 SW_MPS.sub
-VARS N180x800mg-005D100l0025r10 N="180" x="80.0" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D100l0025r10 3
-SCRIPT HOLD N180x800mg-005D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D20l0025r10 SW_MPS.sub
-VARS N180x800mg00D20l0025r10 N="180" x="80.0" mg="0.0" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D20l0025r10 3
-SCRIPT HOLD N180x800mg00D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D40l0025r10 SW_MPS.sub
-VARS N180x800mg00D40l0025r10 N="180" x="80.0" mg="0.0" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D40l0025r10 3
-SCRIPT HOLD N180x800mg00D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D60l0025r10 SW_MPS.sub
-VARS N180x800mg00D60l0025r10 N="180" x="80.0" mg="0.0" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D60l0025r10 3
-SCRIPT HOLD N180x800mg00D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D80l0025r10 SW_MPS.sub
-VARS N180x800mg00D80l0025r10 N="180" x="80.0" mg="0.0" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D80l0025r10 3
-SCRIPT HOLD N180x800mg00D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D100l0025r10 SW_MPS.sub
-VARS N180x800mg00D100l0025r10 N="180" x="80.0" mg="0.0" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D100l0025r10 3
-SCRIPT HOLD N180x800mg00D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D20l0025r10 SW_MPS.sub
-VARS N180x800mg005D20l0025r10 N="180" x="80.0" mg="0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D20l0025r10 3
-SCRIPT HOLD N180x800mg005D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D40l0025r10 SW_MPS.sub
-VARS N180x800mg005D40l0025r10 N="180" x="80.0" mg="0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D40l0025r10 3
-SCRIPT HOLD N180x800mg005D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D60l0025r10 SW_MPS.sub
-VARS N180x800mg005D60l0025r10 N="180" x="80.0" mg="0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D60l0025r10 3
-SCRIPT HOLD N180x800mg005D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D80l0025r10 SW_MPS.sub
-VARS N180x800mg005D80l0025r10 N="180" x="80.0" mg="0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D80l0025r10 3
-SCRIPT HOLD N180x800mg005D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D100l0025r10 SW_MPS.sub
-VARS N180x800mg005D100l0025r10 N="180" x="80.0" mg="0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D100l0025r10 3
-SCRIPT HOLD N180x800mg005D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D20l0025r10 SW_MPS.sub
-VARS N180x800mg01D20l0025r10 N="180" x="80.0" mg="0.1" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D20l0025r10 3
-SCRIPT HOLD N180x800mg01D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D40l0025r10 SW_MPS.sub
-VARS N180x800mg01D40l0025r10 N="180" x="80.0" mg="0.1" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D40l0025r10 3
-SCRIPT HOLD N180x800mg01D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D60l0025r10 SW_MPS.sub
-VARS N180x800mg01D60l0025r10 N="180" x="80.0" mg="0.1" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D60l0025r10 3
-SCRIPT HOLD N180x800mg01D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D80l0025r10 SW_MPS.sub
-VARS N180x800mg01D80l0025r10 N="180" x="80.0" mg="0.1" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D80l0025r10 3
-SCRIPT HOLD N180x800mg01D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D100l0025r10 SW_MPS.sub
-VARS N180x800mg01D100l0025r10 N="180" x="80.0" mg="0.1" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D100l0025r10 3
-SCRIPT HOLD N180x800mg01D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D20l0025r10 SW_MPS.sub
-VARS N180x800mg02D20l0025r10 N="180" x="80.0" mg="0.2" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D20l0025r10 3
-SCRIPT HOLD N180x800mg02D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D40l0025r10 SW_MPS.sub
-VARS N180x800mg02D40l0025r10 N="180" x="80.0" mg="0.2" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D40l0025r10 3
-SCRIPT HOLD N180x800mg02D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D60l0025r10 SW_MPS.sub
-VARS N180x800mg02D60l0025r10 N="180" x="80.0" mg="0.2" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D60l0025r10 3
-SCRIPT HOLD N180x800mg02D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D80l0025r10 SW_MPS.sub
-VARS N180x800mg02D80l0025r10 N="180" x="80.0" mg="0.2" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D80l0025r10 3
-SCRIPT HOLD N180x800mg02D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D100l0025r10 SW_MPS.sub
-VARS N180x800mg02D100l0025r10 N="180" x="80.0" mg="0.2" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D100l0025r10 3
-SCRIPT HOLD N180x800mg02D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D20l0025r10 SW_MPS.sub
-VARS N180x800mg03D20l0025r10 N="180" x="80.0" mg="0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D20l0025r10 3
-SCRIPT HOLD N180x800mg03D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D40l0025r10 SW_MPS.sub
-VARS N180x800mg03D40l0025r10 N="180" x="80.0" mg="0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D40l0025r10 3
-SCRIPT HOLD N180x800mg03D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D60l0025r10 SW_MPS.sub
-VARS N180x800mg03D60l0025r10 N="180" x="80.0" mg="0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D60l0025r10 3
-SCRIPT HOLD N180x800mg03D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D80l0025r10 SW_MPS.sub
-VARS N180x800mg03D80l0025r10 N="180" x="80.0" mg="0.3" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D80l0025r10 3
-SCRIPT HOLD N180x800mg03D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D100l0025r10 SW_MPS.sub
-VARS N180x800mg03D100l0025r10 N="180" x="80.0" mg="0.3" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D100l0025r10 3
-SCRIPT HOLD N180x800mg03D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-08D20l0025r10 SW_MPS.sub
+VARS N200x1000mg-08D20l0025r10 N="200" x="100.0" mg="-0.8" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+RETRY N200x1000mg-08D20l0025r10 3
+SCRIPT HOLD N200x1000mg-08D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-08D40l0025r10 SW_MPS.sub
+VARS N200x1000mg-08D40l0025r10 N="200" x="100.0" mg="-0.8" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+RETRY N200x1000mg-08D40l0025r10 3
+SCRIPT HOLD N200x1000mg-08D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-08D60l0025r10 SW_MPS.sub
+VARS N200x1000mg-08D60l0025r10 N="200" x="100.0" mg="-0.8" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+RETRY N200x1000mg-08D60l0025r10 3
+SCRIPT HOLD N200x1000mg-08D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-07D20l0025r10 SW_MPS.sub
+VARS N200x1000mg-07D20l0025r10 N="200" x="100.0" mg="-0.7" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.8" r="1.0"
+RETRY N200x1000mg-07D20l0025r10 3
+SCRIPT HOLD N200x1000mg-07D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-07D40l0025r10 SW_MPS.sub
+VARS N200x1000mg-07D40l0025r10 N="200" x="100.0" mg="-0.7" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.8" r="1.0"
+RETRY N200x1000mg-07D40l0025r10 3
+SCRIPT HOLD N200x1000mg-07D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-07D60l0025r10 SW_MPS.sub
+VARS N200x1000mg-07D60l0025r10 N="200" x="100.0" mg="-0.7" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.8" r="1.0"
+RETRY N200x1000mg-07D60l0025r10 3
+SCRIPT HOLD N200x1000mg-07D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-06D20l0025r10 SW_MPS.sub
+VARS N200x1000mg-06D20l0025r10 N="200" x="100.0" mg="-0.6" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.7" r="1.0"
+RETRY N200x1000mg-06D20l0025r10 3
+SCRIPT HOLD N200x1000mg-06D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-06D40l0025r10 SW_MPS.sub
+VARS N200x1000mg-06D40l0025r10 N="200" x="100.0" mg="-0.6" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.7" r="1.0"
+RETRY N200x1000mg-06D40l0025r10 3
+SCRIPT HOLD N200x1000mg-06D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-06D60l0025r10 SW_MPS.sub
+VARS N200x1000mg-06D60l0025r10 N="200" x="100.0" mg="-0.6" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.7" r="1.0"
+RETRY N200x1000mg-06D60l0025r10 3
+SCRIPT HOLD N200x1000mg-06D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-05D20l0025r10 SW_MPS.sub
+VARS N200x1000mg-05D20l0025r10 N="200" x="100.0" mg="-0.5" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.6" r="1.0"
+RETRY N200x1000mg-05D20l0025r10 3
+SCRIPT HOLD N200x1000mg-05D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-05D40l0025r10 SW_MPS.sub
+VARS N200x1000mg-05D40l0025r10 N="200" x="100.0" mg="-0.5" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.6" r="1.0"
+RETRY N200x1000mg-05D40l0025r10 3
+SCRIPT HOLD N200x1000mg-05D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-05D60l0025r10 SW_MPS.sub
+VARS N200x1000mg-05D60l0025r10 N="200" x="100.0" mg="-0.5" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.6" r="1.0"
+RETRY N200x1000mg-05D60l0025r10 3
+SCRIPT HOLD N200x1000mg-05D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-04D20l0025r10 SW_MPS.sub
+VARS N200x1000mg-04D20l0025r10 N="200" x="100.0" mg="-0.4" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.5" r="1.0"
+RETRY N200x1000mg-04D20l0025r10 3
+SCRIPT HOLD N200x1000mg-04D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-04D40l0025r10 SW_MPS.sub
+VARS N200x1000mg-04D40l0025r10 N="200" x="100.0" mg="-0.4" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.5" r="1.0"
+RETRY N200x1000mg-04D40l0025r10 3
+SCRIPT HOLD N200x1000mg-04D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-04D60l0025r10 SW_MPS.sub
+VARS N200x1000mg-04D60l0025r10 N="200" x="100.0" mg="-0.4" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.5" r="1.0"
+RETRY N200x1000mg-04D60l0025r10 3
+SCRIPT HOLD N200x1000mg-04D60l0025r10 /usr/bin/condor_release $JOBID
 JOB N200x1000mg-03D20l0025r10 SW_MPS.sub
-VARS N200x1000mg-03D20l0025r10 N="200" x="100.0" mg="-0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+VARS N200x1000mg-03D20l0025r10 N="200" x="100.0" mg="-0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.4" r="1.0"
 RETRY N200x1000mg-03D20l0025r10 3
 SCRIPT HOLD N200x1000mg-03D20l0025r10 /usr/bin/condor_release $JOBID
 JOB N200x1000mg-03D40l0025r10 SW_MPS.sub
-VARS N200x1000mg-03D40l0025r10 N="200" x="100.0" mg="-0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+VARS N200x1000mg-03D40l0025r10 N="200" x="100.0" mg="-0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.4" r="1.0"
 RETRY N200x1000mg-03D40l0025r10 3
 SCRIPT HOLD N200x1000mg-03D40l0025r10 /usr/bin/condor_release $JOBID
 JOB N200x1000mg-03D60l0025r10 SW_MPS.sub
-VARS N200x1000mg-03D60l0025r10 N="200" x="100.0" mg="-0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+VARS N200x1000mg-03D60l0025r10 N="200" x="100.0" mg="-0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.4" r="1.0"
 RETRY N200x1000mg-03D60l0025r10 3
 SCRIPT HOLD N200x1000mg-03D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-03D80l0025r10 SW_MPS.sub
-VARS N200x1000mg-03D80l0025r10 N="200" x="100.0" mg="-0.3" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N200x1000mg-03D80l0025r10 3
-SCRIPT HOLD N200x1000mg-03D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-03D100l0025r10 SW_MPS.sub
-VARS N200x1000mg-03D100l0025r10 N="200" x="100.0" mg="-0.3" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N200x1000mg-03D100l0025r10 3
-SCRIPT HOLD N200x1000mg-03D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D20l0025r10 SW_MPS.sub
-VARS N200x1000mg-02D20l0025r10 N="200" x="100.0" mg="-0.2" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D20l0025r10 3
-SCRIPT HOLD N200x1000mg-02D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D40l0025r10 SW_MPS.sub
-VARS N200x1000mg-02D40l0025r10 N="200" x="100.0" mg="-0.2" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D40l0025r10 3
-SCRIPT HOLD N200x1000mg-02D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D60l0025r10 SW_MPS.sub
-VARS N200x1000mg-02D60l0025r10 N="200" x="100.0" mg="-0.2" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D60l0025r10 3
-SCRIPT HOLD N200x1000mg-02D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D80l0025r10 SW_MPS.sub
-VARS N200x1000mg-02D80l0025r10 N="200" x="100.0" mg="-0.2" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D80l0025r10 3
-SCRIPT HOLD N200x1000mg-02D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D100l0025r10 SW_MPS.sub
-VARS N200x1000mg-02D100l0025r10 N="200" x="100.0" mg="-0.2" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D100l0025r10 3
-SCRIPT HOLD N200x1000mg-02D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D20l0025r10 SW_MPS.sub
-VARS N200x1000mg-01D20l0025r10 N="200" x="100.0" mg="-0.1" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D20l0025r10 3
-SCRIPT HOLD N200x1000mg-01D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D40l0025r10 SW_MPS.sub
-VARS N200x1000mg-01D40l0025r10 N="200" x="100.0" mg="-0.1" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D40l0025r10 3
-SCRIPT HOLD N200x1000mg-01D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D60l0025r10 SW_MPS.sub
-VARS N200x1000mg-01D60l0025r10 N="200" x="100.0" mg="-0.1" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D60l0025r10 3
-SCRIPT HOLD N200x1000mg-01D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D80l0025r10 SW_MPS.sub
-VARS N200x1000mg-01D80l0025r10 N="200" x="100.0" mg="-0.1" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D80l0025r10 3
-SCRIPT HOLD N200x1000mg-01D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D100l0025r10 SW_MPS.sub
-VARS N200x1000mg-01D100l0025r10 N="200" x="100.0" mg="-0.1" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D100l0025r10 3
-SCRIPT HOLD N200x1000mg-01D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D20l0025r10 SW_MPS.sub
-VARS N200x1000mg-005D20l0025r10 N="200" x="100.0" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D20l0025r10 3
-SCRIPT HOLD N200x1000mg-005D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D40l0025r10 SW_MPS.sub
-VARS N200x1000mg-005D40l0025r10 N="200" x="100.0" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D40l0025r10 3
-SCRIPT HOLD N200x1000mg-005D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D60l0025r10 SW_MPS.sub
-VARS N200x1000mg-005D60l0025r10 N="200" x="100.0" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D60l0025r10 3
-SCRIPT HOLD N200x1000mg-005D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D80l0025r10 SW_MPS.sub
-VARS N200x1000mg-005D80l0025r10 N="200" x="100.0" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D80l0025r10 3
-SCRIPT HOLD N200x1000mg-005D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D100l0025r10 SW_MPS.sub
-VARS N200x1000mg-005D100l0025r10 N="200" x="100.0" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D100l0025r10 3
-SCRIPT HOLD N200x1000mg-005D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D20l0025r10 SW_MPS.sub
-VARS N200x1000mg00D20l0025r10 N="200" x="100.0" mg="0.0" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D20l0025r10 3
-SCRIPT HOLD N200x1000mg00D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D40l0025r10 SW_MPS.sub
-VARS N200x1000mg00D40l0025r10 N="200" x="100.0" mg="0.0" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D40l0025r10 3
-SCRIPT HOLD N200x1000mg00D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D60l0025r10 SW_MPS.sub
-VARS N200x1000mg00D60l0025r10 N="200" x="100.0" mg="0.0" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D60l0025r10 3
-SCRIPT HOLD N200x1000mg00D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D80l0025r10 SW_MPS.sub
-VARS N200x1000mg00D80l0025r10 N="200" x="100.0" mg="0.0" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D80l0025r10 3
-SCRIPT HOLD N200x1000mg00D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D100l0025r10 SW_MPS.sub
-VARS N200x1000mg00D100l0025r10 N="200" x="100.0" mg="0.0" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D100l0025r10 3
-SCRIPT HOLD N200x1000mg00D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D20l0025r10 SW_MPS.sub
-VARS N200x1000mg005D20l0025r10 N="200" x="100.0" mg="0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D20l0025r10 3
-SCRIPT HOLD N200x1000mg005D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D40l0025r10 SW_MPS.sub
-VARS N200x1000mg005D40l0025r10 N="200" x="100.0" mg="0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D40l0025r10 3
-SCRIPT HOLD N200x1000mg005D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D60l0025r10 SW_MPS.sub
-VARS N200x1000mg005D60l0025r10 N="200" x="100.0" mg="0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D60l0025r10 3
-SCRIPT HOLD N200x1000mg005D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D80l0025r10 SW_MPS.sub
-VARS N200x1000mg005D80l0025r10 N="200" x="100.0" mg="0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D80l0025r10 3
-SCRIPT HOLD N200x1000mg005D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D100l0025r10 SW_MPS.sub
-VARS N200x1000mg005D100l0025r10 N="200" x="100.0" mg="0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D100l0025r10 3
-SCRIPT HOLD N200x1000mg005D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D20l0025r10 SW_MPS.sub
-VARS N200x1000mg01D20l0025r10 N="200" x="100.0" mg="0.1" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D20l0025r10 3
-SCRIPT HOLD N200x1000mg01D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D40l0025r10 SW_MPS.sub
-VARS N200x1000mg01D40l0025r10 N="200" x="100.0" mg="0.1" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D40l0025r10 3
-SCRIPT HOLD N200x1000mg01D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D60l0025r10 SW_MPS.sub
-VARS N200x1000mg01D60l0025r10 N="200" x="100.0" mg="0.1" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D60l0025r10 3
-SCRIPT HOLD N200x1000mg01D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D80l0025r10 SW_MPS.sub
-VARS N200x1000mg01D80l0025r10 N="200" x="100.0" mg="0.1" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D80l0025r10 3
-SCRIPT HOLD N200x1000mg01D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D100l0025r10 SW_MPS.sub
-VARS N200x1000mg01D100l0025r10 N="200" x="100.0" mg="0.1" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D100l0025r10 3
-SCRIPT HOLD N200x1000mg01D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D20l0025r10 SW_MPS.sub
-VARS N200x1000mg02D20l0025r10 N="200" x="100.0" mg="0.2" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D20l0025r10 3
-SCRIPT HOLD N200x1000mg02D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D40l0025r10 SW_MPS.sub
-VARS N200x1000mg02D40l0025r10 N="200" x="100.0" mg="0.2" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D40l0025r10 3
-SCRIPT HOLD N200x1000mg02D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D60l0025r10 SW_MPS.sub
-VARS N200x1000mg02D60l0025r10 N="200" x="100.0" mg="0.2" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D60l0025r10 3
-SCRIPT HOLD N200x1000mg02D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D80l0025r10 SW_MPS.sub
-VARS N200x1000mg02D80l0025r10 N="200" x="100.0" mg="0.2" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D80l0025r10 3
-SCRIPT HOLD N200x1000mg02D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D100l0025r10 SW_MPS.sub
-VARS N200x1000mg02D100l0025r10 N="200" x="100.0" mg="0.2" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D100l0025r10 3
-SCRIPT HOLD N200x1000mg02D100l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D20l0025r10 SW_MPS.sub
-VARS N200x1000mg03D20l0025r10 N="200" x="100.0" mg="0.3" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D20l0025r10 3
-SCRIPT HOLD N200x1000mg03D20l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D40l0025r10 SW_MPS.sub
-VARS N200x1000mg03D40l0025r10 N="200" x="100.0" mg="0.3" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D40l0025r10 3
-SCRIPT HOLD N200x1000mg03D40l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D60l0025r10 SW_MPS.sub
-VARS N200x1000mg03D60l0025r10 N="200" x="100.0" mg="0.3" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D60l0025r10 3
-SCRIPT HOLD N200x1000mg03D60l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D80l0025r10 SW_MPS.sub
-VARS N200x1000mg03D80l0025r10 N="200" x="100.0" mg="0.3" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D80l0025r10 3
-SCRIPT HOLD N200x1000mg03D80l0025r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D100l0025r10 SW_MPS.sub
-VARS N200x1000mg03D100l0025r10 N="200" x="100.0" mg="0.3" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D100l0025r10 3
-SCRIPT HOLD N200x1000mg03D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-08D20l0075r10 SW_MPS.sub
+VARS N64x100mg-08D20l0075r10 N="64" x="10.0" mg="-0.8" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+RETRY N64x100mg-08D20l0075r10 3
+SCRIPT HOLD N64x100mg-08D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-08D40l0075r10 SW_MPS.sub
+VARS N64x100mg-08D40l0075r10 N="64" x="10.0" mg="-0.8" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+RETRY N64x100mg-08D40l0075r10 3
+SCRIPT HOLD N64x100mg-08D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-08D60l0075r10 SW_MPS.sub
+VARS N64x100mg-08D60l0075r10 N="64" x="10.0" mg="-0.8" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+RETRY N64x100mg-08D60l0075r10 3
+SCRIPT HOLD N64x100mg-08D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-07D20l0075r10 SW_MPS.sub
+VARS N64x100mg-07D20l0075r10 N="64" x="10.0" mg="-0.7" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.8" r="1.0"
+RETRY N64x100mg-07D20l0075r10 3
+SCRIPT HOLD N64x100mg-07D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-07D40l0075r10 SW_MPS.sub
+VARS N64x100mg-07D40l0075r10 N="64" x="10.0" mg="-0.7" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.8" r="1.0"
+RETRY N64x100mg-07D40l0075r10 3
+SCRIPT HOLD N64x100mg-07D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-07D60l0075r10 SW_MPS.sub
+VARS N64x100mg-07D60l0075r10 N="64" x="10.0" mg="-0.7" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.8" r="1.0"
+RETRY N64x100mg-07D60l0075r10 3
+SCRIPT HOLD N64x100mg-07D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-06D20l0075r10 SW_MPS.sub
+VARS N64x100mg-06D20l0075r10 N="64" x="10.0" mg="-0.6" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.7" r="1.0"
+RETRY N64x100mg-06D20l0075r10 3
+SCRIPT HOLD N64x100mg-06D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-06D40l0075r10 SW_MPS.sub
+VARS N64x100mg-06D40l0075r10 N="64" x="10.0" mg="-0.6" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.7" r="1.0"
+RETRY N64x100mg-06D40l0075r10 3
+SCRIPT HOLD N64x100mg-06D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-06D60l0075r10 SW_MPS.sub
+VARS N64x100mg-06D60l0075r10 N="64" x="10.0" mg="-0.6" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.7" r="1.0"
+RETRY N64x100mg-06D60l0075r10 3
+SCRIPT HOLD N64x100mg-06D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-05D20l0075r10 SW_MPS.sub
+VARS N64x100mg-05D20l0075r10 N="64" x="10.0" mg="-0.5" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.6" r="1.0"
+RETRY N64x100mg-05D20l0075r10 3
+SCRIPT HOLD N64x100mg-05D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-05D40l0075r10 SW_MPS.sub
+VARS N64x100mg-05D40l0075r10 N="64" x="10.0" mg="-0.5" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.6" r="1.0"
+RETRY N64x100mg-05D40l0075r10 3
+SCRIPT HOLD N64x100mg-05D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-05D60l0075r10 SW_MPS.sub
+VARS N64x100mg-05D60l0075r10 N="64" x="10.0" mg="-0.5" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.6" r="1.0"
+RETRY N64x100mg-05D60l0075r10 3
+SCRIPT HOLD N64x100mg-05D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-04D20l0075r10 SW_MPS.sub
+VARS N64x100mg-04D20l0075r10 N="64" x="10.0" mg="-0.4" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.5" r="1.0"
+RETRY N64x100mg-04D20l0075r10 3
+SCRIPT HOLD N64x100mg-04D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-04D40l0075r10 SW_MPS.sub
+VARS N64x100mg-04D40l0075r10 N="64" x="10.0" mg="-0.4" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.5" r="1.0"
+RETRY N64x100mg-04D40l0075r10 3
+SCRIPT HOLD N64x100mg-04D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N64x100mg-04D60l0075r10 SW_MPS.sub
+VARS N64x100mg-04D60l0075r10 N="64" x="10.0" mg="-0.4" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.5" r="1.0"
+RETRY N64x100mg-04D60l0075r10 3
+SCRIPT HOLD N64x100mg-04D60l0075r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-03D20l0075r10 SW_MPS.sub
-VARS N64x100mg-03D20l0075r10 N="64" x="10.0" mg="-0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+VARS N64x100mg-03D20l0075r10 N="64" x="10.0" mg="-0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.4" r="1.0"
 RETRY N64x100mg-03D20l0075r10 3
 SCRIPT HOLD N64x100mg-03D20l0075r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-03D40l0075r10 SW_MPS.sub
-VARS N64x100mg-03D40l0075r10 N="64" x="10.0" mg="-0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+VARS N64x100mg-03D40l0075r10 N="64" x="10.0" mg="-0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.4" r="1.0"
 RETRY N64x100mg-03D40l0075r10 3
 SCRIPT HOLD N64x100mg-03D40l0075r10 /usr/bin/condor_release $JOBID
 JOB N64x100mg-03D60l0075r10 SW_MPS.sub
-VARS N64x100mg-03D60l0075r10 N="64" x="10.0" mg="-0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+VARS N64x100mg-03D60l0075r10 N="64" x="10.0" mg="-0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.4" r="1.0"
 RETRY N64x100mg-03D60l0075r10 3
 SCRIPT HOLD N64x100mg-03D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-03D80l0075r10 SW_MPS.sub
-VARS N64x100mg-03D80l0075r10 N="64" x="10.0" mg="-0.3" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N64x100mg-03D80l0075r10 3
-SCRIPT HOLD N64x100mg-03D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-03D100l0075r10 SW_MPS.sub
-VARS N64x100mg-03D100l0075r10 N="64" x="10.0" mg="-0.3" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N64x100mg-03D100l0075r10 3
-SCRIPT HOLD N64x100mg-03D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D20l0075r10 SW_MPS.sub
-VARS N64x100mg-02D20l0075r10 N="64" x="10.0" mg="-0.2" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D20l0075r10 3
-SCRIPT HOLD N64x100mg-02D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D40l0075r10 SW_MPS.sub
-VARS N64x100mg-02D40l0075r10 N="64" x="10.0" mg="-0.2" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D40l0075r10 3
-SCRIPT HOLD N64x100mg-02D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D60l0075r10 SW_MPS.sub
-VARS N64x100mg-02D60l0075r10 N="64" x="10.0" mg="-0.2" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D60l0075r10 3
-SCRIPT HOLD N64x100mg-02D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D80l0075r10 SW_MPS.sub
-VARS N64x100mg-02D80l0075r10 N="64" x="10.0" mg="-0.2" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D80l0075r10 3
-SCRIPT HOLD N64x100mg-02D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-02D100l0075r10 SW_MPS.sub
-VARS N64x100mg-02D100l0075r10 N="64" x="10.0" mg="-0.2" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.3" r="1.0"
-RETRY N64x100mg-02D100l0075r10 3
-SCRIPT HOLD N64x100mg-02D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D20l0075r10 SW_MPS.sub
-VARS N64x100mg-01D20l0075r10 N="64" x="10.0" mg="-0.1" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D20l0075r10 3
-SCRIPT HOLD N64x100mg-01D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D40l0075r10 SW_MPS.sub
-VARS N64x100mg-01D40l0075r10 N="64" x="10.0" mg="-0.1" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D40l0075r10 3
-SCRIPT HOLD N64x100mg-01D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D60l0075r10 SW_MPS.sub
-VARS N64x100mg-01D60l0075r10 N="64" x="10.0" mg="-0.1" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D60l0075r10 3
-SCRIPT HOLD N64x100mg-01D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D80l0075r10 SW_MPS.sub
-VARS N64x100mg-01D80l0075r10 N="64" x="10.0" mg="-0.1" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D80l0075r10 3
-SCRIPT HOLD N64x100mg-01D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-01D100l0075r10 SW_MPS.sub
-VARS N64x100mg-01D100l0075r10 N="64" x="10.0" mg="-0.1" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.2" r="1.0"
-RETRY N64x100mg-01D100l0075r10 3
-SCRIPT HOLD N64x100mg-01D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D20l0075r10 SW_MPS.sub
-VARS N64x100mg-005D20l0075r10 N="64" x="10.0" mg="-0.05" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D20l0075r10 3
-SCRIPT HOLD N64x100mg-005D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D40l0075r10 SW_MPS.sub
-VARS N64x100mg-005D40l0075r10 N="64" x="10.0" mg="-0.05" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D40l0075r10 3
-SCRIPT HOLD N64x100mg-005D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D60l0075r10 SW_MPS.sub
-VARS N64x100mg-005D60l0075r10 N="64" x="10.0" mg="-0.05" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D60l0075r10 3
-SCRIPT HOLD N64x100mg-005D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D80l0075r10 SW_MPS.sub
-VARS N64x100mg-005D80l0075r10 N="64" x="10.0" mg="-0.05" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D80l0075r10 3
-SCRIPT HOLD N64x100mg-005D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-005D100l0075r10 SW_MPS.sub
-VARS N64x100mg-005D100l0075r10 N="64" x="10.0" mg="-0.05" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1" r="1.0"
-RETRY N64x100mg-005D100l0075r10 3
-SCRIPT HOLD N64x100mg-005D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D20l0075r10 SW_MPS.sub
-VARS N64x100mg00D20l0075r10 N="64" x="10.0" mg="0.0" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D20l0075r10 3
-SCRIPT HOLD N64x100mg00D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D40l0075r10 SW_MPS.sub
-VARS N64x100mg00D40l0075r10 N="64" x="10.0" mg="0.0" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D40l0075r10 3
-SCRIPT HOLD N64x100mg00D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D60l0075r10 SW_MPS.sub
-VARS N64x100mg00D60l0075r10 N="64" x="10.0" mg="0.0" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D60l0075r10 3
-SCRIPT HOLD N64x100mg00D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D80l0075r10 SW_MPS.sub
-VARS N64x100mg00D80l0075r10 N="64" x="10.0" mg="0.0" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D80l0075r10 3
-SCRIPT HOLD N64x100mg00D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg00D100l0075r10 SW_MPS.sub
-VARS N64x100mg00D100l0075r10 N="64" x="10.0" mg="0.0" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
-RETRY N64x100mg00D100l0075r10 3
-SCRIPT HOLD N64x100mg00D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D20l0075r10 SW_MPS.sub
-VARS N64x100mg005D20l0075r10 N="64" x="10.0" mg="0.05" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D20l0075r10 3
-SCRIPT HOLD N64x100mg005D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D40l0075r10 SW_MPS.sub
-VARS N64x100mg005D40l0075r10 N="64" x="10.0" mg="0.05" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D40l0075r10 3
-SCRIPT HOLD N64x100mg005D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D60l0075r10 SW_MPS.sub
-VARS N64x100mg005D60l0075r10 N="64" x="10.0" mg="0.05" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D60l0075r10 3
-SCRIPT HOLD N64x100mg005D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D80l0075r10 SW_MPS.sub
-VARS N64x100mg005D80l0075r10 N="64" x="10.0" mg="0.05" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D80l0075r10 3
-SCRIPT HOLD N64x100mg005D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg005D100l0075r10 SW_MPS.sub
-VARS N64x100mg005D100l0075r10 N="64" x="10.0" mg="0.05" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N64x100mg005D100l0075r10 3
-SCRIPT HOLD N64x100mg005D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D20l0075r10 SW_MPS.sub
-VARS N64x100mg01D20l0075r10 N="64" x="10.0" mg="0.1" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D20l0075r10 3
-SCRIPT HOLD N64x100mg01D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D40l0075r10 SW_MPS.sub
-VARS N64x100mg01D40l0075r10 N="64" x="10.0" mg="0.1" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D40l0075r10 3
-SCRIPT HOLD N64x100mg01D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D60l0075r10 SW_MPS.sub
-VARS N64x100mg01D60l0075r10 N="64" x="10.0" mg="0.1" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D60l0075r10 3
-SCRIPT HOLD N64x100mg01D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D80l0075r10 SW_MPS.sub
-VARS N64x100mg01D80l0075r10 N="64" x="10.0" mg="0.1" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D80l0075r10 3
-SCRIPT HOLD N64x100mg01D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg01D100l0075r10 SW_MPS.sub
-VARS N64x100mg01D100l0075r10 N="64" x="10.0" mg="0.1" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.05" r="1.0"
-RETRY N64x100mg01D100l0075r10 3
-SCRIPT HOLD N64x100mg01D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D20l0075r10 SW_MPS.sub
-VARS N64x100mg02D20l0075r10 N="64" x="10.0" mg="0.2" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D20l0075r10 3
-SCRIPT HOLD N64x100mg02D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D40l0075r10 SW_MPS.sub
-VARS N64x100mg02D40l0075r10 N="64" x="10.0" mg="0.2" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D40l0075r10 3
-SCRIPT HOLD N64x100mg02D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D60l0075r10 SW_MPS.sub
-VARS N64x100mg02D60l0075r10 N="64" x="10.0" mg="0.2" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D60l0075r10 3
-SCRIPT HOLD N64x100mg02D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D80l0075r10 SW_MPS.sub
-VARS N64x100mg02D80l0075r10 N="64" x="10.0" mg="0.2" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D80l0075r10 3
-SCRIPT HOLD N64x100mg02D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg02D100l0075r10 SW_MPS.sub
-VARS N64x100mg02D100l0075r10 N="64" x="10.0" mg="0.2" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.1" r="1.0"
-RETRY N64x100mg02D100l0075r10 3
-SCRIPT HOLD N64x100mg02D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D20l0075r10 SW_MPS.sub
-VARS N64x100mg03D20l0075r10 N="64" x="10.0" mg="0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D20l0075r10 3
-SCRIPT HOLD N64x100mg03D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D40l0075r10 SW_MPS.sub
-VARS N64x100mg03D40l0075r10 N="64" x="10.0" mg="0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D40l0075r10 3
-SCRIPT HOLD N64x100mg03D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D60l0075r10 SW_MPS.sub
-VARS N64x100mg03D60l0075r10 N="64" x="10.0" mg="0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D60l0075r10 3
-SCRIPT HOLD N64x100mg03D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D80l0075r10 SW_MPS.sub
-VARS N64x100mg03D80l0075r10 N="64" x="10.0" mg="0.3" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D80l0075r10 3
-SCRIPT HOLD N64x100mg03D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg03D100l0075r10 SW_MPS.sub
-VARS N64x100mg03D100l0075r10 N="64" x="10.0" mg="0.3" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.2" r="1.0"
-RETRY N64x100mg03D100l0075r10 3
-SCRIPT HOLD N64x100mg03D100l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-08D20l0075r10 SW_MPS.sub
+VARS N156x600mg-08D20l0075r10 N="156" x="60.0" mg="-0.8" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+RETRY N156x600mg-08D20l0075r10 3
+SCRIPT HOLD N156x600mg-08D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-08D40l0075r10 SW_MPS.sub
+VARS N156x600mg-08D40l0075r10 N="156" x="60.0" mg="-0.8" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+RETRY N156x600mg-08D40l0075r10 3
+SCRIPT HOLD N156x600mg-08D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-08D60l0075r10 SW_MPS.sub
+VARS N156x600mg-08D60l0075r10 N="156" x="60.0" mg="-0.8" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+RETRY N156x600mg-08D60l0075r10 3
+SCRIPT HOLD N156x600mg-08D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-07D20l0075r10 SW_MPS.sub
+VARS N156x600mg-07D20l0075r10 N="156" x="60.0" mg="-0.7" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.8" r="1.0"
+RETRY N156x600mg-07D20l0075r10 3
+SCRIPT HOLD N156x600mg-07D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-07D40l0075r10 SW_MPS.sub
+VARS N156x600mg-07D40l0075r10 N="156" x="60.0" mg="-0.7" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.8" r="1.0"
+RETRY N156x600mg-07D40l0075r10 3
+SCRIPT HOLD N156x600mg-07D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-07D60l0075r10 SW_MPS.sub
+VARS N156x600mg-07D60l0075r10 N="156" x="60.0" mg="-0.7" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.8" r="1.0"
+RETRY N156x600mg-07D60l0075r10 3
+SCRIPT HOLD N156x600mg-07D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-06D20l0075r10 SW_MPS.sub
+VARS N156x600mg-06D20l0075r10 N="156" x="60.0" mg="-0.6" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.7" r="1.0"
+RETRY N156x600mg-06D20l0075r10 3
+SCRIPT HOLD N156x600mg-06D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-06D40l0075r10 SW_MPS.sub
+VARS N156x600mg-06D40l0075r10 N="156" x="60.0" mg="-0.6" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.7" r="1.0"
+RETRY N156x600mg-06D40l0075r10 3
+SCRIPT HOLD N156x600mg-06D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-06D60l0075r10 SW_MPS.sub
+VARS N156x600mg-06D60l0075r10 N="156" x="60.0" mg="-0.6" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.7" r="1.0"
+RETRY N156x600mg-06D60l0075r10 3
+SCRIPT HOLD N156x600mg-06D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-05D20l0075r10 SW_MPS.sub
+VARS N156x600mg-05D20l0075r10 N="156" x="60.0" mg="-0.5" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.6" r="1.0"
+RETRY N156x600mg-05D20l0075r10 3
+SCRIPT HOLD N156x600mg-05D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-05D40l0075r10 SW_MPS.sub
+VARS N156x600mg-05D40l0075r10 N="156" x="60.0" mg="-0.5" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.6" r="1.0"
+RETRY N156x600mg-05D40l0075r10 3
+SCRIPT HOLD N156x600mg-05D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-05D60l0075r10 SW_MPS.sub
+VARS N156x600mg-05D60l0075r10 N="156" x="60.0" mg="-0.5" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.6" r="1.0"
+RETRY N156x600mg-05D60l0075r10 3
+SCRIPT HOLD N156x600mg-05D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-04D20l0075r10 SW_MPS.sub
+VARS N156x600mg-04D20l0075r10 N="156" x="60.0" mg="-0.4" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.5" r="1.0"
+RETRY N156x600mg-04D20l0075r10 3
+SCRIPT HOLD N156x600mg-04D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-04D40l0075r10 SW_MPS.sub
+VARS N156x600mg-04D40l0075r10 N="156" x="60.0" mg="-0.4" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.5" r="1.0"
+RETRY N156x600mg-04D40l0075r10 3
+SCRIPT HOLD N156x600mg-04D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N156x600mg-04D60l0075r10 SW_MPS.sub
+VARS N156x600mg-04D60l0075r10 N="156" x="60.0" mg="-0.4" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.5" r="1.0"
+RETRY N156x600mg-04D60l0075r10 3
+SCRIPT HOLD N156x600mg-04D60l0075r10 /usr/bin/condor_release $JOBID
 JOB N156x600mg-03D20l0075r10 SW_MPS.sub
-VARS N156x600mg-03D20l0075r10 N="156" x="60.0" mg="-0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+VARS N156x600mg-03D20l0075r10 N="156" x="60.0" mg="-0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.4" r="1.0"
 RETRY N156x600mg-03D20l0075r10 3
 SCRIPT HOLD N156x600mg-03D20l0075r10 /usr/bin/condor_release $JOBID
 JOB N156x600mg-03D40l0075r10 SW_MPS.sub
-VARS N156x600mg-03D40l0075r10 N="156" x="60.0" mg="-0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+VARS N156x600mg-03D40l0075r10 N="156" x="60.0" mg="-0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.4" r="1.0"
 RETRY N156x600mg-03D40l0075r10 3
 SCRIPT HOLD N156x600mg-03D40l0075r10 /usr/bin/condor_release $JOBID
 JOB N156x600mg-03D60l0075r10 SW_MPS.sub
-VARS N156x600mg-03D60l0075r10 N="156" x="60.0" mg="-0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+VARS N156x600mg-03D60l0075r10 N="156" x="60.0" mg="-0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.4" r="1.0"
 RETRY N156x600mg-03D60l0075r10 3
 SCRIPT HOLD N156x600mg-03D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-03D80l0075r10 SW_MPS.sub
-VARS N156x600mg-03D80l0075r10 N="156" x="60.0" mg="-0.3" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N156x600mg-03D80l0075r10 3
-SCRIPT HOLD N156x600mg-03D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-03D100l0075r10 SW_MPS.sub
-VARS N156x600mg-03D100l0075r10 N="156" x="60.0" mg="-0.3" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N156x600mg-03D100l0075r10 3
-SCRIPT HOLD N156x600mg-03D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D20l0075r10 SW_MPS.sub
-VARS N156x600mg-02D20l0075r10 N="156" x="60.0" mg="-0.2" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D20l0075r10 3
-SCRIPT HOLD N156x600mg-02D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D40l0075r10 SW_MPS.sub
-VARS N156x600mg-02D40l0075r10 N="156" x="60.0" mg="-0.2" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D40l0075r10 3
-SCRIPT HOLD N156x600mg-02D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D60l0075r10 SW_MPS.sub
-VARS N156x600mg-02D60l0075r10 N="156" x="60.0" mg="-0.2" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D60l0075r10 3
-SCRIPT HOLD N156x600mg-02D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D80l0075r10 SW_MPS.sub
-VARS N156x600mg-02D80l0075r10 N="156" x="60.0" mg="-0.2" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D80l0075r10 3
-SCRIPT HOLD N156x600mg-02D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-02D100l0075r10 SW_MPS.sub
-VARS N156x600mg-02D100l0075r10 N="156" x="60.0" mg="-0.2" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.3" r="1.0"
-RETRY N156x600mg-02D100l0075r10 3
-SCRIPT HOLD N156x600mg-02D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D20l0075r10 SW_MPS.sub
-VARS N156x600mg-01D20l0075r10 N="156" x="60.0" mg="-0.1" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D20l0075r10 3
-SCRIPT HOLD N156x600mg-01D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D40l0075r10 SW_MPS.sub
-VARS N156x600mg-01D40l0075r10 N="156" x="60.0" mg="-0.1" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D40l0075r10 3
-SCRIPT HOLD N156x600mg-01D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D60l0075r10 SW_MPS.sub
-VARS N156x600mg-01D60l0075r10 N="156" x="60.0" mg="-0.1" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D60l0075r10 3
-SCRIPT HOLD N156x600mg-01D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D80l0075r10 SW_MPS.sub
-VARS N156x600mg-01D80l0075r10 N="156" x="60.0" mg="-0.1" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D80l0075r10 3
-SCRIPT HOLD N156x600mg-01D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-01D100l0075r10 SW_MPS.sub
-VARS N156x600mg-01D100l0075r10 N="156" x="60.0" mg="-0.1" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.2" r="1.0"
-RETRY N156x600mg-01D100l0075r10 3
-SCRIPT HOLD N156x600mg-01D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D20l0075r10 SW_MPS.sub
-VARS N156x600mg-005D20l0075r10 N="156" x="60.0" mg="-0.05" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D20l0075r10 3
-SCRIPT HOLD N156x600mg-005D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D40l0075r10 SW_MPS.sub
-VARS N156x600mg-005D40l0075r10 N="156" x="60.0" mg="-0.05" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D40l0075r10 3
-SCRIPT HOLD N156x600mg-005D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D60l0075r10 SW_MPS.sub
-VARS N156x600mg-005D60l0075r10 N="156" x="60.0" mg="-0.05" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D60l0075r10 3
-SCRIPT HOLD N156x600mg-005D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D80l0075r10 SW_MPS.sub
-VARS N156x600mg-005D80l0075r10 N="156" x="60.0" mg="-0.05" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D80l0075r10 3
-SCRIPT HOLD N156x600mg-005D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-005D100l0075r10 SW_MPS.sub
-VARS N156x600mg-005D100l0075r10 N="156" x="60.0" mg="-0.05" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1" r="1.0"
-RETRY N156x600mg-005D100l0075r10 3
-SCRIPT HOLD N156x600mg-005D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D20l0075r10 SW_MPS.sub
-VARS N156x600mg00D20l0075r10 N="156" x="60.0" mg="0.0" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D20l0075r10 3
-SCRIPT HOLD N156x600mg00D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D40l0075r10 SW_MPS.sub
-VARS N156x600mg00D40l0075r10 N="156" x="60.0" mg="0.0" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D40l0075r10 3
-SCRIPT HOLD N156x600mg00D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D60l0075r10 SW_MPS.sub
-VARS N156x600mg00D60l0075r10 N="156" x="60.0" mg="0.0" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D60l0075r10 3
-SCRIPT HOLD N156x600mg00D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D80l0075r10 SW_MPS.sub
-VARS N156x600mg00D80l0075r10 N="156" x="60.0" mg="0.0" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D80l0075r10 3
-SCRIPT HOLD N156x600mg00D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg00D100l0075r10 SW_MPS.sub
-VARS N156x600mg00D100l0075r10 N="156" x="60.0" mg="0.0" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
-RETRY N156x600mg00D100l0075r10 3
-SCRIPT HOLD N156x600mg00D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D20l0075r10 SW_MPS.sub
-VARS N156x600mg005D20l0075r10 N="156" x="60.0" mg="0.05" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D20l0075r10 3
-SCRIPT HOLD N156x600mg005D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D40l0075r10 SW_MPS.sub
-VARS N156x600mg005D40l0075r10 N="156" x="60.0" mg="0.05" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D40l0075r10 3
-SCRIPT HOLD N156x600mg005D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D60l0075r10 SW_MPS.sub
-VARS N156x600mg005D60l0075r10 N="156" x="60.0" mg="0.05" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D60l0075r10 3
-SCRIPT HOLD N156x600mg005D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D80l0075r10 SW_MPS.sub
-VARS N156x600mg005D80l0075r10 N="156" x="60.0" mg="0.05" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D80l0075r10 3
-SCRIPT HOLD N156x600mg005D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg005D100l0075r10 SW_MPS.sub
-VARS N156x600mg005D100l0075r10 N="156" x="60.0" mg="0.05" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N156x600mg005D100l0075r10 3
-SCRIPT HOLD N156x600mg005D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D20l0075r10 SW_MPS.sub
-VARS N156x600mg01D20l0075r10 N="156" x="60.0" mg="0.1" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D20l0075r10 3
-SCRIPT HOLD N156x600mg01D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D40l0075r10 SW_MPS.sub
-VARS N156x600mg01D40l0075r10 N="156" x="60.0" mg="0.1" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D40l0075r10 3
-SCRIPT HOLD N156x600mg01D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D60l0075r10 SW_MPS.sub
-VARS N156x600mg01D60l0075r10 N="156" x="60.0" mg="0.1" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D60l0075r10 3
-SCRIPT HOLD N156x600mg01D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D80l0075r10 SW_MPS.sub
-VARS N156x600mg01D80l0075r10 N="156" x="60.0" mg="0.1" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D80l0075r10 3
-SCRIPT HOLD N156x600mg01D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg01D100l0075r10 SW_MPS.sub
-VARS N156x600mg01D100l0075r10 N="156" x="60.0" mg="0.1" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.05" r="1.0"
-RETRY N156x600mg01D100l0075r10 3
-SCRIPT HOLD N156x600mg01D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D20l0075r10 SW_MPS.sub
-VARS N156x600mg02D20l0075r10 N="156" x="60.0" mg="0.2" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D20l0075r10 3
-SCRIPT HOLD N156x600mg02D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D40l0075r10 SW_MPS.sub
-VARS N156x600mg02D40l0075r10 N="156" x="60.0" mg="0.2" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D40l0075r10 3
-SCRIPT HOLD N156x600mg02D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D60l0075r10 SW_MPS.sub
-VARS N156x600mg02D60l0075r10 N="156" x="60.0" mg="0.2" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D60l0075r10 3
-SCRIPT HOLD N156x600mg02D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D80l0075r10 SW_MPS.sub
-VARS N156x600mg02D80l0075r10 N="156" x="60.0" mg="0.2" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D80l0075r10 3
-SCRIPT HOLD N156x600mg02D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg02D100l0075r10 SW_MPS.sub
-VARS N156x600mg02D100l0075r10 N="156" x="60.0" mg="0.2" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.1" r="1.0"
-RETRY N156x600mg02D100l0075r10 3
-SCRIPT HOLD N156x600mg02D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D20l0075r10 SW_MPS.sub
-VARS N156x600mg03D20l0075r10 N="156" x="60.0" mg="0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D20l0075r10 3
-SCRIPT HOLD N156x600mg03D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D40l0075r10 SW_MPS.sub
-VARS N156x600mg03D40l0075r10 N="156" x="60.0" mg="0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D40l0075r10 3
-SCRIPT HOLD N156x600mg03D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D60l0075r10 SW_MPS.sub
-VARS N156x600mg03D60l0075r10 N="156" x="60.0" mg="0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D60l0075r10 3
-SCRIPT HOLD N156x600mg03D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D80l0075r10 SW_MPS.sub
-VARS N156x600mg03D80l0075r10 N="156" x="60.0" mg="0.3" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D80l0075r10 3
-SCRIPT HOLD N156x600mg03D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg03D100l0075r10 SW_MPS.sub
-VARS N156x600mg03D100l0075r10 N="156" x="60.0" mg="0.3" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.2" r="1.0"
-RETRY N156x600mg03D100l0075r10 3
-SCRIPT HOLD N156x600mg03D100l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-08D20l0075r10 SW_MPS.sub
+VARS N180x800mg-08D20l0075r10 N="180" x="80.0" mg="-0.8" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+RETRY N180x800mg-08D20l0075r10 3
+SCRIPT HOLD N180x800mg-08D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-08D40l0075r10 SW_MPS.sub
+VARS N180x800mg-08D40l0075r10 N="180" x="80.0" mg="-0.8" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+RETRY N180x800mg-08D40l0075r10 3
+SCRIPT HOLD N180x800mg-08D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-08D60l0075r10 SW_MPS.sub
+VARS N180x800mg-08D60l0075r10 N="180" x="80.0" mg="-0.8" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+RETRY N180x800mg-08D60l0075r10 3
+SCRIPT HOLD N180x800mg-08D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-07D20l0075r10 SW_MPS.sub
+VARS N180x800mg-07D20l0075r10 N="180" x="80.0" mg="-0.7" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.8" r="1.0"
+RETRY N180x800mg-07D20l0075r10 3
+SCRIPT HOLD N180x800mg-07D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-07D40l0075r10 SW_MPS.sub
+VARS N180x800mg-07D40l0075r10 N="180" x="80.0" mg="-0.7" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.8" r="1.0"
+RETRY N180x800mg-07D40l0075r10 3
+SCRIPT HOLD N180x800mg-07D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-07D60l0075r10 SW_MPS.sub
+VARS N180x800mg-07D60l0075r10 N="180" x="80.0" mg="-0.7" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.8" r="1.0"
+RETRY N180x800mg-07D60l0075r10 3
+SCRIPT HOLD N180x800mg-07D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-06D20l0075r10 SW_MPS.sub
+VARS N180x800mg-06D20l0075r10 N="180" x="80.0" mg="-0.6" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.7" r="1.0"
+RETRY N180x800mg-06D20l0075r10 3
+SCRIPT HOLD N180x800mg-06D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-06D40l0075r10 SW_MPS.sub
+VARS N180x800mg-06D40l0075r10 N="180" x="80.0" mg="-0.6" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.7" r="1.0"
+RETRY N180x800mg-06D40l0075r10 3
+SCRIPT HOLD N180x800mg-06D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-06D60l0075r10 SW_MPS.sub
+VARS N180x800mg-06D60l0075r10 N="180" x="80.0" mg="-0.6" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.7" r="1.0"
+RETRY N180x800mg-06D60l0075r10 3
+SCRIPT HOLD N180x800mg-06D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-05D20l0075r10 SW_MPS.sub
+VARS N180x800mg-05D20l0075r10 N="180" x="80.0" mg="-0.5" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.6" r="1.0"
+RETRY N180x800mg-05D20l0075r10 3
+SCRIPT HOLD N180x800mg-05D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-05D40l0075r10 SW_MPS.sub
+VARS N180x800mg-05D40l0075r10 N="180" x="80.0" mg="-0.5" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.6" r="1.0"
+RETRY N180x800mg-05D40l0075r10 3
+SCRIPT HOLD N180x800mg-05D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-05D60l0075r10 SW_MPS.sub
+VARS N180x800mg-05D60l0075r10 N="180" x="80.0" mg="-0.5" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.6" r="1.0"
+RETRY N180x800mg-05D60l0075r10 3
+SCRIPT HOLD N180x800mg-05D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-04D20l0075r10 SW_MPS.sub
+VARS N180x800mg-04D20l0075r10 N="180" x="80.0" mg="-0.4" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.5" r="1.0"
+RETRY N180x800mg-04D20l0075r10 3
+SCRIPT HOLD N180x800mg-04D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-04D40l0075r10 SW_MPS.sub
+VARS N180x800mg-04D40l0075r10 N="180" x="80.0" mg="-0.4" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.5" r="1.0"
+RETRY N180x800mg-04D40l0075r10 3
+SCRIPT HOLD N180x800mg-04D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-04D60l0075r10 SW_MPS.sub
+VARS N180x800mg-04D60l0075r10 N="180" x="80.0" mg="-0.4" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.5" r="1.0"
+RETRY N180x800mg-04D60l0075r10 3
+SCRIPT HOLD N180x800mg-04D60l0075r10 /usr/bin/condor_release $JOBID
 JOB N180x800mg-03D20l0075r10 SW_MPS.sub
-VARS N180x800mg-03D20l0075r10 N="180" x="80.0" mg="-0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+VARS N180x800mg-03D20l0075r10 N="180" x="80.0" mg="-0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.4" r="1.0"
 RETRY N180x800mg-03D20l0075r10 3
 SCRIPT HOLD N180x800mg-03D20l0075r10 /usr/bin/condor_release $JOBID
 JOB N180x800mg-03D40l0075r10 SW_MPS.sub
-VARS N180x800mg-03D40l0075r10 N="180" x="80.0" mg="-0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+VARS N180x800mg-03D40l0075r10 N="180" x="80.0" mg="-0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.4" r="1.0"
 RETRY N180x800mg-03D40l0075r10 3
 SCRIPT HOLD N180x800mg-03D40l0075r10 /usr/bin/condor_release $JOBID
 JOB N180x800mg-03D60l0075r10 SW_MPS.sub
-VARS N180x800mg-03D60l0075r10 N="180" x="80.0" mg="-0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+VARS N180x800mg-03D60l0075r10 N="180" x="80.0" mg="-0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.4" r="1.0"
 RETRY N180x800mg-03D60l0075r10 3
 SCRIPT HOLD N180x800mg-03D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-03D80l0075r10 SW_MPS.sub
-VARS N180x800mg-03D80l0075r10 N="180" x="80.0" mg="-0.3" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N180x800mg-03D80l0075r10 3
-SCRIPT HOLD N180x800mg-03D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-03D100l0075r10 SW_MPS.sub
-VARS N180x800mg-03D100l0075r10 N="180" x="80.0" mg="-0.3" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N180x800mg-03D100l0075r10 3
-SCRIPT HOLD N180x800mg-03D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D20l0075r10 SW_MPS.sub
-VARS N180x800mg-02D20l0075r10 N="180" x="80.0" mg="-0.2" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D20l0075r10 3
-SCRIPT HOLD N180x800mg-02D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D40l0075r10 SW_MPS.sub
-VARS N180x800mg-02D40l0075r10 N="180" x="80.0" mg="-0.2" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D40l0075r10 3
-SCRIPT HOLD N180x800mg-02D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D60l0075r10 SW_MPS.sub
-VARS N180x800mg-02D60l0075r10 N="180" x="80.0" mg="-0.2" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D60l0075r10 3
-SCRIPT HOLD N180x800mg-02D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D80l0075r10 SW_MPS.sub
-VARS N180x800mg-02D80l0075r10 N="180" x="80.0" mg="-0.2" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D80l0075r10 3
-SCRIPT HOLD N180x800mg-02D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-02D100l0075r10 SW_MPS.sub
-VARS N180x800mg-02D100l0075r10 N="180" x="80.0" mg="-0.2" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.3" r="1.0"
-RETRY N180x800mg-02D100l0075r10 3
-SCRIPT HOLD N180x800mg-02D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D20l0075r10 SW_MPS.sub
-VARS N180x800mg-01D20l0075r10 N="180" x="80.0" mg="-0.1" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D20l0075r10 3
-SCRIPT HOLD N180x800mg-01D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D40l0075r10 SW_MPS.sub
-VARS N180x800mg-01D40l0075r10 N="180" x="80.0" mg="-0.1" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D40l0075r10 3
-SCRIPT HOLD N180x800mg-01D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D60l0075r10 SW_MPS.sub
-VARS N180x800mg-01D60l0075r10 N="180" x="80.0" mg="-0.1" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D60l0075r10 3
-SCRIPT HOLD N180x800mg-01D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D80l0075r10 SW_MPS.sub
-VARS N180x800mg-01D80l0075r10 N="180" x="80.0" mg="-0.1" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D80l0075r10 3
-SCRIPT HOLD N180x800mg-01D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-01D100l0075r10 SW_MPS.sub
-VARS N180x800mg-01D100l0075r10 N="180" x="80.0" mg="-0.1" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.2" r="1.0"
-RETRY N180x800mg-01D100l0075r10 3
-SCRIPT HOLD N180x800mg-01D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D20l0075r10 SW_MPS.sub
-VARS N180x800mg-005D20l0075r10 N="180" x="80.0" mg="-0.05" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D20l0075r10 3
-SCRIPT HOLD N180x800mg-005D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D40l0075r10 SW_MPS.sub
-VARS N180x800mg-005D40l0075r10 N="180" x="80.0" mg="-0.05" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D40l0075r10 3
-SCRIPT HOLD N180x800mg-005D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D60l0075r10 SW_MPS.sub
-VARS N180x800mg-005D60l0075r10 N="180" x="80.0" mg="-0.05" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D60l0075r10 3
-SCRIPT HOLD N180x800mg-005D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D80l0075r10 SW_MPS.sub
-VARS N180x800mg-005D80l0075r10 N="180" x="80.0" mg="-0.05" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D80l0075r10 3
-SCRIPT HOLD N180x800mg-005D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-005D100l0075r10 SW_MPS.sub
-VARS N180x800mg-005D100l0075r10 N="180" x="80.0" mg="-0.05" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1" r="1.0"
-RETRY N180x800mg-005D100l0075r10 3
-SCRIPT HOLD N180x800mg-005D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D20l0075r10 SW_MPS.sub
-VARS N180x800mg00D20l0075r10 N="180" x="80.0" mg="0.0" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D20l0075r10 3
-SCRIPT HOLD N180x800mg00D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D40l0075r10 SW_MPS.sub
-VARS N180x800mg00D40l0075r10 N="180" x="80.0" mg="0.0" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D40l0075r10 3
-SCRIPT HOLD N180x800mg00D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D60l0075r10 SW_MPS.sub
-VARS N180x800mg00D60l0075r10 N="180" x="80.0" mg="0.0" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D60l0075r10 3
-SCRIPT HOLD N180x800mg00D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D80l0075r10 SW_MPS.sub
-VARS N180x800mg00D80l0075r10 N="180" x="80.0" mg="0.0" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D80l0075r10 3
-SCRIPT HOLD N180x800mg00D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg00D100l0075r10 SW_MPS.sub
-VARS N180x800mg00D100l0075r10 N="180" x="80.0" mg="0.0" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
-RETRY N180x800mg00D100l0075r10 3
-SCRIPT HOLD N180x800mg00D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D20l0075r10 SW_MPS.sub
-VARS N180x800mg005D20l0075r10 N="180" x="80.0" mg="0.05" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D20l0075r10 3
-SCRIPT HOLD N180x800mg005D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D40l0075r10 SW_MPS.sub
-VARS N180x800mg005D40l0075r10 N="180" x="80.0" mg="0.05" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D40l0075r10 3
-SCRIPT HOLD N180x800mg005D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D60l0075r10 SW_MPS.sub
-VARS N180x800mg005D60l0075r10 N="180" x="80.0" mg="0.05" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D60l0075r10 3
-SCRIPT HOLD N180x800mg005D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D80l0075r10 SW_MPS.sub
-VARS N180x800mg005D80l0075r10 N="180" x="80.0" mg="0.05" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D80l0075r10 3
-SCRIPT HOLD N180x800mg005D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg005D100l0075r10 SW_MPS.sub
-VARS N180x800mg005D100l0075r10 N="180" x="80.0" mg="0.05" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N180x800mg005D100l0075r10 3
-SCRIPT HOLD N180x800mg005D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D20l0075r10 SW_MPS.sub
-VARS N180x800mg01D20l0075r10 N="180" x="80.0" mg="0.1" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D20l0075r10 3
-SCRIPT HOLD N180x800mg01D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D40l0075r10 SW_MPS.sub
-VARS N180x800mg01D40l0075r10 N="180" x="80.0" mg="0.1" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D40l0075r10 3
-SCRIPT HOLD N180x800mg01D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D60l0075r10 SW_MPS.sub
-VARS N180x800mg01D60l0075r10 N="180" x="80.0" mg="0.1" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D60l0075r10 3
-SCRIPT HOLD N180x800mg01D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D80l0075r10 SW_MPS.sub
-VARS N180x800mg01D80l0075r10 N="180" x="80.0" mg="0.1" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D80l0075r10 3
-SCRIPT HOLD N180x800mg01D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg01D100l0075r10 SW_MPS.sub
-VARS N180x800mg01D100l0075r10 N="180" x="80.0" mg="0.1" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.05" r="1.0"
-RETRY N180x800mg01D100l0075r10 3
-SCRIPT HOLD N180x800mg01D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D20l0075r10 SW_MPS.sub
-VARS N180x800mg02D20l0075r10 N="180" x="80.0" mg="0.2" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D20l0075r10 3
-SCRIPT HOLD N180x800mg02D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D40l0075r10 SW_MPS.sub
-VARS N180x800mg02D40l0075r10 N="180" x="80.0" mg="0.2" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D40l0075r10 3
-SCRIPT HOLD N180x800mg02D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D60l0075r10 SW_MPS.sub
-VARS N180x800mg02D60l0075r10 N="180" x="80.0" mg="0.2" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D60l0075r10 3
-SCRIPT HOLD N180x800mg02D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D80l0075r10 SW_MPS.sub
-VARS N180x800mg02D80l0075r10 N="180" x="80.0" mg="0.2" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D80l0075r10 3
-SCRIPT HOLD N180x800mg02D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg02D100l0075r10 SW_MPS.sub
-VARS N180x800mg02D100l0075r10 N="180" x="80.0" mg="0.2" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.1" r="1.0"
-RETRY N180x800mg02D100l0075r10 3
-SCRIPT HOLD N180x800mg02D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D20l0075r10 SW_MPS.sub
-VARS N180x800mg03D20l0075r10 N="180" x="80.0" mg="0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D20l0075r10 3
-SCRIPT HOLD N180x800mg03D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D40l0075r10 SW_MPS.sub
-VARS N180x800mg03D40l0075r10 N="180" x="80.0" mg="0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D40l0075r10 3
-SCRIPT HOLD N180x800mg03D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D60l0075r10 SW_MPS.sub
-VARS N180x800mg03D60l0075r10 N="180" x="80.0" mg="0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D60l0075r10 3
-SCRIPT HOLD N180x800mg03D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D80l0075r10 SW_MPS.sub
-VARS N180x800mg03D80l0075r10 N="180" x="80.0" mg="0.3" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D80l0075r10 3
-SCRIPT HOLD N180x800mg03D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg03D100l0075r10 SW_MPS.sub
-VARS N180x800mg03D100l0075r10 N="180" x="80.0" mg="0.3" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.2" r="1.0"
-RETRY N180x800mg03D100l0075r10 3
-SCRIPT HOLD N180x800mg03D100l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-08D20l0075r10 SW_MPS.sub
+VARS N200x1000mg-08D20l0075r10 N="200" x="100.0" mg="-0.8" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+RETRY N200x1000mg-08D20l0075r10 3
+SCRIPT HOLD N200x1000mg-08D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-08D40l0075r10 SW_MPS.sub
+VARS N200x1000mg-08D40l0075r10 N="200" x="100.0" mg="-0.8" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+RETRY N200x1000mg-08D40l0075r10 3
+SCRIPT HOLD N200x1000mg-08D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-08D60l0075r10 SW_MPS.sub
+VARS N200x1000mg-08D60l0075r10 N="200" x="100.0" mg="-0.8" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+RETRY N200x1000mg-08D60l0075r10 3
+SCRIPT HOLD N200x1000mg-08D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-07D20l0075r10 SW_MPS.sub
+VARS N200x1000mg-07D20l0075r10 N="200" x="100.0" mg="-0.7" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.8" r="1.0"
+RETRY N200x1000mg-07D20l0075r10 3
+SCRIPT HOLD N200x1000mg-07D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-07D40l0075r10 SW_MPS.sub
+VARS N200x1000mg-07D40l0075r10 N="200" x="100.0" mg="-0.7" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.8" r="1.0"
+RETRY N200x1000mg-07D40l0075r10 3
+SCRIPT HOLD N200x1000mg-07D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-07D60l0075r10 SW_MPS.sub
+VARS N200x1000mg-07D60l0075r10 N="200" x="100.0" mg="-0.7" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.8" r="1.0"
+RETRY N200x1000mg-07D60l0075r10 3
+SCRIPT HOLD N200x1000mg-07D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-06D20l0075r10 SW_MPS.sub
+VARS N200x1000mg-06D20l0075r10 N="200" x="100.0" mg="-0.6" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.7" r="1.0"
+RETRY N200x1000mg-06D20l0075r10 3
+SCRIPT HOLD N200x1000mg-06D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-06D40l0075r10 SW_MPS.sub
+VARS N200x1000mg-06D40l0075r10 N="200" x="100.0" mg="-0.6" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.7" r="1.0"
+RETRY N200x1000mg-06D40l0075r10 3
+SCRIPT HOLD N200x1000mg-06D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-06D60l0075r10 SW_MPS.sub
+VARS N200x1000mg-06D60l0075r10 N="200" x="100.0" mg="-0.6" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.7" r="1.0"
+RETRY N200x1000mg-06D60l0075r10 3
+SCRIPT HOLD N200x1000mg-06D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-05D20l0075r10 SW_MPS.sub
+VARS N200x1000mg-05D20l0075r10 N="200" x="100.0" mg="-0.5" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.6" r="1.0"
+RETRY N200x1000mg-05D20l0075r10 3
+SCRIPT HOLD N200x1000mg-05D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-05D40l0075r10 SW_MPS.sub
+VARS N200x1000mg-05D40l0075r10 N="200" x="100.0" mg="-0.5" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.6" r="1.0"
+RETRY N200x1000mg-05D40l0075r10 3
+SCRIPT HOLD N200x1000mg-05D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-05D60l0075r10 SW_MPS.sub
+VARS N200x1000mg-05D60l0075r10 N="200" x="100.0" mg="-0.5" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.6" r="1.0"
+RETRY N200x1000mg-05D60l0075r10 3
+SCRIPT HOLD N200x1000mg-05D60l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-04D20l0075r10 SW_MPS.sub
+VARS N200x1000mg-04D20l0075r10 N="200" x="100.0" mg="-0.4" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.5" r="1.0"
+RETRY N200x1000mg-04D20l0075r10 3
+SCRIPT HOLD N200x1000mg-04D20l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-04D40l0075r10 SW_MPS.sub
+VARS N200x1000mg-04D40l0075r10 N="200" x="100.0" mg="-0.4" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.5" r="1.0"
+RETRY N200x1000mg-04D40l0075r10 3
+SCRIPT HOLD N200x1000mg-04D40l0075r10 /usr/bin/condor_release $JOBID
+JOB N200x1000mg-04D60l0075r10 SW_MPS.sub
+VARS N200x1000mg-04D60l0075r10 N="200" x="100.0" mg="-0.4" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.5" r="1.0"
+RETRY N200x1000mg-04D60l0075r10 3
+SCRIPT HOLD N200x1000mg-04D60l0075r10 /usr/bin/condor_release $JOBID
 JOB N200x1000mg-03D20l0075r10 SW_MPS.sub
-VARS N200x1000mg-03D20l0075r10 N="200" x="100.0" mg="-0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
+VARS N200x1000mg-03D20l0075r10 N="200" x="100.0" mg="-0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.4" r="1.0"
 RETRY N200x1000mg-03D20l0075r10 3
 SCRIPT HOLD N200x1000mg-03D20l0075r10 /usr/bin/condor_release $JOBID
 JOB N200x1000mg-03D40l0075r10 SW_MPS.sub
-VARS N200x1000mg-03D40l0075r10 N="200" x="100.0" mg="-0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
+VARS N200x1000mg-03D40l0075r10 N="200" x="100.0" mg="-0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.4" r="1.0"
 RETRY N200x1000mg-03D40l0075r10 3
 SCRIPT HOLD N200x1000mg-03D40l0075r10 /usr/bin/condor_release $JOBID
 JOB N200x1000mg-03D60l0075r10 SW_MPS.sub
-VARS N200x1000mg-03D60l0075r10 N="200" x="100.0" mg="-0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
+VARS N200x1000mg-03D60l0075r10 N="200" x="100.0" mg="-0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.4" r="1.0"
 RETRY N200x1000mg-03D60l0075r10 3
 SCRIPT HOLD N200x1000mg-03D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-03D80l0075r10 SW_MPS.sub
-VARS N200x1000mg-03D80l0075r10 N="200" x="100.0" mg="-0.3" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N200x1000mg-03D80l0075r10 3
-SCRIPT HOLD N200x1000mg-03D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-03D100l0075r10 SW_MPS.sub
-VARS N200x1000mg-03D100l0075r10 N="200" x="100.0" mg="-0.3" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N200x1000mg-03D100l0075r10 3
-SCRIPT HOLD N200x1000mg-03D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D20l0075r10 SW_MPS.sub
-VARS N200x1000mg-02D20l0075r10 N="200" x="100.0" mg="-0.2" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D20l0075r10 3
-SCRIPT HOLD N200x1000mg-02D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D40l0075r10 SW_MPS.sub
-VARS N200x1000mg-02D40l0075r10 N="200" x="100.0" mg="-0.2" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D40l0075r10 3
-SCRIPT HOLD N200x1000mg-02D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D60l0075r10 SW_MPS.sub
-VARS N200x1000mg-02D60l0075r10 N="200" x="100.0" mg="-0.2" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D60l0075r10 3
-SCRIPT HOLD N200x1000mg-02D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D80l0075r10 SW_MPS.sub
-VARS N200x1000mg-02D80l0075r10 N="200" x="100.0" mg="-0.2" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D80l0075r10 3
-SCRIPT HOLD N200x1000mg-02D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-02D100l0075r10 SW_MPS.sub
-VARS N200x1000mg-02D100l0075r10 N="200" x="100.0" mg="-0.2" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.3" r="1.0"
-RETRY N200x1000mg-02D100l0075r10 3
-SCRIPT HOLD N200x1000mg-02D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D20l0075r10 SW_MPS.sub
-VARS N200x1000mg-01D20l0075r10 N="200" x="100.0" mg="-0.1" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D20l0075r10 3
-SCRIPT HOLD N200x1000mg-01D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D40l0075r10 SW_MPS.sub
-VARS N200x1000mg-01D40l0075r10 N="200" x="100.0" mg="-0.1" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D40l0075r10 3
-SCRIPT HOLD N200x1000mg-01D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D60l0075r10 SW_MPS.sub
-VARS N200x1000mg-01D60l0075r10 N="200" x="100.0" mg="-0.1" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D60l0075r10 3
-SCRIPT HOLD N200x1000mg-01D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D80l0075r10 SW_MPS.sub
-VARS N200x1000mg-01D80l0075r10 N="200" x="100.0" mg="-0.1" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D80l0075r10 3
-SCRIPT HOLD N200x1000mg-01D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-01D100l0075r10 SW_MPS.sub
-VARS N200x1000mg-01D100l0075r10 N="200" x="100.0" mg="-0.1" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.2" r="1.0"
-RETRY N200x1000mg-01D100l0075r10 3
-SCRIPT HOLD N200x1000mg-01D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D20l0075r10 SW_MPS.sub
-VARS N200x1000mg-005D20l0075r10 N="200" x="100.0" mg="-0.05" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D20l0075r10 3
-SCRIPT HOLD N200x1000mg-005D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D40l0075r10 SW_MPS.sub
-VARS N200x1000mg-005D40l0075r10 N="200" x="100.0" mg="-0.05" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D40l0075r10 3
-SCRIPT HOLD N200x1000mg-005D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D60l0075r10 SW_MPS.sub
-VARS N200x1000mg-005D60l0075r10 N="200" x="100.0" mg="-0.05" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D60l0075r10 3
-SCRIPT HOLD N200x1000mg-005D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D80l0075r10 SW_MPS.sub
-VARS N200x1000mg-005D80l0075r10 N="200" x="100.0" mg="-0.05" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D80l0075r10 3
-SCRIPT HOLD N200x1000mg-005D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-005D100l0075r10 SW_MPS.sub
-VARS N200x1000mg-005D100l0075r10 N="200" x="100.0" mg="-0.05" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1" r="1.0"
-RETRY N200x1000mg-005D100l0075r10 3
-SCRIPT HOLD N200x1000mg-005D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D20l0075r10 SW_MPS.sub
-VARS N200x1000mg00D20l0075r10 N="200" x="100.0" mg="0.0" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D20l0075r10 3
-SCRIPT HOLD N200x1000mg00D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D40l0075r10 SW_MPS.sub
-VARS N200x1000mg00D40l0075r10 N="200" x="100.0" mg="0.0" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D40l0075r10 3
-SCRIPT HOLD N200x1000mg00D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D60l0075r10 SW_MPS.sub
-VARS N200x1000mg00D60l0075r10 N="200" x="100.0" mg="0.0" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D60l0075r10 3
-SCRIPT HOLD N200x1000mg00D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D80l0075r10 SW_MPS.sub
-VARS N200x1000mg00D80l0075r10 N="200" x="100.0" mg="0.0" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D80l0075r10 3
-SCRIPT HOLD N200x1000mg00D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg00D100l0075r10 SW_MPS.sub
-VARS N200x1000mg00D100l0075r10 N="200" x="100.0" mg="0.0" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
-RETRY N200x1000mg00D100l0075r10 3
-SCRIPT HOLD N200x1000mg00D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D20l0075r10 SW_MPS.sub
-VARS N200x1000mg005D20l0075r10 N="200" x="100.0" mg="0.05" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D20l0075r10 3
-SCRIPT HOLD N200x1000mg005D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D40l0075r10 SW_MPS.sub
-VARS N200x1000mg005D40l0075r10 N="200" x="100.0" mg="0.05" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D40l0075r10 3
-SCRIPT HOLD N200x1000mg005D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D60l0075r10 SW_MPS.sub
-VARS N200x1000mg005D60l0075r10 N="200" x="100.0" mg="0.05" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D60l0075r10 3
-SCRIPT HOLD N200x1000mg005D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D80l0075r10 SW_MPS.sub
-VARS N200x1000mg005D80l0075r10 N="200" x="100.0" mg="0.05" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D80l0075r10 3
-SCRIPT HOLD N200x1000mg005D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg005D100l0075r10 SW_MPS.sub
-VARS N200x1000mg005D100l0075r10 N="200" x="100.0" mg="0.05" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.0" r="1.0"
-RETRY N200x1000mg005D100l0075r10 3
-SCRIPT HOLD N200x1000mg005D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D20l0075r10 SW_MPS.sub
-VARS N200x1000mg01D20l0075r10 N="200" x="100.0" mg="0.1" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D20l0075r10 3
-SCRIPT HOLD N200x1000mg01D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D40l0075r10 SW_MPS.sub
-VARS N200x1000mg01D40l0075r10 N="200" x="100.0" mg="0.1" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D40l0075r10 3
-SCRIPT HOLD N200x1000mg01D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D60l0075r10 SW_MPS.sub
-VARS N200x1000mg01D60l0075r10 N="200" x="100.0" mg="0.1" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D60l0075r10 3
-SCRIPT HOLD N200x1000mg01D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D80l0075r10 SW_MPS.sub
-VARS N200x1000mg01D80l0075r10 N="200" x="100.0" mg="0.1" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D80l0075r10 3
-SCRIPT HOLD N200x1000mg01D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg01D100l0075r10 SW_MPS.sub
-VARS N200x1000mg01D100l0075r10 N="200" x="100.0" mg="0.1" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.05" r="1.0"
-RETRY N200x1000mg01D100l0075r10 3
-SCRIPT HOLD N200x1000mg01D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D20l0075r10 SW_MPS.sub
-VARS N200x1000mg02D20l0075r10 N="200" x="100.0" mg="0.2" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D20l0075r10 3
-SCRIPT HOLD N200x1000mg02D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D40l0075r10 SW_MPS.sub
-VARS N200x1000mg02D40l0075r10 N="200" x="100.0" mg="0.2" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D40l0075r10 3
-SCRIPT HOLD N200x1000mg02D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D60l0075r10 SW_MPS.sub
-VARS N200x1000mg02D60l0075r10 N="200" x="100.0" mg="0.2" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D60l0075r10 3
-SCRIPT HOLD N200x1000mg02D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D80l0075r10 SW_MPS.sub
-VARS N200x1000mg02D80l0075r10 N="200" x="100.0" mg="0.2" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D80l0075r10 3
-SCRIPT HOLD N200x1000mg02D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg02D100l0075r10 SW_MPS.sub
-VARS N200x1000mg02D100l0075r10 N="200" x="100.0" mg="0.2" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.1" r="1.0"
-RETRY N200x1000mg02D100l0075r10 3
-SCRIPT HOLD N200x1000mg02D100l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D20l0075r10 SW_MPS.sub
-VARS N200x1000mg03D20l0075r10 N="200" x="100.0" mg="0.3" D="20" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="0.0" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D20l0075r10 3
-SCRIPT HOLD N200x1000mg03D20l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D40l0075r10 SW_MPS.sub
-VARS N200x1000mg03D40l0075r10 N="200" x="100.0" mg="0.3" D="40" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D40l0075r10 3
-SCRIPT HOLD N200x1000mg03D40l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D60l0075r10 SW_MPS.sub
-VARS N200x1000mg03D60l0075r10 N="200" x="100.0" mg="0.3" D="60" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D60l0075r10 3
-SCRIPT HOLD N200x1000mg03D60l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D80l0075r10 SW_MPS.sub
-VARS N200x1000mg03D80l0075r10 N="200" x="100.0" mg="0.3" D="80" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D80l0075r10 3
-SCRIPT HOLD N200x1000mg03D80l0075r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg03D100l0075r10 SW_MPS.sub
-VARS N200x1000mg03D100l0075r10 N="200" x="100.0" mg="0.3" D="100" l_0="0.75" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.2" r="1.0"
-RETRY N200x1000mg03D100l0075r10 3
-SCRIPT HOLD N200x1000mg03D100l0075r10 /usr/bin/condor_release $JOBID
+PARENT N64x100mg-08D20l0025r10 CHILD N64x100mg-08D40l0025r10
+PARENT N64x100mg-08D40l0025r10 CHILD N64x100mg-08D60l0025r10
+PARENT N64x100mg-07D20l0025r10 CHILD N64x100mg-07D40l0025r10
+PARENT N64x100mg-07D40l0025r10 CHILD N64x100mg-07D60l0025r10
+PARENT N64x100mg-06D20l0025r10 CHILD N64x100mg-06D40l0025r10
+PARENT N64x100mg-06D40l0025r10 CHILD N64x100mg-06D60l0025r10
+PARENT N64x100mg-05D20l0025r10 CHILD N64x100mg-05D40l0025r10
+PARENT N64x100mg-05D40l0025r10 CHILD N64x100mg-05D60l0025r10
+PARENT N64x100mg-04D20l0025r10 CHILD N64x100mg-04D40l0025r10
+PARENT N64x100mg-04D40l0025r10 CHILD N64x100mg-04D60l0025r10
 PARENT N64x100mg-03D20l0025r10 CHILD N64x100mg-03D40l0025r10
 PARENT N64x100mg-03D40l0025r10 CHILD N64x100mg-03D60l0025r10
-PARENT N64x100mg-03D60l0025r10 CHILD N64x100mg-03D80l0025r10
-PARENT N64x100mg-03D80l0025r10 CHILD N64x100mg-03D100l0025r10
-PARENT N64x100mg-02D20l0025r10 CHILD N64x100mg-02D40l0025r10
-PARENT N64x100mg-02D40l0025r10 CHILD N64x100mg-02D60l0025r10
-PARENT N64x100mg-02D60l0025r10 CHILD N64x100mg-02D80l0025r10
-PARENT N64x100mg-02D80l0025r10 CHILD N64x100mg-02D100l0025r10
-PARENT N64x100mg-01D20l0025r10 CHILD N64x100mg-01D40l0025r10
-PARENT N64x100mg-01D40l0025r10 CHILD N64x100mg-01D60l0025r10
-PARENT N64x100mg-01D60l0025r10 CHILD N64x100mg-01D80l0025r10
-PARENT N64x100mg-01D80l0025r10 CHILD N64x100mg-01D100l0025r10
-PARENT N64x100mg-005D20l0025r10 CHILD N64x100mg-005D40l0025r10
-PARENT N64x100mg-005D40l0025r10 CHILD N64x100mg-005D60l0025r10
-PARENT N64x100mg-005D60l0025r10 CHILD N64x100mg-005D80l0025r10
-PARENT N64x100mg-005D80l0025r10 CHILD N64x100mg-005D100l0025r10
-PARENT N64x100mg00D20l0025r10 CHILD N64x100mg00D40l0025r10
-PARENT N64x100mg00D40l0025r10 CHILD N64x100mg00D60l0025r10
-PARENT N64x100mg00D60l0025r10 CHILD N64x100mg00D80l0025r10
-PARENT N64x100mg00D80l0025r10 CHILD N64x100mg00D100l0025r10
-PARENT N64x100mg005D20l0025r10 CHILD N64x100mg005D40l0025r10
-PARENT N64x100mg005D40l0025r10 CHILD N64x100mg005D60l0025r10
-PARENT N64x100mg005D60l0025r10 CHILD N64x100mg005D80l0025r10
-PARENT N64x100mg005D80l0025r10 CHILD N64x100mg005D100l0025r10
-PARENT N64x100mg01D20l0025r10 CHILD N64x100mg01D40l0025r10
-PARENT N64x100mg01D40l0025r10 CHILD N64x100mg01D60l0025r10
-PARENT N64x100mg01D60l0025r10 CHILD N64x100mg01D80l0025r10
-PARENT N64x100mg01D80l0025r10 CHILD N64x100mg01D100l0025r10
-PARENT N64x100mg02D20l0025r10 CHILD N64x100mg02D40l0025r10
-PARENT N64x100mg02D40l0025r10 CHILD N64x100mg02D60l0025r10
-PARENT N64x100mg02D60l0025r10 CHILD N64x100mg02D80l0025r10
-PARENT N64x100mg02D80l0025r10 CHILD N64x100mg02D100l0025r10
-PARENT N64x100mg03D20l0025r10 CHILD N64x100mg03D40l0025r10
-PARENT N64x100mg03D40l0025r10 CHILD N64x100mg03D60l0025r10
-PARENT N64x100mg03D60l0025r10 CHILD N64x100mg03D80l0025r10
-PARENT N64x100mg03D80l0025r10 CHILD N64x100mg03D100l0025r10
+PARENT N156x600mg-08D20l0025r10 CHILD N156x600mg-08D40l0025r10
+PARENT N156x600mg-08D40l0025r10 CHILD N156x600mg-08D60l0025r10
+PARENT N156x600mg-07D20l0025r10 CHILD N156x600mg-07D40l0025r10
+PARENT N156x600mg-07D40l0025r10 CHILD N156x600mg-07D60l0025r10
+PARENT N156x600mg-06D20l0025r10 CHILD N156x600mg-06D40l0025r10
+PARENT N156x600mg-06D40l0025r10 CHILD N156x600mg-06D60l0025r10
+PARENT N156x600mg-05D20l0025r10 CHILD N156x600mg-05D40l0025r10
+PARENT N156x600mg-05D40l0025r10 CHILD N156x600mg-05D60l0025r10
+PARENT N156x600mg-04D20l0025r10 CHILD N156x600mg-04D40l0025r10
+PARENT N156x600mg-04D40l0025r10 CHILD N156x600mg-04D60l0025r10
 PARENT N156x600mg-03D20l0025r10 CHILD N156x600mg-03D40l0025r10
 PARENT N156x600mg-03D40l0025r10 CHILD N156x600mg-03D60l0025r10
-PARENT N156x600mg-03D60l0025r10 CHILD N156x600mg-03D80l0025r10
-PARENT N156x600mg-03D80l0025r10 CHILD N156x600mg-03D100l0025r10
-PARENT N156x600mg-02D20l0025r10 CHILD N156x600mg-02D40l0025r10
-PARENT N156x600mg-02D40l0025r10 CHILD N156x600mg-02D60l0025r10
-PARENT N156x600mg-02D60l0025r10 CHILD N156x600mg-02D80l0025r10
-PARENT N156x600mg-02D80l0025r10 CHILD N156x600mg-02D100l0025r10
-PARENT N156x600mg-01D20l0025r10 CHILD N156x600mg-01D40l0025r10
-PARENT N156x600mg-01D40l0025r10 CHILD N156x600mg-01D60l0025r10
-PARENT N156x600mg-01D60l0025r10 CHILD N156x600mg-01D80l0025r10
-PARENT N156x600mg-01D80l0025r10 CHILD N156x600mg-01D100l0025r10
-PARENT N156x600mg-005D20l0025r10 CHILD N156x600mg-005D40l0025r10
-PARENT N156x600mg-005D40l0025r10 CHILD N156x600mg-005D60l0025r10
-PARENT N156x600mg-005D60l0025r10 CHILD N156x600mg-005D80l0025r10
-PARENT N156x600mg-005D80l0025r10 CHILD N156x600mg-005D100l0025r10
-PARENT N156x600mg00D20l0025r10 CHILD N156x600mg00D40l0025r10
-PARENT N156x600mg00D40l0025r10 CHILD N156x600mg00D60l0025r10
-PARENT N156x600mg00D60l0025r10 CHILD N156x600mg00D80l0025r10
-PARENT N156x600mg00D80l0025r10 CHILD N156x600mg00D100l0025r10
-PARENT N156x600mg005D20l0025r10 CHILD N156x600mg005D40l0025r10
-PARENT N156x600mg005D40l0025r10 CHILD N156x600mg005D60l0025r10
-PARENT N156x600mg005D60l0025r10 CHILD N156x600mg005D80l0025r10
-PARENT N156x600mg005D80l0025r10 CHILD N156x600mg005D100l0025r10
-PARENT N156x600mg01D20l0025r10 CHILD N156x600mg01D40l0025r10
-PARENT N156x600mg01D40l0025r10 CHILD N156x600mg01D60l0025r10
-PARENT N156x600mg01D60l0025r10 CHILD N156x600mg01D80l0025r10
-PARENT N156x600mg01D80l0025r10 CHILD N156x600mg01D100l0025r10
-PARENT N156x600mg02D20l0025r10 CHILD N156x600mg02D40l0025r10
-PARENT N156x600mg02D40l0025r10 CHILD N156x600mg02D60l0025r10
-PARENT N156x600mg02D60l0025r10 CHILD N156x600mg02D80l0025r10
-PARENT N156x600mg02D80l0025r10 CHILD N156x600mg02D100l0025r10
-PARENT N156x600mg03D20l0025r10 CHILD N156x600mg03D40l0025r10
-PARENT N156x600mg03D40l0025r10 CHILD N156x600mg03D60l0025r10
-PARENT N156x600mg03D60l0025r10 CHILD N156x600mg03D80l0025r10
-PARENT N156x600mg03D80l0025r10 CHILD N156x600mg03D100l0025r10
+PARENT N180x800mg-08D20l0025r10 CHILD N180x800mg-08D40l0025r10
+PARENT N180x800mg-08D40l0025r10 CHILD N180x800mg-08D60l0025r10
+PARENT N180x800mg-07D20l0025r10 CHILD N180x800mg-07D40l0025r10
+PARENT N180x800mg-07D40l0025r10 CHILD N180x800mg-07D60l0025r10
+PARENT N180x800mg-06D20l0025r10 CHILD N180x800mg-06D40l0025r10
+PARENT N180x800mg-06D40l0025r10 CHILD N180x800mg-06D60l0025r10
+PARENT N180x800mg-05D20l0025r10 CHILD N180x800mg-05D40l0025r10
+PARENT N180x800mg-05D40l0025r10 CHILD N180x800mg-05D60l0025r10
+PARENT N180x800mg-04D20l0025r10 CHILD N180x800mg-04D40l0025r10
+PARENT N180x800mg-04D40l0025r10 CHILD N180x800mg-04D60l0025r10
 PARENT N180x800mg-03D20l0025r10 CHILD N180x800mg-03D40l0025r10
 PARENT N180x800mg-03D40l0025r10 CHILD N180x800mg-03D60l0025r10
-PARENT N180x800mg-03D60l0025r10 CHILD N180x800mg-03D80l0025r10
-PARENT N180x800mg-03D80l0025r10 CHILD N180x800mg-03D100l0025r10
-PARENT N180x800mg-02D20l0025r10 CHILD N180x800mg-02D40l0025r10
-PARENT N180x800mg-02D40l0025r10 CHILD N180x800mg-02D60l0025r10
-PARENT N180x800mg-02D60l0025r10 CHILD N180x800mg-02D80l0025r10
-PARENT N180x800mg-02D80l0025r10 CHILD N180x800mg-02D100l0025r10
-PARENT N180x800mg-01D20l0025r10 CHILD N180x800mg-01D40l0025r10
-PARENT N180x800mg-01D40l0025r10 CHILD N180x800mg-01D60l0025r10
-PARENT N180x800mg-01D60l0025r10 CHILD N180x800mg-01D80l0025r10
-PARENT N180x800mg-01D80l0025r10 CHILD N180x800mg-01D100l0025r10
-PARENT N180x800mg-005D20l0025r10 CHILD N180x800mg-005D40l0025r10
-PARENT N180x800mg-005D40l0025r10 CHILD N180x800mg-005D60l0025r10
-PARENT N180x800mg-005D60l0025r10 CHILD N180x800mg-005D80l0025r10
-PARENT N180x800mg-005D80l0025r10 CHILD N180x800mg-005D100l0025r10
-PARENT N180x800mg00D20l0025r10 CHILD N180x800mg00D40l0025r10
-PARENT N180x800mg00D40l0025r10 CHILD N180x800mg00D60l0025r10
-PARENT N180x800mg00D60l0025r10 CHILD N180x800mg00D80l0025r10
-PARENT N180x800mg00D80l0025r10 CHILD N180x800mg00D100l0025r10
-PARENT N180x800mg005D20l0025r10 CHILD N180x800mg005D40l0025r10
-PARENT N180x800mg005D40l0025r10 CHILD N180x800mg005D60l0025r10
-PARENT N180x800mg005D60l0025r10 CHILD N180x800mg005D80l0025r10
-PARENT N180x800mg005D80l0025r10 CHILD N180x800mg005D100l0025r10
-PARENT N180x800mg01D20l0025r10 CHILD N180x800mg01D40l0025r10
-PARENT N180x800mg01D40l0025r10 CHILD N180x800mg01D60l0025r10
-PARENT N180x800mg01D60l0025r10 CHILD N180x800mg01D80l0025r10
-PARENT N180x800mg01D80l0025r10 CHILD N180x800mg01D100l0025r10
-PARENT N180x800mg02D20l0025r10 CHILD N180x800mg02D40l0025r10
-PARENT N180x800mg02D40l0025r10 CHILD N180x800mg02D60l0025r10
-PARENT N180x800mg02D60l0025r10 CHILD N180x800mg02D80l0025r10
-PARENT N180x800mg02D80l0025r10 CHILD N180x800mg02D100l0025r10
-PARENT N180x800mg03D20l0025r10 CHILD N180x800mg03D40l0025r10
-PARENT N180x800mg03D40l0025r10 CHILD N180x800mg03D60l0025r10
-PARENT N180x800mg03D60l0025r10 CHILD N180x800mg03D80l0025r10
-PARENT N180x800mg03D80l0025r10 CHILD N180x800mg03D100l0025r10
+PARENT N200x1000mg-08D20l0025r10 CHILD N200x1000mg-08D40l0025r10
+PARENT N200x1000mg-08D40l0025r10 CHILD N200x1000mg-08D60l0025r10
+PARENT N200x1000mg-07D20l0025r10 CHILD N200x1000mg-07D40l0025r10
+PARENT N200x1000mg-07D40l0025r10 CHILD N200x1000mg-07D60l0025r10
+PARENT N200x1000mg-06D20l0025r10 CHILD N200x1000mg-06D40l0025r10
+PARENT N200x1000mg-06D40l0025r10 CHILD N200x1000mg-06D60l0025r10
+PARENT N200x1000mg-05D20l0025r10 CHILD N200x1000mg-05D40l0025r10
+PARENT N200x1000mg-05D40l0025r10 CHILD N200x1000mg-05D60l0025r10
+PARENT N200x1000mg-04D20l0025r10 CHILD N200x1000mg-04D40l0025r10
+PARENT N200x1000mg-04D40l0025r10 CHILD N200x1000mg-04D60l0025r10
 PARENT N200x1000mg-03D20l0025r10 CHILD N200x1000mg-03D40l0025r10
 PARENT N200x1000mg-03D40l0025r10 CHILD N200x1000mg-03D60l0025r10
-PARENT N200x1000mg-03D60l0025r10 CHILD N200x1000mg-03D80l0025r10
-PARENT N200x1000mg-03D80l0025r10 CHILD N200x1000mg-03D100l0025r10
-PARENT N200x1000mg-02D20l0025r10 CHILD N200x1000mg-02D40l0025r10
-PARENT N200x1000mg-02D40l0025r10 CHILD N200x1000mg-02D60l0025r10
-PARENT N200x1000mg-02D60l0025r10 CHILD N200x1000mg-02D80l0025r10
-PARENT N200x1000mg-02D80l0025r10 CHILD N200x1000mg-02D100l0025r10
-PARENT N200x1000mg-01D20l0025r10 CHILD N200x1000mg-01D40l0025r10
-PARENT N200x1000mg-01D40l0025r10 CHILD N200x1000mg-01D60l0025r10
-PARENT N200x1000mg-01D60l0025r10 CHILD N200x1000mg-01D80l0025r10
-PARENT N200x1000mg-01D80l0025r10 CHILD N200x1000mg-01D100l0025r10
-PARENT N200x1000mg-005D20l0025r10 CHILD N200x1000mg-005D40l0025r10
-PARENT N200x1000mg-005D40l0025r10 CHILD N200x1000mg-005D60l0025r10
-PARENT N200x1000mg-005D60l0025r10 CHILD N200x1000mg-005D80l0025r10
-PARENT N200x1000mg-005D80l0025r10 CHILD N200x1000mg-005D100l0025r10
-PARENT N200x1000mg00D20l0025r10 CHILD N200x1000mg00D40l0025r10
-PARENT N200x1000mg00D40l0025r10 CHILD N200x1000mg00D60l0025r10
-PARENT N200x1000mg00D60l0025r10 CHILD N200x1000mg00D80l0025r10
-PARENT N200x1000mg00D80l0025r10 CHILD N200x1000mg00D100l0025r10
-PARENT N200x1000mg005D20l0025r10 CHILD N200x1000mg005D40l0025r10
-PARENT N200x1000mg005D40l0025r10 CHILD N200x1000mg005D60l0025r10
-PARENT N200x1000mg005D60l0025r10 CHILD N200x1000mg005D80l0025r10
-PARENT N200x1000mg005D80l0025r10 CHILD N200x1000mg005D100l0025r10
-PARENT N200x1000mg01D20l0025r10 CHILD N200x1000mg01D40l0025r10
-PARENT N200x1000mg01D40l0025r10 CHILD N200x1000mg01D60l0025r10
-PARENT N200x1000mg01D60l0025r10 CHILD N200x1000mg01D80l0025r10
-PARENT N200x1000mg01D80l0025r10 CHILD N200x1000mg01D100l0025r10
-PARENT N200x1000mg02D20l0025r10 CHILD N200x1000mg02D40l0025r10
-PARENT N200x1000mg02D40l0025r10 CHILD N200x1000mg02D60l0025r10
-PARENT N200x1000mg02D60l0025r10 CHILD N200x1000mg02D80l0025r10
-PARENT N200x1000mg02D80l0025r10 CHILD N200x1000mg02D100l0025r10
-PARENT N200x1000mg03D20l0025r10 CHILD N200x1000mg03D40l0025r10
-PARENT N200x1000mg03D40l0025r10 CHILD N200x1000mg03D60l0025r10
-PARENT N200x1000mg03D60l0025r10 CHILD N200x1000mg03D80l0025r10
-PARENT N200x1000mg03D80l0025r10 CHILD N200x1000mg03D100l0025r10
+PARENT N64x100mg-08D20l0075r10 CHILD N64x100mg-08D40l0075r10
+PARENT N64x100mg-08D40l0075r10 CHILD N64x100mg-08D60l0075r10
+PARENT N64x100mg-07D20l0075r10 CHILD N64x100mg-07D40l0075r10
+PARENT N64x100mg-07D40l0075r10 CHILD N64x100mg-07D60l0075r10
+PARENT N64x100mg-06D20l0075r10 CHILD N64x100mg-06D40l0075r10
+PARENT N64x100mg-06D40l0075r10 CHILD N64x100mg-06D60l0075r10
+PARENT N64x100mg-05D20l0075r10 CHILD N64x100mg-05D40l0075r10
+PARENT N64x100mg-05D40l0075r10 CHILD N64x100mg-05D60l0075r10
+PARENT N64x100mg-04D20l0075r10 CHILD N64x100mg-04D40l0075r10
+PARENT N64x100mg-04D40l0075r10 CHILD N64x100mg-04D60l0075r10
 PARENT N64x100mg-03D20l0075r10 CHILD N64x100mg-03D40l0075r10
 PARENT N64x100mg-03D40l0075r10 CHILD N64x100mg-03D60l0075r10
-PARENT N64x100mg-03D60l0075r10 CHILD N64x100mg-03D80l0075r10
-PARENT N64x100mg-03D80l0075r10 CHILD N64x100mg-03D100l0075r10
-PARENT N64x100mg-02D20l0075r10 CHILD N64x100mg-02D40l0075r10
-PARENT N64x100mg-02D40l0075r10 CHILD N64x100mg-02D60l0075r10
-PARENT N64x100mg-02D60l0075r10 CHILD N64x100mg-02D80l0075r10
-PARENT N64x100mg-02D80l0075r10 CHILD N64x100mg-02D100l0075r10
-PARENT N64x100mg-01D20l0075r10 CHILD N64x100mg-01D40l0075r10
-PARENT N64x100mg-01D40l0075r10 CHILD N64x100mg-01D60l0075r10
-PARENT N64x100mg-01D60l0075r10 CHILD N64x100mg-01D80l0075r10
-PARENT N64x100mg-01D80l0075r10 CHILD N64x100mg-01D100l0075r10
-PARENT N64x100mg-005D20l0075r10 CHILD N64x100mg-005D40l0075r10
-PARENT N64x100mg-005D40l0075r10 CHILD N64x100mg-005D60l0075r10
-PARENT N64x100mg-005D60l0075r10 CHILD N64x100mg-005D80l0075r10
-PARENT N64x100mg-005D80l0075r10 CHILD N64x100mg-005D100l0075r10
-PARENT N64x100mg00D20l0075r10 CHILD N64x100mg00D40l0075r10
-PARENT N64x100mg00D40l0075r10 CHILD N64x100mg00D60l0075r10
-PARENT N64x100mg00D60l0075r10 CHILD N64x100mg00D80l0075r10
-PARENT N64x100mg00D80l0075r10 CHILD N64x100mg00D100l0075r10
-PARENT N64x100mg005D20l0075r10 CHILD N64x100mg005D40l0075r10
-PARENT N64x100mg005D40l0075r10 CHILD N64x100mg005D60l0075r10
-PARENT N64x100mg005D60l0075r10 CHILD N64x100mg005D80l0075r10
-PARENT N64x100mg005D80l0075r10 CHILD N64x100mg005D100l0075r10
-PARENT N64x100mg01D20l0075r10 CHILD N64x100mg01D40l0075r10
-PARENT N64x100mg01D40l0075r10 CHILD N64x100mg01D60l0075r10
-PARENT N64x100mg01D60l0075r10 CHILD N64x100mg01D80l0075r10
-PARENT N64x100mg01D80l0075r10 CHILD N64x100mg01D100l0075r10
-PARENT N64x100mg02D20l0075r10 CHILD N64x100mg02D40l0075r10
-PARENT N64x100mg02D40l0075r10 CHILD N64x100mg02D60l0075r10
-PARENT N64x100mg02D60l0075r10 CHILD N64x100mg02D80l0075r10
-PARENT N64x100mg02D80l0075r10 CHILD N64x100mg02D100l0075r10
-PARENT N64x100mg03D20l0075r10 CHILD N64x100mg03D40l0075r10
-PARENT N64x100mg03D40l0075r10 CHILD N64x100mg03D60l0075r10
-PARENT N64x100mg03D60l0075r10 CHILD N64x100mg03D80l0075r10
-PARENT N64x100mg03D80l0075r10 CHILD N64x100mg03D100l0075r10
+PARENT N156x600mg-08D20l0075r10 CHILD N156x600mg-08D40l0075r10
+PARENT N156x600mg-08D40l0075r10 CHILD N156x600mg-08D60l0075r10
+PARENT N156x600mg-07D20l0075r10 CHILD N156x600mg-07D40l0075r10
+PARENT N156x600mg-07D40l0075r10 CHILD N156x600mg-07D60l0075r10
+PARENT N156x600mg-06D20l0075r10 CHILD N156x600mg-06D40l0075r10
+PARENT N156x600mg-06D40l0075r10 CHILD N156x600mg-06D60l0075r10
+PARENT N156x600mg-05D20l0075r10 CHILD N156x600mg-05D40l0075r10
+PARENT N156x600mg-05D40l0075r10 CHILD N156x600mg-05D60l0075r10
+PARENT N156x600mg-04D20l0075r10 CHILD N156x600mg-04D40l0075r10
+PARENT N156x600mg-04D40l0075r10 CHILD N156x600mg-04D60l0075r10
 PARENT N156x600mg-03D20l0075r10 CHILD N156x600mg-03D40l0075r10
 PARENT N156x600mg-03D40l0075r10 CHILD N156x600mg-03D60l0075r10
-PARENT N156x600mg-03D60l0075r10 CHILD N156x600mg-03D80l0075r10
-PARENT N156x600mg-03D80l0075r10 CHILD N156x600mg-03D100l0075r10
-PARENT N156x600mg-02D20l0075r10 CHILD N156x600mg-02D40l0075r10
-PARENT N156x600mg-02D40l0075r10 CHILD N156x600mg-02D60l0075r10
-PARENT N156x600mg-02D60l0075r10 CHILD N156x600mg-02D80l0075r10
-PARENT N156x600mg-02D80l0075r10 CHILD N156x600mg-02D100l0075r10
-PARENT N156x600mg-01D20l0075r10 CHILD N156x600mg-01D40l0075r10
-PARENT N156x600mg-01D40l0075r10 CHILD N156x600mg-01D60l0075r10
-PARENT N156x600mg-01D60l0075r10 CHILD N156x600mg-01D80l0075r10
-PARENT N156x600mg-01D80l0075r10 CHILD N156x600mg-01D100l0075r10
-PARENT N156x600mg-005D20l0075r10 CHILD N156x600mg-005D40l0075r10
-PARENT N156x600mg-005D40l0075r10 CHILD N156x600mg-005D60l0075r10
-PARENT N156x600mg-005D60l0075r10 CHILD N156x600mg-005D80l0075r10
-PARENT N156x600mg-005D80l0075r10 CHILD N156x600mg-005D100l0075r10
-PARENT N156x600mg00D20l0075r10 CHILD N156x600mg00D40l0075r10
-PARENT N156x600mg00D40l0075r10 CHILD N156x600mg00D60l0075r10
-PARENT N156x600mg00D60l0075r10 CHILD N156x600mg00D80l0075r10
-PARENT N156x600mg00D80l0075r10 CHILD N156x600mg00D100l0075r10
-PARENT N156x600mg005D20l0075r10 CHILD N156x600mg005D40l0075r10
-PARENT N156x600mg005D40l0075r10 CHILD N156x600mg005D60l0075r10
-PARENT N156x600mg005D60l0075r10 CHILD N156x600mg005D80l0075r10
-PARENT N156x600mg005D80l0075r10 CHILD N156x600mg005D100l0075r10
-PARENT N156x600mg01D20l0075r10 CHILD N156x600mg01D40l0075r10
-PARENT N156x600mg01D40l0075r10 CHILD N156x600mg01D60l0075r10
-PARENT N156x600mg01D60l0075r10 CHILD N156x600mg01D80l0075r10
-PARENT N156x600mg01D80l0075r10 CHILD N156x600mg01D100l0075r10
-PARENT N156x600mg02D20l0075r10 CHILD N156x600mg02D40l0075r10
-PARENT N156x600mg02D40l0075r10 CHILD N156x600mg02D60l0075r10
-PARENT N156x600mg02D60l0075r10 CHILD N156x600mg02D80l0075r10
-PARENT N156x600mg02D80l0075r10 CHILD N156x600mg02D100l0075r10
-PARENT N156x600mg03D20l0075r10 CHILD N156x600mg03D40l0075r10
-PARENT N156x600mg03D40l0075r10 CHILD N156x600mg03D60l0075r10
-PARENT N156x600mg03D60l0075r10 CHILD N156x600mg03D80l0075r10
-PARENT N156x600mg03D80l0075r10 CHILD N156x600mg03D100l0075r10
+PARENT N180x800mg-08D20l0075r10 CHILD N180x800mg-08D40l0075r10
+PARENT N180x800mg-08D40l0075r10 CHILD N180x800mg-08D60l0075r10
+PARENT N180x800mg-07D20l0075r10 CHILD N180x800mg-07D40l0075r10
+PARENT N180x800mg-07D40l0075r10 CHILD N180x800mg-07D60l0075r10
+PARENT N180x800mg-06D20l0075r10 CHILD N180x800mg-06D40l0075r10
+PARENT N180x800mg-06D40l0075r10 CHILD N180x800mg-06D60l0075r10
+PARENT N180x800mg-05D20l0075r10 CHILD N180x800mg-05D40l0075r10
+PARENT N180x800mg-05D40l0075r10 CHILD N180x800mg-05D60l0075r10
+PARENT N180x800mg-04D20l0075r10 CHILD N180x800mg-04D40l0075r10
+PARENT N180x800mg-04D40l0075r10 CHILD N180x800mg-04D60l0075r10
 PARENT N180x800mg-03D20l0075r10 CHILD N180x800mg-03D40l0075r10
 PARENT N180x800mg-03D40l0075r10 CHILD N180x800mg-03D60l0075r10
-PARENT N180x800mg-03D60l0075r10 CHILD N180x800mg-03D80l0075r10
-PARENT N180x800mg-03D80l0075r10 CHILD N180x800mg-03D100l0075r10
-PARENT N180x800mg-02D20l0075r10 CHILD N180x800mg-02D40l0075r10
-PARENT N180x800mg-02D40l0075r10 CHILD N180x800mg-02D60l0075r10
-PARENT N180x800mg-02D60l0075r10 CHILD N180x800mg-02D80l0075r10
-PARENT N180x800mg-02D80l0075r10 CHILD N180x800mg-02D100l0075r10
-PARENT N180x800mg-01D20l0075r10 CHILD N180x800mg-01D40l0075r10
-PARENT N180x800mg-01D40l0075r10 CHILD N180x800mg-01D60l0075r10
-PARENT N180x800mg-01D60l0075r10 CHILD N180x800mg-01D80l0075r10
-PARENT N180x800mg-01D80l0075r10 CHILD N180x800mg-01D100l0075r10
-PARENT N180x800mg-005D20l0075r10 CHILD N180x800mg-005D40l0075r10
-PARENT N180x800mg-005D40l0075r10 CHILD N180x800mg-005D60l0075r10
-PARENT N180x800mg-005D60l0075r10 CHILD N180x800mg-005D80l0075r10
-PARENT N180x800mg-005D80l0075r10 CHILD N180x800mg-005D100l0075r10
-PARENT N180x800mg00D20l0075r10 CHILD N180x800mg00D40l0075r10
-PARENT N180x800mg00D40l0075r10 CHILD N180x800mg00D60l0075r10
-PARENT N180x800mg00D60l0075r10 CHILD N180x800mg00D80l0075r10
-PARENT N180x800mg00D80l0075r10 CHILD N180x800mg00D100l0075r10
-PARENT N180x800mg005D20l0075r10 CHILD N180x800mg005D40l0075r10
-PARENT N180x800mg005D40l0075r10 CHILD N180x800mg005D60l0075r10
-PARENT N180x800mg005D60l0075r10 CHILD N180x800mg005D80l0075r10
-PARENT N180x800mg005D80l0075r10 CHILD N180x800mg005D100l0075r10
-PARENT N180x800mg01D20l0075r10 CHILD N180x800mg01D40l0075r10
-PARENT N180x800mg01D40l0075r10 CHILD N180x800mg01D60l0075r10
-PARENT N180x800mg01D60l0075r10 CHILD N180x800mg01D80l0075r10
-PARENT N180x800mg01D80l0075r10 CHILD N180x800mg01D100l0075r10
-PARENT N180x800mg02D20l0075r10 CHILD N180x800mg02D40l0075r10
-PARENT N180x800mg02D40l0075r10 CHILD N180x800mg02D60l0075r10
-PARENT N180x800mg02D60l0075r10 CHILD N180x800mg02D80l0075r10
-PARENT N180x800mg02D80l0075r10 CHILD N180x800mg02D100l0075r10
-PARENT N180x800mg03D20l0075r10 CHILD N180x800mg03D40l0075r10
-PARENT N180x800mg03D40l0075r10 CHILD N180x800mg03D60l0075r10
-PARENT N180x800mg03D60l0075r10 CHILD N180x800mg03D80l0075r10
-PARENT N180x800mg03D80l0075r10 CHILD N180x800mg03D100l0075r10
+PARENT N200x1000mg-08D20l0075r10 CHILD N200x1000mg-08D40l0075r10
+PARENT N200x1000mg-08D40l0075r10 CHILD N200x1000mg-08D60l0075r10
+PARENT N200x1000mg-07D20l0075r10 CHILD N200x1000mg-07D40l0075r10
+PARENT N200x1000mg-07D40l0075r10 CHILD N200x1000mg-07D60l0075r10
+PARENT N200x1000mg-06D20l0075r10 CHILD N200x1000mg-06D40l0075r10
+PARENT N200x1000mg-06D40l0075r10 CHILD N200x1000mg-06D60l0075r10
+PARENT N200x1000mg-05D20l0075r10 CHILD N200x1000mg-05D40l0075r10
+PARENT N200x1000mg-05D40l0075r10 CHILD N200x1000mg-05D60l0075r10
+PARENT N200x1000mg-04D20l0075r10 CHILD N200x1000mg-04D40l0075r10
+PARENT N200x1000mg-04D40l0075r10 CHILD N200x1000mg-04D60l0075r10
 PARENT N200x1000mg-03D20l0075r10 CHILD N200x1000mg-03D40l0075r10
 PARENT N200x1000mg-03D40l0075r10 CHILD N200x1000mg-03D60l0075r10
-PARENT N200x1000mg-03D60l0075r10 CHILD N200x1000mg-03D80l0075r10
-PARENT N200x1000mg-03D80l0075r10 CHILD N200x1000mg-03D100l0075r10
-PARENT N200x1000mg-02D20l0075r10 CHILD N200x1000mg-02D40l0075r10
-PARENT N200x1000mg-02D40l0075r10 CHILD N200x1000mg-02D60l0075r10
-PARENT N200x1000mg-02D60l0075r10 CHILD N200x1000mg-02D80l0075r10
-PARENT N200x1000mg-02D80l0075r10 CHILD N200x1000mg-02D100l0075r10
-PARENT N200x1000mg-01D20l0075r10 CHILD N200x1000mg-01D40l0075r10
-PARENT N200x1000mg-01D40l0075r10 CHILD N200x1000mg-01D60l0075r10
-PARENT N200x1000mg-01D60l0075r10 CHILD N200x1000mg-01D80l0075r10
-PARENT N200x1000mg-01D80l0075r10 CHILD N200x1000mg-01D100l0075r10
-PARENT N200x1000mg-005D20l0075r10 CHILD N200x1000mg-005D40l0075r10
-PARENT N200x1000mg-005D40l0075r10 CHILD N200x1000mg-005D60l0075r10
-PARENT N200x1000mg-005D60l0075r10 CHILD N200x1000mg-005D80l0075r10
-PARENT N200x1000mg-005D80l0075r10 CHILD N200x1000mg-005D100l0075r10
-PARENT N200x1000mg00D20l0075r10 CHILD N200x1000mg00D40l0075r10
-PARENT N200x1000mg00D40l0075r10 CHILD N200x1000mg00D60l0075r10
-PARENT N200x1000mg00D60l0075r10 CHILD N200x1000mg00D80l0075r10
-PARENT N200x1000mg00D80l0075r10 CHILD N200x1000mg00D100l0075r10
-PARENT N200x1000mg005D20l0075r10 CHILD N200x1000mg005D40l0075r10
-PARENT N200x1000mg005D40l0075r10 CHILD N200x1000mg005D60l0075r10
-PARENT N200x1000mg005D60l0075r10 CHILD N200x1000mg005D80l0075r10
-PARENT N200x1000mg005D80l0075r10 CHILD N200x1000mg005D100l0075r10
-PARENT N200x1000mg01D20l0075r10 CHILD N200x1000mg01D40l0075r10
-PARENT N200x1000mg01D40l0075r10 CHILD N200x1000mg01D60l0075r10
-PARENT N200x1000mg01D60l0075r10 CHILD N200x1000mg01D80l0075r10
-PARENT N200x1000mg01D80l0075r10 CHILD N200x1000mg01D100l0075r10
-PARENT N200x1000mg02D20l0075r10 CHILD N200x1000mg02D40l0075r10
-PARENT N200x1000mg02D40l0075r10 CHILD N200x1000mg02D60l0075r10
-PARENT N200x1000mg02D60l0075r10 CHILD N200x1000mg02D80l0075r10
-PARENT N200x1000mg02D80l0075r10 CHILD N200x1000mg02D100l0075r10
-PARENT N200x1000mg03D20l0075r10 CHILD N200x1000mg03D40l0075r10
-PARENT N200x1000mg03D40l0075r10 CHILD N200x1000mg03D60l0075r10
-PARENT N200x1000mg03D60l0075r10 CHILD N200x1000mg03D80l0075r10
-PARENT N200x1000mg03D80l0075r10 CHILD N200x1000mg03D100l0075r10
