@@ -4,3 +4,9 @@ Submit jobs on DESY cluster example.txt
 *.err
 *.pdf
 Old Files Not Used
+*.dag.condor.sub
+*.dag.dagman.log
+*.dag.metrics
+*.dag.nodes.log
+*.dag.rescue*
+*.dag.lock
