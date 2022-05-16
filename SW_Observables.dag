@@ -31,30 +31,6 @@ JOB N64x100mg00D60l002r10choice1 SW_Observables.sub
 VARS N64x100mg00D60l002r10choice1 N="64" x="10.0" mg="0.0" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N64x100mg00D80l002r10choice1 SW_Observables.sub
 VARS N64x100mg00D80l002r10choice1 N="64" x="10.0" mg="0.0" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg01D20l002r10choice1 SW_Observables.sub
-VARS N64x100mg01D20l002r10choice1 N="64" x="10.0" mg="0.1" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg01D40l002r10choice1 SW_Observables.sub
-VARS N64x100mg01D40l002r10choice1 N="64" x="10.0" mg="0.1" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg01D60l002r10choice1 SW_Observables.sub
-VARS N64x100mg01D60l002r10choice1 N="64" x="10.0" mg="0.1" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg01D80l002r10choice1 SW_Observables.sub
-VARS N64x100mg01D80l002r10choice1 N="64" x="10.0" mg="0.1" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg02D20l002r10choice1 SW_Observables.sub
-VARS N64x100mg02D20l002r10choice1 N="64" x="10.0" mg="0.2" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg02D40l002r10choice1 SW_Observables.sub
-VARS N64x100mg02D40l002r10choice1 N="64" x="10.0" mg="0.2" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg02D60l002r10choice1 SW_Observables.sub
-VARS N64x100mg02D60l002r10choice1 N="64" x="10.0" mg="0.2" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg02D80l002r10choice1 SW_Observables.sub
-VARS N64x100mg02D80l002r10choice1 N="64" x="10.0" mg="0.2" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg03D20l002r10choice1 SW_Observables.sub
-VARS N64x100mg03D20l002r10choice1 N="64" x="10.0" mg="0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg03D40l002r10choice1 SW_Observables.sub
-VARS N64x100mg03D40l002r10choice1 N="64" x="10.0" mg="0.3" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg03D60l002r10choice1 SW_Observables.sub
-VARS N64x100mg03D60l002r10choice1 N="64" x="10.0" mg="0.3" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg03D80l002r10choice1 SW_Observables.sub
-VARS N64x100mg03D80l002r10choice1 N="64" x="10.0" mg="0.3" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N156x600mg-03D20l002r10choice1 SW_Observables.sub
 VARS N156x600mg-03D20l002r10choice1 N="156" x="60.0" mg="-0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N156x600mg-03D40l002r10choice1 SW_Observables.sub
@@ -87,30 +63,6 @@ JOB N156x600mg00D60l002r10choice1 SW_Observables.sub
 VARS N156x600mg00D60l002r10choice1 N="156" x="60.0" mg="0.0" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N156x600mg00D80l002r10choice1 SW_Observables.sub
 VARS N156x600mg00D80l002r10choice1 N="156" x="60.0" mg="0.0" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg01D20l002r10choice1 SW_Observables.sub
-VARS N156x600mg01D20l002r10choice1 N="156" x="60.0" mg="0.1" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg01D40l002r10choice1 SW_Observables.sub
-VARS N156x600mg01D40l002r10choice1 N="156" x="60.0" mg="0.1" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg01D60l002r10choice1 SW_Observables.sub
-VARS N156x600mg01D60l002r10choice1 N="156" x="60.0" mg="0.1" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg01D80l002r10choice1 SW_Observables.sub
-VARS N156x600mg01D80l002r10choice1 N="156" x="60.0" mg="0.1" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg02D20l002r10choice1 SW_Observables.sub
-VARS N156x600mg02D20l002r10choice1 N="156" x="60.0" mg="0.2" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg02D40l002r10choice1 SW_Observables.sub
-VARS N156x600mg02D40l002r10choice1 N="156" x="60.0" mg="0.2" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg02D60l002r10choice1 SW_Observables.sub
-VARS N156x600mg02D60l002r10choice1 N="156" x="60.0" mg="0.2" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg02D80l002r10choice1 SW_Observables.sub
-VARS N156x600mg02D80l002r10choice1 N="156" x="60.0" mg="0.2" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg03D20l002r10choice1 SW_Observables.sub
-VARS N156x600mg03D20l002r10choice1 N="156" x="60.0" mg="0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg03D40l002r10choice1 SW_Observables.sub
-VARS N156x600mg03D40l002r10choice1 N="156" x="60.0" mg="0.3" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg03D60l002r10choice1 SW_Observables.sub
-VARS N156x600mg03D60l002r10choice1 N="156" x="60.0" mg="0.3" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg03D80l002r10choice1 SW_Observables.sub
-VARS N156x600mg03D80l002r10choice1 N="156" x="60.0" mg="0.3" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N180x800mg-03D20l002r10choice1 SW_Observables.sub
 VARS N180x800mg-03D20l002r10choice1 N="180" x="80.0" mg="-0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N180x800mg-03D40l002r10choice1 SW_Observables.sub
@@ -143,30 +95,6 @@ JOB N180x800mg00D60l002r10choice1 SW_Observables.sub
 VARS N180x800mg00D60l002r10choice1 N="180" x="80.0" mg="0.0" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N180x800mg00D80l002r10choice1 SW_Observables.sub
 VARS N180x800mg00D80l002r10choice1 N="180" x="80.0" mg="0.0" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg01D20l002r10choice1 SW_Observables.sub
-VARS N180x800mg01D20l002r10choice1 N="180" x="80.0" mg="0.1" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg01D40l002r10choice1 SW_Observables.sub
-VARS N180x800mg01D40l002r10choice1 N="180" x="80.0" mg="0.1" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg01D60l002r10choice1 SW_Observables.sub
-VARS N180x800mg01D60l002r10choice1 N="180" x="80.0" mg="0.1" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg01D80l002r10choice1 SW_Observables.sub
-VARS N180x800mg01D80l002r10choice1 N="180" x="80.0" mg="0.1" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg02D20l002r10choice1 SW_Observables.sub
-VARS N180x800mg02D20l002r10choice1 N="180" x="80.0" mg="0.2" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg02D40l002r10choice1 SW_Observables.sub
-VARS N180x800mg02D40l002r10choice1 N="180" x="80.0" mg="0.2" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg02D60l002r10choice1 SW_Observables.sub
-VARS N180x800mg02D60l002r10choice1 N="180" x="80.0" mg="0.2" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg02D80l002r10choice1 SW_Observables.sub
-VARS N180x800mg02D80l002r10choice1 N="180" x="80.0" mg="0.2" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg03D20l002r10choice1 SW_Observables.sub
-VARS N180x800mg03D20l002r10choice1 N="180" x="80.0" mg="0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg03D40l002r10choice1 SW_Observables.sub
-VARS N180x800mg03D40l002r10choice1 N="180" x="80.0" mg="0.3" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg03D60l002r10choice1 SW_Observables.sub
-VARS N180x800mg03D60l002r10choice1 N="180" x="80.0" mg="0.3" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg03D80l002r10choice1 SW_Observables.sub
-VARS N180x800mg03D80l002r10choice1 N="180" x="80.0" mg="0.3" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N200x1000mg-03D20l002r10choice1 SW_Observables.sub
 VARS N200x1000mg-03D20l002r10choice1 N="200" x="100.0" mg="-0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N200x1000mg-03D40l002r10choice1 SW_Observables.sub
@@ -199,30 +127,6 @@ JOB N200x1000mg00D60l002r10choice1 SW_Observables.sub
 VARS N200x1000mg00D60l002r10choice1 N="200" x="100.0" mg="0.0" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N200x1000mg00D80l002r10choice1 SW_Observables.sub
 VARS N200x1000mg00D80l002r10choice1 N="200" x="100.0" mg="0.0" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg01D20l002r10choice1 SW_Observables.sub
-VARS N200x1000mg01D20l002r10choice1 N="200" x="100.0" mg="0.1" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg01D40l002r10choice1 SW_Observables.sub
-VARS N200x1000mg01D40l002r10choice1 N="200" x="100.0" mg="0.1" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg01D60l002r10choice1 SW_Observables.sub
-VARS N200x1000mg01D60l002r10choice1 N="200" x="100.0" mg="0.1" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg01D80l002r10choice1 SW_Observables.sub
-VARS N200x1000mg01D80l002r10choice1 N="200" x="100.0" mg="0.1" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg02D20l002r10choice1 SW_Observables.sub
-VARS N200x1000mg02D20l002r10choice1 N="200" x="100.0" mg="0.2" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg02D40l002r10choice1 SW_Observables.sub
-VARS N200x1000mg02D40l002r10choice1 N="200" x="100.0" mg="0.2" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg02D60l002r10choice1 SW_Observables.sub
-VARS N200x1000mg02D60l002r10choice1 N="200" x="100.0" mg="0.2" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg02D80l002r10choice1 SW_Observables.sub
-VARS N200x1000mg02D80l002r10choice1 N="200" x="100.0" mg="0.2" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg03D20l002r10choice1 SW_Observables.sub
-VARS N200x1000mg03D20l002r10choice1 N="200" x="100.0" mg="0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg03D40l002r10choice1 SW_Observables.sub
-VARS N200x1000mg03D40l002r10choice1 N="200" x="100.0" mg="0.3" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg03D60l002r10choice1 SW_Observables.sub
-VARS N200x1000mg03D60l002r10choice1 N="200" x="100.0" mg="0.3" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg03D80l002r10choice1 SW_Observables.sub
-VARS N200x1000mg03D80l002r10choice1 N="200" x="100.0" mg="0.3" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N64x100mg-03D20l004r10choice1 SW_Observables.sub
 VARS N64x100mg-03D20l004r10choice1 N="64" x="10.0" mg="-0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N64x100mg-03D40l004r10choice1 SW_Observables.sub
@@ -255,30 +159,6 @@ JOB N64x100mg00D60l004r10choice1 SW_Observables.sub
 VARS N64x100mg00D60l004r10choice1 N="64" x="10.0" mg="0.0" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N64x100mg00D80l004r10choice1 SW_Observables.sub
 VARS N64x100mg00D80l004r10choice1 N="64" x="10.0" mg="0.0" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg01D20l004r10choice1 SW_Observables.sub
-VARS N64x100mg01D20l004r10choice1 N="64" x="10.0" mg="0.1" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg01D40l004r10choice1 SW_Observables.sub
-VARS N64x100mg01D40l004r10choice1 N="64" x="10.0" mg="0.1" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg01D60l004r10choice1 SW_Observables.sub
-VARS N64x100mg01D60l004r10choice1 N="64" x="10.0" mg="0.1" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg01D80l004r10choice1 SW_Observables.sub
-VARS N64x100mg01D80l004r10choice1 N="64" x="10.0" mg="0.1" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg02D20l004r10choice1 SW_Observables.sub
-VARS N64x100mg02D20l004r10choice1 N="64" x="10.0" mg="0.2" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg02D40l004r10choice1 SW_Observables.sub
-VARS N64x100mg02D40l004r10choice1 N="64" x="10.0" mg="0.2" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg02D60l004r10choice1 SW_Observables.sub
-VARS N64x100mg02D60l004r10choice1 N="64" x="10.0" mg="0.2" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg02D80l004r10choice1 SW_Observables.sub
-VARS N64x100mg02D80l004r10choice1 N="64" x="10.0" mg="0.2" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg03D20l004r10choice1 SW_Observables.sub
-VARS N64x100mg03D20l004r10choice1 N="64" x="10.0" mg="0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg03D40l004r10choice1 SW_Observables.sub
-VARS N64x100mg03D40l004r10choice1 N="64" x="10.0" mg="0.3" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg03D60l004r10choice1 SW_Observables.sub
-VARS N64x100mg03D60l004r10choice1 N="64" x="10.0" mg="0.3" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N64x100mg03D80l004r10choice1 SW_Observables.sub
-VARS N64x100mg03D80l004r10choice1 N="64" x="10.0" mg="0.3" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N156x600mg-03D20l004r10choice1 SW_Observables.sub
 VARS N156x600mg-03D20l004r10choice1 N="156" x="60.0" mg="-0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N156x600mg-03D40l004r10choice1 SW_Observables.sub
@@ -311,30 +191,6 @@ JOB N156x600mg00D60l004r10choice1 SW_Observables.sub
 VARS N156x600mg00D60l004r10choice1 N="156" x="60.0" mg="0.0" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N156x600mg00D80l004r10choice1 SW_Observables.sub
 VARS N156x600mg00D80l004r10choice1 N="156" x="60.0" mg="0.0" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg01D20l004r10choice1 SW_Observables.sub
-VARS N156x600mg01D20l004r10choice1 N="156" x="60.0" mg="0.1" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg01D40l004r10choice1 SW_Observables.sub
-VARS N156x600mg01D40l004r10choice1 N="156" x="60.0" mg="0.1" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg01D60l004r10choice1 SW_Observables.sub
-VARS N156x600mg01D60l004r10choice1 N="156" x="60.0" mg="0.1" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg01D80l004r10choice1 SW_Observables.sub
-VARS N156x600mg01D80l004r10choice1 N="156" x="60.0" mg="0.1" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg02D20l004r10choice1 SW_Observables.sub
-VARS N156x600mg02D20l004r10choice1 N="156" x="60.0" mg="0.2" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg02D40l004r10choice1 SW_Observables.sub
-VARS N156x600mg02D40l004r10choice1 N="156" x="60.0" mg="0.2" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg02D60l004r10choice1 SW_Observables.sub
-VARS N156x600mg02D60l004r10choice1 N="156" x="60.0" mg="0.2" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg02D80l004r10choice1 SW_Observables.sub
-VARS N156x600mg02D80l004r10choice1 N="156" x="60.0" mg="0.2" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg03D20l004r10choice1 SW_Observables.sub
-VARS N156x600mg03D20l004r10choice1 N="156" x="60.0" mg="0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg03D40l004r10choice1 SW_Observables.sub
-VARS N156x600mg03D40l004r10choice1 N="156" x="60.0" mg="0.3" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg03D60l004r10choice1 SW_Observables.sub
-VARS N156x600mg03D60l004r10choice1 N="156" x="60.0" mg="0.3" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N156x600mg03D80l004r10choice1 SW_Observables.sub
-VARS N156x600mg03D80l004r10choice1 N="156" x="60.0" mg="0.3" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N180x800mg-03D20l004r10choice1 SW_Observables.sub
 VARS N180x800mg-03D20l004r10choice1 N="180" x="80.0" mg="-0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N180x800mg-03D40l004r10choice1 SW_Observables.sub
@@ -367,30 +223,6 @@ JOB N180x800mg00D60l004r10choice1 SW_Observables.sub
 VARS N180x800mg00D60l004r10choice1 N="180" x="80.0" mg="0.0" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N180x800mg00D80l004r10choice1 SW_Observables.sub
 VARS N180x800mg00D80l004r10choice1 N="180" x="80.0" mg="0.0" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg01D20l004r10choice1 SW_Observables.sub
-VARS N180x800mg01D20l004r10choice1 N="180" x="80.0" mg="0.1" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg01D40l004r10choice1 SW_Observables.sub
-VARS N180x800mg01D40l004r10choice1 N="180" x="80.0" mg="0.1" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg01D60l004r10choice1 SW_Observables.sub
-VARS N180x800mg01D60l004r10choice1 N="180" x="80.0" mg="0.1" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg01D80l004r10choice1 SW_Observables.sub
-VARS N180x800mg01D80l004r10choice1 N="180" x="80.0" mg="0.1" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg02D20l004r10choice1 SW_Observables.sub
-VARS N180x800mg02D20l004r10choice1 N="180" x="80.0" mg="0.2" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg02D40l004r10choice1 SW_Observables.sub
-VARS N180x800mg02D40l004r10choice1 N="180" x="80.0" mg="0.2" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg02D60l004r10choice1 SW_Observables.sub
-VARS N180x800mg02D60l004r10choice1 N="180" x="80.0" mg="0.2" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg02D80l004r10choice1 SW_Observables.sub
-VARS N180x800mg02D80l004r10choice1 N="180" x="80.0" mg="0.2" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg03D20l004r10choice1 SW_Observables.sub
-VARS N180x800mg03D20l004r10choice1 N="180" x="80.0" mg="0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg03D40l004r10choice1 SW_Observables.sub
-VARS N180x800mg03D40l004r10choice1 N="180" x="80.0" mg="0.3" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg03D60l004r10choice1 SW_Observables.sub
-VARS N180x800mg03D60l004r10choice1 N="180" x="80.0" mg="0.3" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N180x800mg03D80l004r10choice1 SW_Observables.sub
-VARS N180x800mg03D80l004r10choice1 N="180" x="80.0" mg="0.3" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N200x1000mg-03D20l004r10choice1 SW_Observables.sub
 VARS N200x1000mg-03D20l004r10choice1 N="200" x="100.0" mg="-0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N200x1000mg-03D40l004r10choice1 SW_Observables.sub
@@ -423,30 +255,6 @@ JOB N200x1000mg00D60l004r10choice1 SW_Observables.sub
 VARS N200x1000mg00D60l004r10choice1 N="200" x="100.0" mg="0.0" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N200x1000mg00D80l004r10choice1 SW_Observables.sub
 VARS N200x1000mg00D80l004r10choice1 N="200" x="100.0" mg="0.0" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg01D20l004r10choice1 SW_Observables.sub
-VARS N200x1000mg01D20l004r10choice1 N="200" x="100.0" mg="0.1" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg01D40l004r10choice1 SW_Observables.sub
-VARS N200x1000mg01D40l004r10choice1 N="200" x="100.0" mg="0.1" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg01D60l004r10choice1 SW_Observables.sub
-VARS N200x1000mg01D60l004r10choice1 N="200" x="100.0" mg="0.1" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg01D80l004r10choice1 SW_Observables.sub
-VARS N200x1000mg01D80l004r10choice1 N="200" x="100.0" mg="0.1" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg02D20l004r10choice1 SW_Observables.sub
-VARS N200x1000mg02D20l004r10choice1 N="200" x="100.0" mg="0.2" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg02D40l004r10choice1 SW_Observables.sub
-VARS N200x1000mg02D40l004r10choice1 N="200" x="100.0" mg="0.2" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg02D60l004r10choice1 SW_Observables.sub
-VARS N200x1000mg02D60l004r10choice1 N="200" x="100.0" mg="0.2" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg02D80l004r10choice1 SW_Observables.sub
-VARS N200x1000mg02D80l004r10choice1 N="200" x="100.0" mg="0.2" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg03D20l004r10choice1 SW_Observables.sub
-VARS N200x1000mg03D20l004r10choice1 N="200" x="100.0" mg="0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg03D40l004r10choice1 SW_Observables.sub
-VARS N200x1000mg03D40l004r10choice1 N="200" x="100.0" mg="0.3" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg03D60l004r10choice1 SW_Observables.sub
-VARS N200x1000mg03D60l004r10choice1 N="200" x="100.0" mg="0.3" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
-JOB N200x1000mg03D80l004r10choice1 SW_Observables.sub
-VARS N200x1000mg03D80l004r10choice1 N="200" x="100.0" mg="0.3" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="1"
 JOB N64x100mg-03D20l002r10choice2 SW_Observables.sub
 VARS N64x100mg-03D20l002r10choice2 N="64" x="10.0" mg="-0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N64x100mg-03D40l002r10choice2 SW_Observables.sub
@@ -479,30 +287,6 @@ JOB N64x100mg00D60l002r10choice2 SW_Observables.sub
 VARS N64x100mg00D60l002r10choice2 N="64" x="10.0" mg="0.0" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N64x100mg00D80l002r10choice2 SW_Observables.sub
 VARS N64x100mg00D80l002r10choice2 N="64" x="10.0" mg="0.0" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg01D20l002r10choice2 SW_Observables.sub
-VARS N64x100mg01D20l002r10choice2 N="64" x="10.0" mg="0.1" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg01D40l002r10choice2 SW_Observables.sub
-VARS N64x100mg01D40l002r10choice2 N="64" x="10.0" mg="0.1" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg01D60l002r10choice2 SW_Observables.sub
-VARS N64x100mg01D60l002r10choice2 N="64" x="10.0" mg="0.1" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg01D80l002r10choice2 SW_Observables.sub
-VARS N64x100mg01D80l002r10choice2 N="64" x="10.0" mg="0.1" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg02D20l002r10choice2 SW_Observables.sub
-VARS N64x100mg02D20l002r10choice2 N="64" x="10.0" mg="0.2" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg02D40l002r10choice2 SW_Observables.sub
-VARS N64x100mg02D40l002r10choice2 N="64" x="10.0" mg="0.2" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg02D60l002r10choice2 SW_Observables.sub
-VARS N64x100mg02D60l002r10choice2 N="64" x="10.0" mg="0.2" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg02D80l002r10choice2 SW_Observables.sub
-VARS N64x100mg02D80l002r10choice2 N="64" x="10.0" mg="0.2" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg03D20l002r10choice2 SW_Observables.sub
-VARS N64x100mg03D20l002r10choice2 N="64" x="10.0" mg="0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg03D40l002r10choice2 SW_Observables.sub
-VARS N64x100mg03D40l002r10choice2 N="64" x="10.0" mg="0.3" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg03D60l002r10choice2 SW_Observables.sub
-VARS N64x100mg03D60l002r10choice2 N="64" x="10.0" mg="0.3" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg03D80l002r10choice2 SW_Observables.sub
-VARS N64x100mg03D80l002r10choice2 N="64" x="10.0" mg="0.3" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N156x600mg-03D20l002r10choice2 SW_Observables.sub
 VARS N156x600mg-03D20l002r10choice2 N="156" x="60.0" mg="-0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N156x600mg-03D40l002r10choice2 SW_Observables.sub
@@ -535,30 +319,6 @@ JOB N156x600mg00D60l002r10choice2 SW_Observables.sub
 VARS N156x600mg00D60l002r10choice2 N="156" x="60.0" mg="0.0" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N156x600mg00D80l002r10choice2 SW_Observables.sub
 VARS N156x600mg00D80l002r10choice2 N="156" x="60.0" mg="0.0" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg01D20l002r10choice2 SW_Observables.sub
-VARS N156x600mg01D20l002r10choice2 N="156" x="60.0" mg="0.1" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg01D40l002r10choice2 SW_Observables.sub
-VARS N156x600mg01D40l002r10choice2 N="156" x="60.0" mg="0.1" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg01D60l002r10choice2 SW_Observables.sub
-VARS N156x600mg01D60l002r10choice2 N="156" x="60.0" mg="0.1" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg01D80l002r10choice2 SW_Observables.sub
-VARS N156x600mg01D80l002r10choice2 N="156" x="60.0" mg="0.1" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg02D20l002r10choice2 SW_Observables.sub
-VARS N156x600mg02D20l002r10choice2 N="156" x="60.0" mg="0.2" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg02D40l002r10choice2 SW_Observables.sub
-VARS N156x600mg02D40l002r10choice2 N="156" x="60.0" mg="0.2" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg02D60l002r10choice2 SW_Observables.sub
-VARS N156x600mg02D60l002r10choice2 N="156" x="60.0" mg="0.2" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg02D80l002r10choice2 SW_Observables.sub
-VARS N156x600mg02D80l002r10choice2 N="156" x="60.0" mg="0.2" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg03D20l002r10choice2 SW_Observables.sub
-VARS N156x600mg03D20l002r10choice2 N="156" x="60.0" mg="0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg03D40l002r10choice2 SW_Observables.sub
-VARS N156x600mg03D40l002r10choice2 N="156" x="60.0" mg="0.3" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg03D60l002r10choice2 SW_Observables.sub
-VARS N156x600mg03D60l002r10choice2 N="156" x="60.0" mg="0.3" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg03D80l002r10choice2 SW_Observables.sub
-VARS N156x600mg03D80l002r10choice2 N="156" x="60.0" mg="0.3" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N180x800mg-03D20l002r10choice2 SW_Observables.sub
 VARS N180x800mg-03D20l002r10choice2 N="180" x="80.0" mg="-0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N180x800mg-03D40l002r10choice2 SW_Observables.sub
@@ -591,30 +351,6 @@ JOB N180x800mg00D60l002r10choice2 SW_Observables.sub
 VARS N180x800mg00D60l002r10choice2 N="180" x="80.0" mg="0.0" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N180x800mg00D80l002r10choice2 SW_Observables.sub
 VARS N180x800mg00D80l002r10choice2 N="180" x="80.0" mg="0.0" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg01D20l002r10choice2 SW_Observables.sub
-VARS N180x800mg01D20l002r10choice2 N="180" x="80.0" mg="0.1" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg01D40l002r10choice2 SW_Observables.sub
-VARS N180x800mg01D40l002r10choice2 N="180" x="80.0" mg="0.1" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg01D60l002r10choice2 SW_Observables.sub
-VARS N180x800mg01D60l002r10choice2 N="180" x="80.0" mg="0.1" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg01D80l002r10choice2 SW_Observables.sub
-VARS N180x800mg01D80l002r10choice2 N="180" x="80.0" mg="0.1" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg02D20l002r10choice2 SW_Observables.sub
-VARS N180x800mg02D20l002r10choice2 N="180" x="80.0" mg="0.2" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg02D40l002r10choice2 SW_Observables.sub
-VARS N180x800mg02D40l002r10choice2 N="180" x="80.0" mg="0.2" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg02D60l002r10choice2 SW_Observables.sub
-VARS N180x800mg02D60l002r10choice2 N="180" x="80.0" mg="0.2" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg02D80l002r10choice2 SW_Observables.sub
-VARS N180x800mg02D80l002r10choice2 N="180" x="80.0" mg="0.2" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg03D20l002r10choice2 SW_Observables.sub
-VARS N180x800mg03D20l002r10choice2 N="180" x="80.0" mg="0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg03D40l002r10choice2 SW_Observables.sub
-VARS N180x800mg03D40l002r10choice2 N="180" x="80.0" mg="0.3" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg03D60l002r10choice2 SW_Observables.sub
-VARS N180x800mg03D60l002r10choice2 N="180" x="80.0" mg="0.3" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg03D80l002r10choice2 SW_Observables.sub
-VARS N180x800mg03D80l002r10choice2 N="180" x="80.0" mg="0.3" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N200x1000mg-03D20l002r10choice2 SW_Observables.sub
 VARS N200x1000mg-03D20l002r10choice2 N="200" x="100.0" mg="-0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N200x1000mg-03D40l002r10choice2 SW_Observables.sub
@@ -647,30 +383,6 @@ JOB N200x1000mg00D60l002r10choice2 SW_Observables.sub
 VARS N200x1000mg00D60l002r10choice2 N="200" x="100.0" mg="0.0" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N200x1000mg00D80l002r10choice2 SW_Observables.sub
 VARS N200x1000mg00D80l002r10choice2 N="200" x="100.0" mg="0.0" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg01D20l002r10choice2 SW_Observables.sub
-VARS N200x1000mg01D20l002r10choice2 N="200" x="100.0" mg="0.1" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg01D40l002r10choice2 SW_Observables.sub
-VARS N200x1000mg01D40l002r10choice2 N="200" x="100.0" mg="0.1" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg01D60l002r10choice2 SW_Observables.sub
-VARS N200x1000mg01D60l002r10choice2 N="200" x="100.0" mg="0.1" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg01D80l002r10choice2 SW_Observables.sub
-VARS N200x1000mg01D80l002r10choice2 N="200" x="100.0" mg="0.1" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg02D20l002r10choice2 SW_Observables.sub
-VARS N200x1000mg02D20l002r10choice2 N="200" x="100.0" mg="0.2" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg02D40l002r10choice2 SW_Observables.sub
-VARS N200x1000mg02D40l002r10choice2 N="200" x="100.0" mg="0.2" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg02D60l002r10choice2 SW_Observables.sub
-VARS N200x1000mg02D60l002r10choice2 N="200" x="100.0" mg="0.2" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg02D80l002r10choice2 SW_Observables.sub
-VARS N200x1000mg02D80l002r10choice2 N="200" x="100.0" mg="0.2" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg03D20l002r10choice2 SW_Observables.sub
-VARS N200x1000mg03D20l002r10choice2 N="200" x="100.0" mg="0.3" D="20" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg03D40l002r10choice2 SW_Observables.sub
-VARS N200x1000mg03D40l002r10choice2 N="200" x="100.0" mg="0.3" D="40" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg03D60l002r10choice2 SW_Observables.sub
-VARS N200x1000mg03D60l002r10choice2 N="200" x="100.0" mg="0.3" D="60" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg03D80l002r10choice2 SW_Observables.sub
-VARS N200x1000mg03D80l002r10choice2 N="200" x="100.0" mg="0.3" D="80" l_0="0.2" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N64x100mg-03D20l004r10choice2 SW_Observables.sub
 VARS N64x100mg-03D20l004r10choice2 N="64" x="10.0" mg="-0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N64x100mg-03D40l004r10choice2 SW_Observables.sub
@@ -703,30 +415,6 @@ JOB N64x100mg00D60l004r10choice2 SW_Observables.sub
 VARS N64x100mg00D60l004r10choice2 N="64" x="10.0" mg="0.0" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N64x100mg00D80l004r10choice2 SW_Observables.sub
 VARS N64x100mg00D80l004r10choice2 N="64" x="10.0" mg="0.0" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg01D20l004r10choice2 SW_Observables.sub
-VARS N64x100mg01D20l004r10choice2 N="64" x="10.0" mg="0.1" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg01D40l004r10choice2 SW_Observables.sub
-VARS N64x100mg01D40l004r10choice2 N="64" x="10.0" mg="0.1" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg01D60l004r10choice2 SW_Observables.sub
-VARS N64x100mg01D60l004r10choice2 N="64" x="10.0" mg="0.1" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg01D80l004r10choice2 SW_Observables.sub
-VARS N64x100mg01D80l004r10choice2 N="64" x="10.0" mg="0.1" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg02D20l004r10choice2 SW_Observables.sub
-VARS N64x100mg02D20l004r10choice2 N="64" x="10.0" mg="0.2" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg02D40l004r10choice2 SW_Observables.sub
-VARS N64x100mg02D40l004r10choice2 N="64" x="10.0" mg="0.2" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg02D60l004r10choice2 SW_Observables.sub
-VARS N64x100mg02D60l004r10choice2 N="64" x="10.0" mg="0.2" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg02D80l004r10choice2 SW_Observables.sub
-VARS N64x100mg02D80l004r10choice2 N="64" x="10.0" mg="0.2" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg03D20l004r10choice2 SW_Observables.sub
-VARS N64x100mg03D20l004r10choice2 N="64" x="10.0" mg="0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg03D40l004r10choice2 SW_Observables.sub
-VARS N64x100mg03D40l004r10choice2 N="64" x="10.0" mg="0.3" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg03D60l004r10choice2 SW_Observables.sub
-VARS N64x100mg03D60l004r10choice2 N="64" x="10.0" mg="0.3" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N64x100mg03D80l004r10choice2 SW_Observables.sub
-VARS N64x100mg03D80l004r10choice2 N="64" x="10.0" mg="0.3" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N156x600mg-03D20l004r10choice2 SW_Observables.sub
 VARS N156x600mg-03D20l004r10choice2 N="156" x="60.0" mg="-0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N156x600mg-03D40l004r10choice2 SW_Observables.sub
@@ -759,30 +447,6 @@ JOB N156x600mg00D60l004r10choice2 SW_Observables.sub
 VARS N156x600mg00D60l004r10choice2 N="156" x="60.0" mg="0.0" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N156x600mg00D80l004r10choice2 SW_Observables.sub
 VARS N156x600mg00D80l004r10choice2 N="156" x="60.0" mg="0.0" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg01D20l004r10choice2 SW_Observables.sub
-VARS N156x600mg01D20l004r10choice2 N="156" x="60.0" mg="0.1" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg01D40l004r10choice2 SW_Observables.sub
-VARS N156x600mg01D40l004r10choice2 N="156" x="60.0" mg="0.1" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg01D60l004r10choice2 SW_Observables.sub
-VARS N156x600mg01D60l004r10choice2 N="156" x="60.0" mg="0.1" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg01D80l004r10choice2 SW_Observables.sub
-VARS N156x600mg01D80l004r10choice2 N="156" x="60.0" mg="0.1" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg02D20l004r10choice2 SW_Observables.sub
-VARS N156x600mg02D20l004r10choice2 N="156" x="60.0" mg="0.2" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg02D40l004r10choice2 SW_Observables.sub
-VARS N156x600mg02D40l004r10choice2 N="156" x="60.0" mg="0.2" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg02D60l004r10choice2 SW_Observables.sub
-VARS N156x600mg02D60l004r10choice2 N="156" x="60.0" mg="0.2" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg02D80l004r10choice2 SW_Observables.sub
-VARS N156x600mg02D80l004r10choice2 N="156" x="60.0" mg="0.2" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg03D20l004r10choice2 SW_Observables.sub
-VARS N156x600mg03D20l004r10choice2 N="156" x="60.0" mg="0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg03D40l004r10choice2 SW_Observables.sub
-VARS N156x600mg03D40l004r10choice2 N="156" x="60.0" mg="0.3" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg03D60l004r10choice2 SW_Observables.sub
-VARS N156x600mg03D60l004r10choice2 N="156" x="60.0" mg="0.3" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N156x600mg03D80l004r10choice2 SW_Observables.sub
-VARS N156x600mg03D80l004r10choice2 N="156" x="60.0" mg="0.3" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N180x800mg-03D20l004r10choice2 SW_Observables.sub
 VARS N180x800mg-03D20l004r10choice2 N="180" x="80.0" mg="-0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N180x800mg-03D40l004r10choice2 SW_Observables.sub
@@ -815,30 +479,6 @@ JOB N180x800mg00D60l004r10choice2 SW_Observables.sub
 VARS N180x800mg00D60l004r10choice2 N="180" x="80.0" mg="0.0" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N180x800mg00D80l004r10choice2 SW_Observables.sub
 VARS N180x800mg00D80l004r10choice2 N="180" x="80.0" mg="0.0" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg01D20l004r10choice2 SW_Observables.sub
-VARS N180x800mg01D20l004r10choice2 N="180" x="80.0" mg="0.1" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg01D40l004r10choice2 SW_Observables.sub
-VARS N180x800mg01D40l004r10choice2 N="180" x="80.0" mg="0.1" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg01D60l004r10choice2 SW_Observables.sub
-VARS N180x800mg01D60l004r10choice2 N="180" x="80.0" mg="0.1" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg01D80l004r10choice2 SW_Observables.sub
-VARS N180x800mg01D80l004r10choice2 N="180" x="80.0" mg="0.1" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg02D20l004r10choice2 SW_Observables.sub
-VARS N180x800mg02D20l004r10choice2 N="180" x="80.0" mg="0.2" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg02D40l004r10choice2 SW_Observables.sub
-VARS N180x800mg02D40l004r10choice2 N="180" x="80.0" mg="0.2" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg02D60l004r10choice2 SW_Observables.sub
-VARS N180x800mg02D60l004r10choice2 N="180" x="80.0" mg="0.2" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg02D80l004r10choice2 SW_Observables.sub
-VARS N180x800mg02D80l004r10choice2 N="180" x="80.0" mg="0.2" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg03D20l004r10choice2 SW_Observables.sub
-VARS N180x800mg03D20l004r10choice2 N="180" x="80.0" mg="0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg03D40l004r10choice2 SW_Observables.sub
-VARS N180x800mg03D40l004r10choice2 N="180" x="80.0" mg="0.3" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg03D60l004r10choice2 SW_Observables.sub
-VARS N180x800mg03D60l004r10choice2 N="180" x="80.0" mg="0.3" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N180x800mg03D80l004r10choice2 SW_Observables.sub
-VARS N180x800mg03D80l004r10choice2 N="180" x="80.0" mg="0.3" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N200x1000mg-03D20l004r10choice2 SW_Observables.sub
 VARS N200x1000mg-03D20l004r10choice2 N="200" x="100.0" mg="-0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N200x1000mg-03D40l004r10choice2 SW_Observables.sub
@@ -871,27 +511,3 @@ JOB N200x1000mg00D60l004r10choice2 SW_Observables.sub
 VARS N200x1000mg00D60l004r10choice2 N="200" x="100.0" mg="0.0" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
 JOB N200x1000mg00D80l004r10choice2 SW_Observables.sub
 VARS N200x1000mg00D80l004r10choice2 N="200" x="100.0" mg="0.0" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg01D20l004r10choice2 SW_Observables.sub
-VARS N200x1000mg01D20l004r10choice2 N="200" x="100.0" mg="0.1" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg01D40l004r10choice2 SW_Observables.sub
-VARS N200x1000mg01D40l004r10choice2 N="200" x="100.0" mg="0.1" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg01D60l004r10choice2 SW_Observables.sub
-VARS N200x1000mg01D60l004r10choice2 N="200" x="100.0" mg="0.1" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg01D80l004r10choice2 SW_Observables.sub
-VARS N200x1000mg01D80l004r10choice2 N="200" x="100.0" mg="0.1" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg02D20l004r10choice2 SW_Observables.sub
-VARS N200x1000mg02D20l004r10choice2 N="200" x="100.0" mg="0.2" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg02D40l004r10choice2 SW_Observables.sub
-VARS N200x1000mg02D40l004r10choice2 N="200" x="100.0" mg="0.2" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg02D60l004r10choice2 SW_Observables.sub
-VARS N200x1000mg02D60l004r10choice2 N="200" x="100.0" mg="0.2" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg02D80l004r10choice2 SW_Observables.sub
-VARS N200x1000mg02D80l004r10choice2 N="200" x="100.0" mg="0.2" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg03D20l004r10choice2 SW_Observables.sub
-VARS N200x1000mg03D20l004r10choice2 N="200" x="100.0" mg="0.3" D="20" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg03D40l004r10choice2 SW_Observables.sub
-VARS N200x1000mg03D40l004r10choice2 N="200" x="100.0" mg="0.3" D="40" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg03D60l004r10choice2 SW_Observables.sub
-VARS N200x1000mg03D60l004r10choice2 N="200" x="100.0" mg="0.3" D="60" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
-JOB N200x1000mg03D80l004r10choice2 SW_Observables.sub
-VARS N200x1000mg03D80l004r10choice2 N="200" x="100.0" mg="0.3" D="80" l_0="0.4" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="2"
