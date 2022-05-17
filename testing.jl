@@ -622,25 +622,34 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
-# # Testing energy(theta 1) - energy(theta 2) vs m/g
+# Testing energy(theta 1) - energy(theta 2) vs m/g for r=1 vs r=-1 as it is expected that
+# r = 1 should be lower than r=-1 for any given m/g
 
-# N = 4
-# D = 5
+# N = 10
+# D = 10
 # x = 1.0
-# mg = -0.475
+# mg = 0.5
 # lambda = 100.0
-# r = 1.0
 # acc = 1.0e-8
 # ms = 100
 # d = 2
 
-# mpo_left = get_Schwinger_Wilson_general_r_MPO(N, 0.2, x, lambda, mg, r)
-# mpo_right = get_Schwinger_Wilson_general_r_MPO(N, 0.75, x, lambda, mg, r)
+# mpo_left = get_Schwinger_Wilson_general_r_MPO(N, 0.1, x, lambda, mg, 1.0)
+# mpo_right = get_Schwinger_Wilson_general_r_MPO(N, 0.4, x, lambda, mg, 1.0)
 
 # E_left, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_left, acc, ms)
 # E_right, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_right, acc, ms)
 
-# println(E_left - E_right)
+# E_diff_1 = E_left - E_right
 
+# mpo_leftm = get_Schwinger_Wilson_general_r_MPO(N, 0.1, x, lambda, mg, -1.0)
+# mpo_rightm = get_Schwinger_Wilson_general_r_MPO(N, 0.4, x, lambda, mg, -1.0)
+
+# E_leftm, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_leftm, acc, ms)
+# E_rightm, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_rightm, acc, ms)
+
+# E_diff_m1 = E_leftm - E_rightm
+
+# println(E_diff_1, " -- ", E_diff_m1)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
