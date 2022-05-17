@@ -444,7 +444,7 @@ function get_updated_site(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{C
     """
 
     Heff, dimensions = get_Heff(L, W, R)
-    E, M = eigsolve(Heff, 1, :SR, ishermitian = true) # 1 means how many evals to get, :SR means smallest real to get the eval with the smallest real part, also note M'*M = 1.0+0.0im
+    E, M = eigsolve(Heff, 1, :SR, ishermitian = true, krylovdim = 400) # 1 means how many evals to get, :SR means smallest real to get the eval with the smallest real part, also note M'*M = 1.0+0.0im
     M = reshape(M[1], (dimensions[1], dimensions[2], dimensions[3])) # M is reshaped in the form sigma_i, a_i-1, a_i
     M = permutedims(M, (2,3,1)) # M is permuted into the form a_i-1, a_i, sigma_i
 
