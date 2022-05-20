@@ -37,5 +37,17 @@ elseif choice == 2 # Entropy
     open(path_to_text_file, "w") do f
         write(f, "$(entropy)")
     end
+
+elseif choice == 3 # Chiral Condensate
+
+    cc_mpo = get_chiral_condensate_MPO(2*N)
+    cc = real(get_mpo_expectation_value(mps, cc_mpo))
+    
+    text_file_name = "/Chiral Condensate/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r).txt"
+    path_to_text_file = path*text_file_name
+    
+    open(path_to_text_file, "w") do f
+        write(f, "$(cc)")
+    end
     
 end
