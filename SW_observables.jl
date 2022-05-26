@@ -63,8 +63,8 @@ elseif choice == 4 # Electric field
 
 elseif choice == 5 # Electric field but avoiding the lattice edges
 
-    left = floor(Int, N/2)
-    right = floor(Int, 1.5*N)
+    left = floor(Int, N*0.25)
+    right = floor(Int, N*0.75)
     number_of_links = right-left
     efl = get_electric_field_configuration(l_0, mps)
     middle_efl = efl[left:right]
