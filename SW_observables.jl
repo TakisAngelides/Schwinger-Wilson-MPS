@@ -63,11 +63,11 @@ elseif choice == 4 # Electric field
 
 elseif choice == 5 # Electric field but avoiding the lattice edges
 
-    left = floor(Int, N*0.25)
-    right = floor(Int, N*0.75)
-    number_of_links = right-left
+    left_edge = floor(Int, N*0.25)
+    right_edge = floor(Int, N*0.75)
+    number_of_links = right_edge-left_edge
     efl = get_electric_field_configuration(l_0, mps)
-    middle_efl = efl[left:right]
+    middle_efl = efl[left_edge:right_edge]
     ef = real(sum(middle_efl))
     
     text_file_name = "/Electric Field/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r).txt"
