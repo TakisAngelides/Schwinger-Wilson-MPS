@@ -653,3 +653,24 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 # println(E_diff_1, " -- ", E_diff_m1)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
+
+# Plotting the Electric field vs link
+
+# N = 64
+# l_0 = 0.295
+# name_of_mps = "N_64_x_10.0_D_40_l0_0.295_mg_-0.0968_ms_100_acc_1.0e-8_lam_100.0_r_1.0"
+# f = h5open("N_64_x_10.0_D_40_l0_0.295_mg_-0.0968_ms_100_acc_1.0e-8_lam_100.0_r_1.0.h5", "r")
+# mps_group = f[name_of_mps]
+# mps = Vector{Array{ComplexF64}}(undef, 2*N)
+# for i in 1:2*N
+#     mps[i] = read(mps_group["$(i)"])
+# end
+# close(f)
+# electric_field_list = real(get_electric_field_configuration(l_0, mps))
+# charge_list = real(get_charge_configuration(mps))
+# link_number_list = 1:length(electric_field_list)
+# scatter(link_number_list, electric_field_list, label = "Electric Field")
+# scatter!(link_number_list, charge_list, label = "Charge Density")
+# savefig("EFnQDvsSite.pdf")
+
+# ----------------------------------------------------------------------------------------------------------------------------------
