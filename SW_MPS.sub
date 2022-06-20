@@ -8,11 +8,11 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.j
 
 should_transfer_files = IF_NEEDED
 
-mem = ($(D)*$(D)*$(D)*$(D)*64/1e9)+0.01
+mem = ($(D)*$(D)*$(D)*$(D)*64/1e6)+100
 
-request_memory = $(mem)G
+request_memory = $(mem)
 
-+RequestRuntime = 1.99*24*3600
++RequestRuntime = 6.99*24*3600
 
 max_retries = 5
 
