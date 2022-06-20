@@ -12,7 +12,7 @@ mem = ($(D)*$(D)*$(D)*$(D)*64/1e9)+0.25
 
 request_memory = $(mem)G
 
-+RequestRuntime = 6*24*3600
++RequestRuntime = 1.99*24*3600
 
 max_retries = 5
 
