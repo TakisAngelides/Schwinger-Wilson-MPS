@@ -500,6 +500,83 @@ function get_Schwinger_Wilson_general_r_MPO(N::Int64, l_0::Float64, x::Float64, 
 
 end
 
+function get_free_Wilson_general_r_MPO(N::Int64, x::Float64, m_g_ratio::Float64, r::Float64)::Vector{Array{ComplexF64}}
+
+    A = (1/(2*N))*((N-1)*l_0^2 + lambda*N/2 + N*(N-1)/4)
+    B = 1im*x*(r - 1)
+    C = 2*1im*(sqrt(x)*m_g_ratio + x*r)
+    D = 1im*x*(r + 1)
+    
+    D_bond = 6
+    d = 2
+
+    I = [1 0; 0 1]
+    Z = [1 0; 0 -1]
+    PLUS = [0 1; 0 0]
+    MINUS = [0 0; 1 0]
+
+    mpo = Vector{Array{ComplexF64}}(undef, 2*N) # An MPO is stored as a vector and each element of the vector stores a 4-tensor
+
+    for n in 1:2*N
+    
+        if n % 2 == 0
+        
+            if n == 2*N
+
+                mpo[n] = zeros((D_bond, 1, d, d))
+                mpo[n][1,1,:,:] = I
+                mpo[n][2,1,:,:] = MINUS
+                mpo[n][3,1,:,:] = PLUS
+
+            else
+
+                mpo[n] = zeros((D_bond, D_bond, d, d))
+                mpo[n][1,1,:,:] = I
+                mpo[n][6,6,:,:] = I
+                mpo[n][6,3,:,:] = B.*MINUS
+                mpo[n][2,1,:,:] = MINUS
+                mpo[n][6,2,:,:] = -B.*PLUS
+                mpo[n][3,1,:,:] = PLUS
+                mpo[n][4,4,:,:] = Z
+                mpo[n][5,5,:,:] = Z 
+
+            end
+        else
+
+            if n == 1
+                
+                mpo[n] = zeros((1, D_bond, d, d))
+                mpo[n][1,6,:,:] = I
+                mpo[n][1,3,:,:] = C.*MINUS
+                mpo[n][1,5,:,:] = -D.*MINUS
+                mpo[n][1,2,:,:] = -C.*PLUS
+                mpo[n][1,4,:,:] = D.*PLUS
+                
+            
+            else
+
+                mpo[n] = zeros((D_bond, D_bond, d, d))
+                mpo[n][1,1,:,:] = I
+                mpo[n][6,6,:,:] = I
+                mpo[n][2,1,:,:] = MINUS
+                mpo[n][6,3,:,:] = C.*MINUS
+                mpo[n][6,5,:,:] = -D.*MINUS
+                mpo[n][3,1,:,:] = PLUS
+                mpo[n][6,2,:,:] = -C.*PLUS
+                mpo[n][6,4,:,:] = D.*PLUS
+                mpo[n][4,2,:,:] = Z
+                mpo[n][5,3,:,:] = Z
+            
+            end
+
+        end
+    
+    end
+    
+    return mpo
+
+end
+
 function get_local_charge_MPO(N::Int64, site::Int64)::Vector{Array{ComplexF64}}
 
     """
