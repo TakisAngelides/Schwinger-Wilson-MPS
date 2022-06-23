@@ -500,11 +500,10 @@ function get_Schwinger_Wilson_general_r_MPO(N::Int64, l_0::Float64, x::Float64, 
 
 end
 
-function get_free_Wilson_general_r_MPO(N::Int64, x::Float64, m_g_ratio::Float64, r::Float64)::Vector{Array{ComplexF64}}
+function get_free_Wilson_general_r_MPO(N::Int64, x::Float64, r::Float64)::Vector{Array{ComplexF64}}
 
-    A = (1/(2*N))*((N-1)*l_0^2 + lambda*N/2 + N*(N-1)/4)
     B = 1im*x*(r - 1)
-    C = 2*1im*(sqrt(x)*m_g_ratio + x*r)
+    C = 2*1im*(1 + x*r)
     D = 1im*x*(r + 1)
     
     D_bond = 6
