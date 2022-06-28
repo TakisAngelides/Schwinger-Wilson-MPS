@@ -154,7 +154,7 @@ function get_Schwinger_hamiltonian_matrix(N::Int64, l_0::Float64, x::Float64, la
 
     Inputs:
 
-    N = number of lattice sites (if M is the number of physical lattice sites then N = 2M)
+    N = number of physical lattice sites
 
     l_0 = is the background electric field, in this case l_0 = theta/2pi
 
@@ -476,7 +476,7 @@ function quantum_state_coefficients(mps::Vector{Array{ComplexF64}}, N::Int64)::A
 
     mps = the mps that represents the quantum state for which we want the coefficients (Vector with elements being 3-tensors ie 3-arrays)
 
-    N = number of lattice sites (Integer)
+    N = number of spin lattice sites (Integer)
 
     Outputs:
 
