@@ -688,43 +688,68 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Reading an MPS from file and plotting different observables or printing lists
+
+# N = 64
+# l_0 = 0.379
+# name_of_mps = "N_64_x_10.0_D_40_l0_0.379_mg_-0.1116_ms_100_acc_1.0e-8_lam_100.0_r_1.0"
+# f = h5open("N_64_x_10.0_D_40_l0_0.379_mg_-0.1116_ms_100_acc_1.0e-8_lam_100.0_r_1.0.h5", "r")
+# mps_group = f[name_of_mps]
+# mps = Vector{Array{ComplexF64}}(undef, 2*N)
+# for i in 1:2*N
+#     mps[i] = read(mps_group["$(i)"])
+# end
+# close(f)
+
+# mpo_particle_number = get_particle_number_MPO(N)
+# particle_number = get_mpo_expectation_value(mps, mpo_particle_number)
+
+# charge_config = get_charge_configuration(mps)
+
+# println("Charge density configuration")
+# display(charge_config)
+# println()
+# println("Particle number = ", particle_number)
+
+
+# ----------------------------------------------------------------------------------------------------------------------------------
 
 # Plotting the observable vs m/g to compare to fig 8 in https://arxiv.org/pdf/2105.05870.pdf
 
-N = 2
-r = 1.0
-a = 1
-g = 4
-x = 1/(a*g)^2
-l_0 = 0.5
-lambda = 20.0
-ms = 20
-acc = 10^(-8)
-D = 10
-d = 2
-m_list = LinRange(-1.0, 6.0, 2)
-mg_list = m_list/g
+# N = 2
+# r = 1.0
+# a = 1
+# g = 4
+# x = 1/(a*g)^2
+# l_0 = 0.5
+# lambda = 20.0
+# ms = 20
+# acc = 10^(-8)
+# D = 10
+# d = 2
+# m_list = LinRange(-1.0, 6.0, 2)
+# mg_list = m_list/g
 
-E_0_list = []
-exact_E_0_list = []
-E_field_list = []
-particle_number_list = []
-penalty_list = []
-charge_list = []
-quantum_state_list = []
+# E_0_list = []
+# exact_E_0_list = []
+# E_field_list = []
+# particle_number_list = []
+# penalty_list = []
+# charge_list = []
+# quantum_state_list = []
 
-for mg in mg_list
+# for mg in mg_list
 
-    mpo = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, r)
+#     mpo = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, r)
     # mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
     # mpo = get_Schwinger_Wilson_MPO_Stefan(N, l_0, x, lambda, mg)
-    E_0, mps, ns = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+    # E_0, mps, ns = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
 
-    mpo_particle_number = get_particle_number_MPO(N)
-    particle_number = get_mpo_expectation_value(mps, mpo_particle_number)
+    # mpo_particle_number = get_particle_number_MPO(N)
+    # particle_number = get_mpo_expectation_value(mps, mpo_particle_number)
 
-    E_field_configuration = get_electric_field_configuration(l_0, mps)
-    E_field = E_field_configuration[1]
+    # E_field_configuration = get_electric_field_configuration(l_0, mps)
+    # E_field = E_field_configuration[1]
 
     # penalty_mpo = get_penalty_term_MPO(2*N, lambda)
     # penalty = get_mpo_expectation_value(mps, penalty_mpo)
@@ -733,21 +758,21 @@ for mg in mg_list
     # evals = sort(eigvals(matrix_h))
     # E_0_exact = real(evals[1])
 
-    charge_config = get_charge_configuration(mps)
+    # charge_config = get_charge_configuration(mps)
     
     # quantum_state = quantum_state_coefficients(mps, 2*N)
 
     # append!(quantum_state_list, [quantum_state])
-    append!(charge_list, [real(charge_config)])
+    # append!(charge_list, [real(charge_config)])
     # append!(E_0_list, real(E_0))
     # append!(exact_E_0_list, real(E_0_exact))
-    append!(particle_number_list, real(particle_number))
-    append!(E_field_list, real(E_field))
+    # append!(particle_number_list, real(particle_number))
+    # append!(E_field_list, real(E_field))
     # append!(penalty_list, real(penalty))
 
-end
+# end
 
-min_E_field, idx = E_field_list[1], 1
+# min_E_field, idx = E_field_list[1], 1
 # # min_E_field, idx = findmin(E_field_list)
 # psi = quantum_state_list[idx]
 
@@ -773,12 +798,12 @@ min_E_field, idx = E_field_list[1], 1
 # end
 
 # println()
-println("CHARGE LIST")
-display(charge_list[idx])
+# println("CHARGE LIST")
+# display(charge_list[idx])
 # println()
 # println("E field = ", min_E_field)
-println()
-println("Particle number = ", particle_number_list[idx])
+# println()
+# println("Particle number = ", particle_number_list[idx])
 
 # plot!(m_list, exact_E_0_list, label = "Exact E_0", linestyle = :dash)
 # plot!(m_list, E_0_list, label = "E_0")
