@@ -691,6 +691,58 @@ function get_local_spin_MPO(N::Int64, site::Int64)::Vector{Array{ComplexF64}}
 
 end
 
+function get_particle_number_MPO(N::Int64)::Vector{Array{ComplexF64}}
+
+    # N = number of physical sites
+    # This operator is sum from 1 to N psi bar psi + 1 so it is the same as the chiral condensate but with + N*identity operator
+
+    mpo = Vector{Array{ComplexF64}}(undef, 2*N)
+
+    D = 4
+    d = 2
+    I = [1.0+0.0im 0.0+0.0im; 0.0+0.0im 1.0+0.0im]
+    PLUS = [0.0+0.0im 1.0+0.0im; 0.0+0.0im 0.0+0.0im]
+    MINUS = [0.0+0.0im 0.0+0.0im; 1.0+0.0im 0.0+0.0im]
+
+    tensor_first = zeros(ComplexF64, 1, D, d, d)
+    tensor_first[1,2,:,:] = -1im.*PLUS
+    tensor_first[1,3,:,:] = 1im.*MINUS
+    tensor_first[1,D,:,:] = I
+
+    tensor_last = zeros(ComplexF64, D, 1, d, d)
+    tensor_last[1,1,:,:] = I
+    tensor_last[2,1,:,:] = MINUS
+    tensor_last[3,1,:,:] = PLUS
+    tensor_last[4,1,:,:] = N*I
+
+    tensor_even = zeros(ComplexF64, D, D, d, d)
+    tensor_even[1,1,:,:] = I
+    tensor_even[2,1,:,:] = MINUS
+    tensor_even[3,1,:,:] = PLUS
+    tensor_even[D,D,:,:] = I
+
+    tensor_odd = zeros(ComplexF64, D, D, d, d)
+    tensor_odd[1,1,:,:] = I
+    tensor_odd[D,2,:,:] = -1im.*PLUS
+    tensor_odd[D,3,:,:] = 1im.*MINUS
+    tensor_odd[D,D,:,:] = I
+
+    for i in 1:2*N
+        if i == 1
+            mpo[i] = tensor_first
+        elseif i == 2*N
+            mpo[i] = tensor_last
+        elseif i % 2 == 0
+            mpo[i] = tensor_even
+        else
+            mpo[i] = tensor_odd
+        end
+    end
+
+    return mpo
+
+end
+
 function get_penalty_term_MPO(N::Int64, lambda::Float64)::Vector{Array}
 
     """
@@ -701,7 +753,7 @@ function get_penalty_term_MPO(N::Int64, lambda::Float64)::Vector{Array}
 
     Inputs:
     
-    N = number of lattice sites if the number of physical sites is M then N = 2M for our spin formulation
+    N = number of spin lattice sites if the number of physical sites is M then N = 2M for our spin formulation
 
     lambda = lagrange multiplier (float)
 
