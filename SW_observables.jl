@@ -76,5 +76,17 @@ elseif choice == 5 # Electric field but avoiding the lattice edges
     open(path_to_text_file, "w") do f
         write(f, "$(ef),$(number_of_links)")
     end
+
+elseif choice == 6 # Particle number
+
+    mpo_particle_number = get_particle_number_MPO(N)
+    pn = real(get_mpo_expectation_value(mps, mpo_particle_number))
     
+    text_file_name = "/Particle Number/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r).txt"
+    path_to_text_file = path*text_file_name
+    
+    open(path_to_text_file, "w") do f
+        write(f, "$(pn)")
+    end
+
 end
