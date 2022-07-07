@@ -1,10 +1,15 @@
 CONFIG /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/dagman.config
-JOB N64x100mg-00975D110l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-00975D110l00125r10 N="64" x="10.0" mg="-0.0975" D="110" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.0975" r="1.0"
-RETRY N64x100mg-00975D110l00125r10 3
-SCRIPT HOLD N64x100mg-00975D110l00125r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-00975D120l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-00975D120l00125r10 N="64" x="10.0" mg="-0.0975" D="120" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.0975" r="1.0"
-RETRY N64x100mg-00975D120l00125r10 3
-SCRIPT HOLD N64x100mg-00975D120l00125r10 /usr/bin/condor_release $JOBID
-PARENT N64x100mg-00975D110l00125r10 CHILD N64x100mg-00975D120l00125r10
+JOB N190x900mg-00426D100l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N190x900mg-00426D100l00125r10 N="190" x="90.0" mg="-0.0426" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0426" r="1.0"
+RETRY N190x900mg-00426D100l00125r10 3
+SCRIPT HOLD N190x900mg-00426D100l00125r10 /usr/bin/condor_release $JOBID
+JOB N190x900mg-00426D110l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N190x900mg-00426D110l00125r10 N="190" x="90.0" mg="-0.0426" D="110" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.0426" r="1.0"
+RETRY N190x900mg-00426D110l00125r10 3
+SCRIPT HOLD N190x900mg-00426D110l00125r10 /usr/bin/condor_release $JOBID
+JOB N190x900mg-00426D120l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N190x900mg-00426D120l00125r10 N="190" x="90.0" mg="-0.0426" D="120" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.0426" r="1.0"
+RETRY N190x900mg-00426D120l00125r10 3
+SCRIPT HOLD N190x900mg-00426D120l00125r10 /usr/bin/condor_release $JOBID
+PARENT N190x900mg-00426D100l00125r10 CHILD N190x900mg-00426D110l00125r10
+PARENT N190x900mg-00426D110l00125r10 CHILD N190x900mg-00426D120l00125r10
