@@ -1,15 +1,15 @@
 CONFIG /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/dagman.config
-JOB N190x900mg-00426D100l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-00426D100l00125r10 N="190" x="90.0" mg="-0.0426" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0426" r="1.0"
-RETRY N190x900mg-00426D100l00125r10 3
-SCRIPT HOLD N190x900mg-00426D100l00125r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-00426D110l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-00426D110l00125r10 N="190" x="90.0" mg="-0.0426" D="110" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.0426" r="1.0"
-RETRY N190x900mg-00426D110l00125r10 3
-SCRIPT HOLD N190x900mg-00426D110l00125r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-00426D120l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-00426D120l00125r10 N="190" x="90.0" mg="-0.0426" D="120" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.0426" r="1.0"
-RETRY N190x900mg-00426D120l00125r10 3
-SCRIPT HOLD N190x900mg-00426D120l00125r10 /usr/bin/condor_release $JOBID
-PARENT N190x900mg-00426D100l00125r10 CHILD N190x900mg-00426D110l00125r10
-PARENT N190x900mg-00426D110l00125r10 CHILD N190x900mg-00426D120l00125r10
+JOB N180x800mg-00445D100l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N180x800mg-00445D100l00125r10 N="180" x="80.0" mg="-0.0445" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0445" r="1.0"
+RETRY N180x800mg-00445D100l00125r10 3
+SCRIPT HOLD N180x800mg-00445D100l00125r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-00445D110l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N180x800mg-00445D110l00125r10 N="180" x="80.0" mg="-0.0445" D="110" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.0445" r="1.0"
+RETRY N180x800mg-00445D110l00125r10 3
+SCRIPT HOLD N180x800mg-00445D110l00125r10 /usr/bin/condor_release $JOBID
+JOB N180x800mg-00445D120l00125r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N180x800mg-00445D120l00125r10 N="180" x="80.0" mg="-0.0445" D="120" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.0445" r="1.0"
+RETRY N180x800mg-00445D120l00125r10 3
+SCRIPT HOLD N180x800mg-00445D120l00125r10 /usr/bin/condor_release $JOBID
+PARENT N180x800mg-00445D100l00125r10 CHILD N180x800mg-00445D110l00125r10
+PARENT N180x800mg-00445D110l00125r10 CHILD N180x800mg-00445D120l00125r10
