@@ -915,3 +915,99 @@ function get_pseudo_momentum_MPO(N::Int64, x::Float64)::Vector{Array{ComplexF64}
     return mpo
 
 end
+
+function get_two_point_fn_MPO(N::Int64, n::Int64, m::Int64)
+
+    function delta__blue(idx_tmp)
+
+        if idx_tmp == 2*n-1
+            return 1
+        else
+            return 0
+        end
+
+    end
+
+    function delta_green(idx_tmp)
+    
+        if idx_tmp == 2*m
+            return 1
+        else
+            return 0
+        end
+    
+    end
+
+    function delta_pink(idx_tmp)
+
+        if idx_tmp >= 2*n && idx_tmp < 2*m
+            return 1
+        else
+            return 0
+        end
+    end
+
+    function delta_orange(idx_tmp)
+
+        if idx_tmp < 2*m-1 && idx_tmp >= 2*n+1
+            return 1
+        else
+            return 0
+        end
+    end
+
+    function delta_pruple(idx_tmp)
+
+        if idx_tmp == 2*n
+            return 1
+        else
+            return 0
+        end
+    end
+
+    mpo = Vector{Array{ComplexF64}}(undef, 2*N)
+
+    D = 4
+    d = 2
+    I = [1.0+0.0im 0.0+0.0im; 0.0+0.0im 1.0+0.0im]
+    PLUS = [0.0+0.0im 1.0+0.0im; 0.0+0.0im 0.0+0.0im]
+    MINUS = [0.0+0.0im 0.0+0.0im; 1.0+0.0im 0.0+0.0im]
+    Z = [1.0+0.0im 0.0+0.0im; 0.0+0.0im -1.0+0.0im]
+
+    tensor_first = zeros(ComplexF64, 1, D, d, d)
+    tensor_first[1,2,:,:] = -1im*PLUS*delta_blue(1)
+    tensor_first[1,D,:,:] = I
+
+    tensor_last = zeros(ComplexF64, D, 1, d, d)
+    tensor_last[1,1,:,:] = I
+    tensor_last[2,1,:,:] = MINUS*delta_green(2*N)
+
+    for i in 1:2*N
+        if i == 1
+            mpo[i] = tensor_first
+        elseif i == 2*N
+            mpo[i] = tensor_last
+        elseif i % 2 == 0
+            tensor_even = zeros(ComplexF64, D, D, d, d)
+            tensor_even[1,1,:,:] = I
+            tensor_even[2,1,:,:] = MINUS*delta_green(i)
+            tensor_even[D,3,:,:] = 1im*PLUS*delta_purple(i)
+            tensor_even[2,2,:,:] = Z*delta_pink(i)
+            tensor_even[3,3,:,:] = Z*delta_orange(i)
+            tensor_even[D,D,:,:] = I
+            mpo[i] = tensor_even
+        else
+            tensor_odd = zeros(ComplexF64, D, D, d, d)
+            tensor_odd[1,1,:,:] = I
+            tensor_odd[D,2,:,:] = -1im.*PLUS*delta_blue(i)
+            tensor_odd[3,1,:,:] = MINUS*delta_red(i)
+            tensor_even[2,2,:,:] = Z*delta_pink(i)
+            tensor_even[3,3,:,:] = Z*delta_orange(i)
+            tensor_odd[D,D,:,:] = I
+            mpo[i] = tensor_odd
+        end
+    end
+
+    return mpo
+
+end
