@@ -8,7 +8,7 @@ transfer_input_files = /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.j
 
 should_transfer_files = IF_NEEDED
 
-mem = 2*($(D)*$(D)*$(D)*$(D)*64*4*2/1e6)+1000
+mem = 2*($(D)*$(D)*$(D)*$(D)*64/1e6)+1000
 
 request_memory = $(mem)
 
