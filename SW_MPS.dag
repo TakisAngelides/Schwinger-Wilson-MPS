@@ -1,841 +1,1441 @@
 CONFIG /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/dagman.config
-JOB N64x100mg-0097336D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0097336D80l000625r10 N="64" x="10.0" mg="-0.097336" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.097336" r="1.0"
-RETRY N64x100mg-0097336D80l000625r10 3
-SCRIPT HOLD N64x100mg-0097336D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0097336D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0097336D100l000625r10 N="64" x="10.0" mg="-0.097336" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.097336" r="1.0"
-RETRY N64x100mg-0097336D100l000625r10 3
-SCRIPT HOLD N64x100mg-0097336D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0097336D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0097336D110l000625r10 N="64" x="10.0" mg="-0.097336" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.097336" r="1.0"
-RETRY N64x100mg-0097336D110l000625r10 3
-SCRIPT HOLD N64x100mg-0097336D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0097336D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0097336D120l000625r10 N="64" x="10.0" mg="-0.097336" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.097336" r="1.0"
-RETRY N64x100mg-0097336D120l000625r10 3
-SCRIPT HOLD N64x100mg-0097336D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0097336D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0097336D130l000625r10 N="64" x="10.0" mg="-0.097336" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.097336" r="1.0"
-RETRY N64x100mg-0097336D130l000625r10 3
-SCRIPT HOLD N64x100mg-0097336D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0062336D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0062336D80l000625r10 N="64" x="10.0" mg="-0.062336" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.062336" r="1.0"
-RETRY N64x100mg-0062336D80l000625r10 3
-SCRIPT HOLD N64x100mg-0062336D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0062336D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0062336D100l000625r10 N="64" x="10.0" mg="-0.062336" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.062336" r="1.0"
-RETRY N64x100mg-0062336D100l000625r10 3
-SCRIPT HOLD N64x100mg-0062336D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0062336D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0062336D110l000625r10 N="64" x="10.0" mg="-0.062336" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.062336" r="1.0"
-RETRY N64x100mg-0062336D110l000625r10 3
-SCRIPT HOLD N64x100mg-0062336D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0062336D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0062336D120l000625r10 N="64" x="10.0" mg="-0.062336" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.062336" r="1.0"
-RETRY N64x100mg-0062336D120l000625r10 3
-SCRIPT HOLD N64x100mg-0062336D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0062336D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0062336D130l000625r10 N="64" x="10.0" mg="-0.062336" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.062336" r="1.0"
-RETRY N64x100mg-0062336D130l000625r10 3
-SCRIPT HOLD N64x100mg-0062336D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0027336D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0027336D80l000625r10 N="64" x="10.0" mg="-0.027336" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.027336" r="1.0"
-RETRY N64x100mg-0027336D80l000625r10 3
-SCRIPT HOLD N64x100mg-0027336D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0027336D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0027336D100l000625r10 N="64" x="10.0" mg="-0.027336" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.027336" r="1.0"
-RETRY N64x100mg-0027336D100l000625r10 3
-SCRIPT HOLD N64x100mg-0027336D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0027336D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0027336D110l000625r10 N="64" x="10.0" mg="-0.027336" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.027336" r="1.0"
-RETRY N64x100mg-0027336D110l000625r10 3
-SCRIPT HOLD N64x100mg-0027336D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0027336D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0027336D120l000625r10 N="64" x="10.0" mg="-0.027336" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.027336" r="1.0"
-RETRY N64x100mg-0027336D120l000625r10 3
-SCRIPT HOLD N64x100mg-0027336D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg-0027336D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg-0027336D130l000625r10 N="64" x="10.0" mg="-0.027336" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.027336" r="1.0"
-RETRY N64x100mg-0027336D130l000625r10 3
-SCRIPT HOLD N64x100mg-0027336D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0007664D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0007664D80l000625r10 N="64" x="10.0" mg="0.007664" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.007664" r="1.0"
-RETRY N64x100mg0007664D80l000625r10 3
-SCRIPT HOLD N64x100mg0007664D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0007664D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0007664D100l000625r10 N="64" x="10.0" mg="0.007664" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.007664" r="1.0"
-RETRY N64x100mg0007664D100l000625r10 3
-SCRIPT HOLD N64x100mg0007664D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0007664D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0007664D110l000625r10 N="64" x="10.0" mg="0.007664" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.007664" r="1.0"
-RETRY N64x100mg0007664D110l000625r10 3
-SCRIPT HOLD N64x100mg0007664D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0007664D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0007664D120l000625r10 N="64" x="10.0" mg="0.007664" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.007664" r="1.0"
-RETRY N64x100mg0007664D120l000625r10 3
-SCRIPT HOLD N64x100mg0007664D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0007664D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0007664D130l000625r10 N="64" x="10.0" mg="0.007664" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.007664" r="1.0"
-RETRY N64x100mg0007664D130l000625r10 3
-SCRIPT HOLD N64x100mg0007664D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0042664D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0042664D80l000625r10 N="64" x="10.0" mg="0.042664" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.042664" r="1.0"
-RETRY N64x100mg0042664D80l000625r10 3
-SCRIPT HOLD N64x100mg0042664D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0042664D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0042664D100l000625r10 N="64" x="10.0" mg="0.042664" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.042664" r="1.0"
-RETRY N64x100mg0042664D100l000625r10 3
-SCRIPT HOLD N64x100mg0042664D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0042664D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0042664D110l000625r10 N="64" x="10.0" mg="0.042664" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.042664" r="1.0"
-RETRY N64x100mg0042664D110l000625r10 3
-SCRIPT HOLD N64x100mg0042664D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0042664D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0042664D120l000625r10 N="64" x="10.0" mg="0.042664" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.042664" r="1.0"
-RETRY N64x100mg0042664D120l000625r10 3
-SCRIPT HOLD N64x100mg0042664D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N64x100mg0042664D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N64x100mg0042664D130l000625r10 N="64" x="10.0" mg="0.042664" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.042664" r="1.0"
-RETRY N64x100mg0042664D130l000625r10 3
-SCRIPT HOLD N64x100mg0042664D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0049554D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0049554D80l000625r10 N="156" x="60.0" mg="-0.049554" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.049554" r="1.0"
-RETRY N156x600mg-0049554D80l000625r10 3
-SCRIPT HOLD N156x600mg-0049554D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0049554D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0049554D100l000625r10 N="156" x="60.0" mg="-0.049554" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.049554" r="1.0"
-RETRY N156x600mg-0049554D100l000625r10 3
-SCRIPT HOLD N156x600mg-0049554D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0049554D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0049554D110l000625r10 N="156" x="60.0" mg="-0.049554" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.049554" r="1.0"
-RETRY N156x600mg-0049554D110l000625r10 3
-SCRIPT HOLD N156x600mg-0049554D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0049554D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0049554D120l000625r10 N="156" x="60.0" mg="-0.049554" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.049554" r="1.0"
-RETRY N156x600mg-0049554D120l000625r10 3
-SCRIPT HOLD N156x600mg-0049554D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0049554D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0049554D130l000625r10 N="156" x="60.0" mg="-0.049554" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.049554" r="1.0"
-RETRY N156x600mg-0049554D130l000625r10 3
-SCRIPT HOLD N156x600mg-0049554D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0014554D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0014554D80l000625r10 N="156" x="60.0" mg="-0.014554" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.014554" r="1.0"
-RETRY N156x600mg-0014554D80l000625r10 3
-SCRIPT HOLD N156x600mg-0014554D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0014554D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0014554D100l000625r10 N="156" x="60.0" mg="-0.014554" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.014554" r="1.0"
-RETRY N156x600mg-0014554D100l000625r10 3
-SCRIPT HOLD N156x600mg-0014554D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0014554D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0014554D110l000625r10 N="156" x="60.0" mg="-0.014554" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.014554" r="1.0"
-RETRY N156x600mg-0014554D110l000625r10 3
-SCRIPT HOLD N156x600mg-0014554D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0014554D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0014554D120l000625r10 N="156" x="60.0" mg="-0.014554" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.014554" r="1.0"
-RETRY N156x600mg-0014554D120l000625r10 3
-SCRIPT HOLD N156x600mg-0014554D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg-0014554D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg-0014554D130l000625r10 N="156" x="60.0" mg="-0.014554" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.014554" r="1.0"
-RETRY N156x600mg-0014554D130l000625r10 3
-SCRIPT HOLD N156x600mg-0014554D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0020446D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0020446D80l000625r10 N="156" x="60.0" mg="0.020446" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.020446" r="1.0"
-RETRY N156x600mg0020446D80l000625r10 3
-SCRIPT HOLD N156x600mg0020446D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0020446D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0020446D100l000625r10 N="156" x="60.0" mg="0.020446" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.020446" r="1.0"
-RETRY N156x600mg0020446D100l000625r10 3
-SCRIPT HOLD N156x600mg0020446D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0020446D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0020446D110l000625r10 N="156" x="60.0" mg="0.020446" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.020446" r="1.0"
-RETRY N156x600mg0020446D110l000625r10 3
-SCRIPT HOLD N156x600mg0020446D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0020446D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0020446D120l000625r10 N="156" x="60.0" mg="0.020446" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.020446" r="1.0"
-RETRY N156x600mg0020446D120l000625r10 3
-SCRIPT HOLD N156x600mg0020446D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0020446D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0020446D130l000625r10 N="156" x="60.0" mg="0.020446" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.020446" r="1.0"
-RETRY N156x600mg0020446D130l000625r10 3
-SCRIPT HOLD N156x600mg0020446D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0055446D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0055446D80l000625r10 N="156" x="60.0" mg="0.055446" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.055446" r="1.0"
-RETRY N156x600mg0055446D80l000625r10 3
-SCRIPT HOLD N156x600mg0055446D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0055446D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0055446D100l000625r10 N="156" x="60.0" mg="0.055446" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.055446" r="1.0"
-RETRY N156x600mg0055446D100l000625r10 3
-SCRIPT HOLD N156x600mg0055446D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0055446D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0055446D110l000625r10 N="156" x="60.0" mg="0.055446" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.055446" r="1.0"
-RETRY N156x600mg0055446D110l000625r10 3
-SCRIPT HOLD N156x600mg0055446D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0055446D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0055446D120l000625r10 N="156" x="60.0" mg="0.055446" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.055446" r="1.0"
-RETRY N156x600mg0055446D120l000625r10 3
-SCRIPT HOLD N156x600mg0055446D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0055446D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0055446D130l000625r10 N="156" x="60.0" mg="0.055446" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.055446" r="1.0"
-RETRY N156x600mg0055446D130l000625r10 3
-SCRIPT HOLD N156x600mg0055446D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0090446D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0090446D80l000625r10 N="156" x="60.0" mg="0.090446" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.090446" r="1.0"
-RETRY N156x600mg0090446D80l000625r10 3
-SCRIPT HOLD N156x600mg0090446D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0090446D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0090446D100l000625r10 N="156" x="60.0" mg="0.090446" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.090446" r="1.0"
-RETRY N156x600mg0090446D100l000625r10 3
-SCRIPT HOLD N156x600mg0090446D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0090446D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0090446D110l000625r10 N="156" x="60.0" mg="0.090446" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.090446" r="1.0"
-RETRY N156x600mg0090446D110l000625r10 3
-SCRIPT HOLD N156x600mg0090446D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0090446D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0090446D120l000625r10 N="156" x="60.0" mg="0.090446" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.090446" r="1.0"
-RETRY N156x600mg0090446D120l000625r10 3
-SCRIPT HOLD N156x600mg0090446D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N156x600mg0090446D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N156x600mg0090446D130l000625r10 N="156" x="60.0" mg="0.090446" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.090446" r="1.0"
-RETRY N156x600mg0090446D130l000625r10 3
-SCRIPT HOLD N156x600mg0090446D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0044447D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0044447D80l000625r10 N="180" x="80.0" mg="-0.044447" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.044447" r="1.0"
-RETRY N180x800mg-0044447D80l000625r10 3
-SCRIPT HOLD N180x800mg-0044447D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0044447D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0044447D100l000625r10 N="180" x="80.0" mg="-0.044447" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.044447" r="1.0"
-RETRY N180x800mg-0044447D100l000625r10 3
-SCRIPT HOLD N180x800mg-0044447D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0044447D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0044447D110l000625r10 N="180" x="80.0" mg="-0.044447" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.044447" r="1.0"
-RETRY N180x800mg-0044447D110l000625r10 3
-SCRIPT HOLD N180x800mg-0044447D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0044447D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0044447D120l000625r10 N="180" x="80.0" mg="-0.044447" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.044447" r="1.0"
-RETRY N180x800mg-0044447D120l000625r10 3
-SCRIPT HOLD N180x800mg-0044447D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0044447D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0044447D130l000625r10 N="180" x="80.0" mg="-0.044447" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.044447" r="1.0"
-RETRY N180x800mg-0044447D130l000625r10 3
-SCRIPT HOLD N180x800mg-0044447D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0009447D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0009447D80l000625r10 N="180" x="80.0" mg="-0.009447" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.009447" r="1.0"
-RETRY N180x800mg-0009447D80l000625r10 3
-SCRIPT HOLD N180x800mg-0009447D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0009447D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0009447D100l000625r10 N="180" x="80.0" mg="-0.009447" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.009447" r="1.0"
-RETRY N180x800mg-0009447D100l000625r10 3
-SCRIPT HOLD N180x800mg-0009447D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0009447D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0009447D110l000625r10 N="180" x="80.0" mg="-0.009447" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.009447" r="1.0"
-RETRY N180x800mg-0009447D110l000625r10 3
-SCRIPT HOLD N180x800mg-0009447D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0009447D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0009447D120l000625r10 N="180" x="80.0" mg="-0.009447" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.009447" r="1.0"
-RETRY N180x800mg-0009447D120l000625r10 3
-SCRIPT HOLD N180x800mg-0009447D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg-0009447D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg-0009447D130l000625r10 N="180" x="80.0" mg="-0.009447" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.009447" r="1.0"
-RETRY N180x800mg-0009447D130l000625r10 3
-SCRIPT HOLD N180x800mg-0009447D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0025553D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0025553D80l000625r10 N="180" x="80.0" mg="0.025553" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.025553" r="1.0"
-RETRY N180x800mg0025553D80l000625r10 3
-SCRIPT HOLD N180x800mg0025553D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0025553D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0025553D100l000625r10 N="180" x="80.0" mg="0.025553" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.025553" r="1.0"
-RETRY N180x800mg0025553D100l000625r10 3
-SCRIPT HOLD N180x800mg0025553D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0025553D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0025553D110l000625r10 N="180" x="80.0" mg="0.025553" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.025553" r="1.0"
-RETRY N180x800mg0025553D110l000625r10 3
-SCRIPT HOLD N180x800mg0025553D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0025553D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0025553D120l000625r10 N="180" x="80.0" mg="0.025553" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.025553" r="1.0"
-RETRY N180x800mg0025553D120l000625r10 3
-SCRIPT HOLD N180x800mg0025553D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0025553D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0025553D130l000625r10 N="180" x="80.0" mg="0.025553" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.025553" r="1.0"
-RETRY N180x800mg0025553D130l000625r10 3
-SCRIPT HOLD N180x800mg0025553D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0060553D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0060553D80l000625r10 N="180" x="80.0" mg="0.060553" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.060553" r="1.0"
-RETRY N180x800mg0060553D80l000625r10 3
-SCRIPT HOLD N180x800mg0060553D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0060553D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0060553D100l000625r10 N="180" x="80.0" mg="0.060553" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.060553" r="1.0"
-RETRY N180x800mg0060553D100l000625r10 3
-SCRIPT HOLD N180x800mg0060553D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0060553D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0060553D110l000625r10 N="180" x="80.0" mg="0.060553" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.060553" r="1.0"
-RETRY N180x800mg0060553D110l000625r10 3
-SCRIPT HOLD N180x800mg0060553D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0060553D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0060553D120l000625r10 N="180" x="80.0" mg="0.060553" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.060553" r="1.0"
-RETRY N180x800mg0060553D120l000625r10 3
-SCRIPT HOLD N180x800mg0060553D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0060553D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0060553D130l000625r10 N="180" x="80.0" mg="0.060553" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.060553" r="1.0"
-RETRY N180x800mg0060553D130l000625r10 3
-SCRIPT HOLD N180x800mg0060553D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0095553D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0095553D80l000625r10 N="180" x="80.0" mg="0.095553" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.095553" r="1.0"
-RETRY N180x800mg0095553D80l000625r10 3
-SCRIPT HOLD N180x800mg0095553D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0095553D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0095553D100l000625r10 N="180" x="80.0" mg="0.095553" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.095553" r="1.0"
-RETRY N180x800mg0095553D100l000625r10 3
-SCRIPT HOLD N180x800mg0095553D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0095553D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0095553D110l000625r10 N="180" x="80.0" mg="0.095553" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.095553" r="1.0"
-RETRY N180x800mg0095553D110l000625r10 3
-SCRIPT HOLD N180x800mg0095553D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0095553D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0095553D120l000625r10 N="180" x="80.0" mg="0.095553" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.095553" r="1.0"
-RETRY N180x800mg0095553D120l000625r10 3
-SCRIPT HOLD N180x800mg0095553D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N180x800mg0095553D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N180x800mg0095553D130l000625r10 N="180" x="80.0" mg="0.095553" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.095553" r="1.0"
-RETRY N180x800mg0095553D130l000625r10 3
-SCRIPT HOLD N180x800mg0095553D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0042399D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0042399D80l000625r10 N="190" x="90.0" mg="-0.042399" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.042399" r="1.0"
-RETRY N190x900mg-0042399D80l000625r10 3
-SCRIPT HOLD N190x900mg-0042399D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0042399D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0042399D100l000625r10 N="190" x="90.0" mg="-0.042399" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.042399" r="1.0"
-RETRY N190x900mg-0042399D100l000625r10 3
-SCRIPT HOLD N190x900mg-0042399D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0042399D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0042399D110l000625r10 N="190" x="90.0" mg="-0.042399" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.042399" r="1.0"
-RETRY N190x900mg-0042399D110l000625r10 3
-SCRIPT HOLD N190x900mg-0042399D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0042399D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0042399D120l000625r10 N="190" x="90.0" mg="-0.042399" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.042399" r="1.0"
-RETRY N190x900mg-0042399D120l000625r10 3
-SCRIPT HOLD N190x900mg-0042399D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0042399D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0042399D130l000625r10 N="190" x="90.0" mg="-0.042399" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.042399" r="1.0"
-RETRY N190x900mg-0042399D130l000625r10 3
-SCRIPT HOLD N190x900mg-0042399D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0007399D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0007399D80l000625r10 N="190" x="90.0" mg="-0.007399" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.007399" r="1.0"
-RETRY N190x900mg-0007399D80l000625r10 3
-SCRIPT HOLD N190x900mg-0007399D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0007399D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0007399D100l000625r10 N="190" x="90.0" mg="-0.007399" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.007399" r="1.0"
-RETRY N190x900mg-0007399D100l000625r10 3
-SCRIPT HOLD N190x900mg-0007399D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0007399D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0007399D110l000625r10 N="190" x="90.0" mg="-0.007399" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.007399" r="1.0"
-RETRY N190x900mg-0007399D110l000625r10 3
-SCRIPT HOLD N190x900mg-0007399D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0007399D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0007399D120l000625r10 N="190" x="90.0" mg="-0.007399" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.007399" r="1.0"
-RETRY N190x900mg-0007399D120l000625r10 3
-SCRIPT HOLD N190x900mg-0007399D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg-0007399D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg-0007399D130l000625r10 N="190" x="90.0" mg="-0.007399" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.007399" r="1.0"
-RETRY N190x900mg-0007399D130l000625r10 3
-SCRIPT HOLD N190x900mg-0007399D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0027601D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0027601D80l000625r10 N="190" x="90.0" mg="0.027601" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.027601" r="1.0"
-RETRY N190x900mg0027601D80l000625r10 3
-SCRIPT HOLD N190x900mg0027601D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0027601D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0027601D100l000625r10 N="190" x="90.0" mg="0.027601" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.027601" r="1.0"
-RETRY N190x900mg0027601D100l000625r10 3
-SCRIPT HOLD N190x900mg0027601D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0027601D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0027601D110l000625r10 N="190" x="90.0" mg="0.027601" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.027601" r="1.0"
-RETRY N190x900mg0027601D110l000625r10 3
-SCRIPT HOLD N190x900mg0027601D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0027601D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0027601D120l000625r10 N="190" x="90.0" mg="0.027601" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.027601" r="1.0"
-RETRY N190x900mg0027601D120l000625r10 3
-SCRIPT HOLD N190x900mg0027601D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0027601D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0027601D130l000625r10 N="190" x="90.0" mg="0.027601" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.027601" r="1.0"
-RETRY N190x900mg0027601D130l000625r10 3
-SCRIPT HOLD N190x900mg0027601D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0062601D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0062601D80l000625r10 N="190" x="90.0" mg="0.062601" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.062601" r="1.0"
-RETRY N190x900mg0062601D80l000625r10 3
-SCRIPT HOLD N190x900mg0062601D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0062601D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0062601D100l000625r10 N="190" x="90.0" mg="0.062601" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.062601" r="1.0"
-RETRY N190x900mg0062601D100l000625r10 3
-SCRIPT HOLD N190x900mg0062601D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0062601D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0062601D110l000625r10 N="190" x="90.0" mg="0.062601" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.062601" r="1.0"
-RETRY N190x900mg0062601D110l000625r10 3
-SCRIPT HOLD N190x900mg0062601D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0062601D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0062601D120l000625r10 N="190" x="90.0" mg="0.062601" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.062601" r="1.0"
-RETRY N190x900mg0062601D120l000625r10 3
-SCRIPT HOLD N190x900mg0062601D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0062601D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0062601D130l000625r10 N="190" x="90.0" mg="0.062601" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.062601" r="1.0"
-RETRY N190x900mg0062601D130l000625r10 3
-SCRIPT HOLD N190x900mg0062601D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0097601D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0097601D80l000625r10 N="190" x="90.0" mg="0.097601" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.097601" r="1.0"
-RETRY N190x900mg0097601D80l000625r10 3
-SCRIPT HOLD N190x900mg0097601D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0097601D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0097601D100l000625r10 N="190" x="90.0" mg="0.097601" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.097601" r="1.0"
-RETRY N190x900mg0097601D100l000625r10 3
-SCRIPT HOLD N190x900mg0097601D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0097601D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0097601D110l000625r10 N="190" x="90.0" mg="0.097601" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.097601" r="1.0"
-RETRY N190x900mg0097601D110l000625r10 3
-SCRIPT HOLD N190x900mg0097601D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0097601D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0097601D120l000625r10 N="190" x="90.0" mg="0.097601" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.097601" r="1.0"
-RETRY N190x900mg0097601D120l000625r10 3
-SCRIPT HOLD N190x900mg0097601D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N190x900mg0097601D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N190x900mg0097601D130l000625r10 N="190" x="90.0" mg="0.097601" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.097601" r="1.0"
-RETRY N190x900mg0097601D130l000625r10 3
-SCRIPT HOLD N190x900mg0097601D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-004073D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-004073D80l000625r10 N="200" x="100.0" mg="-0.04073" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.04073" r="1.0"
-RETRY N200x1000mg-004073D80l000625r10 3
-SCRIPT HOLD N200x1000mg-004073D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-004073D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-004073D100l000625r10 N="200" x="100.0" mg="-0.04073" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.04073" r="1.0"
-RETRY N200x1000mg-004073D100l000625r10 3
-SCRIPT HOLD N200x1000mg-004073D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-004073D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-004073D110l000625r10 N="200" x="100.0" mg="-0.04073" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.04073" r="1.0"
-RETRY N200x1000mg-004073D110l000625r10 3
-SCRIPT HOLD N200x1000mg-004073D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-004073D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-004073D120l000625r10 N="200" x="100.0" mg="-0.04073" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.04073" r="1.0"
-RETRY N200x1000mg-004073D120l000625r10 3
-SCRIPT HOLD N200x1000mg-004073D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-004073D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-004073D130l000625r10 N="200" x="100.0" mg="-0.04073" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.04073" r="1.0"
-RETRY N200x1000mg-004073D130l000625r10 3
-SCRIPT HOLD N200x1000mg-004073D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-000573D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-000573D80l000625r10 N="200" x="100.0" mg="-0.00573" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.00573" r="1.0"
-RETRY N200x1000mg-000573D80l000625r10 3
-SCRIPT HOLD N200x1000mg-000573D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-000573D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-000573D100l000625r10 N="200" x="100.0" mg="-0.00573" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.00573" r="1.0"
-RETRY N200x1000mg-000573D100l000625r10 3
-SCRIPT HOLD N200x1000mg-000573D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-000573D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-000573D110l000625r10 N="200" x="100.0" mg="-0.00573" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.00573" r="1.0"
-RETRY N200x1000mg-000573D110l000625r10 3
-SCRIPT HOLD N200x1000mg-000573D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-000573D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-000573D120l000625r10 N="200" x="100.0" mg="-0.00573" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.00573" r="1.0"
-RETRY N200x1000mg-000573D120l000625r10 3
-SCRIPT HOLD N200x1000mg-000573D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg-000573D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg-000573D130l000625r10 N="200" x="100.0" mg="-0.00573" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.00573" r="1.0"
-RETRY N200x1000mg-000573D130l000625r10 3
-SCRIPT HOLD N200x1000mg-000573D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg002927D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg002927D80l000625r10 N="200" x="100.0" mg="0.02927" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.02927" r="1.0"
-RETRY N200x1000mg002927D80l000625r10 3
-SCRIPT HOLD N200x1000mg002927D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg002927D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg002927D100l000625r10 N="200" x="100.0" mg="0.02927" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.02927" r="1.0"
-RETRY N200x1000mg002927D100l000625r10 3
-SCRIPT HOLD N200x1000mg002927D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg002927D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg002927D110l000625r10 N="200" x="100.0" mg="0.02927" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.02927" r="1.0"
-RETRY N200x1000mg002927D110l000625r10 3
-SCRIPT HOLD N200x1000mg002927D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg002927D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg002927D120l000625r10 N="200" x="100.0" mg="0.02927" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.02927" r="1.0"
-RETRY N200x1000mg002927D120l000625r10 3
-SCRIPT HOLD N200x1000mg002927D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg002927D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg002927D130l000625r10 N="200" x="100.0" mg="0.02927" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.02927" r="1.0"
-RETRY N200x1000mg002927D130l000625r10 3
-SCRIPT HOLD N200x1000mg002927D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg006427D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg006427D80l000625r10 N="200" x="100.0" mg="0.06427" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.06427" r="1.0"
-RETRY N200x1000mg006427D80l000625r10 3
-SCRIPT HOLD N200x1000mg006427D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg006427D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg006427D100l000625r10 N="200" x="100.0" mg="0.06427" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.06427" r="1.0"
-RETRY N200x1000mg006427D100l000625r10 3
-SCRIPT HOLD N200x1000mg006427D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg006427D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg006427D110l000625r10 N="200" x="100.0" mg="0.06427" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.06427" r="1.0"
-RETRY N200x1000mg006427D110l000625r10 3
-SCRIPT HOLD N200x1000mg006427D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg006427D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg006427D120l000625r10 N="200" x="100.0" mg="0.06427" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.06427" r="1.0"
-RETRY N200x1000mg006427D120l000625r10 3
-SCRIPT HOLD N200x1000mg006427D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg006427D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg006427D130l000625r10 N="200" x="100.0" mg="0.06427" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.06427" r="1.0"
-RETRY N200x1000mg006427D130l000625r10 3
-SCRIPT HOLD N200x1000mg006427D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg009927D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg009927D80l000625r10 N="200" x="100.0" mg="0.09927" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.09927" r="1.0"
-RETRY N200x1000mg009927D80l000625r10 3
-SCRIPT HOLD N200x1000mg009927D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg009927D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg009927D100l000625r10 N="200" x="100.0" mg="0.09927" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.09927" r="1.0"
-RETRY N200x1000mg009927D100l000625r10 3
-SCRIPT HOLD N200x1000mg009927D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg009927D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg009927D110l000625r10 N="200" x="100.0" mg="0.09927" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.09927" r="1.0"
-RETRY N200x1000mg009927D110l000625r10 3
-SCRIPT HOLD N200x1000mg009927D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg009927D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg009927D120l000625r10 N="200" x="100.0" mg="0.09927" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.09927" r="1.0"
-RETRY N200x1000mg009927D120l000625r10 3
-SCRIPT HOLD N200x1000mg009927D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N200x1000mg009927D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N200x1000mg009927D130l000625r10 N="200" x="100.0" mg="0.09927" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.09927" r="1.0"
-RETRY N200x1000mg009927D130l000625r10 3
-SCRIPT HOLD N200x1000mg009927D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-003712D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-003712D80l000625r10 N="225" x="127.0" mg="-0.03712" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.03712" r="1.0"
-RETRY N225x1270mg-003712D80l000625r10 3
-SCRIPT HOLD N225x1270mg-003712D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-003712D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-003712D100l000625r10 N="225" x="127.0" mg="-0.03712" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.03712" r="1.0"
-RETRY N225x1270mg-003712D100l000625r10 3
-SCRIPT HOLD N225x1270mg-003712D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-003712D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-003712D110l000625r10 N="225" x="127.0" mg="-0.03712" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.03712" r="1.0"
-RETRY N225x1270mg-003712D110l000625r10 3
-SCRIPT HOLD N225x1270mg-003712D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-003712D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-003712D120l000625r10 N="225" x="127.0" mg="-0.03712" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.03712" r="1.0"
-RETRY N225x1270mg-003712D120l000625r10 3
-SCRIPT HOLD N225x1270mg-003712D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-003712D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-003712D130l000625r10 N="225" x="127.0" mg="-0.03712" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.03712" r="1.0"
-RETRY N225x1270mg-003712D130l000625r10 3
-SCRIPT HOLD N225x1270mg-003712D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-000212D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-000212D80l000625r10 N="225" x="127.0" mg="-0.00212" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.00212" r="1.0"
-RETRY N225x1270mg-000212D80l000625r10 3
-SCRIPT HOLD N225x1270mg-000212D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-000212D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-000212D100l000625r10 N="225" x="127.0" mg="-0.00212" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.00212" r="1.0"
-RETRY N225x1270mg-000212D100l000625r10 3
-SCRIPT HOLD N225x1270mg-000212D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-000212D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-000212D110l000625r10 N="225" x="127.0" mg="-0.00212" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.00212" r="1.0"
-RETRY N225x1270mg-000212D110l000625r10 3
-SCRIPT HOLD N225x1270mg-000212D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-000212D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-000212D120l000625r10 N="225" x="127.0" mg="-0.00212" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.00212" r="1.0"
-RETRY N225x1270mg-000212D120l000625r10 3
-SCRIPT HOLD N225x1270mg-000212D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg-000212D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg-000212D130l000625r10 N="225" x="127.0" mg="-0.00212" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.00212" r="1.0"
-RETRY N225x1270mg-000212D130l000625r10 3
-SCRIPT HOLD N225x1270mg-000212D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg003288D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg003288D80l000625r10 N="225" x="127.0" mg="0.03288" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.03288" r="1.0"
-RETRY N225x1270mg003288D80l000625r10 3
-SCRIPT HOLD N225x1270mg003288D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg003288D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg003288D100l000625r10 N="225" x="127.0" mg="0.03288" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.03288" r="1.0"
-RETRY N225x1270mg003288D100l000625r10 3
-SCRIPT HOLD N225x1270mg003288D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg003288D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg003288D110l000625r10 N="225" x="127.0" mg="0.03288" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.03288" r="1.0"
-RETRY N225x1270mg003288D110l000625r10 3
-SCRIPT HOLD N225x1270mg003288D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg003288D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg003288D120l000625r10 N="225" x="127.0" mg="0.03288" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.03288" r="1.0"
-RETRY N225x1270mg003288D120l000625r10 3
-SCRIPT HOLD N225x1270mg003288D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg003288D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg003288D130l000625r10 N="225" x="127.0" mg="0.03288" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.03288" r="1.0"
-RETRY N225x1270mg003288D130l000625r10 3
-SCRIPT HOLD N225x1270mg003288D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg006788D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg006788D80l000625r10 N="225" x="127.0" mg="0.06788" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.06788" r="1.0"
-RETRY N225x1270mg006788D80l000625r10 3
-SCRIPT HOLD N225x1270mg006788D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg006788D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg006788D100l000625r10 N="225" x="127.0" mg="0.06788" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.06788" r="1.0"
-RETRY N225x1270mg006788D100l000625r10 3
-SCRIPT HOLD N225x1270mg006788D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg006788D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg006788D110l000625r10 N="225" x="127.0" mg="0.06788" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.06788" r="1.0"
-RETRY N225x1270mg006788D110l000625r10 3
-SCRIPT HOLD N225x1270mg006788D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg006788D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg006788D120l000625r10 N="225" x="127.0" mg="0.06788" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.06788" r="1.0"
-RETRY N225x1270mg006788D120l000625r10 3
-SCRIPT HOLD N225x1270mg006788D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg006788D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg006788D130l000625r10 N="225" x="127.0" mg="0.06788" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.06788" r="1.0"
-RETRY N225x1270mg006788D130l000625r10 3
-SCRIPT HOLD N225x1270mg006788D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg010288D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg010288D80l000625r10 N="225" x="127.0" mg="0.10288" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.10288" r="1.0"
-RETRY N225x1270mg010288D80l000625r10 3
-SCRIPT HOLD N225x1270mg010288D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg010288D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg010288D100l000625r10 N="225" x="127.0" mg="0.10288" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.10288" r="1.0"
-RETRY N225x1270mg010288D100l000625r10 3
-SCRIPT HOLD N225x1270mg010288D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg010288D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg010288D110l000625r10 N="225" x="127.0" mg="0.10288" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.10288" r="1.0"
-RETRY N225x1270mg010288D110l000625r10 3
-SCRIPT HOLD N225x1270mg010288D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg010288D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg010288D120l000625r10 N="225" x="127.0" mg="0.10288" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.10288" r="1.0"
-RETRY N225x1270mg010288D120l000625r10 3
-SCRIPT HOLD N225x1270mg010288D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N225x1270mg010288D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N225x1270mg010288D130l000625r10 N="225" x="127.0" mg="0.10288" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.10288" r="1.0"
-RETRY N225x1270mg010288D130l000625r10 3
-SCRIPT HOLD N225x1270mg010288D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg-0034221D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg-0034221D80l000625r10 N="250" x="156.0" mg="-0.034221" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.034221" r="1.0"
-RETRY N250x1560mg-0034221D80l000625r10 3
-SCRIPT HOLD N250x1560mg-0034221D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg-0034221D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg-0034221D100l000625r10 N="250" x="156.0" mg="-0.034221" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.034221" r="1.0"
-RETRY N250x1560mg-0034221D100l000625r10 3
-SCRIPT HOLD N250x1560mg-0034221D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg-0034221D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg-0034221D110l000625r10 N="250" x="156.0" mg="-0.034221" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="-0.034221" r="1.0"
-RETRY N250x1560mg-0034221D110l000625r10 3
-SCRIPT HOLD N250x1560mg-0034221D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg-0034221D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg-0034221D120l000625r10 N="250" x="156.0" mg="-0.034221" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="-0.034221" r="1.0"
-RETRY N250x1560mg-0034221D120l000625r10 3
-SCRIPT HOLD N250x1560mg-0034221D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg-0034221D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg-0034221D130l000625r10 N="250" x="156.0" mg="-0.034221" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="-0.034221" r="1.0"
-RETRY N250x1560mg-0034221D130l000625r10 3
-SCRIPT HOLD N250x1560mg-0034221D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0000779D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0000779D80l000625r10 N="250" x="156.0" mg="0.000779" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.000779" r="1.0"
-RETRY N250x1560mg0000779D80l000625r10 3
-SCRIPT HOLD N250x1560mg0000779D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0000779D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0000779D100l000625r10 N="250" x="156.0" mg="0.000779" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.000779" r="1.0"
-RETRY N250x1560mg0000779D100l000625r10 3
-SCRIPT HOLD N250x1560mg0000779D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0000779D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0000779D110l000625r10 N="250" x="156.0" mg="0.000779" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.000779" r="1.0"
-RETRY N250x1560mg0000779D110l000625r10 3
-SCRIPT HOLD N250x1560mg0000779D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0000779D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0000779D120l000625r10 N="250" x="156.0" mg="0.000779" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.000779" r="1.0"
-RETRY N250x1560mg0000779D120l000625r10 3
-SCRIPT HOLD N250x1560mg0000779D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0000779D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0000779D130l000625r10 N="250" x="156.0" mg="0.000779" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.000779" r="1.0"
-RETRY N250x1560mg0000779D130l000625r10 3
-SCRIPT HOLD N250x1560mg0000779D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0035779D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0035779D80l000625r10 N="250" x="156.0" mg="0.035779" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.035779" r="1.0"
-RETRY N250x1560mg0035779D80l000625r10 3
-SCRIPT HOLD N250x1560mg0035779D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0035779D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0035779D100l000625r10 N="250" x="156.0" mg="0.035779" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.035779" r="1.0"
-RETRY N250x1560mg0035779D100l000625r10 3
-SCRIPT HOLD N250x1560mg0035779D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0035779D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0035779D110l000625r10 N="250" x="156.0" mg="0.035779" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.035779" r="1.0"
-RETRY N250x1560mg0035779D110l000625r10 3
-SCRIPT HOLD N250x1560mg0035779D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0035779D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0035779D120l000625r10 N="250" x="156.0" mg="0.035779" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.035779" r="1.0"
-RETRY N250x1560mg0035779D120l000625r10 3
-SCRIPT HOLD N250x1560mg0035779D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0035779D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0035779D130l000625r10 N="250" x="156.0" mg="0.035779" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.035779" r="1.0"
-RETRY N250x1560mg0035779D130l000625r10 3
-SCRIPT HOLD N250x1560mg0035779D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0070779D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0070779D80l000625r10 N="250" x="156.0" mg="0.070779" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.070779" r="1.0"
-RETRY N250x1560mg0070779D80l000625r10 3
-SCRIPT HOLD N250x1560mg0070779D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0070779D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0070779D100l000625r10 N="250" x="156.0" mg="0.070779" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.070779" r="1.0"
-RETRY N250x1560mg0070779D100l000625r10 3
-SCRIPT HOLD N250x1560mg0070779D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0070779D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0070779D110l000625r10 N="250" x="156.0" mg="0.070779" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.070779" r="1.0"
-RETRY N250x1560mg0070779D110l000625r10 3
-SCRIPT HOLD N250x1560mg0070779D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0070779D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0070779D120l000625r10 N="250" x="156.0" mg="0.070779" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.070779" r="1.0"
-RETRY N250x1560mg0070779D120l000625r10 3
-SCRIPT HOLD N250x1560mg0070779D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0070779D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0070779D130l000625r10 N="250" x="156.0" mg="0.070779" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.070779" r="1.0"
-RETRY N250x1560mg0070779D130l000625r10 3
-SCRIPT HOLD N250x1560mg0070779D130l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0105779D80l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0105779D80l000625r10 N="250" x="156.0" mg="0.105779" D="80" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="0.105779" r="1.0"
-RETRY N250x1560mg0105779D80l000625r10 3
-SCRIPT HOLD N250x1560mg0105779D80l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0105779D100l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0105779D100l000625r10 N="250" x="156.0" mg="0.105779" D="100" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="0.105779" r="1.0"
-RETRY N250x1560mg0105779D100l000625r10 3
-SCRIPT HOLD N250x1560mg0105779D100l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0105779D110l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0105779D110l000625r10 N="250" x="156.0" mg="0.105779" D="110" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="100" mg_p="0.105779" r="1.0"
-RETRY N250x1560mg0105779D110l000625r10 3
-SCRIPT HOLD N250x1560mg0105779D110l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0105779D120l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0105779D120l000625r10 N="250" x="156.0" mg="0.105779" D="120" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="110" mg_p="0.105779" r="1.0"
-RETRY N250x1560mg0105779D120l000625r10 3
-SCRIPT HOLD N250x1560mg0105779D120l000625r10 /usr/bin/condor_release $JOBID
-JOB N250x1560mg0105779D130l000625r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
-VARS N250x1560mg0105779D130l000625r10 N="250" x="156.0" mg="0.105779" D="130" l_0="0.0625" lambda="100.0" acc="1e-08" ms="100" D_p="120" mg_p="0.105779" r="1.0"
-RETRY N250x1560mg0105779D130l000625r10 3
-SCRIPT HOLD N250x1560mg0105779D130l000625r10 /usr/bin/condor_release $JOBID
-PARENT N64x100mg-0097336D80l000625r10 CHILD N64x100mg-0097336D100l000625r10
-PARENT N64x100mg-0097336D100l000625r10 CHILD N64x100mg-0097336D110l000625r10
-PARENT N64x100mg-0097336D110l000625r10 CHILD N64x100mg-0097336D120l000625r10
-PARENT N64x100mg-0097336D120l000625r10 CHILD N64x100mg-0097336D130l000625r10
-PARENT N64x100mg-0062336D80l000625r10 CHILD N64x100mg-0062336D100l000625r10
-PARENT N64x100mg-0062336D100l000625r10 CHILD N64x100mg-0062336D110l000625r10
-PARENT N64x100mg-0062336D110l000625r10 CHILD N64x100mg-0062336D120l000625r10
-PARENT N64x100mg-0062336D120l000625r10 CHILD N64x100mg-0062336D130l000625r10
-PARENT N64x100mg-0027336D80l000625r10 CHILD N64x100mg-0027336D100l000625r10
-PARENT N64x100mg-0027336D100l000625r10 CHILD N64x100mg-0027336D110l000625r10
-PARENT N64x100mg-0027336D110l000625r10 CHILD N64x100mg-0027336D120l000625r10
-PARENT N64x100mg-0027336D120l000625r10 CHILD N64x100mg-0027336D130l000625r10
-PARENT N64x100mg0007664D80l000625r10 CHILD N64x100mg0007664D100l000625r10
-PARENT N64x100mg0007664D100l000625r10 CHILD N64x100mg0007664D110l000625r10
-PARENT N64x100mg0007664D110l000625r10 CHILD N64x100mg0007664D120l000625r10
-PARENT N64x100mg0007664D120l000625r10 CHILD N64x100mg0007664D130l000625r10
-PARENT N64x100mg0042664D80l000625r10 CHILD N64x100mg0042664D100l000625r10
-PARENT N64x100mg0042664D100l000625r10 CHILD N64x100mg0042664D110l000625r10
-PARENT N64x100mg0042664D110l000625r10 CHILD N64x100mg0042664D120l000625r10
-PARENT N64x100mg0042664D120l000625r10 CHILD N64x100mg0042664D130l000625r10
-PARENT N156x600mg-0049554D80l000625r10 CHILD N156x600mg-0049554D100l000625r10
-PARENT N156x600mg-0049554D100l000625r10 CHILD N156x600mg-0049554D110l000625r10
-PARENT N156x600mg-0049554D110l000625r10 CHILD N156x600mg-0049554D120l000625r10
-PARENT N156x600mg-0049554D120l000625r10 CHILD N156x600mg-0049554D130l000625r10
-PARENT N156x600mg-0014554D80l000625r10 CHILD N156x600mg-0014554D100l000625r10
-PARENT N156x600mg-0014554D100l000625r10 CHILD N156x600mg-0014554D110l000625r10
-PARENT N156x600mg-0014554D110l000625r10 CHILD N156x600mg-0014554D120l000625r10
-PARENT N156x600mg-0014554D120l000625r10 CHILD N156x600mg-0014554D130l000625r10
-PARENT N156x600mg0020446D80l000625r10 CHILD N156x600mg0020446D100l000625r10
-PARENT N156x600mg0020446D100l000625r10 CHILD N156x600mg0020446D110l000625r10
-PARENT N156x600mg0020446D110l000625r10 CHILD N156x600mg0020446D120l000625r10
-PARENT N156x600mg0020446D120l000625r10 CHILD N156x600mg0020446D130l000625r10
-PARENT N156x600mg0055446D80l000625r10 CHILD N156x600mg0055446D100l000625r10
-PARENT N156x600mg0055446D100l000625r10 CHILD N156x600mg0055446D110l000625r10
-PARENT N156x600mg0055446D110l000625r10 CHILD N156x600mg0055446D120l000625r10
-PARENT N156x600mg0055446D120l000625r10 CHILD N156x600mg0055446D130l000625r10
-PARENT N156x600mg0090446D80l000625r10 CHILD N156x600mg0090446D100l000625r10
-PARENT N156x600mg0090446D100l000625r10 CHILD N156x600mg0090446D110l000625r10
-PARENT N156x600mg0090446D110l000625r10 CHILD N156x600mg0090446D120l000625r10
-PARENT N156x600mg0090446D120l000625r10 CHILD N156x600mg0090446D130l000625r10
-PARENT N180x800mg-0044447D80l000625r10 CHILD N180x800mg-0044447D100l000625r10
-PARENT N180x800mg-0044447D100l000625r10 CHILD N180x800mg-0044447D110l000625r10
-PARENT N180x800mg-0044447D110l000625r10 CHILD N180x800mg-0044447D120l000625r10
-PARENT N180x800mg-0044447D120l000625r10 CHILD N180x800mg-0044447D130l000625r10
-PARENT N180x800mg-0009447D80l000625r10 CHILD N180x800mg-0009447D100l000625r10
-PARENT N180x800mg-0009447D100l000625r10 CHILD N180x800mg-0009447D110l000625r10
-PARENT N180x800mg-0009447D110l000625r10 CHILD N180x800mg-0009447D120l000625r10
-PARENT N180x800mg-0009447D120l000625r10 CHILD N180x800mg-0009447D130l000625r10
-PARENT N180x800mg0025553D80l000625r10 CHILD N180x800mg0025553D100l000625r10
-PARENT N180x800mg0025553D100l000625r10 CHILD N180x800mg0025553D110l000625r10
-PARENT N180x800mg0025553D110l000625r10 CHILD N180x800mg0025553D120l000625r10
-PARENT N180x800mg0025553D120l000625r10 CHILD N180x800mg0025553D130l000625r10
-PARENT N180x800mg0060553D80l000625r10 CHILD N180x800mg0060553D100l000625r10
-PARENT N180x800mg0060553D100l000625r10 CHILD N180x800mg0060553D110l000625r10
-PARENT N180x800mg0060553D110l000625r10 CHILD N180x800mg0060553D120l000625r10
-PARENT N180x800mg0060553D120l000625r10 CHILD N180x800mg0060553D130l000625r10
-PARENT N180x800mg0095553D80l000625r10 CHILD N180x800mg0095553D100l000625r10
-PARENT N180x800mg0095553D100l000625r10 CHILD N180x800mg0095553D110l000625r10
-PARENT N180x800mg0095553D110l000625r10 CHILD N180x800mg0095553D120l000625r10
-PARENT N180x800mg0095553D120l000625r10 CHILD N180x800mg0095553D130l000625r10
-PARENT N190x900mg-0042399D80l000625r10 CHILD N190x900mg-0042399D100l000625r10
-PARENT N190x900mg-0042399D100l000625r10 CHILD N190x900mg-0042399D110l000625r10
-PARENT N190x900mg-0042399D110l000625r10 CHILD N190x900mg-0042399D120l000625r10
-PARENT N190x900mg-0042399D120l000625r10 CHILD N190x900mg-0042399D130l000625r10
-PARENT N190x900mg-0007399D80l000625r10 CHILD N190x900mg-0007399D100l000625r10
-PARENT N190x900mg-0007399D100l000625r10 CHILD N190x900mg-0007399D110l000625r10
-PARENT N190x900mg-0007399D110l000625r10 CHILD N190x900mg-0007399D120l000625r10
-PARENT N190x900mg-0007399D120l000625r10 CHILD N190x900mg-0007399D130l000625r10
-PARENT N190x900mg0027601D80l000625r10 CHILD N190x900mg0027601D100l000625r10
-PARENT N190x900mg0027601D100l000625r10 CHILD N190x900mg0027601D110l000625r10
-PARENT N190x900mg0027601D110l000625r10 CHILD N190x900mg0027601D120l000625r10
-PARENT N190x900mg0027601D120l000625r10 CHILD N190x900mg0027601D130l000625r10
-PARENT N190x900mg0062601D80l000625r10 CHILD N190x900mg0062601D100l000625r10
-PARENT N190x900mg0062601D100l000625r10 CHILD N190x900mg0062601D110l000625r10
-PARENT N190x900mg0062601D110l000625r10 CHILD N190x900mg0062601D120l000625r10
-PARENT N190x900mg0062601D120l000625r10 CHILD N190x900mg0062601D130l000625r10
-PARENT N190x900mg0097601D80l000625r10 CHILD N190x900mg0097601D100l000625r10
-PARENT N190x900mg0097601D100l000625r10 CHILD N190x900mg0097601D110l000625r10
-PARENT N190x900mg0097601D110l000625r10 CHILD N190x900mg0097601D120l000625r10
-PARENT N190x900mg0097601D120l000625r10 CHILD N190x900mg0097601D130l000625r10
-PARENT N200x1000mg-004073D80l000625r10 CHILD N200x1000mg-004073D100l000625r10
-PARENT N200x1000mg-004073D100l000625r10 CHILD N200x1000mg-004073D110l000625r10
-PARENT N200x1000mg-004073D110l000625r10 CHILD N200x1000mg-004073D120l000625r10
-PARENT N200x1000mg-004073D120l000625r10 CHILD N200x1000mg-004073D130l000625r10
-PARENT N200x1000mg-000573D80l000625r10 CHILD N200x1000mg-000573D100l000625r10
-PARENT N200x1000mg-000573D100l000625r10 CHILD N200x1000mg-000573D110l000625r10
-PARENT N200x1000mg-000573D110l000625r10 CHILD N200x1000mg-000573D120l000625r10
-PARENT N200x1000mg-000573D120l000625r10 CHILD N200x1000mg-000573D130l000625r10
-PARENT N200x1000mg002927D80l000625r10 CHILD N200x1000mg002927D100l000625r10
-PARENT N200x1000mg002927D100l000625r10 CHILD N200x1000mg002927D110l000625r10
-PARENT N200x1000mg002927D110l000625r10 CHILD N200x1000mg002927D120l000625r10
-PARENT N200x1000mg002927D120l000625r10 CHILD N200x1000mg002927D130l000625r10
-PARENT N200x1000mg006427D80l000625r10 CHILD N200x1000mg006427D100l000625r10
-PARENT N200x1000mg006427D100l000625r10 CHILD N200x1000mg006427D110l000625r10
-PARENT N200x1000mg006427D110l000625r10 CHILD N200x1000mg006427D120l000625r10
-PARENT N200x1000mg006427D120l000625r10 CHILD N200x1000mg006427D130l000625r10
-PARENT N200x1000mg009927D80l000625r10 CHILD N200x1000mg009927D100l000625r10
-PARENT N200x1000mg009927D100l000625r10 CHILD N200x1000mg009927D110l000625r10
-PARENT N200x1000mg009927D110l000625r10 CHILD N200x1000mg009927D120l000625r10
-PARENT N200x1000mg009927D120l000625r10 CHILD N200x1000mg009927D130l000625r10
-PARENT N225x1270mg-003712D80l000625r10 CHILD N225x1270mg-003712D100l000625r10
-PARENT N225x1270mg-003712D100l000625r10 CHILD N225x1270mg-003712D110l000625r10
-PARENT N225x1270mg-003712D110l000625r10 CHILD N225x1270mg-003712D120l000625r10
-PARENT N225x1270mg-003712D120l000625r10 CHILD N225x1270mg-003712D130l000625r10
-PARENT N225x1270mg-000212D80l000625r10 CHILD N225x1270mg-000212D100l000625r10
-PARENT N225x1270mg-000212D100l000625r10 CHILD N225x1270mg-000212D110l000625r10
-PARENT N225x1270mg-000212D110l000625r10 CHILD N225x1270mg-000212D120l000625r10
-PARENT N225x1270mg-000212D120l000625r10 CHILD N225x1270mg-000212D130l000625r10
-PARENT N225x1270mg003288D80l000625r10 CHILD N225x1270mg003288D100l000625r10
-PARENT N225x1270mg003288D100l000625r10 CHILD N225x1270mg003288D110l000625r10
-PARENT N225x1270mg003288D110l000625r10 CHILD N225x1270mg003288D120l000625r10
-PARENT N225x1270mg003288D120l000625r10 CHILD N225x1270mg003288D130l000625r10
-PARENT N225x1270mg006788D80l000625r10 CHILD N225x1270mg006788D100l000625r10
-PARENT N225x1270mg006788D100l000625r10 CHILD N225x1270mg006788D110l000625r10
-PARENT N225x1270mg006788D110l000625r10 CHILD N225x1270mg006788D120l000625r10
-PARENT N225x1270mg006788D120l000625r10 CHILD N225x1270mg006788D130l000625r10
-PARENT N225x1270mg010288D80l000625r10 CHILD N225x1270mg010288D100l000625r10
-PARENT N225x1270mg010288D100l000625r10 CHILD N225x1270mg010288D110l000625r10
-PARENT N225x1270mg010288D110l000625r10 CHILD N225x1270mg010288D120l000625r10
-PARENT N225x1270mg010288D120l000625r10 CHILD N225x1270mg010288D130l000625r10
-PARENT N250x1560mg-0034221D80l000625r10 CHILD N250x1560mg-0034221D100l000625r10
-PARENT N250x1560mg-0034221D100l000625r10 CHILD N250x1560mg-0034221D110l000625r10
-PARENT N250x1560mg-0034221D110l000625r10 CHILD N250x1560mg-0034221D120l000625r10
-PARENT N250x1560mg-0034221D120l000625r10 CHILD N250x1560mg-0034221D130l000625r10
-PARENT N250x1560mg0000779D80l000625r10 CHILD N250x1560mg0000779D100l000625r10
-PARENT N250x1560mg0000779D100l000625r10 CHILD N250x1560mg0000779D110l000625r10
-PARENT N250x1560mg0000779D110l000625r10 CHILD N250x1560mg0000779D120l000625r10
-PARENT N250x1560mg0000779D120l000625r10 CHILD N250x1560mg0000779D130l000625r10
-PARENT N250x1560mg0035779D80l000625r10 CHILD N250x1560mg0035779D100l000625r10
-PARENT N250x1560mg0035779D100l000625r10 CHILD N250x1560mg0035779D110l000625r10
-PARENT N250x1560mg0035779D110l000625r10 CHILD N250x1560mg0035779D120l000625r10
-PARENT N250x1560mg0035779D120l000625r10 CHILD N250x1560mg0035779D130l000625r10
-PARENT N250x1560mg0070779D80l000625r10 CHILD N250x1560mg0070779D100l000625r10
-PARENT N250x1560mg0070779D100l000625r10 CHILD N250x1560mg0070779D110l000625r10
-PARENT N250x1560mg0070779D110l000625r10 CHILD N250x1560mg0070779D120l000625r10
-PARENT N250x1560mg0070779D120l000625r10 CHILD N250x1560mg0070779D130l000625r10
-PARENT N250x1560mg0105779D80l000625r10 CHILD N250x1560mg0105779D100l000625r10
-PARENT N250x1560mg0105779D100l000625r10 CHILD N250x1560mg0105779D110l000625r10
-PARENT N250x1560mg0105779D110l000625r10 CHILD N250x1560mg0105779D120l000625r10
-PARENT N250x1560mg0105779D120l000625r10 CHILD N250x1560mg0105779D130l000625r10
+JOB N70x1225mg-015D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D20l0003r10 N="70" x="12.25" mg="-0.15" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D20l0003r10 3
+SCRIPT HOLD N70x1225mg-015D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D40l0003r10 N="70" x="12.25" mg="-0.15" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D40l0003r10 3
+SCRIPT HOLD N70x1225mg-015D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D60l0003r10 N="70" x="12.25" mg="-0.15" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D60l0003r10 3
+SCRIPT HOLD N70x1225mg-015D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D80l0003r10 N="70" x="12.25" mg="-0.15" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D80l0003r10 3
+SCRIPT HOLD N70x1225mg-015D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D100l0003r10 N="70" x="12.25" mg="-0.15" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D100l0003r10 3
+SCRIPT HOLD N70x1225mg-015D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D20l0003r10 N="70" x="12.25" mg="-0.1389" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D20l0003r10 3
+SCRIPT HOLD N70x1225mg-01389D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D40l0003r10 N="70" x="12.25" mg="-0.1389" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D40l0003r10 3
+SCRIPT HOLD N70x1225mg-01389D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D60l0003r10 N="70" x="12.25" mg="-0.1389" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D60l0003r10 3
+SCRIPT HOLD N70x1225mg-01389D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D80l0003r10 N="70" x="12.25" mg="-0.1389" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D80l0003r10 3
+SCRIPT HOLD N70x1225mg-01389D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D100l0003r10 N="70" x="12.25" mg="-0.1389" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D100l0003r10 3
+SCRIPT HOLD N70x1225mg-01389D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D20l0003r10 N="70" x="12.25" mg="-0.1278" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D20l0003r10 3
+SCRIPT HOLD N70x1225mg-01278D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D40l0003r10 N="70" x="12.25" mg="-0.1278" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D40l0003r10 3
+SCRIPT HOLD N70x1225mg-01278D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D60l0003r10 N="70" x="12.25" mg="-0.1278" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D60l0003r10 3
+SCRIPT HOLD N70x1225mg-01278D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D80l0003r10 N="70" x="12.25" mg="-0.1278" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D80l0003r10 3
+SCRIPT HOLD N70x1225mg-01278D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D100l0003r10 N="70" x="12.25" mg="-0.1278" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D100l0003r10 3
+SCRIPT HOLD N70x1225mg-01278D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D20l0003r10 N="70" x="12.25" mg="-0.1167" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D20l0003r10 3
+SCRIPT HOLD N70x1225mg-01167D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D40l0003r10 N="70" x="12.25" mg="-0.1167" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D40l0003r10 3
+SCRIPT HOLD N70x1225mg-01167D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D60l0003r10 N="70" x="12.25" mg="-0.1167" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D60l0003r10 3
+SCRIPT HOLD N70x1225mg-01167D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D80l0003r10 N="70" x="12.25" mg="-0.1167" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D80l0003r10 3
+SCRIPT HOLD N70x1225mg-01167D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D100l0003r10 N="70" x="12.25" mg="-0.1167" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D100l0003r10 3
+SCRIPT HOLD N70x1225mg-01167D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D20l0003r10 N="70" x="12.25" mg="-0.1056" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D20l0003r10 3
+SCRIPT HOLD N70x1225mg-01056D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D40l0003r10 N="70" x="12.25" mg="-0.1056" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D40l0003r10 3
+SCRIPT HOLD N70x1225mg-01056D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D60l0003r10 N="70" x="12.25" mg="-0.1056" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D60l0003r10 3
+SCRIPT HOLD N70x1225mg-01056D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D80l0003r10 N="70" x="12.25" mg="-0.1056" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D80l0003r10 3
+SCRIPT HOLD N70x1225mg-01056D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D100l0003r10 N="70" x="12.25" mg="-0.1056" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D100l0003r10 3
+SCRIPT HOLD N70x1225mg-01056D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D20l0003r10 N="70" x="12.25" mg="-0.0944" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D20l0003r10 3
+SCRIPT HOLD N70x1225mg-00944D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D40l0003r10 N="70" x="12.25" mg="-0.0944" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D40l0003r10 3
+SCRIPT HOLD N70x1225mg-00944D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D60l0003r10 N="70" x="12.25" mg="-0.0944" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D60l0003r10 3
+SCRIPT HOLD N70x1225mg-00944D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D80l0003r10 N="70" x="12.25" mg="-0.0944" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D80l0003r10 3
+SCRIPT HOLD N70x1225mg-00944D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D100l0003r10 N="70" x="12.25" mg="-0.0944" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D100l0003r10 3
+SCRIPT HOLD N70x1225mg-00944D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D20l0003r10 N="70" x="12.25" mg="-0.0833" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D20l0003r10 3
+SCRIPT HOLD N70x1225mg-00833D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D40l0003r10 N="70" x="12.25" mg="-0.0833" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D40l0003r10 3
+SCRIPT HOLD N70x1225mg-00833D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D60l0003r10 N="70" x="12.25" mg="-0.0833" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D60l0003r10 3
+SCRIPT HOLD N70x1225mg-00833D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D80l0003r10 N="70" x="12.25" mg="-0.0833" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D80l0003r10 3
+SCRIPT HOLD N70x1225mg-00833D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D100l0003r10 N="70" x="12.25" mg="-0.0833" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D100l0003r10 3
+SCRIPT HOLD N70x1225mg-00833D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D20l0003r10 N="70" x="12.25" mg="-0.0722" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D20l0003r10 3
+SCRIPT HOLD N70x1225mg-00722D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D40l0003r10 N="70" x="12.25" mg="-0.0722" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D40l0003r10 3
+SCRIPT HOLD N70x1225mg-00722D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D60l0003r10 N="70" x="12.25" mg="-0.0722" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D60l0003r10 3
+SCRIPT HOLD N70x1225mg-00722D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D80l0003r10 N="70" x="12.25" mg="-0.0722" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D80l0003r10 3
+SCRIPT HOLD N70x1225mg-00722D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D100l0003r10 N="70" x="12.25" mg="-0.0722" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D100l0003r10 3
+SCRIPT HOLD N70x1225mg-00722D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D20l0003r10 N="70" x="12.25" mg="-0.0611" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D20l0003r10 3
+SCRIPT HOLD N70x1225mg-00611D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D40l0003r10 N="70" x="12.25" mg="-0.0611" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D40l0003r10 3
+SCRIPT HOLD N70x1225mg-00611D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D60l0003r10 N="70" x="12.25" mg="-0.0611" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D60l0003r10 3
+SCRIPT HOLD N70x1225mg-00611D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D80l0003r10 N="70" x="12.25" mg="-0.0611" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D80l0003r10 3
+SCRIPT HOLD N70x1225mg-00611D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D100l0003r10 N="70" x="12.25" mg="-0.0611" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D100l0003r10 3
+SCRIPT HOLD N70x1225mg-00611D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D20l0003r10 N="70" x="12.25" mg="-0.05" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D20l0003r10 3
+SCRIPT HOLD N70x1225mg-005D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D40l0003r10 N="70" x="12.25" mg="-0.05" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D40l0003r10 3
+SCRIPT HOLD N70x1225mg-005D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D60l0003r10 N="70" x="12.25" mg="-0.05" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D60l0003r10 3
+SCRIPT HOLD N70x1225mg-005D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D80l0003r10 N="70" x="12.25" mg="-0.05" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D80l0003r10 3
+SCRIPT HOLD N70x1225mg-005D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D100l0003r10 N="70" x="12.25" mg="-0.05" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D100l0003r10 3
+SCRIPT HOLD N70x1225mg-005D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D20l0003r10 N="80" x="16.0" mg="-0.1278" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D20l0003r10 3
+SCRIPT HOLD N80x160mg-01278D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D40l0003r10 N="80" x="16.0" mg="-0.1278" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D40l0003r10 3
+SCRIPT HOLD N80x160mg-01278D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D60l0003r10 N="80" x="16.0" mg="-0.1278" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D60l0003r10 3
+SCRIPT HOLD N80x160mg-01278D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D80l0003r10 N="80" x="16.0" mg="-0.1278" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D80l0003r10 3
+SCRIPT HOLD N80x160mg-01278D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D100l0003r10 N="80" x="16.0" mg="-0.1278" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D100l0003r10 3
+SCRIPT HOLD N80x160mg-01278D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D20l0003r10 N="80" x="16.0" mg="-0.1167" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D20l0003r10 3
+SCRIPT HOLD N80x160mg-01167D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D40l0003r10 N="80" x="16.0" mg="-0.1167" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D40l0003r10 3
+SCRIPT HOLD N80x160mg-01167D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D60l0003r10 N="80" x="16.0" mg="-0.1167" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D60l0003r10 3
+SCRIPT HOLD N80x160mg-01167D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D80l0003r10 N="80" x="16.0" mg="-0.1167" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D80l0003r10 3
+SCRIPT HOLD N80x160mg-01167D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D100l0003r10 N="80" x="16.0" mg="-0.1167" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D100l0003r10 3
+SCRIPT HOLD N80x160mg-01167D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D20l0003r10 N="80" x="16.0" mg="-0.1056" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D20l0003r10 3
+SCRIPT HOLD N80x160mg-01056D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D40l0003r10 N="80" x="16.0" mg="-0.1056" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D40l0003r10 3
+SCRIPT HOLD N80x160mg-01056D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D60l0003r10 N="80" x="16.0" mg="-0.1056" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D60l0003r10 3
+SCRIPT HOLD N80x160mg-01056D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D80l0003r10 N="80" x="16.0" mg="-0.1056" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D80l0003r10 3
+SCRIPT HOLD N80x160mg-01056D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D100l0003r10 N="80" x="16.0" mg="-0.1056" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D100l0003r10 3
+SCRIPT HOLD N80x160mg-01056D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D20l0003r10 N="80" x="16.0" mg="-0.0944" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D20l0003r10 3
+SCRIPT HOLD N80x160mg-00944D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D40l0003r10 N="80" x="16.0" mg="-0.0944" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D40l0003r10 3
+SCRIPT HOLD N80x160mg-00944D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D60l0003r10 N="80" x="16.0" mg="-0.0944" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D60l0003r10 3
+SCRIPT HOLD N80x160mg-00944D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D80l0003r10 N="80" x="16.0" mg="-0.0944" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D80l0003r10 3
+SCRIPT HOLD N80x160mg-00944D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D100l0003r10 N="80" x="16.0" mg="-0.0944" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D100l0003r10 3
+SCRIPT HOLD N80x160mg-00944D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D20l0003r10 N="80" x="16.0" mg="-0.09" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D20l0003r10 3
+SCRIPT HOLD N80x160mg-009D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D40l0003r10 N="80" x="16.0" mg="-0.09" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D40l0003r10 3
+SCRIPT HOLD N80x160mg-009D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D60l0003r10 N="80" x="16.0" mg="-0.09" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D60l0003r10 3
+SCRIPT HOLD N80x160mg-009D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D80l0003r10 N="80" x="16.0" mg="-0.09" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D80l0003r10 3
+SCRIPT HOLD N80x160mg-009D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D100l0003r10 N="80" x="16.0" mg="-0.09" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D100l0003r10 3
+SCRIPT HOLD N80x160mg-009D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D20l0003r10 N="80" x="16.0" mg="-0.087" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D20l0003r10 3
+SCRIPT HOLD N80x160mg-0087D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D40l0003r10 N="80" x="16.0" mg="-0.087" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D40l0003r10 3
+SCRIPT HOLD N80x160mg-0087D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D60l0003r10 N="80" x="16.0" mg="-0.087" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D60l0003r10 3
+SCRIPT HOLD N80x160mg-0087D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D80l0003r10 N="80" x="16.0" mg="-0.087" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D80l0003r10 3
+SCRIPT HOLD N80x160mg-0087D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D100l0003r10 N="80" x="16.0" mg="-0.087" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D100l0003r10 3
+SCRIPT HOLD N80x160mg-0087D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D20l0003r10 N="80" x="16.0" mg="-0.0833" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D20l0003r10 3
+SCRIPT HOLD N80x160mg-00833D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D40l0003r10 N="80" x="16.0" mg="-0.0833" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D40l0003r10 3
+SCRIPT HOLD N80x160mg-00833D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D60l0003r10 N="80" x="16.0" mg="-0.0833" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D60l0003r10 3
+SCRIPT HOLD N80x160mg-00833D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D80l0003r10 N="80" x="16.0" mg="-0.0833" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D80l0003r10 3
+SCRIPT HOLD N80x160mg-00833D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D100l0003r10 N="80" x="16.0" mg="-0.0833" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D100l0003r10 3
+SCRIPT HOLD N80x160mg-00833D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D20l0003r10 N="80" x="16.0" mg="-0.0722" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D20l0003r10 3
+SCRIPT HOLD N80x160mg-00722D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D40l0003r10 N="80" x="16.0" mg="-0.0722" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D40l0003r10 3
+SCRIPT HOLD N80x160mg-00722D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D60l0003r10 N="80" x="16.0" mg="-0.0722" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D60l0003r10 3
+SCRIPT HOLD N80x160mg-00722D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D80l0003r10 N="80" x="16.0" mg="-0.0722" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D80l0003r10 3
+SCRIPT HOLD N80x160mg-00722D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D100l0003r10 N="80" x="16.0" mg="-0.0722" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D100l0003r10 3
+SCRIPT HOLD N80x160mg-00722D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D20l0003r10 N="80" x="16.0" mg="-0.0611" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D20l0003r10 3
+SCRIPT HOLD N80x160mg-00611D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D40l0003r10 N="80" x="16.0" mg="-0.0611" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D40l0003r10 3
+SCRIPT HOLD N80x160mg-00611D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D60l0003r10 N="80" x="16.0" mg="-0.0611" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D60l0003r10 3
+SCRIPT HOLD N80x160mg-00611D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D80l0003r10 N="80" x="16.0" mg="-0.0611" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D80l0003r10 3
+SCRIPT HOLD N80x160mg-00611D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D100l0003r10 N="80" x="16.0" mg="-0.0611" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D100l0003r10 3
+SCRIPT HOLD N80x160mg-00611D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D20l0003r10 N="80" x="16.0" mg="-0.05" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D20l0003r10 3
+SCRIPT HOLD N80x160mg-005D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D40l0003r10 N="80" x="16.0" mg="-0.05" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D40l0003r10 3
+SCRIPT HOLD N80x160mg-005D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D60l0003r10 N="80" x="16.0" mg="-0.05" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D60l0003r10 3
+SCRIPT HOLD N80x160mg-005D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D80l0003r10 N="80" x="16.0" mg="-0.05" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D80l0003r10 3
+SCRIPT HOLD N80x160mg-005D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D100l0003r10 N="80" x="16.0" mg="-0.05" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D100l0003r10 3
+SCRIPT HOLD N80x160mg-005D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D20l0003r10 N="90" x="20.25" mg="-0.1278" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D20l0003r10 3
+SCRIPT HOLD N90x2025mg-01278D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D40l0003r10 N="90" x="20.25" mg="-0.1278" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D40l0003r10 3
+SCRIPT HOLD N90x2025mg-01278D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D60l0003r10 N="90" x="20.25" mg="-0.1278" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D60l0003r10 3
+SCRIPT HOLD N90x2025mg-01278D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D80l0003r10 N="90" x="20.25" mg="-0.1278" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D80l0003r10 3
+SCRIPT HOLD N90x2025mg-01278D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D100l0003r10 N="90" x="20.25" mg="-0.1278" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D100l0003r10 3
+SCRIPT HOLD N90x2025mg-01278D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D20l0003r10 N="90" x="20.25" mg="-0.1167" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D20l0003r10 3
+SCRIPT HOLD N90x2025mg-01167D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D40l0003r10 N="90" x="20.25" mg="-0.1167" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D40l0003r10 3
+SCRIPT HOLD N90x2025mg-01167D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D60l0003r10 N="90" x="20.25" mg="-0.1167" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D60l0003r10 3
+SCRIPT HOLD N90x2025mg-01167D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D80l0003r10 N="90" x="20.25" mg="-0.1167" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D80l0003r10 3
+SCRIPT HOLD N90x2025mg-01167D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D100l0003r10 N="90" x="20.25" mg="-0.1167" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D100l0003r10 3
+SCRIPT HOLD N90x2025mg-01167D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D20l0003r10 N="90" x="20.25" mg="-0.1056" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D20l0003r10 3
+SCRIPT HOLD N90x2025mg-01056D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D40l0003r10 N="90" x="20.25" mg="-0.1056" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D40l0003r10 3
+SCRIPT HOLD N90x2025mg-01056D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D60l0003r10 N="90" x="20.25" mg="-0.1056" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D60l0003r10 3
+SCRIPT HOLD N90x2025mg-01056D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D80l0003r10 N="90" x="20.25" mg="-0.1056" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D80l0003r10 3
+SCRIPT HOLD N90x2025mg-01056D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D100l0003r10 N="90" x="20.25" mg="-0.1056" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D100l0003r10 3
+SCRIPT HOLD N90x2025mg-01056D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D20l0003r10 N="90" x="20.25" mg="-0.0944" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D20l0003r10 3
+SCRIPT HOLD N90x2025mg-00944D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D40l0003r10 N="90" x="20.25" mg="-0.0944" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D40l0003r10 3
+SCRIPT HOLD N90x2025mg-00944D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D60l0003r10 N="90" x="20.25" mg="-0.0944" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D60l0003r10 3
+SCRIPT HOLD N90x2025mg-00944D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D80l0003r10 N="90" x="20.25" mg="-0.0944" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D80l0003r10 3
+SCRIPT HOLD N90x2025mg-00944D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D100l0003r10 N="90" x="20.25" mg="-0.0944" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D100l0003r10 3
+SCRIPT HOLD N90x2025mg-00944D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D20l0003r10 N="90" x="20.25" mg="-0.09" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D20l0003r10 3
+SCRIPT HOLD N90x2025mg-009D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D40l0003r10 N="90" x="20.25" mg="-0.09" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D40l0003r10 3
+SCRIPT HOLD N90x2025mg-009D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D60l0003r10 N="90" x="20.25" mg="-0.09" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D60l0003r10 3
+SCRIPT HOLD N90x2025mg-009D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D80l0003r10 N="90" x="20.25" mg="-0.09" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D80l0003r10 3
+SCRIPT HOLD N90x2025mg-009D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D100l0003r10 N="90" x="20.25" mg="-0.09" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D100l0003r10 3
+SCRIPT HOLD N90x2025mg-009D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D20l0003r10 N="90" x="20.25" mg="-0.087" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D20l0003r10 3
+SCRIPT HOLD N90x2025mg-0087D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D40l0003r10 N="90" x="20.25" mg="-0.087" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D40l0003r10 3
+SCRIPT HOLD N90x2025mg-0087D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D60l0003r10 N="90" x="20.25" mg="-0.087" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D60l0003r10 3
+SCRIPT HOLD N90x2025mg-0087D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D80l0003r10 N="90" x="20.25" mg="-0.087" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D80l0003r10 3
+SCRIPT HOLD N90x2025mg-0087D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D100l0003r10 N="90" x="20.25" mg="-0.087" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D100l0003r10 3
+SCRIPT HOLD N90x2025mg-0087D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D20l0003r10 N="90" x="20.25" mg="-0.0833" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D20l0003r10 3
+SCRIPT HOLD N90x2025mg-00833D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D40l0003r10 N="90" x="20.25" mg="-0.0833" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D40l0003r10 3
+SCRIPT HOLD N90x2025mg-00833D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D60l0003r10 N="90" x="20.25" mg="-0.0833" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D60l0003r10 3
+SCRIPT HOLD N90x2025mg-00833D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D80l0003r10 N="90" x="20.25" mg="-0.0833" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D80l0003r10 3
+SCRIPT HOLD N90x2025mg-00833D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D100l0003r10 N="90" x="20.25" mg="-0.0833" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D100l0003r10 3
+SCRIPT HOLD N90x2025mg-00833D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D20l0003r10 N="90" x="20.25" mg="-0.0722" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D20l0003r10 3
+SCRIPT HOLD N90x2025mg-00722D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D40l0003r10 N="90" x="20.25" mg="-0.0722" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D40l0003r10 3
+SCRIPT HOLD N90x2025mg-00722D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D60l0003r10 N="90" x="20.25" mg="-0.0722" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D60l0003r10 3
+SCRIPT HOLD N90x2025mg-00722D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D80l0003r10 N="90" x="20.25" mg="-0.0722" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D80l0003r10 3
+SCRIPT HOLD N90x2025mg-00722D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D100l0003r10 N="90" x="20.25" mg="-0.0722" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D100l0003r10 3
+SCRIPT HOLD N90x2025mg-00722D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D20l0003r10 N="90" x="20.25" mg="-0.0611" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D20l0003r10 3
+SCRIPT HOLD N90x2025mg-00611D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D40l0003r10 N="90" x="20.25" mg="-0.0611" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D40l0003r10 3
+SCRIPT HOLD N90x2025mg-00611D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D60l0003r10 N="90" x="20.25" mg="-0.0611" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D60l0003r10 3
+SCRIPT HOLD N90x2025mg-00611D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D80l0003r10 N="90" x="20.25" mg="-0.0611" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D80l0003r10 3
+SCRIPT HOLD N90x2025mg-00611D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D100l0003r10 N="90" x="20.25" mg="-0.0611" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D100l0003r10 3
+SCRIPT HOLD N90x2025mg-00611D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D20l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D20l0003r10 N="90" x="20.25" mg="-0.05" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D20l0003r10 3
+SCRIPT HOLD N90x2025mg-005D20l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D40l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D40l0003r10 N="90" x="20.25" mg="-0.05" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D40l0003r10 3
+SCRIPT HOLD N90x2025mg-005D40l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D60l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D60l0003r10 N="90" x="20.25" mg="-0.05" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D60l0003r10 3
+SCRIPT HOLD N90x2025mg-005D60l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D80l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D80l0003r10 N="90" x="20.25" mg="-0.05" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D80l0003r10 3
+SCRIPT HOLD N90x2025mg-005D80l0003r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D100l0003r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D100l0003r10 N="90" x="20.25" mg="-0.05" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D100l0003r10 3
+SCRIPT HOLD N90x2025mg-005D100l0003r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D20l0025r10 N="70" x="12.25" mg="-0.15" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D20l0025r10 3
+SCRIPT HOLD N70x1225mg-015D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D40l0025r10 N="70" x="12.25" mg="-0.15" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D40l0025r10 3
+SCRIPT HOLD N70x1225mg-015D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D60l0025r10 N="70" x="12.25" mg="-0.15" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D60l0025r10 3
+SCRIPT HOLD N70x1225mg-015D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D80l0025r10 N="70" x="12.25" mg="-0.15" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D80l0025r10 3
+SCRIPT HOLD N70x1225mg-015D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-015D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-015D100l0025r10 N="70" x="12.25" mg="-0.15" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.15" r="1.0"
+RETRY N70x1225mg-015D100l0025r10 3
+SCRIPT HOLD N70x1225mg-015D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D20l0025r10 N="70" x="12.25" mg="-0.1389" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D20l0025r10 3
+SCRIPT HOLD N70x1225mg-01389D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D40l0025r10 N="70" x="12.25" mg="-0.1389" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D40l0025r10 3
+SCRIPT HOLD N70x1225mg-01389D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D60l0025r10 N="70" x="12.25" mg="-0.1389" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D60l0025r10 3
+SCRIPT HOLD N70x1225mg-01389D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D80l0025r10 N="70" x="12.25" mg="-0.1389" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D80l0025r10 3
+SCRIPT HOLD N70x1225mg-01389D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01389D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01389D100l0025r10 N="70" x="12.25" mg="-0.1389" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1389" r="1.0"
+RETRY N70x1225mg-01389D100l0025r10 3
+SCRIPT HOLD N70x1225mg-01389D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D20l0025r10 N="70" x="12.25" mg="-0.1278" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D20l0025r10 3
+SCRIPT HOLD N70x1225mg-01278D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D40l0025r10 N="70" x="12.25" mg="-0.1278" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D40l0025r10 3
+SCRIPT HOLD N70x1225mg-01278D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D60l0025r10 N="70" x="12.25" mg="-0.1278" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D60l0025r10 3
+SCRIPT HOLD N70x1225mg-01278D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D80l0025r10 N="70" x="12.25" mg="-0.1278" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D80l0025r10 3
+SCRIPT HOLD N70x1225mg-01278D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01278D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01278D100l0025r10 N="70" x="12.25" mg="-0.1278" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1278" r="1.0"
+RETRY N70x1225mg-01278D100l0025r10 3
+SCRIPT HOLD N70x1225mg-01278D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D20l0025r10 N="70" x="12.25" mg="-0.1167" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D20l0025r10 3
+SCRIPT HOLD N70x1225mg-01167D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D40l0025r10 N="70" x="12.25" mg="-0.1167" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D40l0025r10 3
+SCRIPT HOLD N70x1225mg-01167D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D60l0025r10 N="70" x="12.25" mg="-0.1167" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D60l0025r10 3
+SCRIPT HOLD N70x1225mg-01167D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D80l0025r10 N="70" x="12.25" mg="-0.1167" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D80l0025r10 3
+SCRIPT HOLD N70x1225mg-01167D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01167D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01167D100l0025r10 N="70" x="12.25" mg="-0.1167" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1167" r="1.0"
+RETRY N70x1225mg-01167D100l0025r10 3
+SCRIPT HOLD N70x1225mg-01167D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D20l0025r10 N="70" x="12.25" mg="-0.1056" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D20l0025r10 3
+SCRIPT HOLD N70x1225mg-01056D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D40l0025r10 N="70" x="12.25" mg="-0.1056" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D40l0025r10 3
+SCRIPT HOLD N70x1225mg-01056D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D60l0025r10 N="70" x="12.25" mg="-0.1056" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D60l0025r10 3
+SCRIPT HOLD N70x1225mg-01056D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D80l0025r10 N="70" x="12.25" mg="-0.1056" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D80l0025r10 3
+SCRIPT HOLD N70x1225mg-01056D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-01056D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-01056D100l0025r10 N="70" x="12.25" mg="-0.1056" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1056" r="1.0"
+RETRY N70x1225mg-01056D100l0025r10 3
+SCRIPT HOLD N70x1225mg-01056D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D20l0025r10 N="70" x="12.25" mg="-0.0944" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D20l0025r10 3
+SCRIPT HOLD N70x1225mg-00944D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D40l0025r10 N="70" x="12.25" mg="-0.0944" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D40l0025r10 3
+SCRIPT HOLD N70x1225mg-00944D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D60l0025r10 N="70" x="12.25" mg="-0.0944" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D60l0025r10 3
+SCRIPT HOLD N70x1225mg-00944D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D80l0025r10 N="70" x="12.25" mg="-0.0944" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D80l0025r10 3
+SCRIPT HOLD N70x1225mg-00944D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00944D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00944D100l0025r10 N="70" x="12.25" mg="-0.0944" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0944" r="1.0"
+RETRY N70x1225mg-00944D100l0025r10 3
+SCRIPT HOLD N70x1225mg-00944D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D20l0025r10 N="70" x="12.25" mg="-0.0833" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D20l0025r10 3
+SCRIPT HOLD N70x1225mg-00833D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D40l0025r10 N="70" x="12.25" mg="-0.0833" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D40l0025r10 3
+SCRIPT HOLD N70x1225mg-00833D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D60l0025r10 N="70" x="12.25" mg="-0.0833" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D60l0025r10 3
+SCRIPT HOLD N70x1225mg-00833D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D80l0025r10 N="70" x="12.25" mg="-0.0833" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D80l0025r10 3
+SCRIPT HOLD N70x1225mg-00833D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00833D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00833D100l0025r10 N="70" x="12.25" mg="-0.0833" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0833" r="1.0"
+RETRY N70x1225mg-00833D100l0025r10 3
+SCRIPT HOLD N70x1225mg-00833D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D20l0025r10 N="70" x="12.25" mg="-0.0722" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D20l0025r10 3
+SCRIPT HOLD N70x1225mg-00722D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D40l0025r10 N="70" x="12.25" mg="-0.0722" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D40l0025r10 3
+SCRIPT HOLD N70x1225mg-00722D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D60l0025r10 N="70" x="12.25" mg="-0.0722" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D60l0025r10 3
+SCRIPT HOLD N70x1225mg-00722D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D80l0025r10 N="70" x="12.25" mg="-0.0722" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D80l0025r10 3
+SCRIPT HOLD N70x1225mg-00722D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00722D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00722D100l0025r10 N="70" x="12.25" mg="-0.0722" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0722" r="1.0"
+RETRY N70x1225mg-00722D100l0025r10 3
+SCRIPT HOLD N70x1225mg-00722D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D20l0025r10 N="70" x="12.25" mg="-0.0611" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D20l0025r10 3
+SCRIPT HOLD N70x1225mg-00611D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D40l0025r10 N="70" x="12.25" mg="-0.0611" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D40l0025r10 3
+SCRIPT HOLD N70x1225mg-00611D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D60l0025r10 N="70" x="12.25" mg="-0.0611" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D60l0025r10 3
+SCRIPT HOLD N70x1225mg-00611D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D80l0025r10 N="70" x="12.25" mg="-0.0611" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D80l0025r10 3
+SCRIPT HOLD N70x1225mg-00611D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-00611D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-00611D100l0025r10 N="70" x="12.25" mg="-0.0611" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0611" r="1.0"
+RETRY N70x1225mg-00611D100l0025r10 3
+SCRIPT HOLD N70x1225mg-00611D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D20l0025r10 N="70" x="12.25" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D20l0025r10 3
+SCRIPT HOLD N70x1225mg-005D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D40l0025r10 N="70" x="12.25" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D40l0025r10 3
+SCRIPT HOLD N70x1225mg-005D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D60l0025r10 N="70" x="12.25" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D60l0025r10 3
+SCRIPT HOLD N70x1225mg-005D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D80l0025r10 N="70" x="12.25" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D80l0025r10 3
+SCRIPT HOLD N70x1225mg-005D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N70x1225mg-005D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N70x1225mg-005D100l0025r10 N="70" x="12.25" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
+RETRY N70x1225mg-005D100l0025r10 3
+SCRIPT HOLD N70x1225mg-005D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D20l0025r10 N="80" x="16.0" mg="-0.1278" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D20l0025r10 3
+SCRIPT HOLD N80x160mg-01278D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D40l0025r10 N="80" x="16.0" mg="-0.1278" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D40l0025r10 3
+SCRIPT HOLD N80x160mg-01278D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D60l0025r10 N="80" x="16.0" mg="-0.1278" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D60l0025r10 3
+SCRIPT HOLD N80x160mg-01278D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D80l0025r10 N="80" x="16.0" mg="-0.1278" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D80l0025r10 3
+SCRIPT HOLD N80x160mg-01278D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01278D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01278D100l0025r10 N="80" x="16.0" mg="-0.1278" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1278" r="1.0"
+RETRY N80x160mg-01278D100l0025r10 3
+SCRIPT HOLD N80x160mg-01278D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D20l0025r10 N="80" x="16.0" mg="-0.1167" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D20l0025r10 3
+SCRIPT HOLD N80x160mg-01167D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D40l0025r10 N="80" x="16.0" mg="-0.1167" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D40l0025r10 3
+SCRIPT HOLD N80x160mg-01167D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D60l0025r10 N="80" x="16.0" mg="-0.1167" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D60l0025r10 3
+SCRIPT HOLD N80x160mg-01167D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D80l0025r10 N="80" x="16.0" mg="-0.1167" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D80l0025r10 3
+SCRIPT HOLD N80x160mg-01167D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01167D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01167D100l0025r10 N="80" x="16.0" mg="-0.1167" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1167" r="1.0"
+RETRY N80x160mg-01167D100l0025r10 3
+SCRIPT HOLD N80x160mg-01167D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D20l0025r10 N="80" x="16.0" mg="-0.1056" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D20l0025r10 3
+SCRIPT HOLD N80x160mg-01056D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D40l0025r10 N="80" x="16.0" mg="-0.1056" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D40l0025r10 3
+SCRIPT HOLD N80x160mg-01056D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D60l0025r10 N="80" x="16.0" mg="-0.1056" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D60l0025r10 3
+SCRIPT HOLD N80x160mg-01056D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D80l0025r10 N="80" x="16.0" mg="-0.1056" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D80l0025r10 3
+SCRIPT HOLD N80x160mg-01056D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-01056D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-01056D100l0025r10 N="80" x="16.0" mg="-0.1056" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1056" r="1.0"
+RETRY N80x160mg-01056D100l0025r10 3
+SCRIPT HOLD N80x160mg-01056D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D20l0025r10 N="80" x="16.0" mg="-0.0944" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D20l0025r10 3
+SCRIPT HOLD N80x160mg-00944D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D40l0025r10 N="80" x="16.0" mg="-0.0944" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D40l0025r10 3
+SCRIPT HOLD N80x160mg-00944D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D60l0025r10 N="80" x="16.0" mg="-0.0944" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D60l0025r10 3
+SCRIPT HOLD N80x160mg-00944D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D80l0025r10 N="80" x="16.0" mg="-0.0944" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D80l0025r10 3
+SCRIPT HOLD N80x160mg-00944D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00944D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00944D100l0025r10 N="80" x="16.0" mg="-0.0944" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0944" r="1.0"
+RETRY N80x160mg-00944D100l0025r10 3
+SCRIPT HOLD N80x160mg-00944D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D20l0025r10 N="80" x="16.0" mg="-0.09" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D20l0025r10 3
+SCRIPT HOLD N80x160mg-009D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D40l0025r10 N="80" x="16.0" mg="-0.09" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D40l0025r10 3
+SCRIPT HOLD N80x160mg-009D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D60l0025r10 N="80" x="16.0" mg="-0.09" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D60l0025r10 3
+SCRIPT HOLD N80x160mg-009D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D80l0025r10 N="80" x="16.0" mg="-0.09" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D80l0025r10 3
+SCRIPT HOLD N80x160mg-009D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-009D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-009D100l0025r10 N="80" x="16.0" mg="-0.09" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.09" r="1.0"
+RETRY N80x160mg-009D100l0025r10 3
+SCRIPT HOLD N80x160mg-009D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D20l0025r10 N="80" x="16.0" mg="-0.087" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D20l0025r10 3
+SCRIPT HOLD N80x160mg-0087D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D40l0025r10 N="80" x="16.0" mg="-0.087" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D40l0025r10 3
+SCRIPT HOLD N80x160mg-0087D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D60l0025r10 N="80" x="16.0" mg="-0.087" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D60l0025r10 3
+SCRIPT HOLD N80x160mg-0087D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D80l0025r10 N="80" x="16.0" mg="-0.087" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D80l0025r10 3
+SCRIPT HOLD N80x160mg-0087D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-0087D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-0087D100l0025r10 N="80" x="16.0" mg="-0.087" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.087" r="1.0"
+RETRY N80x160mg-0087D100l0025r10 3
+SCRIPT HOLD N80x160mg-0087D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D20l0025r10 N="80" x="16.0" mg="-0.0833" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D20l0025r10 3
+SCRIPT HOLD N80x160mg-00833D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D40l0025r10 N="80" x="16.0" mg="-0.0833" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D40l0025r10 3
+SCRIPT HOLD N80x160mg-00833D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D60l0025r10 N="80" x="16.0" mg="-0.0833" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D60l0025r10 3
+SCRIPT HOLD N80x160mg-00833D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D80l0025r10 N="80" x="16.0" mg="-0.0833" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D80l0025r10 3
+SCRIPT HOLD N80x160mg-00833D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00833D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00833D100l0025r10 N="80" x="16.0" mg="-0.0833" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0833" r="1.0"
+RETRY N80x160mg-00833D100l0025r10 3
+SCRIPT HOLD N80x160mg-00833D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D20l0025r10 N="80" x="16.0" mg="-0.0722" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D20l0025r10 3
+SCRIPT HOLD N80x160mg-00722D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D40l0025r10 N="80" x="16.0" mg="-0.0722" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D40l0025r10 3
+SCRIPT HOLD N80x160mg-00722D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D60l0025r10 N="80" x="16.0" mg="-0.0722" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D60l0025r10 3
+SCRIPT HOLD N80x160mg-00722D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D80l0025r10 N="80" x="16.0" mg="-0.0722" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D80l0025r10 3
+SCRIPT HOLD N80x160mg-00722D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00722D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00722D100l0025r10 N="80" x="16.0" mg="-0.0722" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0722" r="1.0"
+RETRY N80x160mg-00722D100l0025r10 3
+SCRIPT HOLD N80x160mg-00722D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D20l0025r10 N="80" x="16.0" mg="-0.0611" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D20l0025r10 3
+SCRIPT HOLD N80x160mg-00611D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D40l0025r10 N="80" x="16.0" mg="-0.0611" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D40l0025r10 3
+SCRIPT HOLD N80x160mg-00611D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D60l0025r10 N="80" x="16.0" mg="-0.0611" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D60l0025r10 3
+SCRIPT HOLD N80x160mg-00611D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D80l0025r10 N="80" x="16.0" mg="-0.0611" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D80l0025r10 3
+SCRIPT HOLD N80x160mg-00611D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-00611D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-00611D100l0025r10 N="80" x="16.0" mg="-0.0611" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0611" r="1.0"
+RETRY N80x160mg-00611D100l0025r10 3
+SCRIPT HOLD N80x160mg-00611D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D20l0025r10 N="80" x="16.0" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D20l0025r10 3
+SCRIPT HOLD N80x160mg-005D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D40l0025r10 N="80" x="16.0" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D40l0025r10 3
+SCRIPT HOLD N80x160mg-005D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D60l0025r10 N="80" x="16.0" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D60l0025r10 3
+SCRIPT HOLD N80x160mg-005D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D80l0025r10 N="80" x="16.0" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D80l0025r10 3
+SCRIPT HOLD N80x160mg-005D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N80x160mg-005D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N80x160mg-005D100l0025r10 N="80" x="16.0" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
+RETRY N80x160mg-005D100l0025r10 3
+SCRIPT HOLD N80x160mg-005D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D20l0025r10 N="90" x="20.25" mg="-0.1278" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D20l0025r10 3
+SCRIPT HOLD N90x2025mg-01278D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D40l0025r10 N="90" x="20.25" mg="-0.1278" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D40l0025r10 3
+SCRIPT HOLD N90x2025mg-01278D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D60l0025r10 N="90" x="20.25" mg="-0.1278" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D60l0025r10 3
+SCRIPT HOLD N90x2025mg-01278D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D80l0025r10 N="90" x="20.25" mg="-0.1278" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D80l0025r10 3
+SCRIPT HOLD N90x2025mg-01278D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01278D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01278D100l0025r10 N="90" x="20.25" mg="-0.1278" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1278" r="1.0"
+RETRY N90x2025mg-01278D100l0025r10 3
+SCRIPT HOLD N90x2025mg-01278D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D20l0025r10 N="90" x="20.25" mg="-0.1167" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D20l0025r10 3
+SCRIPT HOLD N90x2025mg-01167D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D40l0025r10 N="90" x="20.25" mg="-0.1167" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D40l0025r10 3
+SCRIPT HOLD N90x2025mg-01167D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D60l0025r10 N="90" x="20.25" mg="-0.1167" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D60l0025r10 3
+SCRIPT HOLD N90x2025mg-01167D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D80l0025r10 N="90" x="20.25" mg="-0.1167" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D80l0025r10 3
+SCRIPT HOLD N90x2025mg-01167D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01167D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01167D100l0025r10 N="90" x="20.25" mg="-0.1167" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1167" r="1.0"
+RETRY N90x2025mg-01167D100l0025r10 3
+SCRIPT HOLD N90x2025mg-01167D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D20l0025r10 N="90" x="20.25" mg="-0.1056" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D20l0025r10 3
+SCRIPT HOLD N90x2025mg-01056D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D40l0025r10 N="90" x="20.25" mg="-0.1056" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D40l0025r10 3
+SCRIPT HOLD N90x2025mg-01056D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D60l0025r10 N="90" x="20.25" mg="-0.1056" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D60l0025r10 3
+SCRIPT HOLD N90x2025mg-01056D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D80l0025r10 N="90" x="20.25" mg="-0.1056" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D80l0025r10 3
+SCRIPT HOLD N90x2025mg-01056D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-01056D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-01056D100l0025r10 N="90" x="20.25" mg="-0.1056" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.1056" r="1.0"
+RETRY N90x2025mg-01056D100l0025r10 3
+SCRIPT HOLD N90x2025mg-01056D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D20l0025r10 N="90" x="20.25" mg="-0.0944" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D20l0025r10 3
+SCRIPT HOLD N90x2025mg-00944D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D40l0025r10 N="90" x="20.25" mg="-0.0944" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D40l0025r10 3
+SCRIPT HOLD N90x2025mg-00944D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D60l0025r10 N="90" x="20.25" mg="-0.0944" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D60l0025r10 3
+SCRIPT HOLD N90x2025mg-00944D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D80l0025r10 N="90" x="20.25" mg="-0.0944" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D80l0025r10 3
+SCRIPT HOLD N90x2025mg-00944D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00944D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00944D100l0025r10 N="90" x="20.25" mg="-0.0944" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0944" r="1.0"
+RETRY N90x2025mg-00944D100l0025r10 3
+SCRIPT HOLD N90x2025mg-00944D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D20l0025r10 N="90" x="20.25" mg="-0.09" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D20l0025r10 3
+SCRIPT HOLD N90x2025mg-009D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D40l0025r10 N="90" x="20.25" mg="-0.09" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D40l0025r10 3
+SCRIPT HOLD N90x2025mg-009D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D60l0025r10 N="90" x="20.25" mg="-0.09" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D60l0025r10 3
+SCRIPT HOLD N90x2025mg-009D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D80l0025r10 N="90" x="20.25" mg="-0.09" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D80l0025r10 3
+SCRIPT HOLD N90x2025mg-009D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-009D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-009D100l0025r10 N="90" x="20.25" mg="-0.09" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.09" r="1.0"
+RETRY N90x2025mg-009D100l0025r10 3
+SCRIPT HOLD N90x2025mg-009D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D20l0025r10 N="90" x="20.25" mg="-0.087" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D20l0025r10 3
+SCRIPT HOLD N90x2025mg-0087D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D40l0025r10 N="90" x="20.25" mg="-0.087" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D40l0025r10 3
+SCRIPT HOLD N90x2025mg-0087D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D60l0025r10 N="90" x="20.25" mg="-0.087" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D60l0025r10 3
+SCRIPT HOLD N90x2025mg-0087D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D80l0025r10 N="90" x="20.25" mg="-0.087" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D80l0025r10 3
+SCRIPT HOLD N90x2025mg-0087D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-0087D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-0087D100l0025r10 N="90" x="20.25" mg="-0.087" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.087" r="1.0"
+RETRY N90x2025mg-0087D100l0025r10 3
+SCRIPT HOLD N90x2025mg-0087D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D20l0025r10 N="90" x="20.25" mg="-0.0833" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D20l0025r10 3
+SCRIPT HOLD N90x2025mg-00833D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D40l0025r10 N="90" x="20.25" mg="-0.0833" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D40l0025r10 3
+SCRIPT HOLD N90x2025mg-00833D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D60l0025r10 N="90" x="20.25" mg="-0.0833" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D60l0025r10 3
+SCRIPT HOLD N90x2025mg-00833D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D80l0025r10 N="90" x="20.25" mg="-0.0833" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D80l0025r10 3
+SCRIPT HOLD N90x2025mg-00833D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00833D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00833D100l0025r10 N="90" x="20.25" mg="-0.0833" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0833" r="1.0"
+RETRY N90x2025mg-00833D100l0025r10 3
+SCRIPT HOLD N90x2025mg-00833D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D20l0025r10 N="90" x="20.25" mg="-0.0722" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D20l0025r10 3
+SCRIPT HOLD N90x2025mg-00722D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D40l0025r10 N="90" x="20.25" mg="-0.0722" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D40l0025r10 3
+SCRIPT HOLD N90x2025mg-00722D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D60l0025r10 N="90" x="20.25" mg="-0.0722" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D60l0025r10 3
+SCRIPT HOLD N90x2025mg-00722D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D80l0025r10 N="90" x="20.25" mg="-0.0722" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D80l0025r10 3
+SCRIPT HOLD N90x2025mg-00722D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00722D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00722D100l0025r10 N="90" x="20.25" mg="-0.0722" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0722" r="1.0"
+RETRY N90x2025mg-00722D100l0025r10 3
+SCRIPT HOLD N90x2025mg-00722D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D20l0025r10 N="90" x="20.25" mg="-0.0611" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D20l0025r10 3
+SCRIPT HOLD N90x2025mg-00611D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D40l0025r10 N="90" x="20.25" mg="-0.0611" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D40l0025r10 3
+SCRIPT HOLD N90x2025mg-00611D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D60l0025r10 N="90" x="20.25" mg="-0.0611" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D60l0025r10 3
+SCRIPT HOLD N90x2025mg-00611D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D80l0025r10 N="90" x="20.25" mg="-0.0611" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D80l0025r10 3
+SCRIPT HOLD N90x2025mg-00611D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-00611D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-00611D100l0025r10 N="90" x="20.25" mg="-0.0611" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.0611" r="1.0"
+RETRY N90x2025mg-00611D100l0025r10 3
+SCRIPT HOLD N90x2025mg-00611D100l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D20l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D20l0025r10 N="90" x="20.25" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="0" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D20l0025r10 3
+SCRIPT HOLD N90x2025mg-005D20l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D40l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D40l0025r10 N="90" x="20.25" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="20" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D40l0025r10 3
+SCRIPT HOLD N90x2025mg-005D40l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D60l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D60l0025r10 N="90" x="20.25" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="40" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D60l0025r10 3
+SCRIPT HOLD N90x2025mg-005D60l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D80l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D80l0025r10 N="90" x="20.25" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="60" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D80l0025r10 3
+SCRIPT HOLD N90x2025mg-005D80l0025r10 /usr/bin/condor_release $JOBID
+JOB N90x2025mg-005D100l0025r10 /afs/ifh.de/user/a/angeltak/Schwinger-Wilson-MPS/SW_MPS.sub
+VARS N90x2025mg-005D100l0025r10 N="90" x="20.25" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" D_p="80" mg_p="-0.05" r="1.0"
+RETRY N90x2025mg-005D100l0025r10 3
+SCRIPT HOLD N90x2025mg-005D100l0025r10 /usr/bin/condor_release $JOBID
+PARENT N70x1225mg-015D20l0003r10 CHILD N70x1225mg-015D40l0003r10
+PARENT N70x1225mg-015D40l0003r10 CHILD N70x1225mg-015D60l0003r10
+PARENT N70x1225mg-015D60l0003r10 CHILD N70x1225mg-015D80l0003r10
+PARENT N70x1225mg-015D80l0003r10 CHILD N70x1225mg-015D100l0003r10
+PARENT N70x1225mg-01389D20l0003r10 CHILD N70x1225mg-01389D40l0003r10
+PARENT N70x1225mg-01389D40l0003r10 CHILD N70x1225mg-01389D60l0003r10
+PARENT N70x1225mg-01389D60l0003r10 CHILD N70x1225mg-01389D80l0003r10
+PARENT N70x1225mg-01389D80l0003r10 CHILD N70x1225mg-01389D100l0003r10
+PARENT N70x1225mg-01278D20l0003r10 CHILD N70x1225mg-01278D40l0003r10
+PARENT N70x1225mg-01278D40l0003r10 CHILD N70x1225mg-01278D60l0003r10
+PARENT N70x1225mg-01278D60l0003r10 CHILD N70x1225mg-01278D80l0003r10
+PARENT N70x1225mg-01278D80l0003r10 CHILD N70x1225mg-01278D100l0003r10
+PARENT N70x1225mg-01167D20l0003r10 CHILD N70x1225mg-01167D40l0003r10
+PARENT N70x1225mg-01167D40l0003r10 CHILD N70x1225mg-01167D60l0003r10
+PARENT N70x1225mg-01167D60l0003r10 CHILD N70x1225mg-01167D80l0003r10
+PARENT N70x1225mg-01167D80l0003r10 CHILD N70x1225mg-01167D100l0003r10
+PARENT N70x1225mg-01056D20l0003r10 CHILD N70x1225mg-01056D40l0003r10
+PARENT N70x1225mg-01056D40l0003r10 CHILD N70x1225mg-01056D60l0003r10
+PARENT N70x1225mg-01056D60l0003r10 CHILD N70x1225mg-01056D80l0003r10
+PARENT N70x1225mg-01056D80l0003r10 CHILD N70x1225mg-01056D100l0003r10
+PARENT N70x1225mg-00944D20l0003r10 CHILD N70x1225mg-00944D40l0003r10
+PARENT N70x1225mg-00944D40l0003r10 CHILD N70x1225mg-00944D60l0003r10
+PARENT N70x1225mg-00944D60l0003r10 CHILD N70x1225mg-00944D80l0003r10
+PARENT N70x1225mg-00944D80l0003r10 CHILD N70x1225mg-00944D100l0003r10
+PARENT N70x1225mg-00833D20l0003r10 CHILD N70x1225mg-00833D40l0003r10
+PARENT N70x1225mg-00833D40l0003r10 CHILD N70x1225mg-00833D60l0003r10
+PARENT N70x1225mg-00833D60l0003r10 CHILD N70x1225mg-00833D80l0003r10
+PARENT N70x1225mg-00833D80l0003r10 CHILD N70x1225mg-00833D100l0003r10
+PARENT N70x1225mg-00722D20l0003r10 CHILD N70x1225mg-00722D40l0003r10
+PARENT N70x1225mg-00722D40l0003r10 CHILD N70x1225mg-00722D60l0003r10
+PARENT N70x1225mg-00722D60l0003r10 CHILD N70x1225mg-00722D80l0003r10
+PARENT N70x1225mg-00722D80l0003r10 CHILD N70x1225mg-00722D100l0003r10
+PARENT N70x1225mg-00611D20l0003r10 CHILD N70x1225mg-00611D40l0003r10
+PARENT N70x1225mg-00611D40l0003r10 CHILD N70x1225mg-00611D60l0003r10
+PARENT N70x1225mg-00611D60l0003r10 CHILD N70x1225mg-00611D80l0003r10
+PARENT N70x1225mg-00611D80l0003r10 CHILD N70x1225mg-00611D100l0003r10
+PARENT N70x1225mg-005D20l0003r10 CHILD N70x1225mg-005D40l0003r10
+PARENT N70x1225mg-005D40l0003r10 CHILD N70x1225mg-005D60l0003r10
+PARENT N70x1225mg-005D60l0003r10 CHILD N70x1225mg-005D80l0003r10
+PARENT N70x1225mg-005D80l0003r10 CHILD N70x1225mg-005D100l0003r10
+PARENT N80x160mg-01278D20l0003r10 CHILD N80x160mg-01278D40l0003r10
+PARENT N80x160mg-01278D40l0003r10 CHILD N80x160mg-01278D60l0003r10
+PARENT N80x160mg-01278D60l0003r10 CHILD N80x160mg-01278D80l0003r10
+PARENT N80x160mg-01278D80l0003r10 CHILD N80x160mg-01278D100l0003r10
+PARENT N80x160mg-01167D20l0003r10 CHILD N80x160mg-01167D40l0003r10
+PARENT N80x160mg-01167D40l0003r10 CHILD N80x160mg-01167D60l0003r10
+PARENT N80x160mg-01167D60l0003r10 CHILD N80x160mg-01167D80l0003r10
+PARENT N80x160mg-01167D80l0003r10 CHILD N80x160mg-01167D100l0003r10
+PARENT N80x160mg-01056D20l0003r10 CHILD N80x160mg-01056D40l0003r10
+PARENT N80x160mg-01056D40l0003r10 CHILD N80x160mg-01056D60l0003r10
+PARENT N80x160mg-01056D60l0003r10 CHILD N80x160mg-01056D80l0003r10
+PARENT N80x160mg-01056D80l0003r10 CHILD N80x160mg-01056D100l0003r10
+PARENT N80x160mg-00944D20l0003r10 CHILD N80x160mg-00944D40l0003r10
+PARENT N80x160mg-00944D40l0003r10 CHILD N80x160mg-00944D60l0003r10
+PARENT N80x160mg-00944D60l0003r10 CHILD N80x160mg-00944D80l0003r10
+PARENT N80x160mg-00944D80l0003r10 CHILD N80x160mg-00944D100l0003r10
+PARENT N80x160mg-009D20l0003r10 CHILD N80x160mg-009D40l0003r10
+PARENT N80x160mg-009D40l0003r10 CHILD N80x160mg-009D60l0003r10
+PARENT N80x160mg-009D60l0003r10 CHILD N80x160mg-009D80l0003r10
+PARENT N80x160mg-009D80l0003r10 CHILD N80x160mg-009D100l0003r10
+PARENT N80x160mg-0087D20l0003r10 CHILD N80x160mg-0087D40l0003r10
+PARENT N80x160mg-0087D40l0003r10 CHILD N80x160mg-0087D60l0003r10
+PARENT N80x160mg-0087D60l0003r10 CHILD N80x160mg-0087D80l0003r10
+PARENT N80x160mg-0087D80l0003r10 CHILD N80x160mg-0087D100l0003r10
+PARENT N80x160mg-00833D20l0003r10 CHILD N80x160mg-00833D40l0003r10
+PARENT N80x160mg-00833D40l0003r10 CHILD N80x160mg-00833D60l0003r10
+PARENT N80x160mg-00833D60l0003r10 CHILD N80x160mg-00833D80l0003r10
+PARENT N80x160mg-00833D80l0003r10 CHILD N80x160mg-00833D100l0003r10
+PARENT N80x160mg-00722D20l0003r10 CHILD N80x160mg-00722D40l0003r10
+PARENT N80x160mg-00722D40l0003r10 CHILD N80x160mg-00722D60l0003r10
+PARENT N80x160mg-00722D60l0003r10 CHILD N80x160mg-00722D80l0003r10
+PARENT N80x160mg-00722D80l0003r10 CHILD N80x160mg-00722D100l0003r10
+PARENT N80x160mg-00611D20l0003r10 CHILD N80x160mg-00611D40l0003r10
+PARENT N80x160mg-00611D40l0003r10 CHILD N80x160mg-00611D60l0003r10
+PARENT N80x160mg-00611D60l0003r10 CHILD N80x160mg-00611D80l0003r10
+PARENT N80x160mg-00611D80l0003r10 CHILD N80x160mg-00611D100l0003r10
+PARENT N80x160mg-005D20l0003r10 CHILD N80x160mg-005D40l0003r10
+PARENT N80x160mg-005D40l0003r10 CHILD N80x160mg-005D60l0003r10
+PARENT N80x160mg-005D60l0003r10 CHILD N80x160mg-005D80l0003r10
+PARENT N80x160mg-005D80l0003r10 CHILD N80x160mg-005D100l0003r10
+PARENT N90x2025mg-01278D20l0003r10 CHILD N90x2025mg-01278D40l0003r10
+PARENT N90x2025mg-01278D40l0003r10 CHILD N90x2025mg-01278D60l0003r10
+PARENT N90x2025mg-01278D60l0003r10 CHILD N90x2025mg-01278D80l0003r10
+PARENT N90x2025mg-01278D80l0003r10 CHILD N90x2025mg-01278D100l0003r10
+PARENT N90x2025mg-01167D20l0003r10 CHILD N90x2025mg-01167D40l0003r10
+PARENT N90x2025mg-01167D40l0003r10 CHILD N90x2025mg-01167D60l0003r10
+PARENT N90x2025mg-01167D60l0003r10 CHILD N90x2025mg-01167D80l0003r10
+PARENT N90x2025mg-01167D80l0003r10 CHILD N90x2025mg-01167D100l0003r10
+PARENT N90x2025mg-01056D20l0003r10 CHILD N90x2025mg-01056D40l0003r10
+PARENT N90x2025mg-01056D40l0003r10 CHILD N90x2025mg-01056D60l0003r10
+PARENT N90x2025mg-01056D60l0003r10 CHILD N90x2025mg-01056D80l0003r10
+PARENT N90x2025mg-01056D80l0003r10 CHILD N90x2025mg-01056D100l0003r10
+PARENT N90x2025mg-00944D20l0003r10 CHILD N90x2025mg-00944D40l0003r10
+PARENT N90x2025mg-00944D40l0003r10 CHILD N90x2025mg-00944D60l0003r10
+PARENT N90x2025mg-00944D60l0003r10 CHILD N90x2025mg-00944D80l0003r10
+PARENT N90x2025mg-00944D80l0003r10 CHILD N90x2025mg-00944D100l0003r10
+PARENT N90x2025mg-009D20l0003r10 CHILD N90x2025mg-009D40l0003r10
+PARENT N90x2025mg-009D40l0003r10 CHILD N90x2025mg-009D60l0003r10
+PARENT N90x2025mg-009D60l0003r10 CHILD N90x2025mg-009D80l0003r10
+PARENT N90x2025mg-009D80l0003r10 CHILD N90x2025mg-009D100l0003r10
+PARENT N90x2025mg-0087D20l0003r10 CHILD N90x2025mg-0087D40l0003r10
+PARENT N90x2025mg-0087D40l0003r10 CHILD N90x2025mg-0087D60l0003r10
+PARENT N90x2025mg-0087D60l0003r10 CHILD N90x2025mg-0087D80l0003r10
+PARENT N90x2025mg-0087D80l0003r10 CHILD N90x2025mg-0087D100l0003r10
+PARENT N90x2025mg-00833D20l0003r10 CHILD N90x2025mg-00833D40l0003r10
+PARENT N90x2025mg-00833D40l0003r10 CHILD N90x2025mg-00833D60l0003r10
+PARENT N90x2025mg-00833D60l0003r10 CHILD N90x2025mg-00833D80l0003r10
+PARENT N90x2025mg-00833D80l0003r10 CHILD N90x2025mg-00833D100l0003r10
+PARENT N90x2025mg-00722D20l0003r10 CHILD N90x2025mg-00722D40l0003r10
+PARENT N90x2025mg-00722D40l0003r10 CHILD N90x2025mg-00722D60l0003r10
+PARENT N90x2025mg-00722D60l0003r10 CHILD N90x2025mg-00722D80l0003r10
+PARENT N90x2025mg-00722D80l0003r10 CHILD N90x2025mg-00722D100l0003r10
+PARENT N90x2025mg-00611D20l0003r10 CHILD N90x2025mg-00611D40l0003r10
+PARENT N90x2025mg-00611D40l0003r10 CHILD N90x2025mg-00611D60l0003r10
+PARENT N90x2025mg-00611D60l0003r10 CHILD N90x2025mg-00611D80l0003r10
+PARENT N90x2025mg-00611D80l0003r10 CHILD N90x2025mg-00611D100l0003r10
+PARENT N90x2025mg-005D20l0003r10 CHILD N90x2025mg-005D40l0003r10
+PARENT N90x2025mg-005D40l0003r10 CHILD N90x2025mg-005D60l0003r10
+PARENT N90x2025mg-005D60l0003r10 CHILD N90x2025mg-005D80l0003r10
+PARENT N90x2025mg-005D80l0003r10 CHILD N90x2025mg-005D100l0003r10
+PARENT N70x1225mg-015D20l0025r10 CHILD N70x1225mg-015D40l0025r10
+PARENT N70x1225mg-015D40l0025r10 CHILD N70x1225mg-015D60l0025r10
+PARENT N70x1225mg-015D60l0025r10 CHILD N70x1225mg-015D80l0025r10
+PARENT N70x1225mg-015D80l0025r10 CHILD N70x1225mg-015D100l0025r10
+PARENT N70x1225mg-01389D20l0025r10 CHILD N70x1225mg-01389D40l0025r10
+PARENT N70x1225mg-01389D40l0025r10 CHILD N70x1225mg-01389D60l0025r10
+PARENT N70x1225mg-01389D60l0025r10 CHILD N70x1225mg-01389D80l0025r10
+PARENT N70x1225mg-01389D80l0025r10 CHILD N70x1225mg-01389D100l0025r10
+PARENT N70x1225mg-01278D20l0025r10 CHILD N70x1225mg-01278D40l0025r10
+PARENT N70x1225mg-01278D40l0025r10 CHILD N70x1225mg-01278D60l0025r10
+PARENT N70x1225mg-01278D60l0025r10 CHILD N70x1225mg-01278D80l0025r10
+PARENT N70x1225mg-01278D80l0025r10 CHILD N70x1225mg-01278D100l0025r10
+PARENT N70x1225mg-01167D20l0025r10 CHILD N70x1225mg-01167D40l0025r10
+PARENT N70x1225mg-01167D40l0025r10 CHILD N70x1225mg-01167D60l0025r10
+PARENT N70x1225mg-01167D60l0025r10 CHILD N70x1225mg-01167D80l0025r10
+PARENT N70x1225mg-01167D80l0025r10 CHILD N70x1225mg-01167D100l0025r10
+PARENT N70x1225mg-01056D20l0025r10 CHILD N70x1225mg-01056D40l0025r10
+PARENT N70x1225mg-01056D40l0025r10 CHILD N70x1225mg-01056D60l0025r10
+PARENT N70x1225mg-01056D60l0025r10 CHILD N70x1225mg-01056D80l0025r10
+PARENT N70x1225mg-01056D80l0025r10 CHILD N70x1225mg-01056D100l0025r10
+PARENT N70x1225mg-00944D20l0025r10 CHILD N70x1225mg-00944D40l0025r10
+PARENT N70x1225mg-00944D40l0025r10 CHILD N70x1225mg-00944D60l0025r10
+PARENT N70x1225mg-00944D60l0025r10 CHILD N70x1225mg-00944D80l0025r10
+PARENT N70x1225mg-00944D80l0025r10 CHILD N70x1225mg-00944D100l0025r10
+PARENT N70x1225mg-00833D20l0025r10 CHILD N70x1225mg-00833D40l0025r10
+PARENT N70x1225mg-00833D40l0025r10 CHILD N70x1225mg-00833D60l0025r10
+PARENT N70x1225mg-00833D60l0025r10 CHILD N70x1225mg-00833D80l0025r10
+PARENT N70x1225mg-00833D80l0025r10 CHILD N70x1225mg-00833D100l0025r10
+PARENT N70x1225mg-00722D20l0025r10 CHILD N70x1225mg-00722D40l0025r10
+PARENT N70x1225mg-00722D40l0025r10 CHILD N70x1225mg-00722D60l0025r10
+PARENT N70x1225mg-00722D60l0025r10 CHILD N70x1225mg-00722D80l0025r10
+PARENT N70x1225mg-00722D80l0025r10 CHILD N70x1225mg-00722D100l0025r10
+PARENT N70x1225mg-00611D20l0025r10 CHILD N70x1225mg-00611D40l0025r10
+PARENT N70x1225mg-00611D40l0025r10 CHILD N70x1225mg-00611D60l0025r10
+PARENT N70x1225mg-00611D60l0025r10 CHILD N70x1225mg-00611D80l0025r10
+PARENT N70x1225mg-00611D80l0025r10 CHILD N70x1225mg-00611D100l0025r10
+PARENT N70x1225mg-005D20l0025r10 CHILD N70x1225mg-005D40l0025r10
+PARENT N70x1225mg-005D40l0025r10 CHILD N70x1225mg-005D60l0025r10
+PARENT N70x1225mg-005D60l0025r10 CHILD N70x1225mg-005D80l0025r10
+PARENT N70x1225mg-005D80l0025r10 CHILD N70x1225mg-005D100l0025r10
+PARENT N80x160mg-01278D20l0025r10 CHILD N80x160mg-01278D40l0025r10
+PARENT N80x160mg-01278D40l0025r10 CHILD N80x160mg-01278D60l0025r10
+PARENT N80x160mg-01278D60l0025r10 CHILD N80x160mg-01278D80l0025r10
+PARENT N80x160mg-01278D80l0025r10 CHILD N80x160mg-01278D100l0025r10
+PARENT N80x160mg-01167D20l0025r10 CHILD N80x160mg-01167D40l0025r10
+PARENT N80x160mg-01167D40l0025r10 CHILD N80x160mg-01167D60l0025r10
+PARENT N80x160mg-01167D60l0025r10 CHILD N80x160mg-01167D80l0025r10
+PARENT N80x160mg-01167D80l0025r10 CHILD N80x160mg-01167D100l0025r10
+PARENT N80x160mg-01056D20l0025r10 CHILD N80x160mg-01056D40l0025r10
+PARENT N80x160mg-01056D40l0025r10 CHILD N80x160mg-01056D60l0025r10
+PARENT N80x160mg-01056D60l0025r10 CHILD N80x160mg-01056D80l0025r10
+PARENT N80x160mg-01056D80l0025r10 CHILD N80x160mg-01056D100l0025r10
+PARENT N80x160mg-00944D20l0025r10 CHILD N80x160mg-00944D40l0025r10
+PARENT N80x160mg-00944D40l0025r10 CHILD N80x160mg-00944D60l0025r10
+PARENT N80x160mg-00944D60l0025r10 CHILD N80x160mg-00944D80l0025r10
+PARENT N80x160mg-00944D80l0025r10 CHILD N80x160mg-00944D100l0025r10
+PARENT N80x160mg-009D20l0025r10 CHILD N80x160mg-009D40l0025r10
+PARENT N80x160mg-009D40l0025r10 CHILD N80x160mg-009D60l0025r10
+PARENT N80x160mg-009D60l0025r10 CHILD N80x160mg-009D80l0025r10
+PARENT N80x160mg-009D80l0025r10 CHILD N80x160mg-009D100l0025r10
+PARENT N80x160mg-0087D20l0025r10 CHILD N80x160mg-0087D40l0025r10
+PARENT N80x160mg-0087D40l0025r10 CHILD N80x160mg-0087D60l0025r10
+PARENT N80x160mg-0087D60l0025r10 CHILD N80x160mg-0087D80l0025r10
+PARENT N80x160mg-0087D80l0025r10 CHILD N80x160mg-0087D100l0025r10
+PARENT N80x160mg-00833D20l0025r10 CHILD N80x160mg-00833D40l0025r10
+PARENT N80x160mg-00833D40l0025r10 CHILD N80x160mg-00833D60l0025r10
+PARENT N80x160mg-00833D60l0025r10 CHILD N80x160mg-00833D80l0025r10
+PARENT N80x160mg-00833D80l0025r10 CHILD N80x160mg-00833D100l0025r10
+PARENT N80x160mg-00722D20l0025r10 CHILD N80x160mg-00722D40l0025r10
+PARENT N80x160mg-00722D40l0025r10 CHILD N80x160mg-00722D60l0025r10
+PARENT N80x160mg-00722D60l0025r10 CHILD N80x160mg-00722D80l0025r10
+PARENT N80x160mg-00722D80l0025r10 CHILD N80x160mg-00722D100l0025r10
+PARENT N80x160mg-00611D20l0025r10 CHILD N80x160mg-00611D40l0025r10
+PARENT N80x160mg-00611D40l0025r10 CHILD N80x160mg-00611D60l0025r10
+PARENT N80x160mg-00611D60l0025r10 CHILD N80x160mg-00611D80l0025r10
+PARENT N80x160mg-00611D80l0025r10 CHILD N80x160mg-00611D100l0025r10
+PARENT N80x160mg-005D20l0025r10 CHILD N80x160mg-005D40l0025r10
+PARENT N80x160mg-005D40l0025r10 CHILD N80x160mg-005D60l0025r10
+PARENT N80x160mg-005D60l0025r10 CHILD N80x160mg-005D80l0025r10
+PARENT N80x160mg-005D80l0025r10 CHILD N80x160mg-005D100l0025r10
+PARENT N90x2025mg-01278D20l0025r10 CHILD N90x2025mg-01278D40l0025r10
+PARENT N90x2025mg-01278D40l0025r10 CHILD N90x2025mg-01278D60l0025r10
+PARENT N90x2025mg-01278D60l0025r10 CHILD N90x2025mg-01278D80l0025r10
+PARENT N90x2025mg-01278D80l0025r10 CHILD N90x2025mg-01278D100l0025r10
+PARENT N90x2025mg-01167D20l0025r10 CHILD N90x2025mg-01167D40l0025r10
+PARENT N90x2025mg-01167D40l0025r10 CHILD N90x2025mg-01167D60l0025r10
+PARENT N90x2025mg-01167D60l0025r10 CHILD N90x2025mg-01167D80l0025r10
+PARENT N90x2025mg-01167D80l0025r10 CHILD N90x2025mg-01167D100l0025r10
+PARENT N90x2025mg-01056D20l0025r10 CHILD N90x2025mg-01056D40l0025r10
+PARENT N90x2025mg-01056D40l0025r10 CHILD N90x2025mg-01056D60l0025r10
+PARENT N90x2025mg-01056D60l0025r10 CHILD N90x2025mg-01056D80l0025r10
+PARENT N90x2025mg-01056D80l0025r10 CHILD N90x2025mg-01056D100l0025r10
+PARENT N90x2025mg-00944D20l0025r10 CHILD N90x2025mg-00944D40l0025r10
+PARENT N90x2025mg-00944D40l0025r10 CHILD N90x2025mg-00944D60l0025r10
+PARENT N90x2025mg-00944D60l0025r10 CHILD N90x2025mg-00944D80l0025r10
+PARENT N90x2025mg-00944D80l0025r10 CHILD N90x2025mg-00944D100l0025r10
+PARENT N90x2025mg-009D20l0025r10 CHILD N90x2025mg-009D40l0025r10
+PARENT N90x2025mg-009D40l0025r10 CHILD N90x2025mg-009D60l0025r10
+PARENT N90x2025mg-009D60l0025r10 CHILD N90x2025mg-009D80l0025r10
+PARENT N90x2025mg-009D80l0025r10 CHILD N90x2025mg-009D100l0025r10
+PARENT N90x2025mg-0087D20l0025r10 CHILD N90x2025mg-0087D40l0025r10
+PARENT N90x2025mg-0087D40l0025r10 CHILD N90x2025mg-0087D60l0025r10
+PARENT N90x2025mg-0087D60l0025r10 CHILD N90x2025mg-0087D80l0025r10
+PARENT N90x2025mg-0087D80l0025r10 CHILD N90x2025mg-0087D100l0025r10
+PARENT N90x2025mg-00833D20l0025r10 CHILD N90x2025mg-00833D40l0025r10
+PARENT N90x2025mg-00833D40l0025r10 CHILD N90x2025mg-00833D60l0025r10
+PARENT N90x2025mg-00833D60l0025r10 CHILD N90x2025mg-00833D80l0025r10
+PARENT N90x2025mg-00833D80l0025r10 CHILD N90x2025mg-00833D100l0025r10
+PARENT N90x2025mg-00722D20l0025r10 CHILD N90x2025mg-00722D40l0025r10
+PARENT N90x2025mg-00722D40l0025r10 CHILD N90x2025mg-00722D60l0025r10
+PARENT N90x2025mg-00722D60l0025r10 CHILD N90x2025mg-00722D80l0025r10
+PARENT N90x2025mg-00722D80l0025r10 CHILD N90x2025mg-00722D100l0025r10
+PARENT N90x2025mg-00611D20l0025r10 CHILD N90x2025mg-00611D40l0025r10
+PARENT N90x2025mg-00611D40l0025r10 CHILD N90x2025mg-00611D60l0025r10
+PARENT N90x2025mg-00611D60l0025r10 CHILD N90x2025mg-00611D80l0025r10
+PARENT N90x2025mg-00611D80l0025r10 CHILD N90x2025mg-00611D100l0025r10
+PARENT N90x2025mg-005D20l0025r10 CHILD N90x2025mg-005D40l0025r10
+PARENT N90x2025mg-005D40l0025r10 CHILD N90x2025mg-005D60l0025r10
+PARENT N90x2025mg-005D60l0025r10 CHILD N90x2025mg-005D80l0025r10
+PARENT N90x2025mg-005D80l0025r10 CHILD N90x2025mg-005D100l0025r10

@@ -186,24 +186,30 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for total electric field vs m/g
 
-# mg_list = LinRange(-0.7, -0.4, 5)
-# N = 40
+# mg_list = LinRange(-0.3, -0.09, 10)
+# N = 10
 # d = 2
-# D = 60
+# D = 10
 # l_0 = 0.0
-# x = 10.0
+# x = 1.0
 # lambda = 100.0
 # acc = 10^(-8)
 # ms = 100
-# open("E_field_vs_mass.txt", "w") do f
-#     for mg in mg_list
-#         mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-#         _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
-#         E = sum(get_electric_field_configuration(N, l_0, mps)) + l_0
-#         EE = entanglement_entropy(mps, N)
-#         write(f, "$(mg),$(E),$(EE)\n")
-#     end
+# efd_list = []
+
+# for mg in mg_list
+#     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+#     _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+#     left_edge = floor(Int, N*0.48)
+#     right_edge = floor(Int, N*0.52)
+#     number_of_links = (right_edge-left_edge) + 1
+#     efl = get_electric_field_configuration(l_0, mps)
+#     middle_efl = efl[left_edge:right_edge]
+#     efd = real(sum(middle_efl))/number_of_links
+#     append!(efd_list, efd)
 # end
+
+# plot(mg_list, efd_list)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
