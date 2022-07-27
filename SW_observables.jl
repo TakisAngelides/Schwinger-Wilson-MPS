@@ -65,9 +65,9 @@ elseif choice == 5 # Electric field but avoiding the lattice edges
 
     left_edge = floor(Int, N*0.48)
     right_edge = floor(Int, N*0.52)
-    number_of_links = (right_edge-left_edge) + 1
-    efl = get_electric_field_configuration(l_0, mps)
-    middle_efl = efl[left_edge:right_edge]
+    efl = get_electric_field_configuration(l_0, mps) # Electric field list
+    middle_efl = efl[left_edge:right_edge] # Both are inclusive in Julia and if its [5:5] it will still take the element 5
+    number_of_links = length(middle_efl)
     ef = real(sum(middle_efl))
     
     text_file_name = "/Electric Field/N_$(N)_x_$(x)_D_$(D)_l0_$(l_0)_mg_$(mg)_ms_$(ms)_acc_$(acc)_lam_$(lambda)_r_$(r).txt"
