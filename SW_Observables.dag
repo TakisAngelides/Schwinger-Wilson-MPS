@@ -1,101 +1,601 @@
 CONFIG dagman.config
-JOB N64x100mg-01D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-01D20l00125r10choice5 N="64" x="10.0" mg="-0.1" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-01D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-01D40l00125r10choice5 N="64" x="10.0" mg="-0.1" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-01D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-01D60l00125r10choice5 N="64" x="10.0" mg="-0.1" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-01D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-01D80l00125r10choice5 N="64" x="10.0" mg="-0.1" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-01D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-01D100l00125r10choice5 N="64" x="10.0" mg="-0.1" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00995D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00995D20l00125r10choice5 N="64" x="10.0" mg="-0.0995" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00995D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00995D40l00125r10choice5 N="64" x="10.0" mg="-0.0995" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00995D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00995D60l00125r10choice5 N="64" x="10.0" mg="-0.0995" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00995D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00995D80l00125r10choice5 N="64" x="10.0" mg="-0.0995" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00995D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00995D100l00125r10choice5 N="64" x="10.0" mg="-0.0995" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0099D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0099D20l00125r10choice5 N="64" x="10.0" mg="-0.099" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0099D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0099D40l00125r10choice5 N="64" x="10.0" mg="-0.099" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0099D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0099D60l00125r10choice5 N="64" x="10.0" mg="-0.099" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0099D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0099D80l00125r10choice5 N="64" x="10.0" mg="-0.099" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0099D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0099D100l00125r10choice5 N="64" x="10.0" mg="-0.099" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00985D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00985D20l00125r10choice5 N="64" x="10.0" mg="-0.0985" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00985D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00985D40l00125r10choice5 N="64" x="10.0" mg="-0.0985" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00985D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00985D60l00125r10choice5 N="64" x="10.0" mg="-0.0985" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00985D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00985D80l00125r10choice5 N="64" x="10.0" mg="-0.0985" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00985D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00985D100l00125r10choice5 N="64" x="10.0" mg="-0.0985" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0098D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0098D20l00125r10choice5 N="64" x="10.0" mg="-0.098" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0098D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0098D40l00125r10choice5 N="64" x="10.0" mg="-0.098" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0098D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0098D60l00125r10choice5 N="64" x="10.0" mg="-0.098" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0098D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0098D80l00125r10choice5 N="64" x="10.0" mg="-0.098" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0098D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0098D100l00125r10choice5 N="64" x="10.0" mg="-0.098" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00975D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00975D20l00125r10choice5 N="64" x="10.0" mg="-0.0975" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00975D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00975D40l00125r10choice5 N="64" x="10.0" mg="-0.0975" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00975D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00975D60l00125r10choice5 N="64" x="10.0" mg="-0.0975" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00975D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00975D80l00125r10choice5 N="64" x="10.0" mg="-0.0975" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00975D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00975D100l00125r10choice5 N="64" x="10.0" mg="-0.0975" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0097D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0097D20l00125r10choice5 N="64" x="10.0" mg="-0.097" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0097D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0097D40l00125r10choice5 N="64" x="10.0" mg="-0.097" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0097D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0097D60l00125r10choice5 N="64" x="10.0" mg="-0.097" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0097D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0097D80l00125r10choice5 N="64" x="10.0" mg="-0.097" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0097D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0097D100l00125r10choice5 N="64" x="10.0" mg="-0.097" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00965D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00965D20l00125r10choice5 N="64" x="10.0" mg="-0.0965" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00965D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00965D40l00125r10choice5 N="64" x="10.0" mg="-0.0965" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00965D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00965D60l00125r10choice5 N="64" x="10.0" mg="-0.0965" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00965D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00965D80l00125r10choice5 N="64" x="10.0" mg="-0.0965" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00965D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00965D100l00125r10choice5 N="64" x="10.0" mg="-0.0965" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0096D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0096D20l00125r10choice5 N="64" x="10.0" mg="-0.096" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0096D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0096D40l00125r10choice5 N="64" x="10.0" mg="-0.096" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0096D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0096D60l00125r10choice5 N="64" x="10.0" mg="-0.096" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0096D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0096D80l00125r10choice5 N="64" x="10.0" mg="-0.096" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-0096D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-0096D100l00125r10choice5 N="64" x="10.0" mg="-0.096" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00955D20l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00955D20l00125r10choice5 N="64" x="10.0" mg="-0.0955" D="20" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00955D40l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00955D40l00125r10choice5 N="64" x="10.0" mg="-0.0955" D="40" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00955D60l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00955D60l00125r10choice5 N="64" x="10.0" mg="-0.0955" D="60" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00955D80l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00955D80l00125r10choice5 N="64" x="10.0" mg="-0.0955" D="80" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
-JOB N64x100mg-00955D100l00125r10choice5 SW_Observables.sub
-VARS N64x100mg-00955D100l00125r10choice5 N="64" x="10.0" mg="-0.0955" D="100" l_0="0.125" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D20l0003r10choice5 N="70" x="12.25" mg="-0.15" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D40l0003r10choice5 N="70" x="12.25" mg="-0.15" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D60l0003r10choice5 N="70" x="12.25" mg="-0.15" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D80l0003r10choice5 N="70" x="12.25" mg="-0.15" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D100l0003r10choice5 N="70" x="12.25" mg="-0.15" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D20l0003r10choice5 N="70" x="12.25" mg="-0.1389" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D40l0003r10choice5 N="70" x="12.25" mg="-0.1389" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D60l0003r10choice5 N="70" x="12.25" mg="-0.1389" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D80l0003r10choice5 N="70" x="12.25" mg="-0.1389" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D100l0003r10choice5 N="70" x="12.25" mg="-0.1389" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D20l0003r10choice5 N="70" x="12.25" mg="-0.1278" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D40l0003r10choice5 N="70" x="12.25" mg="-0.1278" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D60l0003r10choice5 N="70" x="12.25" mg="-0.1278" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D80l0003r10choice5 N="70" x="12.25" mg="-0.1278" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D100l0003r10choice5 N="70" x="12.25" mg="-0.1278" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D20l0003r10choice5 N="70" x="12.25" mg="-0.1167" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D40l0003r10choice5 N="70" x="12.25" mg="-0.1167" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D60l0003r10choice5 N="70" x="12.25" mg="-0.1167" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D80l0003r10choice5 N="70" x="12.25" mg="-0.1167" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D100l0003r10choice5 N="70" x="12.25" mg="-0.1167" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D20l0003r10choice5 N="70" x="12.25" mg="-0.1056" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D40l0003r10choice5 N="70" x="12.25" mg="-0.1056" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D60l0003r10choice5 N="70" x="12.25" mg="-0.1056" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D80l0003r10choice5 N="70" x="12.25" mg="-0.1056" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D100l0003r10choice5 N="70" x="12.25" mg="-0.1056" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D20l0003r10choice5 N="70" x="12.25" mg="-0.0944" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D40l0003r10choice5 N="70" x="12.25" mg="-0.0944" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D60l0003r10choice5 N="70" x="12.25" mg="-0.0944" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D80l0003r10choice5 N="70" x="12.25" mg="-0.0944" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D100l0003r10choice5 N="70" x="12.25" mg="-0.0944" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D20l0003r10choice5 N="70" x="12.25" mg="-0.0833" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D40l0003r10choice5 N="70" x="12.25" mg="-0.0833" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D60l0003r10choice5 N="70" x="12.25" mg="-0.0833" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D80l0003r10choice5 N="70" x="12.25" mg="-0.0833" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D100l0003r10choice5 N="70" x="12.25" mg="-0.0833" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D20l0003r10choice5 N="70" x="12.25" mg="-0.0722" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D40l0003r10choice5 N="70" x="12.25" mg="-0.0722" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D60l0003r10choice5 N="70" x="12.25" mg="-0.0722" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D80l0003r10choice5 N="70" x="12.25" mg="-0.0722" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D100l0003r10choice5 N="70" x="12.25" mg="-0.0722" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D20l0003r10choice5 N="70" x="12.25" mg="-0.0611" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D40l0003r10choice5 N="70" x="12.25" mg="-0.0611" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D60l0003r10choice5 N="70" x="12.25" mg="-0.0611" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D80l0003r10choice5 N="70" x="12.25" mg="-0.0611" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D100l0003r10choice5 N="70" x="12.25" mg="-0.0611" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D20l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D20l0003r10choice5 N="70" x="12.25" mg="-0.05" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D40l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D40l0003r10choice5 N="70" x="12.25" mg="-0.05" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D60l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D60l0003r10choice5 N="70" x="12.25" mg="-0.05" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D80l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D80l0003r10choice5 N="70" x="12.25" mg="-0.05" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D100l0003r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D100l0003r10choice5 N="70" x="12.25" mg="-0.05" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D20l0003r10choice5 N="80" x="16.0" mg="-0.1278" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D40l0003r10choice5 N="80" x="16.0" mg="-0.1278" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D60l0003r10choice5 N="80" x="16.0" mg="-0.1278" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D80l0003r10choice5 N="80" x="16.0" mg="-0.1278" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D100l0003r10choice5 N="80" x="16.0" mg="-0.1278" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D20l0003r10choice5 N="80" x="16.0" mg="-0.1167" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D40l0003r10choice5 N="80" x="16.0" mg="-0.1167" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D60l0003r10choice5 N="80" x="16.0" mg="-0.1167" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D80l0003r10choice5 N="80" x="16.0" mg="-0.1167" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D100l0003r10choice5 N="80" x="16.0" mg="-0.1167" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D20l0003r10choice5 N="80" x="16.0" mg="-0.1056" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D40l0003r10choice5 N="80" x="16.0" mg="-0.1056" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D60l0003r10choice5 N="80" x="16.0" mg="-0.1056" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D80l0003r10choice5 N="80" x="16.0" mg="-0.1056" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D100l0003r10choice5 N="80" x="16.0" mg="-0.1056" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D20l0003r10choice5 N="80" x="16.0" mg="-0.0944" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D40l0003r10choice5 N="80" x="16.0" mg="-0.0944" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D60l0003r10choice5 N="80" x="16.0" mg="-0.0944" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D80l0003r10choice5 N="80" x="16.0" mg="-0.0944" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D100l0003r10choice5 N="80" x="16.0" mg="-0.0944" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-009D20l0003r10choice5 N="80" x="16.0" mg="-0.09" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-009D40l0003r10choice5 N="80" x="16.0" mg="-0.09" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-009D60l0003r10choice5 N="80" x="16.0" mg="-0.09" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-009D80l0003r10choice5 N="80" x="16.0" mg="-0.09" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-009D100l0003r10choice5 N="80" x="16.0" mg="-0.09" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D20l0003r10choice5 N="80" x="16.0" mg="-0.087" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D40l0003r10choice5 N="80" x="16.0" mg="-0.087" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D60l0003r10choice5 N="80" x="16.0" mg="-0.087" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D80l0003r10choice5 N="80" x="16.0" mg="-0.087" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D100l0003r10choice5 N="80" x="16.0" mg="-0.087" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D20l0003r10choice5 N="80" x="16.0" mg="-0.0833" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D40l0003r10choice5 N="80" x="16.0" mg="-0.0833" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D60l0003r10choice5 N="80" x="16.0" mg="-0.0833" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D80l0003r10choice5 N="80" x="16.0" mg="-0.0833" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D100l0003r10choice5 N="80" x="16.0" mg="-0.0833" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D20l0003r10choice5 N="80" x="16.0" mg="-0.0722" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D40l0003r10choice5 N="80" x="16.0" mg="-0.0722" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D60l0003r10choice5 N="80" x="16.0" mg="-0.0722" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D80l0003r10choice5 N="80" x="16.0" mg="-0.0722" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D100l0003r10choice5 N="80" x="16.0" mg="-0.0722" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D20l0003r10choice5 N="80" x="16.0" mg="-0.0611" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D40l0003r10choice5 N="80" x="16.0" mg="-0.0611" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D60l0003r10choice5 N="80" x="16.0" mg="-0.0611" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D80l0003r10choice5 N="80" x="16.0" mg="-0.0611" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D100l0003r10choice5 N="80" x="16.0" mg="-0.0611" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D20l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-005D20l0003r10choice5 N="80" x="16.0" mg="-0.05" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D40l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-005D40l0003r10choice5 N="80" x="16.0" mg="-0.05" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D60l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-005D60l0003r10choice5 N="80" x="16.0" mg="-0.05" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D80l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-005D80l0003r10choice5 N="80" x="16.0" mg="-0.05" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D100l0003r10choice5 SW_Observables.sub
+VARS N80x160mg-005D100l0003r10choice5 N="80" x="16.0" mg="-0.05" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D20l0003r10choice5 N="90" x="20.25" mg="-0.1278" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D40l0003r10choice5 N="90" x="20.25" mg="-0.1278" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D60l0003r10choice5 N="90" x="20.25" mg="-0.1278" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D80l0003r10choice5 N="90" x="20.25" mg="-0.1278" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D100l0003r10choice5 N="90" x="20.25" mg="-0.1278" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D20l0003r10choice5 N="90" x="20.25" mg="-0.1167" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D40l0003r10choice5 N="90" x="20.25" mg="-0.1167" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D60l0003r10choice5 N="90" x="20.25" mg="-0.1167" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D80l0003r10choice5 N="90" x="20.25" mg="-0.1167" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D100l0003r10choice5 N="90" x="20.25" mg="-0.1167" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D20l0003r10choice5 N="90" x="20.25" mg="-0.1056" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D40l0003r10choice5 N="90" x="20.25" mg="-0.1056" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D60l0003r10choice5 N="90" x="20.25" mg="-0.1056" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D80l0003r10choice5 N="90" x="20.25" mg="-0.1056" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D100l0003r10choice5 N="90" x="20.25" mg="-0.1056" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D20l0003r10choice5 N="90" x="20.25" mg="-0.0944" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D40l0003r10choice5 N="90" x="20.25" mg="-0.0944" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D60l0003r10choice5 N="90" x="20.25" mg="-0.0944" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D80l0003r10choice5 N="90" x="20.25" mg="-0.0944" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D100l0003r10choice5 N="90" x="20.25" mg="-0.0944" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D20l0003r10choice5 N="90" x="20.25" mg="-0.09" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D40l0003r10choice5 N="90" x="20.25" mg="-0.09" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D60l0003r10choice5 N="90" x="20.25" mg="-0.09" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D80l0003r10choice5 N="90" x="20.25" mg="-0.09" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D100l0003r10choice5 N="90" x="20.25" mg="-0.09" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D20l0003r10choice5 N="90" x="20.25" mg="-0.087" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D40l0003r10choice5 N="90" x="20.25" mg="-0.087" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D60l0003r10choice5 N="90" x="20.25" mg="-0.087" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D80l0003r10choice5 N="90" x="20.25" mg="-0.087" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D100l0003r10choice5 N="90" x="20.25" mg="-0.087" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D20l0003r10choice5 N="90" x="20.25" mg="-0.0833" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D40l0003r10choice5 N="90" x="20.25" mg="-0.0833" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D60l0003r10choice5 N="90" x="20.25" mg="-0.0833" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D80l0003r10choice5 N="90" x="20.25" mg="-0.0833" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D100l0003r10choice5 N="90" x="20.25" mg="-0.0833" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D20l0003r10choice5 N="90" x="20.25" mg="-0.0722" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D40l0003r10choice5 N="90" x="20.25" mg="-0.0722" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D60l0003r10choice5 N="90" x="20.25" mg="-0.0722" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D80l0003r10choice5 N="90" x="20.25" mg="-0.0722" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D100l0003r10choice5 N="90" x="20.25" mg="-0.0722" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D20l0003r10choice5 N="90" x="20.25" mg="-0.0611" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D40l0003r10choice5 N="90" x="20.25" mg="-0.0611" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D60l0003r10choice5 N="90" x="20.25" mg="-0.0611" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D80l0003r10choice5 N="90" x="20.25" mg="-0.0611" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D100l0003r10choice5 N="90" x="20.25" mg="-0.0611" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D20l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D20l0003r10choice5 N="90" x="20.25" mg="-0.05" D="20" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D40l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D40l0003r10choice5 N="90" x="20.25" mg="-0.05" D="40" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D60l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D60l0003r10choice5 N="90" x="20.25" mg="-0.05" D="60" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D80l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D80l0003r10choice5 N="90" x="20.25" mg="-0.05" D="80" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D100l0003r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D100l0003r10choice5 N="90" x="20.25" mg="-0.05" D="100" l_0="0.03" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D20l0025r10choice5 N="70" x="12.25" mg="-0.15" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D40l0025r10choice5 N="70" x="12.25" mg="-0.15" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D60l0025r10choice5 N="70" x="12.25" mg="-0.15" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D80l0025r10choice5 N="70" x="12.25" mg="-0.15" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-015D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-015D100l0025r10choice5 N="70" x="12.25" mg="-0.15" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D20l0025r10choice5 N="70" x="12.25" mg="-0.1389" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D40l0025r10choice5 N="70" x="12.25" mg="-0.1389" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D60l0025r10choice5 N="70" x="12.25" mg="-0.1389" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D80l0025r10choice5 N="70" x="12.25" mg="-0.1389" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01389D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01389D100l0025r10choice5 N="70" x="12.25" mg="-0.1389" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D20l0025r10choice5 N="70" x="12.25" mg="-0.1278" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D40l0025r10choice5 N="70" x="12.25" mg="-0.1278" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D60l0025r10choice5 N="70" x="12.25" mg="-0.1278" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D80l0025r10choice5 N="70" x="12.25" mg="-0.1278" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01278D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01278D100l0025r10choice5 N="70" x="12.25" mg="-0.1278" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D20l0025r10choice5 N="70" x="12.25" mg="-0.1167" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D40l0025r10choice5 N="70" x="12.25" mg="-0.1167" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D60l0025r10choice5 N="70" x="12.25" mg="-0.1167" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D80l0025r10choice5 N="70" x="12.25" mg="-0.1167" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01167D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01167D100l0025r10choice5 N="70" x="12.25" mg="-0.1167" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D20l0025r10choice5 N="70" x="12.25" mg="-0.1056" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D40l0025r10choice5 N="70" x="12.25" mg="-0.1056" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D60l0025r10choice5 N="70" x="12.25" mg="-0.1056" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D80l0025r10choice5 N="70" x="12.25" mg="-0.1056" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-01056D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-01056D100l0025r10choice5 N="70" x="12.25" mg="-0.1056" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D20l0025r10choice5 N="70" x="12.25" mg="-0.0944" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D40l0025r10choice5 N="70" x="12.25" mg="-0.0944" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D60l0025r10choice5 N="70" x="12.25" mg="-0.0944" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D80l0025r10choice5 N="70" x="12.25" mg="-0.0944" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00944D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00944D100l0025r10choice5 N="70" x="12.25" mg="-0.0944" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D20l0025r10choice5 N="70" x="12.25" mg="-0.0833" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D40l0025r10choice5 N="70" x="12.25" mg="-0.0833" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D60l0025r10choice5 N="70" x="12.25" mg="-0.0833" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D80l0025r10choice5 N="70" x="12.25" mg="-0.0833" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00833D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00833D100l0025r10choice5 N="70" x="12.25" mg="-0.0833" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D20l0025r10choice5 N="70" x="12.25" mg="-0.0722" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D40l0025r10choice5 N="70" x="12.25" mg="-0.0722" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D60l0025r10choice5 N="70" x="12.25" mg="-0.0722" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D80l0025r10choice5 N="70" x="12.25" mg="-0.0722" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00722D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00722D100l0025r10choice5 N="70" x="12.25" mg="-0.0722" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D20l0025r10choice5 N="70" x="12.25" mg="-0.0611" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D40l0025r10choice5 N="70" x="12.25" mg="-0.0611" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D60l0025r10choice5 N="70" x="12.25" mg="-0.0611" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D80l0025r10choice5 N="70" x="12.25" mg="-0.0611" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-00611D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-00611D100l0025r10choice5 N="70" x="12.25" mg="-0.0611" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D20l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D20l0025r10choice5 N="70" x="12.25" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D40l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D40l0025r10choice5 N="70" x="12.25" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D60l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D60l0025r10choice5 N="70" x="12.25" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D80l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D80l0025r10choice5 N="70" x="12.25" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N70x1225mg-005D100l0025r10choice5 SW_Observables.sub
+VARS N70x1225mg-005D100l0025r10choice5 N="70" x="12.25" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D20l0025r10choice5 N="80" x="16.0" mg="-0.1278" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D40l0025r10choice5 N="80" x="16.0" mg="-0.1278" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D60l0025r10choice5 N="80" x="16.0" mg="-0.1278" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D80l0025r10choice5 N="80" x="16.0" mg="-0.1278" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01278D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01278D100l0025r10choice5 N="80" x="16.0" mg="-0.1278" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D20l0025r10choice5 N="80" x="16.0" mg="-0.1167" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D40l0025r10choice5 N="80" x="16.0" mg="-0.1167" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D60l0025r10choice5 N="80" x="16.0" mg="-0.1167" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D80l0025r10choice5 N="80" x="16.0" mg="-0.1167" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01167D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01167D100l0025r10choice5 N="80" x="16.0" mg="-0.1167" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D20l0025r10choice5 N="80" x="16.0" mg="-0.1056" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D40l0025r10choice5 N="80" x="16.0" mg="-0.1056" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D60l0025r10choice5 N="80" x="16.0" mg="-0.1056" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D80l0025r10choice5 N="80" x="16.0" mg="-0.1056" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-01056D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-01056D100l0025r10choice5 N="80" x="16.0" mg="-0.1056" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D20l0025r10choice5 N="80" x="16.0" mg="-0.0944" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D40l0025r10choice5 N="80" x="16.0" mg="-0.0944" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D60l0025r10choice5 N="80" x="16.0" mg="-0.0944" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D80l0025r10choice5 N="80" x="16.0" mg="-0.0944" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00944D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00944D100l0025r10choice5 N="80" x="16.0" mg="-0.0944" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-009D20l0025r10choice5 N="80" x="16.0" mg="-0.09" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-009D40l0025r10choice5 N="80" x="16.0" mg="-0.09" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-009D60l0025r10choice5 N="80" x="16.0" mg="-0.09" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-009D80l0025r10choice5 N="80" x="16.0" mg="-0.09" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-009D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-009D100l0025r10choice5 N="80" x="16.0" mg="-0.09" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D20l0025r10choice5 N="80" x="16.0" mg="-0.087" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D40l0025r10choice5 N="80" x="16.0" mg="-0.087" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D60l0025r10choice5 N="80" x="16.0" mg="-0.087" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D80l0025r10choice5 N="80" x="16.0" mg="-0.087" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-0087D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-0087D100l0025r10choice5 N="80" x="16.0" mg="-0.087" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D20l0025r10choice5 N="80" x="16.0" mg="-0.0833" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D40l0025r10choice5 N="80" x="16.0" mg="-0.0833" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D60l0025r10choice5 N="80" x="16.0" mg="-0.0833" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D80l0025r10choice5 N="80" x="16.0" mg="-0.0833" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00833D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00833D100l0025r10choice5 N="80" x="16.0" mg="-0.0833" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D20l0025r10choice5 N="80" x="16.0" mg="-0.0722" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D40l0025r10choice5 N="80" x="16.0" mg="-0.0722" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D60l0025r10choice5 N="80" x="16.0" mg="-0.0722" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D80l0025r10choice5 N="80" x="16.0" mg="-0.0722" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00722D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00722D100l0025r10choice5 N="80" x="16.0" mg="-0.0722" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D20l0025r10choice5 N="80" x="16.0" mg="-0.0611" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D40l0025r10choice5 N="80" x="16.0" mg="-0.0611" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D60l0025r10choice5 N="80" x="16.0" mg="-0.0611" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D80l0025r10choice5 N="80" x="16.0" mg="-0.0611" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-00611D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-00611D100l0025r10choice5 N="80" x="16.0" mg="-0.0611" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D20l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-005D20l0025r10choice5 N="80" x="16.0" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D40l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-005D40l0025r10choice5 N="80" x="16.0" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D60l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-005D60l0025r10choice5 N="80" x="16.0" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D80l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-005D80l0025r10choice5 N="80" x="16.0" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N80x160mg-005D100l0025r10choice5 SW_Observables.sub
+VARS N80x160mg-005D100l0025r10choice5 N="80" x="16.0" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D20l0025r10choice5 N="90" x="20.25" mg="-0.1278" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D40l0025r10choice5 N="90" x="20.25" mg="-0.1278" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D60l0025r10choice5 N="90" x="20.25" mg="-0.1278" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D80l0025r10choice5 N="90" x="20.25" mg="-0.1278" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01278D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01278D100l0025r10choice5 N="90" x="20.25" mg="-0.1278" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D20l0025r10choice5 N="90" x="20.25" mg="-0.1167" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D40l0025r10choice5 N="90" x="20.25" mg="-0.1167" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D60l0025r10choice5 N="90" x="20.25" mg="-0.1167" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D80l0025r10choice5 N="90" x="20.25" mg="-0.1167" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01167D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01167D100l0025r10choice5 N="90" x="20.25" mg="-0.1167" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D20l0025r10choice5 N="90" x="20.25" mg="-0.1056" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D40l0025r10choice5 N="90" x="20.25" mg="-0.1056" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D60l0025r10choice5 N="90" x="20.25" mg="-0.1056" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D80l0025r10choice5 N="90" x="20.25" mg="-0.1056" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-01056D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-01056D100l0025r10choice5 N="90" x="20.25" mg="-0.1056" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D20l0025r10choice5 N="90" x="20.25" mg="-0.0944" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D40l0025r10choice5 N="90" x="20.25" mg="-0.0944" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D60l0025r10choice5 N="90" x="20.25" mg="-0.0944" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D80l0025r10choice5 N="90" x="20.25" mg="-0.0944" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00944D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00944D100l0025r10choice5 N="90" x="20.25" mg="-0.0944" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D20l0025r10choice5 N="90" x="20.25" mg="-0.09" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D40l0025r10choice5 N="90" x="20.25" mg="-0.09" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D60l0025r10choice5 N="90" x="20.25" mg="-0.09" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D80l0025r10choice5 N="90" x="20.25" mg="-0.09" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-009D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-009D100l0025r10choice5 N="90" x="20.25" mg="-0.09" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D20l0025r10choice5 N="90" x="20.25" mg="-0.087" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D40l0025r10choice5 N="90" x="20.25" mg="-0.087" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D60l0025r10choice5 N="90" x="20.25" mg="-0.087" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D80l0025r10choice5 N="90" x="20.25" mg="-0.087" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-0087D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-0087D100l0025r10choice5 N="90" x="20.25" mg="-0.087" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D20l0025r10choice5 N="90" x="20.25" mg="-0.0833" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D40l0025r10choice5 N="90" x="20.25" mg="-0.0833" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D60l0025r10choice5 N="90" x="20.25" mg="-0.0833" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D80l0025r10choice5 N="90" x="20.25" mg="-0.0833" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00833D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00833D100l0025r10choice5 N="90" x="20.25" mg="-0.0833" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D20l0025r10choice5 N="90" x="20.25" mg="-0.0722" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D40l0025r10choice5 N="90" x="20.25" mg="-0.0722" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D60l0025r10choice5 N="90" x="20.25" mg="-0.0722" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D80l0025r10choice5 N="90" x="20.25" mg="-0.0722" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00722D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00722D100l0025r10choice5 N="90" x="20.25" mg="-0.0722" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D20l0025r10choice5 N="90" x="20.25" mg="-0.0611" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D40l0025r10choice5 N="90" x="20.25" mg="-0.0611" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D60l0025r10choice5 N="90" x="20.25" mg="-0.0611" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D80l0025r10choice5 N="90" x="20.25" mg="-0.0611" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-00611D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-00611D100l0025r10choice5 N="90" x="20.25" mg="-0.0611" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D20l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D20l0025r10choice5 N="90" x="20.25" mg="-0.05" D="20" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D40l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D40l0025r10choice5 N="90" x="20.25" mg="-0.05" D="40" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D60l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D60l0025r10choice5 N="90" x="20.25" mg="-0.05" D="60" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D80l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D80l0025r10choice5 N="90" x="20.25" mg="-0.05" D="80" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
+JOB N90x2025mg-005D100l0025r10choice5 SW_Observables.sub
+VARS N90x2025mg-005D100l0025r10choice5 N="90" x="20.25" mg="-0.05" D="100" l_0="0.25" lambda="100.0" acc="1e-08" ms="100" r="1.0" choice="5"
