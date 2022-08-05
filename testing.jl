@@ -533,8 +533,8 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Checking if the Schwinger Wilson spectrum is the same for theta = 0 m/g = -0.125 and theta = pi m/g = 0.125
 
-# mpo_1 = get_Schwinger_Wilson_MPO(4, 0.0, 1.0, 100.0, -0.125)
-# mpo_2 = get_Schwinger_Wilson_MPO(4, 0.5, 2.0, 100.0, 0.125)
+# mpo_1 = get_Schwinger_Wilson_general_r_MPO(4, 1.0, 1.0, 10.0, 0.0, 1.0)
+# mpo_2 = get_Schwinger_Wilson_general_r_MPO(4, -1.0, 1.0, 10.0, 0.0, 1.0)
 
 # matrix_1 = mpo_to_matrix(mpo_1)
 # matrix_2 = mpo_to_matrix(mpo_2)
