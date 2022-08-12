@@ -549,63 +549,84 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
+# Testing the Ising model
+
+# N = 10
+# J = -1.0
+# g_z = -0.1
+# g_x = 1.5
+# ns = 5
+# d = 2
+# acc = 1E-10
+# D = 50
+
+# mpo = get_Ising_MPO(N, J, g_x, g_z)
+# E,_,_ = variational_ground_state_MPS(N, d, D, mpo, acc, ns)
+# println(E)
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
 # Testing the KrylovKit eigsolve as well as general r = 1.0 MPO and original r = 1 MPO and the new way of getting an updated site
 
-function wrap_it()
+# function wrap_it()
 
-    N = 4
-    D = 10
-    x = 1.0
-    ms = 100
-    acc = 10^(-8)
-    lambda = 10.0
-    l_0 = 0.125
-    d = 2
-    mg = 0.125
+#     N = 4
+#     D = 20
+#     x = 1.0
+#     ms = 100
+#     acc = 10^(-8)
+#     lambda = 10.0
+#     l_0 = 0.0
+#     d = 2
+#     mg = 0.0
 
-    mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
+#     mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
 
-    mpo_matrix = mpo_to_matrix(mpo_gen)
+#     # mpo_matrix = mpo_to_matrix(mpo_gen)
 
-    evals, _ = eigsolve(mpo_matrix, 1, :SR)
+#     # evals, _ = eigsolve(mpo_matrix, 1, :SR)
 
-    display(evals)
+#     # display(evals)
     
-    E_gen, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_gen, acc, ms)
+#     E_gen, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo_gen, acc, ms)
     
-    println(E_gen)
-    
-    # A = rand(3, 3)
-    # function f(m, x)
-    #     print("F")
-    #     return m*x
-    # end
-    # init = rand(3)
-    # e, v = eigsolve(v -> f(A, v), init, 1, :SR)
-    # display(e)
-    # display(v)
-end
+#     # for t in mps
+#     #     display(size(t))
+#     # end
 
-function wrap_it_new()
+#     println(E_gen)
     
-    N = 4
-    D = 6
-    x = 1.0
-    ms = 100
-    acc = 10^(-8)
-    lambda = 10.0
-    l_0 = 0.125
-    d = 2
-    mg = 0.125
+#     # A = rand(3, 3)
+#     # function f(m, x)
+#     #     print("F")
+#     #     return m*x
+#     # end
+#     # init = rand(3)
+#     # e, v = eigsolve(v -> f(A, v), init, 1, :SR)
+#     # display(e)
+#     # display(v)
+# end
 
-    mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
+# function wrap_it_new()
     
-    E_gen_new, _, _ = variational_ground_state_MPS_new(2*N, d, D, mpo_gen, acc, ms)
-    
-    # println(E_gen_new, " New version")
-end
+#     N = 4
+#     D = 6
+#     x = 1.0
+#     ms = 100
+#     acc = 10^(-8)
+#     lambda = 10.0
+#     l_0 = 0.125
+#     d = 2
+#     mg = 0.125
 
-wrap_it() # force compilation
+#     mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
+    
+#     E_gen_new, _, _ = variational_ground_state_MPS_new(2*N, d, D, mpo_gen, acc, ms)
+    
+#     # println(E_gen_new, " New version")
+# end
+
+# wrap_it() # force compilation
 # wrap_it_new() # force compilation
 
 # Profile.clear()
