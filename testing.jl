@@ -549,25 +549,80 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
-# Testing the KrylovKit eigsolve as well as general r = 1.0 MPO and original r = 1 MPO
+# Testing the KrylovKit eigsolve as well as general r = 1.0 MPO and original r = 1 MPO and the new way of getting an updated site
 
-# N = 10
-# D = 20
-# x = 1.0
-# ms = 100
-# acc = 10^(-8)
-# lambda = 100.0
-# l_0 = 0.5
-# d = 2
-# mg = 0.125
+function wrap_it()
 
-# mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
-# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+    N = 4
+    D = 10
+    x = 1.0
+    ms = 100
+    acc = 10^(-8)
+    lambda = 10.0
+    l_0 = 0.125
+    d = 2
+    mg = 0.125
 
-# E_gen, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_gen, acc, ms)
-# E, _, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+    mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
 
-# println(E_gen, " -- ", E)
+    mpo_matrix = mpo_to_matrix(mpo_gen)
+
+    evals, _ = eigsolve(mpo_matrix, 1, :SR)
+
+    display(evals)
+    
+    E_gen, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_gen, acc, ms)
+    
+    println(E_gen)
+    
+    # A = rand(3, 3)
+    # function f(m, x)
+    #     print("F")
+    #     return m*x
+    # end
+    # init = rand(3)
+    # e, v = eigsolve(v -> f(A, v), init, 1, :SR)
+    # display(e)
+    # display(v)
+end
+
+function wrap_it_new()
+    
+    N = 4
+    D = 6
+    x = 1.0
+    ms = 100
+    acc = 10^(-8)
+    lambda = 10.0
+    l_0 = 0.125
+    d = 2
+    mg = 0.125
+
+    mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
+    
+    E_gen_new, _, _ = variational_ground_state_MPS_new(2*N, d, D, mpo_gen, acc, ms)
+    
+    # println(E_gen_new, " New version")
+end
+
+wrap_it() # force compilation
+# wrap_it_new() # force compilation
+
+# Profile.clear()
+
+# @profile wrap_it()
+
+# Profile.print()
+
+# Profile.clear()
+
+# @profile wrap_it_new()
+
+# Profile.print()
+
+# VSCodeServer.@profview wrap_it() 
+# VSCodeServer.@profview wrap_it_new()
+
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 

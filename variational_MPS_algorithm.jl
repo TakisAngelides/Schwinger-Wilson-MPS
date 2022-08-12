@@ -406,9 +406,9 @@ function get_Heff(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{ComplexF6
     Heff = contraction(Heff, (3,), R, (2,)) # A_a_i-1 a'_i-1 b_i sigma_i sigma'_i * R_a_i b_i a'_i -> B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i
     Heff = permutedims(Heff, (3,1,5,4,2,6)) # B_a_i-1 a'_i-1 sigma_i sigma'_i a_i a'_i -> C_sigma_i a_i-1 a_i sigma'_i a'_i-1 a'_i
     dimensions = size(Heff)
-    println("Dimensions of Heff: $(dimensions)\n")
-    size_of_Heff = Base.summarysize(Heff)/10^9
-    println("Size of Heff: $(size_of_Heff) GB\n")
+    # println("Dimensions of Heff: $(dimensions)\n")
+    # size_of_Heff = Base.summarysize(Heff)/10^9
+    # println("Size of Heff: $(size_of_Heff) GB\n")
     Heff = reshape(Heff, (dimensions[1]*dimensions[2]*dimensions[3], dimensions[4]*dimensions[5]*dimensions[6]))
 
     return Heff, dimensions
@@ -446,9 +446,30 @@ function get_updated_site(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{C
     Heff, dimensions = get_Heff(L, W, R)
     E, M = eigsolve(Heff, 1, :SR, ishermitian = true, krylovdim = 50) # 1 means how many evals to get, :SR means smallest real to get the eval with the smallest real part, also note M'*M = 1.0+0.0im
     M = reshape(M[1], (dimensions[1], dimensions[2], dimensions[3])) # M is reshaped in the form sigma_i, a_i-1, a_i
-    M = permutedims(M, (2,3,1)) # M is permuted into the form a_i-1, a_i, sigma_i
+    M = permutedims(M, (2, 3, 1)) # M is permuted into the form a_i-1, a_i, sigma_i
 
     return M, E[1]
+
+end
+
+function linear_map_for_updated_site(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{ComplexF64}, M::Array{ComplexF64})::Array{ComplexF64}
+
+
+    A = contraction(L, (3,), M, (1,)) # a_i-1 b_i-1 a'_i-1, a'_i-1 a'_i s'_i -> a_i-1 b_i-1 a'_i s'_i
+    B = contraction(A, (3,), R, (3,)) # a_i-1 b_i-1 a'_i s'_i, a_i b_i a'_i -> a_i-1 b_i-1 s'_i a_i b_i
+    C = contraction(W, (1, 2, 4), B, (2, 5, 3)) # b_i-1 b_i s_i s'_i, a_i-1 b_i-1 s'_i a_i b_i -> s_i a_i-1 a_i
+
+    D = permutedims(C, (2, 3, 1)) # s_i a_i-1 a_i -> a_i-1 a_i s_i
+
+    return D
+
+end
+
+function get_updated_site_new(L::Array{ComplexF64}, W::Array{ComplexF64}, R::Array{ComplexF64}, M_old::Array{ComplexF64})
+
+    E_new, M_new = eigsolve(x -> linear_map_for_updated_site(L, W, R, x), M_old, 1, :SR, krylovdim = 50)
+
+    return M_new[1], E_new[1]
 
 end
 
@@ -479,6 +500,9 @@ function update_states!(sweep_direction::Form, states::Vector{Array{ComplexF64}}
     This function does not return anything. As suggested by the exclamation mark which is conventionally placed in its name (when
     the given function mutates the input), it mutates the states vector.
     """
+
+    # println("updates sites fn size of M")
+    # display(size(M))
 
     if sweep_direction == right # Right moving sweep from left to right
     
@@ -545,7 +569,17 @@ function variational_ground_state_MPS(N::Int64, d::Int64, D::Int64, mpo::Vector{
             W = mpo[i]
             R = states[i+1]
             M, _ = get_updated_site(L, W, R)
-            mps[i], _ = gauge_site(left, M)
+            # display(size(mps[1]))
+            # display(size(L))
+            # display(size(mps[i]))
+            # println(i)
+            # M, _ = get_updated_site_new(L, W, R, mps[i])
+            # display(size(mps[i]))
+            # println("before gauge site")
+            # display(size(M))
+            mps[i], SVt = gauge_site(left, M)
+            # display(size(mps[i]))
+            # mps[i+1] = contraction(SVt, (2,), mps[i+1], (1,))
             update_states!(right, states, mps[i], W, i+1) # i+1 because for loop starts from 1 and index 1 in states is the dummy 1x1x1 tensor of value 1 
 
         end
@@ -556,7 +590,11 @@ function variational_ground_state_MPS(N::Int64, d::Int64, D::Int64, mpo::Vector{
             W = mpo[i]
             R = states[i+1]
             M, E = get_updated_site(L, W, R)
+            # println(i)
+            # M, E = get_updated_site_new(L, W, R, mps[i])
             US, mps[i] = gauge_site(right, M) # We only use US after this for loop to restore normalization to the mps state
+            # mps[i-1] = contraction(mps[i-1], (2,), US, (1,))
+            # mps[i-1] = permutedims(mps[i-1], (1, 3, 2))
             update_states!(left, states, mps[i], W, i)
 
         end
@@ -590,6 +628,130 @@ function variational_ground_state_MPS(N::Int64, d::Int64, D::Int64, mpo::Vector{
 
             mps[1] = contraction(mps[1], (2,), US, (1,))
             mps[1] = permutedims(mps[1], (1,3,2))
+
+            println("Maximum number of sweeps reached before desired accuracy.")
+
+            break
+
+        end
+
+        E_initial = E
+        sweep_number = sweep_number + 1
+    end
+
+    return E_optimal, mps, sweep_number
+
+end
+
+function variational_ground_state_MPS_new(N::Int64, d::Int64, D::Int64, mpo::Vector{Array{ComplexF64}}, accuracy::Float64, max_sweeps::Int64)::Tuple{ComplexF64, Vector{Array{ComplexF64}}, Int64}
+
+    """
+    This is the main function which implements the variational MPS ground state algorithm described in Schollwock section 6.3.
+        
+    Inputs:
+
+    N = number of spin lattice sites (Integer)
+
+    d = number of degrees of freedom on each site - eg d = 2 if we have only spin up, spin down (Integer)
+
+    D = bond dimension which controls the entanglement of the mps state (Integer)
+
+    mpo = The Hamiltonian we are investigating in the form of an mpo
+
+    accuracy = We are trying to find the mps that will give the smallest energy and we stop the search once the fractional change in energy is less than the accuracy (Float)
+    
+    max_sweeps = number of maximum sweeps we should perform if the desired accuracy is not reached and the algorithm does not stop because it reached the desired accuracy
+
+    Outputs:
+
+    E_optimal, mps, sweep_number = minimum energy we reached, mps that reached this minimum energy which approximates the ground state of the mpo Hamiltonian we gave as input, number of sweeps we performed when we stopped the algorithm
+
+    """
+    
+    mps = initialize_MPS(N, d, D) # Initialize a random mps
+    gauge_mps!(right, mps, true, N) # Put it in right canonical form and normalize it
+
+    # This are the partial contractions of the initial mps configuration which is contains all B tensors, 
+    # it has length N+1 where the first and last elements are 1x1x1 tensors of value 1. The states vector will thus be of the form
+    # 1RRRR1 for N = 5.
+
+    states = initialize_L_R_states(mps, mpo, N) # Holds partial contractions needed for each site's H_eff
+    E_initial = 10^(-5) # Will hold the ground state energy approximation of the previous full sweep
+    E_optimal = 0 # Will hold the final best ground state energy approximation once the algorithm is finished
+    sweep_number = 0 # Counts the number of full sweeps performed
+    US = 0 # Will hold the residual matrices from SVD when we put a newly updated tensor in right canonical form while sweeping from right to left
+
+    while(true)
+        
+        E = 0 # Will hold the ground state energy apprxoimation right after a full sweep finishes
+
+        # From left to right sweep (right moving sweep or right sweep)
+
+        for i in 1:N-1 # Its up to N-1 here because the left moving sweep will start from N
+
+            L = states[i]
+            W = mpo[i]
+            R = states[i+1]
+            # M, _ = get_updated_site(L, W, R)
+            # display(size(mps[1]))
+            # display(size(L))
+            # display(size(mps[i]))
+            # println(i)
+            M, _ = get_updated_site_new(L, W, R, mps[i])
+            # display(size(mps[i]))
+            # println("before gauge site")
+            # display(size(M))
+            mps[i], SVt = gauge_site(left, M)
+            # display(size(mps[i]))
+            mps[i+1] = contraction(SVt, (2,), mps[i+1], (1,))
+            update_states!(right, states, mps[i], W, i+1) # i+1 because for loop starts from 1 and index 1 in states is the dummy 1x1x1 tensor of value 1 
+
+        end
+
+        for i in N:-1:2 # Lower limit is 2 here because the right moving sweep will start from 1
+
+            L = states[i]
+            W = mpo[i]
+            R = states[i+1]
+            # M, E = get_updated_site(L, W, R)
+            # println(i)
+            M, E = get_updated_site_new(L, W, R, mps[i])
+            US, mps[i] = gauge_site(right, M) # We only use US after this for loop to restore normalization to the mps state
+            mps[i-1] = contraction(mps[i-1], (2,), US, (1,))
+            mps[i-1] = permutedims(mps[i-1], (1, 3, 2))
+            update_states!(left, states, mps[i], W, i)
+
+        end
+        
+        fractional_energy_change = abs((E - E_initial)/E_initial)
+
+        if fractional_energy_change < accuracy
+
+            E_optimal = E
+            
+            # To restore the normalization of the mps
+
+            # We start with a normalized mps and each time we update a tensor we replace it with a normalized one such that the mps 
+            # normalization is maintained. The fact that we discard residual matrices from the SVD that put the updated tensors into 
+            # a particular gauge changes the mps and thus destroys its normalization. However these residual matrices would have been 
+            # multiplied on the next site which is about to get updated next and replaced with a normalized tensor, 
+            # restoring theoverall mps normalization. Just as we are about to stop sweeping, we need to multiply onto the tensor 
+            # on site 1 the lastresidual matrices from gauging site 2 so as to not change the mps, 
+            # maintaining in this way its normalization.
+
+            # mps[1] = contraction(mps[1], (2,), US, (1,))
+            # mps[1] = permutedims(mps[1], (1,3,2))
+
+            # println("Desired accuracy reached.")
+
+            break
+        
+        elseif max_sweeps < sweep_number
+            
+            E_optimal = E
+
+            # mps[1] = contraction(mps[1], (2,), US, (1,))
+            # mps[1] = permutedims(mps[1], (1,3,2))
 
             println("Maximum number of sweeps reached before desired accuracy.")
 
