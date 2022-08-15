@@ -568,44 +568,45 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Testing the KrylovKit eigsolve as well as general r = 1.0 MPO and original r = 1 MPO and the new way of getting an updated site
 
-# function wrap_it()
+function wrap_it()
 
-#     N = 4
-#     D = 20
-#     x = 1.0
-#     ms = 100
-#     acc = 10^(-8)
-#     lambda = 10.0
-#     l_0 = 0.0
-#     d = 2
-#     mg = 0.0
+    d = 2
+    N = 4
+    D = 10
+    x = 1.0
+    ms = 100
+    lambda = 100.0
+    l_0 = 0.125
+    mg = 0.125
+    r = 1.0
+    acc = 1E-10
 
-#     mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, 1.0)
+    mpo_gen = get_Schwinger_Wilson_general_r_MPO(N, l_0, x, lambda, mg, r)
 
-#     # mpo_matrix = mpo_to_matrix(mpo_gen)
+    # mpo_matrix = mpo_to_matrix(mpo_gen)
 
-#     # evals, _ = eigsolve(mpo_matrix, 1, :SR)
+    # evals, _ = eigsolve(mpo_matrix, 1, :SR)
 
-#     # display(evals)
+    # display(evals)
     
-#     E_gen, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo_gen, acc, ms)
+    E_gen, _, _ = variational_ground_state_MPS(2*N, d, D, mpo_gen, acc, ms)
     
-#     # for t in mps
-#     #     display(size(t))
-#     # end
+    # for t in mps
+    #     display(size(t))
+    # end
 
-#     println(E_gen)
+    println(E_gen)
     
-#     # A = rand(3, 3)
-#     # function f(m, x)
-#     #     print("F")
-#     #     return m*x
-#     # end
-#     # init = rand(3)
-#     # e, v = eigsolve(v -> f(A, v), init, 1, :SR)
-#     # display(e)
-#     # display(v)
-# end
+    # A = rand(3, 3)
+    # function f(m, x)
+    #     print("F")
+    #     return m*x
+    # end
+    # init = rand(3)
+    # e, v = eigsolve(v -> f(A, v), init, 1, :SR)
+    # display(e)
+    # display(v)
+end
 
 # function wrap_it_new()
     
@@ -626,7 +627,7 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 #     # println(E_gen_new, " New version")
 # end
 
-# wrap_it() # force compilation
+wrap_it() # force compilation
 # wrap_it_new() # force compilation
 
 # Profile.clear()

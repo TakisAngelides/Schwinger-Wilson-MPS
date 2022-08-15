@@ -104,7 +104,7 @@ function get_charge_configuration(mps)
     Z_list = get_spin_configuration(mps)
     charge_configuration = []
     for k in 1:N
-        Q_k = 0.5*(Z_list[2*k-1]+1)+0.5*(Z_list[2*k]+1)-1
+        Q_k = 0.5*Z_list[2*k-1]+0.5*Z_list[2*k]
         append!(charge_configuration, Q_k)
     end
 
