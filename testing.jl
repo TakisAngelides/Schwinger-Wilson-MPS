@@ -277,29 +277,29 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Check that the first excited energy is the same as from exact diagonalization
 
-N = 6
-x = 1.0
-m_g_ratio = -0.1
-l_0 = 0.01
-lambda = 0.0
-acc = 10^(-12)
-max_sweeps = 100
-d = 2
-D = 40
+# N = 6
+# x = 1.0
+# m_g_ratio = -0.1
+# l_0 = 0.01
+# lambda = 0.0
+# acc = 10^(-12)
+# max_sweeps = 100
+# d = 2
+# D = 40
 
-# N = 10
-# J = 0.0001
-# g_z = 0.1
-# g_x = 0.2
-# mpo = get_Ising_MPO(N, J, g_x, g_z)
+# # N = 10
+# # J = 0.0001
+# # g_z = 0.1
+# # g_x = 0.2
+# # mpo = get_Ising_MPO(N, J, g_x, g_z)
 
-mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
+# mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, m_g_ratio)
 
-E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
-E_1, mps_first, sn_first = variational_first_excited_MPS(2*N, d, D, mpo, acc, max_sweeps, mps_ground, E_0)
-println("First excited energy from variational search: ", E_1)
-matrix = mpo_to_matrix(mpo)
-println("Spectrum from exact diagonalization: ", eigvals(matrix)[1:10])
+# E_0, mps_ground, sn = variational_ground_state_MPS(2*N, d, D, mpo, acc, max_sweeps)
+# E_1, mps_first, sn_first = variational_first_excited_MPS(2*N, d, D, mpo, acc, max_sweeps, mps_ground, E_0)
+# println("First excited energy from variational search: ", E_1)
+# matrix = mpo_to_matrix(mpo)
+# println("Spectrum from exact diagonalization: ", eigvals(matrix)[1:10])
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -914,5 +914,32 @@ println("Spectrum from exact diagonalization: ", eigvals(matrix)[1:10])
 # println("Penalty list")
 # display(penalty_list)
 
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# Generate data for total electric field vs theta
+
+# N = 10
+# d = 2
+# D = 16
+# l_0_list = LinRange(0.75, 1.0, 10)
+# x = 1.0
+# lambda = 100.0
+# acc = 10^(-11)
+# ms = 100
+# efd_list = []
+# mg = 1.0
+
+# for l_0 in l_0_list
+    
+#     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+#     _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+#     efl = get_electric_field_configuration(l_0, mps)
+    
+#     efd = real(efl[5])
+#     append!(efd_list, efd)
+# end
+
+# scatter(l_0_list, efd_list)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
