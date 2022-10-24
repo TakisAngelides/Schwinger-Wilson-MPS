@@ -919,27 +919,27 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for total electric field vs theta
 
-N = 5
-d = 2
-D = 16
-l_0_list = LinRange(1.0, 1.8, 10)
-x = 1.0
-lambda = 100.0
-acc = 10^(-11)
-ms = 100
-efd_list = []
-mg = 1.0
+# N = 10
+# d = 2
+# D = 16
+# l_0_list = LinRange(0.75, 1.0, 10)
+# x = 1.0
+# lambda = 100.0
+# acc = 10^(-11)
+# ms = 100
+# efd_list = []
+# mg = 1.0
 
-for l_0 in l_0_list
+# for l_0 in l_0_list
     
-    mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
-    _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
-    efl = get_electric_field_configuration(l_0, mps)
+#     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
+#     _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
+#     efl = get_electric_field_configuration(l_0, mps)
     
-    efd = real(efl[3])
-    append!(efd_list, efd)
-end
+#     efd = real(efl[5])
+#     append!(efd_list, efd)
+# end
 
-scatter(l_0_list, efd_list)
+# scatter(l_0_list, efd_list)
 
 # ----------------------------------------------------------------------------------------------------------------------------------
