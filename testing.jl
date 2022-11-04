@@ -919,12 +919,13 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for total electric field vs theta
 
-N = 6
-link_to_measure = 3
+N = 4
+link_to_measure = 2
 d = 2
-D = 30
-l_0_list = LinRange(1.0, 3.0, 10)
-volume = 20.0
+D = 10
+# l_0_list = LinRange(2.2, 3.0, 10)
+l_0_list = [2.37, 2.47, 2.57, 2.67, 2.77]
+volume = 10.0
 x = N^2/volume^2
 lambda = 100.0
 acc = 10^(-11)
@@ -936,12 +937,39 @@ for l_0 in l_0_list
     
     mpo = get_Schwinger_Wilson_MPO(N, l_0, x, lambda, mg)
     _, mps, _ = variational_ground_state_MPS(2*N, d, D, mpo, acc, ms)
-    efl = get_electric_field_configuration(l_0, mps)
+
+    Z = get_spin_configuration(mps)
+
+    charge_config = []
+
+    for n in 1:N
+
+        charge_n = (Z[2*n-1] + Z[2*n])*0.5
+        append!(charge_config, real(charge_n))
+
+    end
+
+    efl = []
+
+    for n in 1:N
+
+        L_n = l_0 + sum(charge_config[1:n])
+        append!(efl, L_n)
+
+    end
     
     efd = real(efl[link_to_measure])
+    println(efd)
     append!(efd_list, efd)
+
+    plot(1:N, charge_config, label = "charge, l_0 = $(l_0)")
+    savefig("q_$(l_0).pdf")
+    plot(1:N, efl, label = "ef, l_0 = $(l_0)")
+    savefig("ef_$(l_0).pdf")
+
 end
 
-scatter(l_0_list, efd_list, label = "N = $(N)")
+scatter(l_0_list, efd_list, label = "N = $(N), efd vs l_0")
+savefig("efd_vs_l_0.pdf")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
