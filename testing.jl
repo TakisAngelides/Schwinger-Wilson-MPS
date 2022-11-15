@@ -922,15 +922,15 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 N = 4
 link_to_measure = 2
 d = 2
-D = 10
-# l_0_list = LinRange(2.2, 3.0, 10)
-l_0_list = [2.37, 2.47, 2.57, 2.67, 2.77]
+D = 16
+l_0_list = LinRange(0.0, 1.5, 100)
 volume = 10.0
 x = N^2/volume^2
 lambda = 100.0
 acc = 10^(-11)
 ms = 100
 efd_list = []
+particle_number_list = []
 mg = 1.0
 
 for l_0 in l_0_list
@@ -957,19 +957,36 @@ for l_0 in l_0_list
         append!(efl, L_n)
 
     end
+
+    mpo_particle_number = get_particle_number_MPO(N)
+    particle_number = real(get_mpo_expectation_value(mps, mpo_particle_number))
+    append!(particle_number_list, particle_number)
+
+    println("----------------------------")
+    println("l_0 = $(l_0) with particle number = $(particle_number)")
+    println("Charge at site 1: $(charge_config[1])")
+    println("Charge at site 2: $(charge_config[2])")
+    println("Charge at site 3: $(charge_config[3])")
+    println("Charge at site 4: $(charge_config[4])")
+    println("Electric field at link 1: $(efl[1])")
+    println("Electric field at link 2: $(efl[2])")
+    println("Electric field at link 3: $(efl[3])")
+    println("----------------------------")
     
     efd = real(efl[link_to_measure])
-    println(efd)
+    # println(efd)
     append!(efd_list, efd)
 
-    plot(1:N, charge_config, label = "charge, l_0 = $(l_0)")
-    savefig("q_$(l_0).pdf")
-    plot(1:N, efl, label = "ef, l_0 = $(l_0)")
-    savefig("ef_$(l_0).pdf")
+    # plot(1:N, charge_config, label = "charge, l_0 = $(l_0)")
+    # savefig("q_$(l_0).pdf")
+    # plot(1:N, efl, label = "ef, l_0 = $(l_0)")
+    # savefig("ef_$(l_0).pdf")
 
 end
 
-scatter(l_0_list, efd_list, label = "N = $(N), efd vs l_0")
-savefig("efd_vs_l_0.pdf")
+plot(l_0_list, efd_list, label = "N = $(N), x = $(x), mg = $(mg), EFD")
+plot!(l_0_list, particle_number_list, label = "Particle Number")
+xlabel!("l_0")
+# savefig("efd_vs_l_0.pdf")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
