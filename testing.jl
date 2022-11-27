@@ -991,9 +991,9 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 
-# Generate data for total electric field vs theta
+# Generate data for total electric field vs mg
 
-N = 6
+N = 4
 link_to_measure = 2
 d = 2
 D = 16
@@ -1003,7 +1003,7 @@ lambda = 100.0
 acc = 10^(-11)
 ms = 100
 particle_number_list = []
-mg_list = LinRange(-0.35, -0.3, 5)
+mg_list = LinRange(-0.3545, -0.35425, 5)
 # l_0_list = LinRange(0.4, 0.9, 5)
 l_0_list = [0.1]
 # l_0_list = [0.1, 0.11]
@@ -1042,19 +1042,23 @@ for l_0 in l_0_list
         mpo_particle_number = get_particle_number_MPO(N)
         particle_number = real(get_mpo_expectation_value(mps, mpo_particle_number))
         append!(particle_number_list, particle_number)
+        ee = entanglement_entropy(mps, N)
 
         # println("----------------------------")
-        # println("l_0 = $(l_0) with particle number = $(particle_number)")
+        println("mg = $(mg) with particle number = $(particle_number), ee = $(ee)")
         println("Charge at site 1: $(charge_config[1])")
         println("Charge at site 2: $(charge_config[2])")
         println("Charge at site 3: $(charge_config[3])")
         println("Charge at site 4: $(charge_config[4])")
-        println("Charge at site 5: $(charge_config[5])")
-        println("Charge at site 6: $(charge_config[6])")
-        # println("Charge at site 4: $(charge_config[4])")
-        # println("Electric field at link 1: $(efl[1])")
-        # println("Electric field at link 2: $(efl[2])")
-        # println("Electric field at link 3: $(efl[3])")
+        # println("Charge at site 5: $(charge_config[5])")
+        # println("Charge at site 6: $(charge_config[6])")
+        
+        println("Electric field at link 1: $(efl[1])")
+        println("Electric field at link 2: $(efl[2])")
+        println("Electric field at link 3: $(efl[3])")
+        println("Electric field at link 4: $(efl[4])")
+        # println("Electric field at link 5: $(efl[5])")
+        # println("Electric field at link 6: $(efl[6])")
         # println("----------------------------")
         
         display(efl)
@@ -1073,7 +1077,6 @@ for l_0 in l_0_list
    
 end
 
-# plot(mg_list, efd_list, label = "N = $(N), x = $(x), l_0 = $(l_0)")
 plot!([mg_list[1], mg_list[length(mg_list)]], [0, 0])
 # plot!(mg_list, particle_number_list, label = "Particle Number")
 xlabel!("mg")
