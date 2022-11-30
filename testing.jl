@@ -923,7 +923,7 @@ N = 6
 link_to_measure = 3
 d = 2
 D = 12
-l_0_list = LinRange(3.0, 6.0, 10)
+l_0_list = LinRange(1.1, 2.8, 10)
 volume = 10.0
 x = N^2/volume^2
 lambda = 100.0
@@ -931,7 +931,7 @@ acc = 10^(-11)
 ms = 100
 efd_list = []
 particle_number_list = []
-mg = 20.0
+mg = 3.0
 
 for l_0 in l_0_list
     
