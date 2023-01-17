@@ -919,19 +919,20 @@ include("variational_first_excited_state_MPS_algorithm.jl")
 
 # Generate data for total electric field vs theta
 
-N = 6
-link_to_measure = 3
+N = 4
+link_to_measure = 2
 d = 2
 D = 12
-l_0_list = LinRange(1.1, 2.8, 10)
-volume = 10.0
-x = N^2/volume^2
+l_0_list = LinRange(0.5, 1.5, 10)
+# volume = 10.0
+# x = N^2/volume^2
+x = 0.36
 lambda = 100.0
 acc = 10^(-11)
 ms = 100
 efd_list = []
 particle_number_list = []
-mg = 3.0
+mg = 1.1 
 
 for l_0 in l_0_list
     
